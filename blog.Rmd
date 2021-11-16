@@ -1,0 +1,6 @@
+---
+title: "Blog listing"
+description: |
+  This blog contains a mixture of posts on computacional reproducibilty, research integrity, R and academia.
+listing: posts
+---

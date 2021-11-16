@@ -1,0 +1,11 @@
+---
+title: "Glossary"
+bibliography: references.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+There are lots of terms related to reproduction and replicability. And the interpretation of these terms often differ per discipline, field or knowledge area. 

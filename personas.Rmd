@@ -1,0 +1,43 @@
+---
+title: "Personas"
+bibliography: references.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Un **Participante tipo** (*Learner Personas*, [@wilson2019]) consiste en 1/ un contexto general, 2/ qué sabe ya, 3/ qué quiere saber, y 4/ otras necesidades especiales que pueder tener. Si estás con tu tesis doctoral, ¿te identificas mejor con [Celine](#celine) o con [Víctor](#victor)?. Si formas parte del profesorado, ¿tus necesidades de aprendizaje encajan mejor con las de [Juan](#juan) o con las de [Ana](#ana)?
+
+## Celine {#celine}
+
+Celine es licenciada en psicología en Inglaterra y acaba de matricularse en la escuela de doctorado de la UJI. Su tesis doctoral versa sobre la aplicación de nuevas tecnologías para la mejora de terapias comportamentales para pacientes diagnosticados con adición al juego.
+
+Celine tiene planeado llevar cabo varios experimentos con pacientes durante su periodo doctoral. Conoce algunas herramientas para el análisis de datos (como SPSS) de su licenciatura, pero nunca ha cursado un curso de programación formal, aunque lo ha pensado a menudo. A veces piensa que sufre el síndrome del impostor en cuanto le nombran lenguajes de programación o herramientas de análisis.
+
+Celine le gustaría sistematizar los análisis de los resultados de los experimentos que tiene por delante, para su trabajo doctoral y, sobre todo, para demostrarse a ella misma que puede aprender una competencia computacional. Le suenan algo los términos reproducibilidad y replicabilidad e intuye que le pueden ser útiles para agilizar el trabajo tedioso de sus experimentos, pero no sabe por donde empezar.
+
+## Víctor {#victor}
+
+Víctor estudió química en la UJI y se encuentra en la fase final de su tesis sobre química computacional que espera defender una vez realice una estancia de investigación en Francia que tiene planeada.
+
+Víctor aprendió R al principio de su tesis y sigue siendo el lenguaje de programación en su investigación. Fue autodidacta en el uso de Github, como en muchas otras cosas, y lo utiliza pare versionar su software y colaborar con otros colegas. Ha publicado algunos artículos relevantes en los cuales el software desarrollado ha sido una contribución principal.
+
+Víctor quiere mejorar sus competencias y ampliar su conocimiento sobre reproducibilidad. Las mejoras revistas académicas de su campo ahora exigen que cada envío venga con código y datos reproducibles, y sabe que un artículo publicado en esas revistas le puede abrir las puertas a una postdoc.
+
+## Juan {#juan}
+
+Juan es profesor de Economía en la UJI. Cuenta con cuatro sexenios de investigación y un buen registro de publicaciones científicas. Es responsable de un curso de economía cuantitativa que a su vez es el foco de su investigación.
+
+Juan ve extrañado el revuelo actual por la era de *crisis de reproducibilidad* de la ciencia que lee en editoriales de Science y Nature. Lo considera una moda pasajera, un *hype*, como otras tantas modas efímeras de las que ha sido testigo en su dilatada carrera académica . Nunca ha necesitado de la reproducibilidad para tener una exitosa carrera académica.
+
+Juan, a pesar de ello, quiere cerciorarse por sí mismo si sus creencias sobre reproducibilidad y prácticas reproducibles son fundadas.
+
+## Ana {#ana}
+
+Ana es profesora de Informática en la UJI. No investiga, o investiga poco, pero es muy activa y se preocupa en mejorar sus prácticas docentes. Es responsable de un curso de introducción a la programación para grupos grandes de estudiantes de primero de carrera.
+
+Ana está al día de las innovaciones docentes y todo lo relacionada con la tecnología educativa. Desde hace un década, aplica distintas técnicas y metodologías innovadoras a sus clases con bastante éxito, según lo que comentan sus estudiantes en las encuestas.
+
+Ana quiere saber si reproducibilidad y docencia conjugan de alguna forma, ya que reproducibilidad e investigación siempre van de la mano en todo lo que ha leído. Piensa que de alguna forma le puede ser útil en las sesiones prácticas de sus clases e incluso para la creación de material docente. Busca guías y ejemplos prácticos con los que inspirarse para reciclar sus materiales docentes y clases prácticas.

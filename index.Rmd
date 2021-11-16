@@ -1,0 +1,61 @@
+---
+title: "Reproducible Research Practices'22"
+author:
+- name: Carlos Granell
+  url: http://carlosgranell.eu
+  affiliation: Universitat Jaume I
+  affiliation_url: http://geotec.uji.es/
+  orcid_id: 0000-0003-1004-9695
+- name: Sergi Trilles
+  url: http://www3.uji.es/~strilles/
+  affiliation: Universitat Jaume I
+  affiliation_url: http://geotec.uji.es/
+  orcid_id: 0000-0002-9304-0719
+  
+date: "`r Sys.Date()`"
+bibliography: references.bib
+link-citations: true
+
+description: |
+  [The Doctoral School of Universitat Jaume  I ](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course. Academic year 2021/2022.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "cgranell/rrp22") %>%
+  meta_social(
+    title = "Reproducible Research Practices'22",
+    url ="https://cgranell.github.io/rrp22/"
+  )
+
+```
+
+
+Welcome to the **Reproducibility Research Practices** (or *What can I do to make my next article (more) reproducible?*) course website.
+
+This introductory course is currently scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course proceeds. At any other time, this website is continuously online, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
+
+## Website content 
+
+
+## Getting started
+
+
+## Acknowledgements
+
+This course was developed and is maintained by [Carlos Granell](http://carlosgranell.eu).
+
+The following individuals have contributed to improving the course: ...
+
+The course materials are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Linked materials are governed by their own licenses. I assume that all external materials used here are covered under the educational fair use policy. If this is not the case and any material displayed here violates copyright, please let me know and I will remove it.
+

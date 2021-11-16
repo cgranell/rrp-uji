@@ -1,0 +1,69 @@
+name: "rrp-uji"
+title: "Reproducible Research Practices'22"
+description: |
+  Curso de formación transversal de la
+  [Escuela de Doctorado](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)
+  en el curso académico 2022/2023.
+base_url: https://cgranell.github.io/rrp-uji
+repository_url: https://github.com/cgranell/rrp-uji
+output_dir: "docs"
+creative_commons: CC BY-NC-SA
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    custom: _custom.html         # Like an aside
+navbar:
+  search: true
+  source_url: true   # pone el icono y link a Github
+  logo:
+    image: images/ESCOLA-DOCTORAT-es-blanco.png
+    href: https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/
+  left:
+    - text: "Home"
+      href: index.html
+  right:
+    - text: "General information"
+      menu:
+      - text: "Syllabus"
+        href: syllabus.html
+      - text: "Schedule"
+        href: schedule.html
+      - text: "---"
+      - text: "Code of Conduct"
+        href: code_of_conduct.html
+    - text: Sessions
+      menu:
+        - text: "1.1 Intro"
+          href: session11.html
+        - text: "1.2 "
+          href: session12.html
+        - text: "2.1"
+          href: session21.html
+        - text: "2.2"
+          href: session22.html
+        - text: "3.1"
+          href: session31.html
+        - text: "3.2"
+          href: session32.html
+    - text: Resources
+      menu:
+        - text: "Personas"
+          href: personas.html
+        - text: "References"
+          href: references.html
+        - text: "Glossary"
+          href: glossary.html
+
+    - text: "Blog"
+      href: blog.html
+    - icon: fa fa-rss
+      href: index.xml
+search: true
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    code_download: true
