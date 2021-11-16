@@ -1,0 +1,39 @@
+---
+title: "Colophon RRP21"
+description: |
+  En este post resumimos los aspectos más importantes tras terminar el curso RRP'21.
+author:
+  - name: Carlos Granell
+    affiliation: Universitat Jaume I
+    orcid_id: 0000-0003-1004-9695
+date: 2021-05-11
+categories: [RRP21]
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+    toc_float: true
+draft: false
+---
+
+La idea de reproducción en ciencia no es algo nuevo. Las disputas entre [Isaac Newton y John Falmsteed](https://cgranell.github.io/rrp21/slides/slides11_01.html#17) siglos atrás ya mostraban claramente los ingredientes de la reproducción y la replicación como mecanismos necesarios para el progreso de la ciencia. [En palabras de Newton](https://cgranell.github.io/rrp21/slides/slides11_01.html#20),
+
+> "these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations ... **I want not your calculations, but your observations only**."
+
+Es innegable que la ciencia moderna se apoya en gran medida en la tecnología y la computación. Muchas disciplinas científicas se les puede calificar hasta cierto punto de "computacionales". Algunas requieren de procesos computacionales a gran escala para llevar a cabo sus investigaciones, otras necesitan acceso a datos heterogéneos en formato digital, y otras necesitan procesos analíticos para obtener los resultados. De uno u otro modo, la diferencia con la época de Newton es que hablamos de una **reproducibilidad computacional**. En vez de pedirle "las observaciones en papel", Newton en nuestros días le pediría a Falmsteed los "datos, scripts, y el entorno de computacional en el cual había realizado los cálculos". Ha sido un cambio radical en el soporte, no cabe duda, pero la idea detrás de la reproducción sigue intacta: transparencia e integridad en el proceso científico.
+
+Sin embargo, la forma de diseminar la investigación no ha cambiado radicalmente desde los tiempos de Newton. El contenido de un *paper* sigue siendo en esencia tal como era siglos atrás, mucho antes de la introducción de la computación y la tecnología en las metodologías de investigación. Para los científicos de siglos pasados la apariencia actual de un artículo científico sería muy familiar. Pero tendrían serios problemas en [reproducir un artículo](https://cgranell.github.io/rrp21/slides/slides11_01.html#54) actual. En parte, claro, por el desconocimiento total de la tecnología moderna. Por otra parte, sin embargo, porque los datos y recursos para entender los resultados descritos en el artículo no se incluyen. "Algo falta aquí! El autor dice que procesa los datos pero ¿dónde están?". Y añadirían desesperados, "escribirimos una carta al autor para pedirle los datos originales. Seguro que en un par de meses tendremos notícias suyas".
+
+¿Qué diferencia un paper tradicional de uno reproducible? En su forma más simple, un párrafo más. Un párrafo que indique donde se pueden encontrar y como acceder a los datos, código, documentación, instrucciones, scripts, infraestructura computacional y, en definitiva, a cualquier recurso que se haya utilizado para llegar a los resultados y conclusiones expuestas en el artículo escrito. Un apartado de [Data and Software Availabilty](https://doi.org/10.17605/OSF.IO/CB7Z8) (DASA) en la sección de los métodos del artículo cumple con ese cometido. Fácil, ¿no?
+
+Lo verdaderamente importante no es incluir la sección DASA en el artículo final. No me mal interpretés, ¡incluidla siempre que podáis! Lo verdaderamente importante es la sistematización de describir con sumo detalle todo el proceso científico llevado a cabo hasta su culminación en el artículo científico publicado. La sección DASA es solo la punta del iceberg, indica al lector "[here's my work](https://cgranell.github.io/rrp21/slides/slides11_01.html#41)", donde encontrar y acceder a los recursos necesarios para la reproducción/replicación. Todo lo que no se ve, el resto del iceberg, que es inmenso comparado con la sección DASA, son las **prácticas y hábitos para la investigación reproducible que habéis ido adquiriendo y aplicando en vuestra rutina diaria**.
+
+No se puede pensar en la reproducibilidad unos días antes de enviar un artículo para su revisión, como una tarea más equiparable a la recogida de biografías del resto de autores. Ser reproducible empieza mucho antes [@nature2021], cuando arranca el proyecto de investigación, durante la recogida de datos, durante el análisis, durante la redacción del artículo; en definitiva, durante toda la vida del proyecto. **Ser reproducible implica un cambio en el proceso**. La clave es el proceso, no el producto. Optimizando el proceso de forma reproducible, generareis productos (*papers*) reproducibles una y otra vez.
+
+Este curso no tenía por objetivo enseñaros a escribir secciones DASA para incluirlas en vuestros artículos. Eso es un efecto colateral. El objetivo primario del curso era promover un cambio de mentalidad en vuestro proceso de investigación y rutina de trabajo diaria, para que asimiléis como hábitos propios las [prácticas y recomendaciones básicas](https://cgranell.github.io/rrp21/slides/slides21_01.html) vistas en este curso.
+
+Esperamos haberlo conseguido.
+
+Carlos y Sergi
+

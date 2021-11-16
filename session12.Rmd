@@ -1,0 +1,63 @@
+---
+title: "Sesión 1.2"
+description: |
+  Evaluación de la reproducibilidad
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Los resultados de aprendizaje de la sesión...
+
+-   RRP03 - **Describir y distinguir** los criterios de reproducibilidad
+
+-   RRP04 - **Evaluar** el nivel de reproducibilidad en trabajos de investigación propios u otros propuestos
+
+## Los contenidos de la sesión...
+
+-   Recursos que forman parte del proceso científico, más allá del artículo científico publicado.
+
+-   Caracterización de dichos recursos en criterios de reproducibilidad.
+
+-   Uso e interpretación correcta de los niveles asociados a cada criterio.
+
+-   Como leer un artículo científico.
+
+-   Como leer un artículo científico desde la perspectiva de la reproducibilidad.
+
+## Actividades y materiales
+
+**[Tiempo estimado: 2 horas]**
+
+1.  Del siguiente artículo [@nust2018], lee las primeras tres secciones (*Introduction, Related Work, Materials & Methods*), donde se proponen unos criterios para evaluar el grado de reproduciblidad de un artículo. Presta atención a la [figura 2](https://doi.org/10.7717/peerj.5072/fig-2), la cual esquematiza los niveles para cada uno de los criterios de reproducibilidad. Es necesario que te familiarices con estos criterios y sus niveles para cuantificar posteriormente cuan reproducible es un artículo.
+
+2.  Para entrar en contexto sobre tu proceso y prácticas de investigación: "[PhD thesis meets reproducibility" (slides)](slides/slides12_01.html) y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).
+
+    ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides12_01.html)"}
+    xaringanExtra::embed_xaringan(url = "slides/slides12_01.html", ratio = "16:9")
+    ```
+
+3.  Reflexiona sobre tu proceso y prácticas de investigación en general (no te focalices en un proyecto o artículo en concreto) y contesta a las siguientes preguntas.
+
+    -   Indica departamento y/o grupo de investigación.
+
+    -   ¿Realizas una investigación teórica-conceptual, práctica-experimental, o una combinación de ellas?
+
+    -   ¿Juegan los datos de entrada un papel importante en tu investigación? ¿Utilizas fuentes de datos ya existentes? ¿O generas los datos expresamente para tu investigación (p.e. cuestionarios)?
+
+    -   ¿Necesitas ajustar, arreglar, limpiar, en definitiva, pre-procesar los datos de entrada para tu investigación?
+
+    -   ¿Realizas algún análisis o aplicas algún modelo sobre los datos? ¿Utilizas alguna herramienta tecnológica ya existente para el análisis, o escribes tu propio código para analizar los datos? ¿O ambas cosas?
+
+    -   ¿Las tablas, figuras, gráficos, mapas o diagramas son resultados habituales en tu investigación, es decir, aparecen frecuentemente en tus informes o artículos finales?
+
+4.  Realiza un ejercicio de auto-evaluación en el que deberás asignar un nivel (NA, 0, 1, 2, 3) para cada uno de los criterios de reproducibilidad aplicados a uno de tus artículos publicados. Reflexiona sobre aquellos criterios de reproducibilidad que te resultan más difíciles de llevar a cabo (por la falta de conocimiento técnico o de herramienta de apoyo o simplemente porque nunca los ha tenido en cuenta). Destaca tres aspectos (como máximo) que te gustaría intentar mejorar para el próximo artículo de investigación.
+
+## **Entrega:**
+
+-   Responde a las preguntas de la actividad 3 en la **Encuesta prácticas de investigación** en el Aula Virtual.
+-   Sube tu auto-evaluación (actividad 4) en el foro **Auto-evaluación de la reproducibilidad** en el AV e indica también la disciplina a la que perteneces en el mensaje.
+
+### 

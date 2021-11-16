@@ -1,0 +1,41 @@
+---
+title: "#1 - Grupo piloto en investigación reproducible"
+description: |
+  En este post iniciamos una serie de mensajes para promover prácticas reproducibles dirigidas especialemnte a jóvenes investigadores Esta iniciativa _de prueba y experimental_ surgío tras terminar el curso de RRP en Mayo 2021 (RRP'21) y con el visto bueno de la Escuela de Doctorado.
+author:
+  - name: Carlos Granell
+    affiliation: Universitat Jaume I
+    orcid_id: 0000-0003-1004-9695
+date: 2021-05-31
+categories: [Pilot]
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+Hola,
+
+Que sepáis que no voy a daros trabajo por mostrar interés en este grupo piloto sobre investigación reproducible. Simplemente os informaré de cosas que atañen directamente a la reproducibilidad y las buenas prácticas en la investigación. 
+
+Ni que decir tiene que tenéis mi correo para contactarme directamente sobre cualquier cuestión relacionada con lo visto en el curso para el desarrollo de vuestra tesis doctorales. 
+
+Comentaros brevemente que el abril de 2021 pasado la [Agencia Española de Investigación se adhirió](https://www.ciencia.gob.es/portal/site/MICINN/menuitem.edc7f2029a2be27d7010721001432ea0/?vgnextoid=54360b2a21fe8710VgnVCM1000001d04140aRCRD) a la [Declaración DORA](https://sfdora.org/read/read-the-declaration-espanol/) sobre evaluación de la investigación. Promete 
+
+> "revisar todas sus convocatorias y documentos de soporte a la evaluación para asegurar su correcta implementación". 
+
+Algunas de las recomendaciones DORA que la AEI promete llevar a cabo (aunque no será un camino de rosas cambiar las políticas actuales basadas en el factor de impacto por su larga permanencia en la ciencia española) al adherirse son las siguientes (negritas son mías):
+
+-   **No utilice métricas basadas en revistas, como el factor de impacto, como una medida sustituta de la calidad de los artículos de investigación individuales**, para evaluar las contribuciones de un científico individual, o en las decisiones de contratación, promoción o financiación.
+
+-   Sea explícito sobre los criterios utilizados para evaluar la productividad científica de los solicitantes de fondos de investigación, especialmente para los investigadores que están iniciando su carrera investigadora, que el **contenido científico de un artículo es mucho más importante que las métricas de publicación o la identidad de la revista en la que fue publicado**.
+
+-   Con el fin de evaluar la investigación, **considere el valor y el impacto de todos los resultados de la investigación (incluidos los conjuntos de datos y el software)** además de las publicaciones de investigación, y considere una amplia gama de medidas de impacto que incluyan indicadores cualitativos, como la influencia sobre la política y prácticas científicas.
+
+Como veis, claramente se primará el contenido del artículo en detrimento del contenedor (revista y su índice de impacto). Por fin algo de sentido común en la ciencia española. Ojalá logremos (investigadores, universidades, ANECA, etc) dejar atrás la dependencia absoluta en el factor de impacto y primos cercanos para evaluar si el CV de un/a candidato/a es suficiente o no para una beca, contrato o promoción. 
+
+Las pinceladas iniciales que vimos en el curso de [RRP'21](https://cgranell.github.io/rrp21/) cobran más sentido y se hacen más necesarias que nunca para vuestra futura carrera investigadora. Sed pacientes y agarraos a lo verdaderamente importante y no al factor de impacto. ¡Sois mucho más que un número!
+
+Saludos,
+Carlos
+

@@ -1,0 +1,32 @@
+---
+title: "#2 - Grupo piloto en investigación reproducible"
+description: |
+  En este post recogemos unas notícias que cuestionan el poder del factor de impacto para la evaluación de la investigacion.
+author:
+  - name: Carlos Granell
+    affiliation: Universitat Jaume I
+    orcid_id: 0000-0003-1004-9695
+date: 2021-07-16
+categories: [Pilot]
+bibliography: ../../references.bib
+link-citations: yes
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+Hola,
+
+Solo un par de notícias relacionadas con la investigación reproducible antes de que disfruteis de vuestras merecidas vacaciones.
+
+La primera viene con el siguiente titular: **La Universidad de Utrecht dejará de tener en cuenta el factor de impacto para medir la calidad de sus investigadores** [@woolston2021]. Esta universidad holandesa dice que está dejando formalmente de tener en cuenta el factor de impacto, una medida "estándar" del éxito científico, y que interviene para bien o para mal en todas las decisiones de contratación y promoción. Para principios de 2022, todos sus departamentos juzgarán a sus académicos según otros estándares, incluido su compromiso con el trabajo en equipo y sus esfuerzos para promover la ciencia abierta, según el nuevo esquema de acreditación "[Recognition and rewards](https://www.uu.nl/en/research/open-science/tracks/recognition-and-rewards)" de la Universidad de Utrecht. A pesar de este gran salto, no se quedan ahí. Ese nuevo esquema de reconocimiento forma parte del programa [Open Science](https://www.uu.nl/en/research/open-science) de Utrecht, un esfuerzo brutal para hacer que la investigación sea más transparente y cooperativa. Ahí se dice que los encargados de los programas de ciencia abierta integrados en cada departamento evaluarán el progreso hacia la publicación de acceso abierto, la participación pública y el intercambio de datos. Ojalá este cambio de rumbo en las políticas de contratación y promoción se aplicará también en UJI.
+
+La segunda es a nivel nacional a raíz de una carta abierta [@delgadolopez2021] firmada por Emilio Delgado-López, Ismael Ràfols y Ernest Abadal,  que reclaman un llamamiento a las autoridades españolas para cambiar el modelo de evaluación de la investigación en España, que tanta importancia concede a los indicadores bibliométricos (índice H, citaciones, etc), en general, y a los índices de impacto de revista, en particular. Pues bien, parece que esa carta ha generado algo de movimiento, y la semana que viene, 22 de julio, se celebra una [mesa redonda](https://www.poruncambioenlaevaluacioncientifica.es/2021/07/01/evaluacion-ciencia-debate/) donde se discutirán (entre los panelistas, representantes de ANECA, AEI, etc) sobre la necesidad de ese cambio de rumbo en la evaluación científica en España. Podéis registraros para la mesa redonda desde el link anterior, y/o seguir el debate por [youtube](https://www.youtube.com/watch?v=xSepgCgznzY) en background mientras hacéis otras cosas. 
+
+Este debate llega tardísimo, visto a la altura de película a la que está la Universidad de Utrecht que nos saca varios pueblos de ventaja. Pero bien, bienvenidas estas mesas redondas si los que toman las decisiones en políticas científicas se van con ideas de cambio real. ¿Y cómo os afecta a vosotros?. Hace pocos años, no se hablaba de esto. Ni por asomo. Se aceptaba el sacrosanto Factor de Impacto sin pestañear. A mi me da que este cambio se va a acelerar en pocos años. Esa es mi impresión. Espero que os anticipéis al futuro y toméis nota para que vuestra investigació sea dirigida por principios de ciencia abierta, datos FAIR, reproducibilidad, etc (recogidos en "[Recognition and Rewards](https://www.uu.nl/en/research/open-science/tracks/recognition-and-rewards)") en vez de por el Factor de Impacto. 
+
+Saludos y buen verano!
+
+Carlos
+
