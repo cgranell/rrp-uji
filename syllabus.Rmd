@@ -95,8 +95,14 @@ No se habla de "aprender a programar" como resultado de aprendizaje o de "saber 
 
 **Semana 2: Prácticas y recomendaciones.** En esta semana se tratan los resultados de aprendizaje RRP05-07
 
--   Sesión 2.1: [Organización, recomendaciones y buenas prácticas reproducibles](sesion21.html)
+-   Sesión 2.1: [Recomendaciones y buenas prácticas generales](sesion21.html)
 
+-   Sesión 2.2: Recomendaciones específicas para la reproducción computacional 
+
+
+2. Prácticas y recomendaciones para facilitar la reproducción y reutilización
+
+    
 **Semana 3: Literate programming y notebooks.** En esta semana se tratan los resultados de aprendizaje RRP08-10
 
 -   Sesión 3.1: Literate programming y markdown
