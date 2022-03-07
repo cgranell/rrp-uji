@@ -14,9 +14,9 @@ This is the current course schedule. Things might change, so check regularly for
 
 **Week 1: Introduction to reproducibility**
 
--   Session 1.1: [Reproducibilidad y replicabilidad](session11.html)
+-   Session 1.1: [Reproducibility and replicability](session11.html)
 
--   Session 1.2: [Reproducibilidad assessment](session12.html)
+-   Session 1.2: [Reproducibilidty assessment criteria](session12.html)
 
 **Week 2: Recommendations and practices**
 

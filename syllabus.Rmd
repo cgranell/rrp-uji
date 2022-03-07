@@ -10,24 +10,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Identificación del curso
 
-Código: **14100.17**
+Código: **MI007.TMP**
 
-Nombre: **Reproducible Research Practices (o *¿Qué puedo hacer para que mi próximo artículo sea (más) reproducible?*)**
+Nombre: **Reproducible Research Practices (*¿Qué puedo hacer para que mi próximo artículo sea (más) reproducible?*)**
 
-Plan de Formación Transversal en Investigación: PDF/Doctorado Curso Académico: 2020/2021
+Plan de Formación Transversal en Investigación: PDF/Doctorado Curso Académico: 2021/2022
 
-Horas de formación: **20 horas en total que incluye asistencia más trabajo autónomo.** Fechas y horario de impartición: **14, 16, 21, 23, 28 y 30 de abril de 2021, de 10 a 11**
+Horas de formación: **6 horas (acreditable por 20 horas que incluyen asistencia más trabajo autónomo.** Fechas y horario de impartición: **29 de marzo, 5 y 11 de abril de 2022, de 10 a 12**
 
-Idioma de impartición: **castellano** (Nota: en años pares se imparte en inglés, en años impares en castellano)
+Idioma de impartición: **castellano/inglés** (Nota: en años pares se imparte en inglés, en años impares en castellano)
 
-Plazas ofertadas: **40 en modalidad online síncrona** Tasa: **gratuito**
 
 **Profesorado**:
 
 -   **Dr. Carlos Granell Canut** (Dep. de Lenguajes y Sistemas Informáticos. Universitat Jaume I)
 -   **Dr. Sergi Trilles Oliver** (Dep. de Lenguajes y Sistemas Informáticos. Universitat Jaume I)
 
-Ficha en la Escuela de Doctorado: [web Formación Transversal](https://www.uji.es/estudis/centres/escola-doctorat/base/Formacio-transversal/)
+Ficha del curso en la Escuela de Doctorado: [Castellano](https://ujiapps.uji.es/ade/rest/storage/HPOJUR5VMPQWDOCS6QGHUI6VX5LYWTDU) [English](https://ujiapps.uji.es/ade/rest/storage/Z8KFWYOHSZYNTH6WKH0DRGQVLCPLCM8P)
 
 ## Requisitos
 
@@ -89,25 +88,12 @@ No se habla de "aprender a programar" como resultado de aprendizaje o de "saber 
 
 **Semana 1: Introducción a la reproducibilidad.** En esta semana se tratan los resultados de aprendizaje RRP01-04
 
--   Sesión 1.1: [Reproducibilidad y replicabilidad](sesion11.html)
+**Semana 2: Prácticas y recomendaciones para facilitar la reproducción y reutilización.** En esta semana se tratan los resultados de aprendizaje RRP05-07
 
--   Sesión 1.2: [Evaluación de la reproducibilidad](sesion12.html)
-
-**Semana 2: Prácticas y recomendaciones.** En esta semana se tratan los resultados de aprendizaje RRP05-07
-
--   Sesión 2.1: [Recomendaciones y buenas prácticas generales](sesion21.html)
-
--   Sesión 2.2: Recomendaciones específicas para la reproducción computacional 
-
-
-2. Prácticas y recomendaciones para facilitar la reproducción y reutilización
-
-    
 **Semana 3: Literate programming y notebooks.** En esta semana se tratan los resultados de aprendizaje RRP08-10
 
--   Sesión 3.1: Literate programming y markdown
+Check [course schedule](schedule.html)
 
--   Sesión 3.2: Notebooks
 
 ## Metodología docente
 

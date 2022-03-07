@@ -35,21 +35,23 @@ navbar:
         href: code_of_conduct.html
     - text: Sessions
       menu:
-        - text: "1.1 Intro"
+        - text: "1.1 Reproduction & replication"
           href: session11.html
-        - text: "1.2 "
+        - text: "1.2 Assessment criteria"
           href: session12.html
-        - text: "2.1"
+        - text: "---"
+        - text: "2.1 Basic recommendations"
           href: session21.html
-        - text: "2.2"
+        - text: "2.2 More recommendations"
           href: session22.html
-        - text: "3.1"
+        - text: "---"
+        - text: "3.1 Literate programming & Markdown"
           href: session31.html
-        - text: "3.2"
+        - text: "3.2 R Markdown Notebooks"
           href: session32.html
     - text: Resources
       menu:
-        - text: "Personas"
+        - text: "Learner Personas"
           href: personas.html
         - text: "References"
           href: references.html
