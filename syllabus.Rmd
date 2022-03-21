@@ -59,7 +59,7 @@ Las competencias específicas (CE) del curso versan sobre la capacidad de organi
 Los resultados de aprendizaje que el/la participante logrará al final del curso son los siguientes, destacando la acción (verbo) en negrita e indicando el nivel de la taxonomía de Bloom al que corresponde el resultado de aprendizaje, y la competencia especifica con la que está relacionado.
 
 ```{r echo=FALSE, layout="l-body-outset", fig.cap="Figure from https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/", out.extra="class=external"}
-knitr::include_graphics("./images/bloom_taxonomy.jpg")
+knitr::include_graphics("./assets/images/bloom_taxonomy.jpg")
 
 ```
 

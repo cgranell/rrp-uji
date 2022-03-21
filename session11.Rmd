@@ -1,5 +1,5 @@
 ---
-title: "Sesion 1.1"
+title: "Session 1.1"
 description: |
   Reproducibility and replicability
 bibliography: references.bib
@@ -9,27 +9,28 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## **Los resultados de aprendizaje de la sesión...**
+## **Learning outcomes...**
 
 -   RPP01 - **Reconocer** la importancia de la investigación reproducible (computacional) como un pilar fundamental de la ciencia moderna, y sus tendencias principales (reproducir, replicar, recrear).
 
 -   RRP02 - **Comparar y contrastar** las tendencias en investigación reproducible contextualizadas a la disciplina propia de cada estudiante.
 
-## **Los contenidos de la sesión...**
+## **Content...**
 
--   Reconocemos la importancia de la reproducción y replicación como parte del método científico y de la ciencia abierta (RPP01).
+-   We recognize the importance of reproduction and replication as part of the scientific method and open science (RPP01).
 
--   Introducimos los conceptos de reproducibilidad y replicabilidad (RRP01).
+-   We introduce the concepts of reproducibility and replicability (RRP01).
 
--   Contextualizamos sobre las prácticas y estándares de reproducción exigidos/percibidos en nuestra propia disciplina o área de conocimiento (RRP02).
+-   We compare reproduction practices and standards required/perceived in different disciplines or areas of knowledge (RRP02).
 
-## Actividades y materiales
 
-**[Tiempo estimado: 2 horas]**
+## Activities & materials
 
-1.  De los ejemplos [Participantes Tipo](personas.html) (o *Learner Persona*), ¿con cuál te identificas más, aunque no se ajuste del todo a tu perfil?
+**[Estimated time: 2 hours]**
 
-2.  Puedes repasar los conceptos de reproducibilidad, replicación y reproducibilidad computational en [Reproducibility: historical notes & concept (slides)](slides/slides11_01.html) y [video](https://drive.google.com/file/d/1Fjd37NPEINIRgCOdmaa892ayG2IRaV7H/view?usp=sharing).
+1.  Of the examples of [Learner Personas](personas.html), with which one do you identify the most, even if it doesn't quite fit your profile?
+
+2.  Review the concepts of reproducibility, replication, and computational reproducibility in [Reproducibility: historical notes & concept (slides)](slides/slides11_01.html) <!--and [video](https://drive.google.com/file/d/1Fjd37NPEINIRgCOdmaa892ayG2IRaV7H/view?usp=sharing)-->.
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides11_01.html)"}
     xaringanExtra::embed_xaringan(url = "slides/slides11_01.html", ratio = "16:9")
@@ -43,6 +44,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## **Entrega**
 
--   Indica el Participante Tipo con el que te mejor te identificas (actividad 1) en la **Encuesta Personas** en el Aula Virtual.
+-   Indicate the [Learner Persona](personas.html) with whom you best identify (activity 1) in the **Learner Persona Survey** in the AV.
 
 -   Sube tu auto-reflexión (actividades 3 y 4) en el foro **Auto-reflexión sobre reproducibilidad/replicabilidad de tu disciplina** en el Aula Virtual e indica también la disciplina a la que perteneces en el mensaje.

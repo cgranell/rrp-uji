@@ -17,7 +17,7 @@ bibliography: references.bib
 link-citations: true
 
 description: |
-  [UJI's Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices on reproducible research. Academic year 2021/2022.
+  [UJI Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices on reproducible research. Academic year 2021/2022.
 site: distill::distill_website
 ---
 
@@ -46,6 +46,7 @@ Welcome to the **Reproducibility Research Practices** (or *What can I do to make
 This introductory course is currently scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course proceeds. At any other time, this website is continuously online, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
 
 ## Website content 
+
 
 
 ## Getting started
