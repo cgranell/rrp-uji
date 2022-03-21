@@ -68,6 +68,16 @@ a:focus {
   border-bottom: none;
 }
 
+
+/* transition slides */
+
+.inverse2 {
+  background-color: #FFF0E2;
+  /*color: #d6d6d6;
+  text-shadow: 0 0 20px #333;*/
+}
+
+
 /* font size */
 
 .small {

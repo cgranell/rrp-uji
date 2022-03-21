@@ -3,11 +3,11 @@ title: "Reproducibility: historical notes & concept"
 subtitle: "[1.1] Reproducibility & replicability"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2021"
-description: "Reproducible Research Practices (RRP'21)"
+date: "April 2022"
+description: "Reproducible Research Practices (RRP'22)"
 output:
   xaringan::moon_reader:
-    css: ["default", "assets/css/cgc-xaringan-style.css"]
+    css: ["assets/css/xaringan-themer.css"]
     seal: false
     lib_dir: libs
     nature:
@@ -16,6 +16,11 @@ output:
       countIncrementalSlides: false
       ratio: "16:9"
 ---
+name: title
+class: left, middle
+background-image: url(images/rawpixel/nasa-jupiter.jpg)
+background-size: cover
+
 
 
 ```{r setup, include=FALSE}
@@ -24,25 +29,32 @@ knitr::opts_chunk$set(collapse = TRUE,
                       fig.retina = 3)
 ```
 
-```{r share-again, echo=FALSE}
+```{r xaringan-extra, echo=FALSE}
 library(xaringanExtra)
 
-xaringanExtra::use_share_again()
+xaringanExtra:::use_xaringan_extra(c("tile_view", "panelset", "share_again", "editable"))
+
 xaringanExtra::style_share_again(
-  share_buttons = c("twitter", "linkedin", "pocket")
-)
+  share_buttons = c("twitter", "linkedin", "pocket"))
+xaringanExtra::use_scribble(
+  pen_color = "#d33f49", pen_size = 4)
+
 ```
 
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+#style_mono_accent(
+#  base_color = "#1c5253",
+#  header_font_google = google_font("Josefin Sans"),
+#  text_font_google   = google_font("Montserrat", "300", "300i"),
+#  code_font_google   = google_font("Fira Mono")
+#)
+```
 
 ```{r, load_refs, include=FALSE, cache=FALSE}
 source("load_references.r")
 ```
-
-name: title
-class: Left, middle
-background-image: url(images/rawpixel/nasa-jupiter.jpg)
-background-size: cover
-
 
 # .whiteinline[.fancy[`r rmarkdown::metadata$title`]]
 
@@ -90,34 +102,37 @@ class: center
 
 ---
 class: center
-# Reproducibility in Science
+# Advancing science and knowledge requires
 
-
-## Advancing science and knowledge requires
 
 --
 
-### openness
+## Openness
 
 --
 
-### transparency
+## Transparency
 
 --
 
-### reproduction
+## Reproduction
 
 --
 
-### cumulative evidence (replication)
+## Cumulative evidence (replication)
 
+--
+
+.acid[It's all about the SCIENTIFIC METHOD]
 
 ---
-class: center, middle
+class: inverse, center, middle
+
 
 # Is reproducibility a new problem?
 
---
+---
+class: inverse2, center, middle
 
 ### Let's go back to the 17th century...
 

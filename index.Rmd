@@ -92,7 +92,7 @@ Briefly, the course's learning outcomes are to help you:
 
 ## Getting started
 
-This web site is the main resource of the course. In the top menu, `General Information` menu item allows you to consult the [code of conduct](code of conduct.html) and the [course schedule](schedule.html). If you read Spanish, you can continue reading the [blog posts](blog.html). The `Resources` menu item provides you with additional documents and materials to go deeper into this topic. As we progress through the course, the teaching materials are available from the `Sessions` menu item.
+This web site is the main `theatre entrance` to the `play` of reproducible  research practices, and participants, you all, are the main `performers`! To start, click on `casting` to get general information about the course, such as the [code of conduct](code_of_conduct.html), [`roles` in the play](personas.html) (or learning persona) and the [`acts`](schedule.html) (or course schedule). Tonight's `play`, with `acts` and `scenes`, is ready to be performed on the `stage`. If you like it, feel free to go `backstage` to inspect additional documents and materials to go deeper into this topic. If you *really, really* love the topic (and read Spanish), meet the [`crew`](blog.html) behind the `curtain`.
 
 
 ## Acknowledgements
