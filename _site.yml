@@ -27,8 +27,6 @@ navbar:
   right:
     - text: "General information"
       menu:
-      - text: "Syllabus"
-        href: syllabus.html
       - text: "Schedule"
         href: schedule.html
       - text: "---"

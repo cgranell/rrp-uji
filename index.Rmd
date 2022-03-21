@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research Practices'22"
+title: "What can I do to make my next article (more) reproducible?"
 author:
 - name: Carlos Granell
   url: http://carlosgranell.eu
@@ -17,7 +17,7 @@ bibliography: references.bib
 link-citations: true
 
 description: |
-  [UJI Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices on reproducible research. Academic year 2021/2022.
+  [UJI Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices about reproducible research - [Academic year 2021/2022](https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/21-22/recerca/).
 site: distill::distill_website
 ---
 
@@ -41,15 +41,58 @@ meta() %>%
 ```
 
 
-Welcome to the **Reproducibility Research Practices** (or *What can I do to make my next article (more) reproducible?*) course website.
-
 This introductory course is currently scheduled to be offered in 2 or 3 weeks. While the course is running, some material might not be visible and will be unlocked as the course proceeds. At any other time, this website is continuously online, with small updates happening on an ongoing basis and larger updates every time the course is offered again.
 
-## Website content 
+## Course identification
+
+**Code/Name**: MI007.TMP - Reproducible Research Practices
+
+**Duration**: 6 hours (up to 20 hours including attendance and self-directed work)
+
+**Dates**: 29 March, 5 and 11 April 2022, from 10 to 12
+
+**Teaching language**: English (*Note: in Spanish even years, in English odd years*)
+
+**Teaching staff**:
+
+-   [Carlos Granell](http://geotec.uji.es/staff) <br> Associate Professor in Computer Science <br> Office [UB1520DD](http://smart.uji.es/index.php?room=UB1520DD), Espaitec2, 5th floor <br> Universitat Jaume I, Spain
+
+-   [Sergi Trilles](http://geotec.uji.es/staff) <br> PostDoc - JdC <br> Office [UB-1518DD](http://smart.uji.es/index.php?room=UB1518DD), Espaitec2, 5th floor <br> Universitat Jaume I, Spain
+
+Detail course description in [Spanish](https://ujiapps.uji.es/ade/rest/storage/HPOJUR5VMPQWDOCS6QGHUI6VX5LYWTDU) and  [English](https://ujiapps.uji.es/ade/rest/storage/Z8KFWYOHSZYNTH6WKH0DRGQVLCPLCM8P)
+
+
+## Purpose 
+
+This course emphasises the principles and strategies of open science and reproducible research practices and gives you practice in their application to present scientific and technical material in an informative and clear manner.
+
+<aside>
+
+We are not talking about “learning to programme” as a course objetive or "knowing how to
+programme” as a previous requirement. Of course, an open mindset is presupposed so that the course participants can incorporate new practices/recommendations into their research process.
+
+</aside>
+
+## Learning outcomes
+
+Briefly, the course's learning outcomes are to help you:
+
+-   [RRP01] Recognise the importance of (computational) reproducible research as a fundamental pillar of modern science.
+-   [RRP02] Compare and contrast the RE-* terms (reproduce, replicate, recreate, etc) within the context of each participant's own discipline.
+-   [RRP03] Describe and distinguish the reproducibility criteria.
+-   [RRP04] Assess participants' own work according to the reproducibility criteria.
+-   [RRP05] Organise a research project to facilitate reproducibility, openness and reuse.
+-   [RRP06] Contrast the main families of licences for software and data.
+-   [RRP07] Understand the value of combining questions, source code and outcomes.
+-   [RRP08] Apply notebooks to the documentation of computational analyses.
+-   [RRP09] Design and create notebooks for producing academic articles, technical reports or presentations.
+-   [RRP09] Create a **Reproduction Plan** and reflect on the next steps to achieve it.
 
 
 
 ## Getting started
+
+This web site is the main resource of the course. In the top menu, `General Information` menu item allows you to consult the [code of conduct](code of conduct.html) and the [course schedule](schedule.html). If you read Spanish, you can continue reading the [blog posts](blog.html). The `Resources` menu item provides you with additional documents and materials to go deeper into this topic. As we progress through the course, the teaching materials are available from the `Sessions` menu item.
 
 
 ## Acknowledgements

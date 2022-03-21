@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+title: "Course schedule"
 bibliography: references.bib
 link-citations: yes
 ---
@@ -8,24 +8,31 @@ link-citations: yes
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Schedule
 
 This is the current course schedule. Things might change, so check regularly for updates.
 
-**Week 1: Introduction to reproducibility**
+## Week 1: Introduction to reproducibility
+
+We cover learning outcomes [RRP01 to RRP04](index.html#learning-outcomes). We recognise landmark examples that have influenced the emphasis on reproducibility in the past decades and explain why reproducibility is important in current scientific endeavour. We highlight which components may be reproducible and take a PhD perspective for reproducibility.
 
 -   Session 1.1: [Reproducibility and replicability](session11.html)
 
 -   Session 1.2: [Reproducibilidty assessment criteria](session12.html)
 
-**Week 2: Recommendations and practices**
+## Week 2: Recommendations and practices
+
+We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes).
 
 -   Session 2.1: [Basics to get started](session21.html)
 
 -   Session 2.1: [More recommendations](session21.html)
 
-**Week 3: Literate programming y notebooks**
+## Week 3: Literate programming y notebooks
+
+We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
 -   Session 3.1: [Literate programming y markdown](sesion31.html)
 
 -   Session 3.2: [R Markdown Notebooks](sesion32.html)
+
+RRP Learning Outcome 10 - **Reproduction Plan** - is a skill that will be developed throughout the course. Participants will submit their Reproduction Plan to make their next research project/work or technical writing more reproducible.
