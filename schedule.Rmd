@@ -13,11 +13,11 @@ This is the current course schedule. Things might change, so check regularly for
 
 ## Act I: Setting the stage
 
-We cover learning outcomes [RRP01 to RRP04](index.html#learning-outcomes). We look at landmark examples that have influenced the emphasis on reproducibility in the past decades and explain why reproducibility is so important in current scientific endeavour. We highlight which components may be reproducible and take a PhD perspective for reproducibility.
+We cover learning outcomes [RRP01 to RRP04](index.html#learning-outcomes). We look at landmark examples that have influenced the emphasis on reproducibility in the past decades and explain why reproducibility is so important in current scientific endeavour. We highlight which components may be reproducible and take a PhD perspective for reproducibility too.
 
 -   Scene 1: [Reproducibility and replicability](scene11.html)
 
--   Scene 2: [Reproducibilidty assessment criteria](session12.html)
+-   Scene 2: [Assessment criteria](scene12.html)
 
 ## Act II: Recommendations and practices
 

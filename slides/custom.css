@@ -60,6 +60,13 @@ a:hover {
 }
 
 
+/* list */
+
+li::marker {
+  content: "• ";
+  color: var(--primary-color);
+}
+
 /* font size */
 
 .tiny {

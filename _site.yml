@@ -39,7 +39,7 @@ navbar:
         - text: "I.1 Reproduction & replication"
           href: scene11.html
         - text: "I.2 Assessment criteria"
-          href: session12.html
+          href: scene12.html
         - text: "---"
         - text: "II.1 Basic recommendations"
           href: session21.html

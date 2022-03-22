@@ -32,10 +32,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r meta, echo=FALSE}
 library(metathis)
 meta() %>%
-  meta_name("github-repo" = "cgranell/rrp22") %>%
+  meta_name("github-repo" = "cgranell/rrp-uji") %>%
   meta_social(
-    title = "Reproducible Research Practices'22",
-    url ="https://cgranell.github.io/rrp22/"
+    title = "Reproducible Research Practices",
+    url ="https://cgranell.github.io/rrp-uji/"
   )
 
 ```

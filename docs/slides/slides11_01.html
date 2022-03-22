@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"ce9047da1ab44efcbb40f7dd78e4d6db","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x0d49f6a4d9143d6bff184308ce4834c","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -23,6 +23,8 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -82,7 +84,7 @@ class: inverse, center, middle
 class: center
 # Reproducibility in Science
 
-## Doubt is inherently human and we (scientists) always have doubts!
+.huge[Doubt is inherently human and we (scientists) always have doubts!]
 
 --
 
@@ -103,6 +105,10 @@ class: center
 
 --
 
+.large[Honesty]
+
+--
+
 .large[Reproduction]
 
 --
@@ -111,7 +117,11 @@ class: center
 
 --
 
-.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD]
+.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD!]
+
+???
+
+So, reproducibility is an integral part of the scientifc method. 
 
 ---
 class: inverse, center, middle
@@ -120,26 +130,27 @@ class: inverse, center, middle
 # Is reproducibility a new problem?
 
 ---
-class: inverse2, center, middle
+class: center, middle
 
-### Let's go back to the 17th century...
+## .white.bg-blue[Let's go back to the 17th century...]
 
 
 ---
 class: center
-# Boyle vs Huygens
+# Huygens vs Boyle 
 
 .pull-left[
 
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="65%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="60%"/&gt;
 
-[Robert Boyle](https://en.wikipedia.org/wiki/Robert_Boyle)
+[Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens)
+
 ]
 
 .pull-right[
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="65%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="60%"/&gt;
 
-[Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens)
+[Robert Boyle](https://en.wikipedia.org/wiki/Robert_Boyle)
 
 ]
 
@@ -147,34 +158,52 @@ class: center
 ---
 class: center, middle
 
-# Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility...
-
-
----
-class: center
-# Boyle vs Huygens
-
 .pull-left[
 
-### Huygens reported a new effect he termed "anomalous suspension" in Amsterdam.
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-### Boyle could not replicate this effect in his own air pump in UK.
-
-### Huygens was invited to UK (1663) to personally help Boyle __replicate__ anomalous suspension of water.
+.huge[Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility adn the experiemental science...]
 
 ]
 
 
 .pull-right[
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Boyle_air_pump.jpg" width="55%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Boyle_air_pump.jpg" width="65%"/&gt;
 
 ]
+
+
+---
+class: center
+# Huygens vs Boyle 
+
+.pull-left[
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="35%"/&gt;
+
+.large[**Huygens** observed a new effect (*[anomalous suspension](https://www.youtube.com/watch?v=vekG7rotwy4)*) in NL]
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="35%"/&gt;
+
+.large[**Boyle** could not replicate this effect in his own air pump in UK]
+
+]
+
+--
+
+.huge[Huygens went to UK (1663) to personally help Boyle .white.bg-blue[replicate] anomalous suspension of water]
 
 
 ???
 
 [Source](https://en.wikipedia.org/wiki/Reproducibility)
 
+Note here that non-replication can be good! Here, a new, valid effect during replication was not observed in the original study. That's how science progresses! 
 
 ---
 class: center
@@ -182,13 +211,13 @@ class: center
 
 .pull-left[
 
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/1280px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" width="65%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/1280px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" width="60%"/&gt;
 
 [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)
 ]
 
 .pull-right[
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/1/16/John_Flamsteed_1702.jpg" width="65%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/1/16/John_Flamsteed_1702.jpg" width="60%"/&gt;
 
 [John Flamsteed](https://en.wikipedia.org/wiki/John_Flamsteed)
 
@@ -198,15 +227,40 @@ class: center
 ---
 class: center, middle
 
-# Flamsteed's lunar data &amp; Newston's request for raw data 
+
+.pull-left[
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+.huge[Flamsteed's [lunar data](https://articles.adsabs.harvard.edu//full/1995JHA....26..237K/0000237.000.html) &amp; Newston's request for raw data...]
+
+]
+
+
+.pull-right[
+
+![lunardata](images/flamsteed-newton-lunardata.jpg)
+
+]
+
+
+???
+
+[SAO/NASA Astrophysics Data System (ADS)](https://articles.adsabs.harvard.edu//full/1995JHA....26..237K/0000237.000.html)
+
+
+---
+class: center
+# Newton vs Flamsteed
+
+
+.large[In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year.]
 
 --
 
-In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year. Newton declared that
+.large[Newton declared that]
 
---
-
-&gt; “these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … __I want not your calculations, but your observations only__.” &lt;a name=cite-noy2019&gt;&lt;/a&gt;[[NN19](http://dx.doi.org/10.1038/s41563-019-0539-5)]
+&gt; .large[“these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … .white.bg-blue[I want not your calculations, but your observations only].”] &lt;a name=cite-noy2019&gt;&lt;/a&gt;[[NN19](http://dx.doi.org/10.1038/s41563-019-0539-5)]
 
 ???
 
@@ -214,26 +268,29 @@ In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Fl
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
---
-
-### Let's go back to 40 years ago, with the birth of personal computers...
 
 ---
-class: center
+class: center, middle
 
-# Literate programming 
+## .white.bg-blue[Let's go back to 40 years ago, with the birth of personal computers...]
+
+
+---
+class: left
+
+# Donald Khuth 
 
 .pull-left[
 
-### [Literate programming](https://en.wikipedia.org/wiki/Literate_programming): a new methodology of programming. &lt;a name=cite-knuth1984&gt;&lt;/a&gt;[[Knu84](https://doi.org/10.1093/comjnl/27.2.97)]
+### [Literate programming](http://www.literateprogramming.com/): a new methodology of programming. &lt;a name=cite-knuth1984&gt;&lt;/a&gt;[[Knu84](https://doi.org/10.1093/comjnl/27.2.97)]
 
-### "Programs are meant to be read by humans, and only incidentally for computers to execute."
+-   .large["Programs are meant to be read by humans, and only incidentally for computers to execute."]
 
-### A programme combines human language and code.
+-   .large[A programme combines human language and code.]
 
 
 ]
@@ -246,6 +303,36 @@ class: center
 
 
 ]
+
+
+---
+
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; x &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; y &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; CWEB &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Literate &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Codnar &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Axiom &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Funnel WEB &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Jupyter Notebook &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Noweb &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Molly &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; R Notebooks &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 ---
 class: center, middle
@@ -660,6 +747,7 @@ e21. URL:
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"highlightStyle": "github",
 "countIncrementalSlides": false,
 "ratio": "16:9"
 });

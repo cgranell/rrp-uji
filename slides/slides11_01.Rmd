@@ -11,6 +11,7 @@ output:
     seal: false
     lib_dir: libs
     nature:
+      highlightStyle: github
       countIncrementalSlides: false
       ratio: "16:9"
 ---
@@ -23,8 +24,20 @@ background-size: cover-->
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(collapse = TRUE,
-                      fig.retina = 3)
+# knitr::opts_chunk$set(collapse = TRUE,
+#                       fig.retina = 3)
+
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+
 ```
 
 ```{r xaringan-extra, echo=FALSE}
@@ -40,53 +53,7 @@ xaringanExtra::use_scribble(
 
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
-# source("xaringan-themer.R")
-
-
-# http://urbaninstitute.github.io/graphics-styleguide/
-
-library(xaringanthemer)
-
-blue <- "#1277A7"
-gray <- "#d2d2d2"
-  
-# https://www.w3schools.com/cssref/css_colors.asp
-colors <- c(
-  blue = "#1277A7",
-  gray = "#d2d2d2",
-  white = "#ffffff",
-  black = "#000000",
-  green = "#367b51",
-  salmon = "#eb6a60",
-  turquoise = "#4d8984",
-  cold = "#61acf0", # blue 
-  fat = "#f0a561", # orange 
-  acid = "#cbd20a", # lime 
-  heat = "#e74a2f", # red 
-  red = "#f34213",
-  purple = "#3e2f5b",
-  orange = "#ff8811",
-  yellow = "#fdbf11"
-)
-
-xaringanthemer::style_duo(
-  # primary color
-  primary_color = gray, 
-  header_color = blue,
-  text_color = "#000000",
-  
-  # secundary color
-  secondary_color = blue,
-  inverse_header_color = "#ffffff",
-  inverse_text_color = gray,
-  
-  # fonts
-  header_font_google = google_font("Martel", "300", "400"),
-  text_font_google = google_font("Lato"),
-  code_font_google = google_font("Fira Mono"),
-  colors = colors,
-  )
-
+source("xaringan-themer.R")
 ```
 
 ```{r, load_refs, include=FALSE, cache=FALSE}
@@ -124,7 +91,7 @@ class: inverse, center, middle
 class: center
 # Reproducibility in Science
 
-## Doubt is inherently human and we (scientists) always have doubts!
+.huge[Doubt is inherently human and we (scientists) always have doubts!]
 
 --
 
@@ -145,6 +112,10 @@ class: center
 
 --
 
+.large[Honesty]
+
+--
+
 .large[Reproduction]
 
 --
@@ -153,7 +124,11 @@ class: center
 
 --
 
-.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD]
+.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD!]
+
+???
+
+So, reproducibility is an integral part of the scientifc method. 
 
 ---
 class: inverse, center, middle
@@ -162,26 +137,27 @@ class: inverse, center, middle
 # Is reproducibility a new problem?
 
 ---
-class: inverse2, center, middle
+class: center, middle
 
-### Let's go back to the 17th century...
+## .white.bg-blue[Let's go back to the 17th century...]
 
 
 ---
 class: center
-# Boyle vs Huygens
+# Huygens vs Boyle 
 
 .pull-left[
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="65%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="60%"/>
 
-[Robert Boyle](https://en.wikipedia.org/wiki/Robert_Boyle)
+[Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens)
+
 ]
 
 .pull-right[
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="65%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="60%"/>
 
-[Christiaan Huygens](https://en.wikipedia.org/wiki/Christiaan_Huygens)
+[Robert Boyle](https://en.wikipedia.org/wiki/Robert_Boyle)
 
 ]
 
@@ -189,34 +165,52 @@ class: center
 ---
 class: center, middle
 
-# Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility...
-
-
----
-class: center
-# Boyle vs Huygens
-
 .pull-left[
 
-### Huygens reported a new effect he termed "anomalous suspension" in Amsterdam.
+<br/><br/><br/><br/>
 
-### Boyle could not replicate this effect in his own air pump in UK.
-
-### Huygens was invited to UK (1663) to personally help Boyle __replicate__ anomalous suspension of water.
+.huge[Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility adn the experiemental science...]
 
 ]
 
 
 .pull-right[
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Boyle_air_pump.jpg" width="55%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Boyle_air_pump.jpg" width="65%"/>
 
 ]
+
+
+---
+class: center
+# Huygens vs Boyle 
+
+.pull-left[
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Christiaan_Huygens-painting.jpeg" width="35%"/>
+
+.large[**Huygens** observed a new effect (*[anomalous suspension](https://www.youtube.com/watch?v=vekG7rotwy4)*) in NL]
+
+]
+
+--
+
+.pull-right[
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg/800px-The_Shannon_Portrait_of_the_Hon_Robert_Boyle.jpg" width="35%"/>
+
+.large[**Boyle** could not replicate this effect in his own air pump in UK]
+
+]
+
+--
+
+.huge[Huygens went to UK (1663) to personally help Boyle .white.bg-blue[replicate] anomalous suspension of water]
 
 
 ???
 
 [Source](https://en.wikipedia.org/wiki/Reproducibility)
 
+Note here that non-replication can be good! Here, a new, valid effect during replication was not observed in the original study. That's how science progresses! 
 
 ---
 class: center
@@ -224,13 +218,13 @@ class: center
 
 .pull-left[
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/1280px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" width="65%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/1280px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" width="60%"/>
 
 [Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)
 ]
 
 .pull-right[
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/John_Flamsteed_1702.jpg" width="65%"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/16/John_Flamsteed_1702.jpg" width="60%"/>
 
 [John Flamsteed](https://en.wikipedia.org/wiki/John_Flamsteed)
 
@@ -240,15 +234,40 @@ class: center
 ---
 class: center, middle
 
-# Flamsteed's lunar data & Newston's request for raw data 
+
+.pull-left[
+
+<br/><br/><br/><br/>
+
+.huge[Flamsteed's [lunar data](https://articles.adsabs.harvard.edu//full/1995JHA....26..237K/0000237.000.html) & Newston's request for raw data...]
+
+]
+
+
+.pull-right[
+
+![lunardata](images/flamsteed-newton-lunardata.jpg)
+
+]
+
+
+???
+
+[SAO/NASA Astrophysics Data System (ADS)](https://articles.adsabs.harvard.edu//full/1995JHA....26..237K/0000237.000.html)
+
+
+---
+class: center
+# Newton vs Flamsteed
+
+
+.large[In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year.]
 
 --
 
-In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year. Newton declared that
+.large[Newton declared that]
 
---
-
-> “these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … __I want not your calculations, but your observations only__.” `r Cite(my_refs, "noy2019")`
+> .large[“these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … .white.bg-blue[I want not your calculations, but your observations only].”] `r Cite(my_refs, "noy2019")`
 
 ???
 
@@ -256,26 +275,29 @@ In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Fl
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
---
-
-### Let's go back to 40 years ago, with the birth of personal computers...
 
 ---
-class: center
+class: center, middle
 
-# Literate programming 
+## .white.bg-blue[Let's go back to 40 years ago, with the birth of personal computers...]
+
+
+---
+class: left
+
+# Donald Khuth 
 
 .pull-left[
 
-### [Literate programming](https://en.wikipedia.org/wiki/Literate_programming): a new methodology of programming. `r Cite(my_refs, "knuth1984")`
+### [Literate programming](http://www.literateprogramming.com/): a new methodology of programming. `r Cite(my_refs, "knuth1984")`
 
-### "Programs are meant to be read by humans, and only incidentally for computers to execute."
+-   .large["Programs are meant to be read by humans, and only incidentally for computers to execute."]
 
-### A programme combines human language and code.
+-   .large[A programme combines human language and code.]
 
 
 ]
@@ -288,6 +310,28 @@ class: center
 
 
 ]
+
+
+---
+
+```{r literateprograming2, echo=FALSE}
+
+library(magrittr)
+library(kableExtra)
+
+tools <- tibble::tribble(
+  ~x, ~y,  ~z,
+  "CWEB", "Literate", "Codnar",
+  "Axiom", "Funnel WEB",  "Jupyter Notebook",
+  "Noweb", "Molly", "R Notebooks")
+
+tools %>% 
+  kbl() %>%
+  kableExtra::kable_styling()
+
+
+# knitr::kable(head(mtcars), format = 'html')
+```
 
 ---
 class: center, middle
