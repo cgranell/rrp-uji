@@ -18,18 +18,18 @@
  *  Version: 0.4.1
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Martel:300,400&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
 
 
 :root {
   /* Fonts */
-  --text-font-family: Montserrat;
+  --text-font-family: Lato;
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: 'Josefin Sans';
+  --header-font-family: Martel;
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'Fira Mono';
@@ -43,23 +43,37 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #272822;
-  --header-color: #1c5253;
-  --background-color: #FFFFFF;
-  --link-color: #1c5253;
-  --text-bold-color: #1c5253;
+  --text-color: #000000;
+  --header-color: #1277A7;
+  --background-color: #d2d2d2;
+  --link-color: #1277A7;
+  --text-bold-color: #1277A7;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #FFFFFF;
-  --inverse-background-color: #1c5253;
-  --inverse-header-color: #FFFFFF;
-  --inverse-link-color: #1c5253;
-  --title-slide-background-color: #1c5253;
-  --title-slide-text-color: #FFFFFF;
-  --header-background-color: #1c5253;
-  --header-background-text-color: #FFFFFF;
-  --base: #1c5253;
-  --white: #FFFFFF;
-  --black: #272822;
+  --inverse-text-color: #d2d2d2;
+  --inverse-background-color: #1277A7;
+  --inverse-header-color: #ffffff;
+  --inverse-link-color: #1277A7;
+  --title-slide-background-color: #d2d2d2;
+  --title-slide-text-color: #1277A7;
+  --header-background-color: #1277A7;
+  --header-background-text-color: #d2d2d2;
+  --primary: #d2d2d2;
+  --secondary: #1277A7;
+  --blue: #1277A7;
+  --gray: #d2d2d2;
+  --white: #ffffff;
+  --black: #000000;
+  --green: #367b51;
+  --salmon: #eb6a60;
+  --turquoise: #4d8984;
+  --cold: #61acf0;
+  --fat: #f0a561;
+  --acid: #cbd20a;
+  --heat: #e74a2f;
+  --red: #f34213;
+  --purple: #3e2f5b;
+  --orange: #ff8811;
+  --yellow: #fdbf11;
 }
 
 html {
@@ -68,7 +82,7 @@ html {
 
 body {
   font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
-  font-weight: 300;
+  font-weight: normal;
   color: var(--text-color);
 }
 h1, h2, h3 {
@@ -100,10 +114,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #1c5253;
+  color: #1277A7;
 }
 .remark-slide-number {
-  color: #1c5253;
+  color: #000000;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -151,10 +165,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #1c525399;
+  color: #1277A799;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #1c5253;
+  color: #1277A7;
 }
 .right-column {
   width: 75%;
@@ -176,7 +190,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #1c525380;
+  border-left: solid 5px #1277A780;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -191,7 +205,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #D1DCDC;
+  background: #FAFAFA;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -201,7 +215,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #D1DCDC;
+  background-color: #FAFAFA;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -271,11 +285,29 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
-.base {
-  color: var(--base);
+.primary {
+  color: var(--primary);
 }
-.bg-base {
-  background-color: var(--base);
+.bg-primary {
+  background-color: var(--primary);
+}
+.secondary {
+  color: var(--secondary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.gray {
+  color: var(--gray);
+}
+.bg-gray {
+  background-color: var(--gray);
 }
 .white {
   color: var(--white);
@@ -288,5 +320,71 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .bg-black {
   background-color: var(--black);
+}
+.green {
+  color: var(--green);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.salmon {
+  color: var(--salmon);
+}
+.bg-salmon {
+  background-color: var(--salmon);
+}
+.turquoise {
+  color: var(--turquoise);
+}
+.bg-turquoise {
+  background-color: var(--turquoise);
+}
+.cold {
+  color: var(--cold);
+}
+.bg-cold {
+  background-color: var(--cold);
+}
+.fat {
+  color: var(--fat);
+}
+.bg-fat {
+  background-color: var(--fat);
+}
+.acid {
+  color: var(--acid);
+}
+.bg-acid {
+  background-color: var(--acid);
+}
+.heat {
+  color: var(--heat);
+}
+.bg-heat {
+  background-color: var(--heat);
+}
+.red {
+  color: var(--red);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.purple {
+  color: var(--purple);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+.orange {
+  color: var(--orange);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.yellow {
+  color: var(--yellow);
+}
+.bg-yellow {
+  background-color: var(--yellow);
 }
 

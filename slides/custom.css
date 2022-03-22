@@ -1,0 +1,113 @@
+/* Let's load some fonts */
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:700');
+
+:root {
+  --primary-color: #1277A7;
+  --color-white: #ffffff;
+  --color-cold: #61acf0; /* blue */
+  --color-fat: #f0a561; /* orange */
+  --color-acid: #cbd20a; /* lime */
+  --color-heat: #e74a2f; /* red */
+  --color-black: #1a1917; /* black */
+}
+
+
+/* footer */
+
+div.my-footer {
+    background-color: var(--color-black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 16px;
+    width: 100%;
+}
+
+div.my-footer span {
+    font-size: 9pt;
+    color: var(--color-fat);
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}
+
+a.footer-link {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    height: 40px;
+    width: 150px;
+    color: #023d4d;
+}
+
+
+/* links */
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: inset 0 -1px 0 var(--primary-color);
+  background: transparent;
+  transition: background 150ms ease;
+}
+
+
+a:hover {
+  text-decoration: none;
+  --bg-opacity:       0.3;
+  background-color: rgba(18, 119, 167, var(--bg-opacity));
+}
+
+
+/* font size */
+
+.tiny {
+  font-size: 60%;
+}
+
+.small {
+  font-size: 90%;
+}
+
+.large {
+  font-size: 160%;
+}
+
+.huge {
+  font-size: 200%;
+}
+
+.fancy{
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 700;
+}
+
+
+/* font colors */
+
+.cold {
+  color: var(--color-cold);
+  font-size: 200%;
+  font-weight:700;
+}
+
+
+.fat {
+  color: var(--color-fat);
+  font-size: 200%;
+  font-weight:700;
+}
+
+.acid {
+  color: var(--color-acid);
+  font-size: 200%;
+  font-weight:700;
+}
+
+.heat {
+  color: var(--color-heat);
+  font-size: 200%;
+  font-weight:700;
+}
+

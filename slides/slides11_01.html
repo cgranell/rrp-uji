@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x24c994d86a54ae5a5539500f29ba8b6","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"ce9047da1ab44efcbb40f7dd78e4d6db","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -23,15 +23,16 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
-    <link rel="stylesheet" href="assets/css/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 
 name: title
 class: left, middle
-background-image: url(images/rawpixel/nasa-jupiter.jpg)
-background-size: cover
+&lt;!--background-image: url(images/rawpixel/nasa-jupiter.jpg)
+background-size: cover--&gt;
 
 
 
@@ -50,15 +51,15 @@ background-size: cover
 
 
 
-# .whiteinline[.fancy[Reproducibility: historical notes &amp; concept]]
+# Reproducibility: historical notes &amp; concept
 
-### .whiteinline[[1.1] Reproducibility &amp; replicability]
+### [1.1] Reproducibility &amp; replicability
 
-.whiteinline[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
+.large[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
 
-.right[.whiteinline[Carlos Granell &amp;#183; Sergi Trilles]]
+.right[Carlos Granell &amp;#183; Sergi Trilles]
 
-.right[.whiteinline[Universitat Jaume I]]
+.right[Universitat Jaume I]
 
 ???
 
@@ -66,18 +67,11 @@ This enhanced color view of Jupiter's south pole was created using data from the
 Source: [Rawpixel](https://www.rawpixel.com/image/440596/jupiters-south-pole)
 
 ---
-name: spacecraft
-class: bottom, middle
-background-image: url(images/rawpixel/nasa-cygnus-spacecraft.jpg)
-background-size: cover
-
-
----
-template: spacecraft
+class: inverse, bottom, middle
 
 ## Focus is the art of knowing what to ignore.
 
-### The fastest way to raise your level of performance: Cut your number of commitments in half.
+.large[The fastest way to raise your level of performance: Cut your number of commitments in half.]
 
 ---
 class: inverse, center, middle
@@ -92,7 +86,7 @@ class: center
 
 --
 
-### (Well, that doesn’t mean it’s OK to keep questioning climate change, evolution, and the power of vaccines...)
+.large[Well, that doesn’t mean it’s OK to keep questioning climate change, evolution, and the power of vaccines...]
 
 ---
 class: center
@@ -101,23 +95,23 @@ class: center
 
 --
 
-## Openness
+.large[Openness]
 
 --
 
-## Transparency
+.large[Transparency]
 
 --
 
-## Reproduction
+.large[Reproduction]
 
 --
 
-## Cumulative evidence (replication)
+.large[Cumulative evidence (replication)]
 
 --
 
-.acid[It's all about the SCIENTIFIC METHOD]
+.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD]
 
 ---
 class: inverse, center, middle
@@ -666,8 +660,6 @@ e21. URL:
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "solarized-light",
-"highlightLines": true,
 "countIncrementalSlides": false,
 "ratio": "16:9"
 });
@@ -735,24 +727,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {
