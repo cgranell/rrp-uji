@@ -37,7 +37,7 @@ navbar:
     - text: "Stage"
       menu:
         - text: "I.1 Reproduction & replication"
-          href: session11.html
+          href: scene11.html
         - text: "I.2 Assessment criteria"
           href: session12.html
         - text: "---"

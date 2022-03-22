@@ -9,7 +9,7 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## **Learning outcomes...**
+## Learning outcomes...
 
 
 -   [RRP01] **Recognise** the importance of (computational) reproducible research as a fundamental pillar of modern science.
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 -   [RRP02] **Compare and contrast** the RE-* terms (reproduce, replicate, recreate, etc) within the context of each participant's own discipline.
 
 
-## **Content...**
+## Content...
 
 -   We recognize the importance of reproduction and replication as part of the scientific method and open science.
 
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 -   We compare reproduction practices and standards required/perceived in different disciplines or areas of knowledge.
 
 
-## Activities & materials
+## Organisation & materials
 
 **[Estimated time: 2 hours]**
 
@@ -38,14 +38,14 @@ knitr::opts_chunk$set(echo = TRUE)
     xaringanExtra::embed_xaringan(url = "slides/slides11_01.html", ratio = "16:9")
     ```
 
-3.  Reflexiona en qué medida estos términos (reproducción, replicación) están extendido en tu propia disciplina o área de investigación. ¿Cuál es más predominante en tu disciplina? ¿Qué incluyen colegas de disciplina en sus artículos para que sean reproducibles y/o replicables? De las revistas en las que publicas, ¿solicitan artículos reproducibles?
+3.  Reflect on the extent to which these terms ([reproduction, replication, robustness, generalisation](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)) [@turingway2019] are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish (or flag-ship journals in your discipline,) do they request articles that support computational reproducibility, 
+empirical reproducibility, or statistical reproducibility?
 
-4.  Reflexiona en qué grado tienes en cuenta el enfoque predominante en cuanto a reproducibilidad/replicabilidad de tu disciplina en tus propias investigaciones pasadas/presentes?
 
-5.  (Opcional) Si aún dudas en abrazar la reproducibilidad, [Five Selfish Reasons to Work Reproducibly by Dr. Florian Markowetz](https://www.youtube.com/watch?v=yVT07Sukv9Q)], basado en su publicación homónima [@markowetz2015], te convencerá.
+4.  (Optional) If you're still hesitant to embrace reproducibility, [Five Selfish Reasons to Work Reproducibly by Dr. Florian Markowetz](https://www.youtube.com/watch?v=yVT07Sukv9Q)], based his paper [@markowetz2015], will convince you!
 
-## **Entrega**
+## Assignments
 
 -   Indicate the [Learner Persona](personas.html) with whom you best identify (activity 1) in the **Learner Persona Survey** in the AV.
 
--   Sube tu auto-reflexión (actividades 3 y 4) en el foro **Auto-reflexión sobre reproducibilidad/replicabilidad de tu disciplina** en el Aula Virtual e indica también la disciplina a la que perteneces en el mensaje.
+-   Write a message (min 150 words) to answer the questions posed in Activity 3 above to the forum  **Reflection on reproducibility/replicability in your discipline and in your own researchForo** in AV. Please, indicate in the message your discipline or area of knowledge.
