@@ -62,8 +62,13 @@ a:hover {
 
 /* list */
 
-li::marker {
+ul {
+  list-style: none;
+}
+
+ul li::marker {
   content: "• ";
+  font-size: 1.8em;
   color: var(--primary-color);
 }
 

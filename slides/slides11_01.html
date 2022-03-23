@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x0d49f6a4d9143d6bff184308ce4834c","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"c3211a8427724750a37f0688dc64e104","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -23,8 +23,6 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
-    <script src="libs/kePrint/kePrint.js"></script>
-    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -117,7 +115,7 @@ class: center
 
 --
 
-.huge.white.bg-blue[It's all about the SCIENTIFIC METHOD!]
+.huge.gray.bg-blue[It's all about the SCIENTIFIC METHOD!]
 
 ???
 
@@ -132,7 +130,7 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## .white.bg-blue[Let's go back to the 17th century...]
+## .gray.bg-blue[Let's go back to the 17th century...]
 
 
 ---
@@ -196,7 +194,7 @@ class: center
 
 --
 
-.huge[Huygens went to UK (1663) to personally help Boyle .white.bg-blue[replicate] anomalous suspension of water]
+.huge[Huygens went to UK (1663) to personally help Boyle .gray.bg-blue[replicate] anomalous suspension of water]
 
 
 ???
@@ -254,13 +252,15 @@ class: center
 # Newton vs Flamsteed
 
 
-.large[In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year.]
+.large[In 1695, Sir Isaac Newton wrote a letter to the British Astronomer Royal John Flamsteed, whose data on lunar positions he was trying to get for more than half a year...]
 
 --
 
-.large[Newton declared that]
+.large[Newton wrote that...]
 
-&gt; .large[“these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … .white.bg-blue[I want not your calculations, but your observations only].”] &lt;a name=cite-noy2019&gt;&lt;/a&gt;[[NN19](http://dx.doi.org/10.1038/s41563-019-0539-5)]
+&gt; .large[“these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … .gray.bg-blue[I want not your calculations, but your observations only].”] .small[&lt;a name=cite-noy2019&gt;&lt;/a&gt;[[NN19](http://doi.org/10.1038/s41563-019-0539-5)]]
+
+&lt;!--[[NN19](http://doi.org/10.1038/s41563-019-0539-5)]--&gt;
 
 ???
 
@@ -276,92 +276,102 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## .white.bg-blue[Let's go back to 40 years ago, with the birth of personal computers...]
+## .gray.bg-blue[Let's go back to 40 years ago, with the birth of personal computers...]
 
 
 ---
 class: left
 
-# Donald Khuth 
+# Literate programming 
 
 .pull-left[
 
-### [Literate programming](http://www.literateprogramming.com/): a new methodology of programming. &lt;a name=cite-knuth1984&gt;&lt;/a&gt;[[Knu84](https://doi.org/10.1093/comjnl/27.2.97)]
+### [Essay = prose &amp; code](http://www.literateprogramming.com/) .small[&lt;a name=cite-knuth1984&gt;&lt;/a&gt;[[Knu84](https://doi.org/10.1093/comjnl/27.2.97)]]
 
--   .large["Programs are meant to be read by humans, and only incidentally for computers to execute."]
+-   .large[Code embedded within the program's documentation as opposed to documentation embedded within code.]
 
--   .large[A programme combines human language and code.]
-
+-   .large[Combines .gray.bg-blue[programming language] (R, python) with .gray.bg-blue[documentation language] (TeX, LaTeX, Markdown).]
 
 ]
 
 .pull-right[
 
-&lt;img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg" width="65%"/&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg" width="60%"/&gt;
 
 [Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
 
-
 ]
 
 
 ---
+# Dynamic documentation (Act III)
 
-&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; x &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; y &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; z &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; CWEB &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Literate &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Codnar &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Axiom &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Funnel WEB &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Jupyter Notebook &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Noweb &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Molly &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R Notebooks &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+.large[.gray.bg-blue[constant change]: anytime that the underlying data, analysis, or code change, the report itself is automatically updated]
+
+--
+
+.pull-left[
+
+.large[SWEAVE (2002) by Friedrich Leisch allowed R code to be embedded within lay LaTex documents]
+
+]
+
+--
+
+.pull-right[
+
+.large[Language-specific tools to enable interactive or “live” notebooks]: 
+
+-   [Rmarkdown](https://rmarkdown.rstudio.com/)
+-   [Jupyter Notebooks](https://jupyter.org/)
+-   [Wolfram Notebooks](https://www.wolfram.com/notebooks/)
+
+]
+
 
 ---
 class: center, middle
 
 # Is reproducibility a new problem?
 
---
-
-### Let's go back to 30 years ago, with the birth of Internet...
 
 ---
-class: center
+class: center, middle
 
-# Electronic documents
+## .gray.bg-blue[Let's go back to 30 years ago, with the birth of Internet...]
+
+
+---
+class: center, middle
+
+&gt;  .huge[Today, few published results are reproducible in any practical sense. To verify them requires almost as much effort as it took to create them originally. 
+After a time, authors are often unable to reproduce their own results! For these reasons, many people ignaore most of the literature. ]
+
+.right[Jon Claerbout, *Earth Sounding Analysis*]
+
+???
+
+John Claerbout revised his book *Earth Soundings Analysis* with a valid complain.
+
+---
+class: left
+
+# Electronic documents .small[&lt;a name=cite-claerbout1992&gt;&lt;/a&gt;[[CK92](https://doi.org/10.1190/1.1822162)]]
 
 
 .pull-left[
 
-## Electronic documents give reproducible research a new meaning &lt;a name=cite-claerbout1992&gt;&lt;/a&gt;[[CK92](https://doi.org/10.1190/1.1822162)]
+-   .large[Merge publication with underlying computational analysis]
 
-### Executable digital notebook
+-   .large[Executable digital notebook]
 
-### Be open &amp; help others
+-   .large[Be open &amp; help others]
 
-### Document for future self
+-   .large[Document for future self]
 ]
 
 .pull-right[
-&lt;img src="images/Claerbout92.png" width="65%"/&gt;
+&lt;img src="images/Claerbout92.png" width="60%"/&gt;
 ]
 
 ---
@@ -369,10 +379,11 @@ class: center, middle
 
 # Is reproducibility a new problem?
 
---
+---
+class: center, middle
 
-### No, it is not _NEW_, but it _IS_ still a problem. 
 
+## No, it is not .gray.bg-blue[NEW], but it .gray.bg-blue[IS] still a problem.
 
 ---
 class: left, bottom
@@ -380,17 +391,66 @@ background-image: url(images/supertramp.jpg)
 background-size: contain
 
 
----
-class: center
 
-# 1,500 scientists lift the lid on reproducibility &lt;a name=cite-baker2016&gt;&lt;/a&gt;[[Bak16](http://dx.doi.org/10.1038/533452a)]
+---
+class: left
+
+### .small[&lt;a name=cite-alsheikhAli2011&gt;&lt;/a&gt;[[Als+11](https://doi.org/10.1371/journal.pone.0024357)]] - _Public Availability of Published Research Data in High-Impact Journals_
+
+.huge[Assessed 500 papers]
+
+-   .large[149 not subject to any data availability policy]
+
+-   .large[208 did not adhere to data availability instructions]
+
+-   .large[143 adhered to minimum requirements]
+
+-   .large[47 deposited full primary data] ~9%
+
+
+---
+class:left
+### .small[&lt;a name=cite-baker2015&gt;&lt;/a&gt;[[Bak15](https://doi.org/10.1038/nature.2015.17433)]] - _First results from psychology's largest reproducibility test_
+
+.pull-left[
+
+-   .large[Only 39 out ot 100 of the published studies in psychology could be reproduced.]
+
+]
+
+.pull-right[
+
+&lt;img src="images/replicatation-graphic-b.png" width="65%" /&gt;
+]
+
+
+---
+### .center[Reproducibility issues are well covered...]
+
+
+-   .large[in __science studies__ in general, across various disciplines] .small[&lt;a name=cite-ioannidis2005&gt;&lt;/a&gt;[[Ioa05](https://doi.org/10.1371/journal.pmed.0020124)]]: _Why most published research findings are false_
+
+-   .large[in __economics__]: &lt;a name=cite-ioannidis2017&gt;&lt;/a&gt;[[ISD17](https://doi.org/10.1111/ecoj.12461)]: _The Power of Bias in Economics Research_
+
+-   .large[in __medical chemistry__]: &lt;a name=cite-baker2017&gt;&lt;/a&gt;[[Bak17](https://doi.org/10.1038/548485a)]: _Check your chemistry_
+
+-   .large[in __neuroscience__]: &lt;a name=cite-button2013&gt;&lt;/a&gt;[[But+13](https://doi.org/10.1038/nrn3475)]: _Power failure: why small sample size undermines the reliability of neuroscience_
+
+-   others to CHECK
+
+
+
+---
+class: left
+
+### .small[&lt;a name=cite-baker2016&gt;&lt;/a&gt;[[Bak16](http://doi.org/10.1038/533452a)]] - _1,500 scientists lift the lid on reproducibility_
 
 
 .pull-left[
 
-### +70% of researchers have tried and failed to reproduce another scientist's experiments
+-   .large[+70% of researchers have tried and failed to reproduce another scientist's experiments]
 
-### +50% have failed to reproduce their own experiments
+-   .large[+50% have failed to reproduce their own experiments]
 ]
 
 .pull-right[
@@ -398,78 +458,60 @@ class: center
 ]
 
 ---
-class: center
-# Limitations &amp; enablers [[Bak16](http://dx.doi.org/10.1038/533452a)]
-
-.pull-left[
-&lt;img src="images/reproducibility-graphic-online4.jpg" width="65%"/&gt;
-]
-
-.pull-right[
-&lt;img src="images/reproducibility-graphic-online5.jpg" width="70%"/&gt;
-]
-
----
-# .center[Reproducibility crisis is well covered]
-
-
-- In __scientific studies__ in general, across various disciplines &lt;a name=cite-ioannidis2005&gt;&lt;/a&gt;[[Ioa05](https://doi.org/10.1371/journal.pmed.0020124)]: _Why most published research findings are false_
-
-- In __economics__ &lt;a name=cite-ioannidis2017&gt;&lt;/a&gt;[[ISD17](https://doi.org/10.1111/ecoj.12461)]: _The Power of Bias in Economics Research_
-
-- In __medical chemistry__ &lt;a name=cite-baker2017&gt;&lt;/a&gt;[[Bak17](https://doi.org/10.1038/548485a)]: _Check your chemistry_
-
-- In __neuroscience__ &lt;a name=cite-button2013&gt;&lt;/a&gt;[[But+13](https://doi.org/10.1038/nrn3475)]: _Power failure: why small sample size undermines the reliability of neuroscience_
-
-- In __psychology__ &lt;a name=cite-baker2015&gt;&lt;/a&gt;[[Bak15](https://doi.org/10.1038/nature.2015.17433)]: _First results from psychology's largest reproducibility test_
-
----
-# .center[Psychology's largest reproducibility test]
+class: left
+### .small[[[Bak16](http://doi.org/10.1038/533452a)]] - Limitations &amp; enablers 
 
 .pull-left[
 
+&lt;img src="images/reproducibility-graphic-online4.jpg" width="65%" style="display: block; margin: auto;" /&gt;
 
-### Only 39 out ot 100 of the published studies in psychology could be reproduced. [[Bak15](https://doi.org/10.1038/nature.2015.17433)]
 ]
 
 .pull-right[
-![](images/replicatation-graphic-b.png)
+&lt;img src="images/reproducibility-graphic-online5.jpg" width="70%" style="display: block; margin: auto;" /&gt;
 ]
 
----
-class: center, middle
-# “science is in crisis” narrative is wrong 
 
-### &lt;a name=cite-fanelli2018&gt;&lt;/a&gt;[[Fan18](https://doi.org/10.1073/pnas.1708272114)]: _Opinion: Is science really facing a reproducibility crisis, and do we need it to?_
+---
+class: left
+
+### .small[&lt;a name=cite-fanelli2018&gt;&lt;/a&gt;[[Fan18](https://doi.org/10.1073/pnas.1708272114)]] -  _Opinion: Is science really facing a reproducibility crisis, and do we need it to?_
+
+.huge[“science is in crisis” narrative is wrong?]
+
+--
 
 &gt; The new “science is in crisis” narrative is not only empirically unsupported, but also quite obviously counterproductive. Instead of inspiring younger generations to do more and better science, it might foster in them cynicism and indifference. Instead of inviting greater respect for and investment in research, it risks discrediting the value of evidence and feeding antiscientific agendas.
 
-&gt; Therefore, contemporary science could be more accurately portrayed as facing “new opportunities and challenges” or even a “revolution”. __Efforts to promote transparency and reproducibility would find complete justification in such a narrative of transformation and empowerment__, a narrative that is not only more compelling and inspiring than that of a crisis, but also better supported by evidence.
+---
+class: left,
+
+### .small[[[Fan18](https://doi.org/10.1073/pnas.1708272114)]] -  _Opinion: Is science really facing a reproducibility crisis, and do we need it to?_
+
+.huge[“science is in crisis” narrative is wrong?]
+
+&gt; Therefore, contemporary science could be more accurately portrayed as facing “new opportunities and challenges” or even a “revolution”. .gray.bg-blue[Efforts to promote transparency and reproducibility would find complete justification in such a narrative of transformation and empowerment], a narrative that is not only more compelling and inspiring than that of a crisis, but also better supported by evidence.
 
 ---
 class: inverse, center, middle
 
-## The concept of reproduction 
+# The concept of reproduction 
 
 ---
-class: center, middle
+class: left, center
 # Objectives of scientific research
 
 --
 
-### Discover laws, axioms, rules, etc. and describe them under which condition they apply
+.huge[Discover laws, axioms, rules, etc. and describe them under which conditions they apply]
 
 --
 
-### Conduct case studies to prove a general principle or theory
+.huge[Conduct case studies to prove a general principle or theory]
 
+--
 
----
-class: center, middle
-# Objectives of scientific research
-
-
-### Transfer/publish results to prove validity, veracity, trust in findings
+.huge[Transfer/publish results to prove validity, veracity, trust in findings]
 
 --
 
@@ -481,105 +523,141 @@ finding or discovery is by repeating the research that produced it.
 others fear it may be a symptom of a lack of rigor in science
 
 
+
 ---
-class: center
+class: left
 
-# 'Show me', not 'trust me' &lt;a name=cite-stark2018&gt;&lt;/a&gt;[[Sta18](https://doi.org/10.1038/d41586-018-05256-0)]
+# .center[Today's reality]
 
-.pull-left[
+-   .huge[.gray.bg-blue[Computation] has an increasing role in scientific research] .small[&lt;a name=cite-stodden2014&gt;&lt;/a&gt;[[SM14](https://doi.org/10.5334/jors.ay)]]
 
-### 'Show me' = ‘help me if you can’
+-   .huge[Many and diverse .gray.bg-blue[computational] sciences (bio-informatics, geophysics, material science, fluid mechanics, climate modelling, computational chemistry, ...)] .small[&lt;a name=cite-barba2021&gt;&lt;/a&gt;[[Bar21](https://ieeexplore.ieee.org/document/9364769/)]]
 
-### not 'trust me' = not ‘catch me if you can’ 
+-   .huge[if results are produced by complex .gray.bg-blue[computational] processes...] 
 
-&gt; "If I publish a paper long on results but short on methods, and it’s wrong, that makes me untrustworthy." 
+---
+class: center. middle
 
-&gt; "If I say: ‘here’s my work’ and it’s wrong, I might have erred, but at least I am honest". 
-]
-
-.pull-right[
-![](images/preproducibility.png)
-]
+## .gray.bg-blue[...the _methods_ section of a scientific paper is no longer sufficient]
 
 
 ---
-class: center, middle
-
-# Today's reality 
-
---
-
-### Computation has a large and increasing role in scientific research &lt;a name=cite-stodden2014&gt;&lt;/a&gt;[[SM14](https://doi.org/10.5334/jors.ay)]
-
---
-
-### Many and diverse computational sciences (bio-informatics, geophysics, material science, fluid mechanics, climate modelling, computational chemistry, ...) &lt;a name=cite-barba2021&gt;&lt;/a&gt;[[Bar21](https://ieeexplore.ieee.org/document/9364769/)]
-
-
----
-class: center, middle
-
-# Today's reality 
-
-
-### If results are produced by complex computational processes, 
-
---
-
-### the _methods_ section of a scientific paper is no longer sufficient. 
-
-
----
-# .center[The inverse problem &lt;a name=cite-nust2021&gt;&lt;/a&gt;[[NE21](https://f1000research.com/articles/10-253/v1)]]
+class: left
+### .small[&lt;a name=cite-nust2021&gt;&lt;/a&gt;[[NE21](https://f1000research.com/articles/10-253/v1)]] - _The inverse problem_
 
 ![](images/nust2021_f1000.gif)
 
+
+---
+class: left
+
+### .small[&lt;a name=cite-stark2018&gt;&lt;/a&gt;[[Sta18](https://doi.org/10.1038/d41586-018-05256-0)]] - _'Show me', not 'trust me'_
+
+.pull-left[
+
+-   .large['Show me' = ‘help me if you can’]
+
+&gt; "If I say: ‘here’s my work’ and it’s wrong, I might have erred, but at least I am honest". 
+
+
+-   .large[not 'trust me' = not ‘catch me if you can’]
+
+&gt; "If I publish a paper long on results but short on methods, and it’s wrong, that makes me untrustworthy." 
+
+]
+
+.pull-right[
+&lt;img src="images/preproducibility.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+background-image: url(images/turingway_reproducibility.jpg)
+background-size: contain
+
+???
+
+[The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+
+---
+### .small[&lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]] - The Turing Way Community 
+
+&lt;img src="images/turingway_reproducible-matrix.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+
+???
+
+[The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
+
+---
+### .center[{Re}* terms ]
+
+-   .large[__Reproducible research__: Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.]
+
+-   .large[__Reproducibility__: A study is reproducible if all of the code and data used to generate the numbers and figures in the paper are available and exactly produce the published results.]
+
+-   .large[__Replication__: A study that arrives at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses.]
+
+
+.footnote[&lt;a name=cite-donoho2009&gt;&lt;/a&gt;&lt;a name=cite-peng2011&gt;&lt;/a&gt;&lt;a name=cite-leek2017&gt;&lt;/a&gt;&lt;a name=cite-barba2018&gt;&lt;/a&gt;[[CK92](https://doi.org/10.1190/1.1822162); [Don+09](https://doi.org/10.1109/MCSE.2009.15); [Pen11](https://doi.org/10.1126/science.1213847); [LJ17](https://doi.org/10.1146/annurev-statistics-060116-054104); [Bar18](https://arxiv.org/abs/1802.03311)]]
+
+
+---
+### .center[{Re}* terms ]
+
+
+-   .large[__Replicability__: A study is replicable if an identical experiment can be performed like the first study and the statistical results are consistent.]
+
+-   .large[__False discovery__: A study is a false discovery if the result presented in the study produces the wrong answer to the question of interest.]
+
+.footnote[[[CK92](https://doi.org/10.1190/1.1822162); [Don+09](https://doi.org/10.1109/MCSE.2009.15); [Pen11](https://doi.org/10.1126/science.1213847); [LJ17](https://doi.org/10.1146/annurev-statistics-060116-054104); [Bar18](https://arxiv.org/abs/1802.03311)]]
+
+
+
 ---
 class: center, middle
 
-### We define _reproducibility_ to mean 
-
---
-
-.cold[COMPUTATIONAL REPRODUCIBILITY]
-
-
----
-
-# .center[Some terms &lt;a name=cite-donoho2009&gt;&lt;/a&gt;&lt;a name=cite-peng2011&gt;&lt;/a&gt;&lt;a name=cite-leek2017&gt;&lt;/a&gt;&lt;a name=cite-barba2018&gt;&lt;/a&gt;[[CK92](https://doi.org/10.1190/1.1822162); [Don+09](https://doi.org/10.1109/MCSE.2009.15); [Pen11](https://doi.org/10.1126/science.1213847); [LJ17](https://doi.org/10.1146/annurev-statistics-060116-054104); [Bar18](https://arxiv.org/abs/1802.03311)]]
-
-.large[__Reproducible research__: Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.]
-
-.large[__Reproducibility__: A study is reproducible if all of the code and data used to generate the numbers and figures in the paper are available and exactly produce the published results.]
-
-
----
-
-# .center[Some terms [[CK92](https://doi.org/10.1190/1.1822162); [Don+09](https://doi.org/10.1109/MCSE.2009.15); [Pen11](https://doi.org/10.1126/science.1213847); [LJ17](https://doi.org/10.1146/annurev-statistics-060116-054104); [Bar18](https://arxiv.org/abs/1802.03311)]]
-
-.large[__Replication__: A study that arrives at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses.]
-
-.large[__Replicability__: A study is replicable if an identical experiment can be performed like the first study and the statistical results are consistent.]
-
-.large[__False discovery__: A study is a false discovery if the result presented in the study produces the wrong answer to the question of interest.]
-
----
-class: center, middle
-
-# Our view &lt;a name=cite-ostermann2017&gt;&lt;/a&gt;&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2020&gt;&lt;/a&gt;[[OG17](https://doi.org/10.1111/tgis.12195); [Nus+18](https://doi.org/10.7717/peerj.5072); [Ost+20](http://dx.doi.org/10.31223/X5ZK5V)]:
+# Our view &lt;a name=cite-ostermann2017&gt;&lt;/a&gt;&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2020&gt;&lt;/a&gt;[[OG17](https://doi.org/10.1111/tgis.12195); [NÃs+18](https://doi.org/10.7717/peerj.5072); [Ost+20](http://doi.org/10.31223/X5ZK5V)]:
 
 .large[A reproducible paper ensures a reviewer or reader can recreate the computational workflow of a study or experiment, including the prerequisite knowledge and the computational environment. The former implies the scientific argument to be understandable and sound. The latter requires a detailed description of used software and data, and both being openly available.]
 
 ---
-class: center
 
-# Reproducibility spectrum [[Pen11](https://doi.org/10.1126/science.1213847)]
 
-![](images/spectrumreproducibility.jpg)
+-   .large[Computational reproducibility: When detailed information is provided about code, software, hardware and implementation details.]
+
+-   .large[Empirical reproducibility: When detailed information is provided about non-computational empirical scientific experiments and observations. In practice, this is enabled by making the data and details of how it was collected freely available.]
+
+-   .large[Statistical reproducibility: When detailed information is provided, for example, about the choice of statistical tests, model parameters, and threshold values. This mostly relates to pre-registration of study design to prevent p-value hacking and other manipulations.]
+
+???
+
+[The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
+
 
 ---
+class: center, middle
+
+## We define .gray.bg-blue[reproducibility] to mean 
+
+---
+class: center, middle
+
+## .gray.bg-blue[computacional reproduciblity]
+
+
+---
+class: center
+
+### .small[[[Pen11](https://doi.org/10.1126/science.1213847)]] - _Reproducible Research in Computational Science_
+
+&lt;img src="images/spectrumreproducibility.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
 
 # Summary
+
+---
 
 ### Reproducibility involves the .coldinline[ORIGINAL] data and code:
 1. checking the published manuscript, 
@@ -590,7 +668,7 @@ class: center
 
 ### Replicability involves .fatinline[NEW] data collection to test for consistency with previous results of a smiliar study.
 
-- Replication is to advance theory by confronting existing understanding with new evidence.&lt;a name=cite-nosek2020&gt;&lt;/a&gt;[[NE20](http://dx.doi.org/10.1371/journal.pbio.3000691 https://dx.plos.org/10.1371/journal.pbio.3000691)] 
+- Replication is to advance theory by confronting existing understanding with new evidence.&lt;a name=cite-nosek2020&gt;&lt;/a&gt;[[NE20](http://doi.org/10.1371/journal.pbio.3000691)] 
 - Replication is accumulated  evidence 
 - Even when paper is computationally reproducible, it may fail to be replicated
 
@@ -599,41 +677,11 @@ class: center
 
 # References
 
-&lt;a name=bib-baker2015&gt;&lt;/a&gt;[Baker, M](#cite-baker2015) (2015). _First
-results from psychology's largest reproducibility test_. URL:
-[https://doi.org/10.1038/nature.2015.17433](https://doi.org/10.1038/nature.2015.17433).
-
-&lt;a name=bib-baker2017&gt;&lt;/a&gt;[\-\-\-](#cite-baker2017) (2017). "Check your
-chemistry". In: _Nature_ 548.7668, pp. 485-488. URL:
-[https://doi.org/10.1038/548485a](https://doi.org/10.1038/548485a).
-
-&lt;a name=bib-baker2016&gt;&lt;/a&gt;[Baker, Monya](#cite-baker2016) (2016).
-"1,500 scientists lift the lid on reproducibility". In: _Nature_
-533.7604, p. 452â€“454. DOI:
-[10.1038/533452a](https://doi.org/10.1038%2F533452a). URL:
-[http://dx.doi.org/10.1038/533452a](http://dx.doi.org/10.1038/533452a).
-
-&lt;a name=bib-barba2018&gt;&lt;/a&gt;[Barba, L](#cite-barba2018) (2018).
-_Terminologies for Reproducible Research_. URL:
-[https://arxiv.org/abs/1802.03311](https://arxiv.org/abs/1802.03311).
-
-&lt;a name=bib-barba2021&gt;&lt;/a&gt;[Barba, Lorena A](#cite-barba2021) (2021).
-"Trustworthy Computational Evidence Through Transparency and
-Reproducibility". In: _Computing in Science &amp; Engineering_ 23.1, pp.
-58-64. DOI:
-[10.1109/MCSE.2020.3048406](https://doi.org/10.1109%2FMCSE.2020.3048406).
+.tiny[
+&lt;a name=bib-knuth1984&gt;&lt;/a&gt;[Knuth, DE](#cite-knuth1984) (1984).
+"Literate Programming". In: _The Computer Journal_ 11.2, pp. 97-111.
 URL:
-[https://ieeexplore.ieee.org/document/9364769/](https://ieeexplore.ieee.org/document/9364769/).
-
----
-
-# References
-
-&lt;a name=bib-button2013&gt;&lt;/a&gt;[Button, KS, JPA Ioannidis, et
-al.](#cite-button2013) (2013). "Power failure: why small sample size
-undermines the reliability of neuroscience". In: _Nature Reviews
-Neuroscience_ 14.5, pp. 365-376. URL:
-[https://doi.org/10.1038/nrn3475](https://doi.org/10.1038/nrn3475).
+[https://doi.org/10.1093/comjnl/27.2.97](https://doi.org/10.1093/comjnl/27.2.97).
 
 &lt;a name=bib-claerbout1992&gt;&lt;/a&gt;[Claerbout, JF and M
 Karrenbach](#cite-claerbout1992) (1992). "Electronic documents give
@@ -642,11 +690,55 @@ Expanded Abstracts 1992_. Society of Exploration Geophysicists, pp.
 601-604. URL:
 [https://doi.org/10.1190/1.1822162](https://doi.org/10.1190/1.1822162).
 
+&lt;a name=bib-ioannidis2005&gt;&lt;/a&gt;[Ioannidis, JP](#cite-ioannidis2005)
+(2005). "Why most published research findings are false". In: _PLOS
+Medicine_ 2.8, p. e124. URL:
+[https://doi.org/10.1371/journal.pmed.0020124](https://doi.org/10.1371/journal.pmed.0020124).
+
 &lt;a name=bib-donoho2009&gt;&lt;/a&gt;[Donoho, DL, A Maleki, et
 al.](#cite-donoho2009) (2009). "Reproducible research in computational
 harmonic analysis". In: _Computing in Science &amp; Engineering_ 11.1, pp.
 8-18. URL:
 [https://doi.org/10.1109/MCSE.2009.15](https://doi.org/10.1109/MCSE.2009.15).
+
+&lt;a name=bib-alsheikhAli2011&gt;&lt;/a&gt;[Alsheikh-Ali, Alawi A., Waqas Qureshi,
+et al.](#cite-alsheikhAli2011) (2011). "Public Availability of
+Published Research Data in High-Impact Journals". In: _PLOS ONE_ 6.9,
+pp. 1-4. URL:
+[https://doi.org/10.1371/journal.pone.0024357](https://doi.org/10.1371/journal.pone.0024357).
+
+&lt;a name=bib-button2013&gt;&lt;/a&gt;[Button, KS, JPA Ioannidis, et
+al.](#cite-button2013) (2013). "Power failure: why small sample size
+undermines the reliability of neuroscience". In: _Nature Reviews
+Neuroscience_ 14.5, pp. 365-376. URL:
+[https://doi.org/10.1038/nrn3475](https://doi.org/10.1038/nrn3475).
+
+&lt;a name=bib-baker2015&gt;&lt;/a&gt;[Baker, M](#cite-baker2015) (2015). _First
+results from psychology's largest reproducibility test_. URL:
+[https://doi.org/10.1038/nature.2015.17433](https://doi.org/10.1038/nature.2015.17433).
+
+&lt;a name=bib-baker2016&gt;&lt;/a&gt;[Baker, Monya](#cite-baker2016) (2016).
+"1,500 scientists lift the lid on reproducibility". In: _Nature_
+533.7604, p. 452â€“454. URL:
+[http://doi.org/10.1038/533452a](http://doi.org/10.1038/533452a).
+
+&lt;a name=bib-baker2017&gt;&lt;/a&gt;[\-\-\-](#cite-baker2017) (2017). "Check your
+chemistry". In: _Nature_ 548.7668, pp. 485-488. URL:
+[https://doi.org/10.1038/548485a](https://doi.org/10.1038/548485a).
+
+&lt;a name=bib-ioannidis2017&gt;&lt;/a&gt;[Ioannidis, JP, TD Stanley, et
+al.](#cite-ioannidis2017) (2017). "The Power of Bias in Economics
+Research". In: _The Economic Journal_ 127.605, pp. F236-F265. URL:
+[https://doi.org/10.1111/ecoj.12461](https://doi.org/10.1111/ecoj.12461).
+
+&lt;a name=bib-leek2017&gt;&lt;/a&gt;[Leek, JT and LR Jager](#cite-leek2017)
+(2017). "Is Most Published Research Really False?" In: _Annual Review
+of Statistics and Its Application_ 4, pp. 109-122. URL:
+[https://doi.org/10.1146/annurev-statistics-060116-054104](https://doi.org/10.1146/annurev-statistics-060116-054104).
+
+&lt;a name=bib-barba2018&gt;&lt;/a&gt;[Barba, L](#cite-barba2018) (2018).
+_Terminologies for Reproducible Research_. URL:
+[https://arxiv.org/abs/1802.03311](https://arxiv.org/abs/1802.03311).
 
 &lt;a name=bib-fanelli2018&gt;&lt;/a&gt;[Fanelli, D](#cite-fanelli2018) (2018).
 "Opinion: Is science really facing a reproducibility crisis, and do we
@@ -654,88 +746,27 @@ need it to?" In: _Proceedings of the National Academy of Sciences_
 115.11, pp. 2628-2631. URL:
 [https://doi.org/10.1073/pnas.1708272114](https://doi.org/10.1073/pnas.1708272114).
 
-&lt;a name=bib-ioannidis2005&gt;&lt;/a&gt;[Ioannidis, JP](#cite-ioannidis2005)
-(2005). "Why most published research findings are false". In: _PLOS
-Medicine_ 2.8, p. e124. URL:
-[https://doi.org/10.1371/journal.pmed.0020124](https://doi.org/10.1371/journal.pmed.0020124).
-
----
-
-# References
-
-&lt;a name=bib-ioannidis2017&gt;&lt;/a&gt;[Ioannidis, JP, TD Stanley, et
-al.](#cite-ioannidis2017) (2017). "The Power of Bias in Economics
-Research". In: _The Economic Journal_ 127.605, pp. F236-F265. URL:
-[https://doi.org/10.1111/ecoj.12461](https://doi.org/10.1111/ecoj.12461).
-
-&lt;a name=bib-knuth1984&gt;&lt;/a&gt;[Knuth, DE](#cite-knuth1984) (1984).
-"Literate Programming". In: _The Computer Journal_ 11.2, pp. 97-111.
-URL:
-[https://doi.org/10.1093/comjnl/27.2.97](https://doi.org/10.1093/comjnl/27.2.97).
-
-&lt;a name=bib-leek2017&gt;&lt;/a&gt;[Leek, JT and LR Jager](#cite-leek2017)
-(2017). "Is Most Published Research Really False?" In: _Annual Review
-of Statistics and Its Application_ 4, pp. 109-122. URL:
-[https://doi.org/10.1146/annurev-statistics-060116-054104](https://doi.org/10.1146/annurev-statistics-060116-054104).
-
 &lt;a name=bib-nosek2020&gt;&lt;/a&gt;[Nosek, Brian A. and Timothy M.
 Errington](#cite-nosek2020) (2020). "What is replication?". In: _PLOS
-Biology_ 18.3, p. e3000691. ISSN: 1545-7885. DOI:
-[10.1371/journal.pbio.3000691](https://doi.org/10.1371%2Fjournal.pbio.3000691).
-URL: [http://dx.doi.org/10.1371/journal.pbio.3000691
-https://dx.plos.org/10.1371/journal.pbio.3000691](http://dx.doi.org/10.1371/journal.pbio.3000691
-https://dx.plos.org/10.1371/journal.pbio.3000691).
+Biology_ 18.3, p. e3000691. ISSN: 1545-7885. URL:
+[http://doi.org/10.1371/journal.pbio.3000691](http://doi.org/10.1371/journal.pbio.3000691).
 
-&lt;a name=bib-noy2019&gt;&lt;/a&gt;[Noy, Natasha and Aleksandr Noy](#cite-noy2019)
-(2019). "Let go of your data". In: _Nature Materials_ 19.1, p.
-128â€“128. DOI:
-[10.1038/s41563-019-0539-5](https://doi.org/10.1038%2Fs41563-019-0539-5).
-URL:
-[http://dx.doi.org/10.1038/s41563-019-0539-5](http://dx.doi.org/10.1038/s41563-019-0539-5).
+&lt;a name=bib-barba2021&gt;&lt;/a&gt;[Barba, Lorena A](#cite-barba2021) (2021).
+"Trustworthy Computational Evidence Through Transparency and
+Reproducibility". In: _Computing in Science &amp; Engineering_ 23.1, pp.
+58-64. URL:
+[https://ieeexplore.ieee.org/document/9364769/](https://ieeexplore.ieee.org/document/9364769/).
+]
 
 ---
 
 # References
 
-&lt;a name=bib-nust2021&gt;&lt;/a&gt;[Nüst, Daniel and Stephen J
-Eglen](#cite-nust2021) (2021). "CODECHECK: an Open Science initiative
-for the independent execution of computations underlying research
-articles during peer review to improve reproducibility". In:
-_F1000Research_ 10, p. 253. ISSN: 2046-1402. DOI:
-[10.12688/f1000research.51738.1](https://doi.org/10.12688%2Ff1000research.51738.1).
-URL:
-[https://f1000research.com/articles/10-253/v1](https://f1000research.com/articles/10-253/v1).
-
-&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nust, D, C Granell, et al.](#cite-nust2018)
-(2018). "Reproducible research and GIScience: an evaluation using AGILE
-conference papers". In: _PeerJ_ 6, p. e5072. URL:
-[https://doi.org/10.7717/peerj.5072](https://doi.org/10.7717/peerj.5072).
-
-&lt;a name=bib-ostermann2017&gt;&lt;/a&gt;[Ostermann, FO and C
-Granell](#cite-ostermann2017) (2017). "Advancing science with VGI:
-Reproducibility and replicability of recent studies using VGI". In:
-_Transactions in GIS_ 21.2, pp. 224-237. URL:
-[https://doi.org/10.1111/tgis.12195](https://doi.org/10.1111/tgis.12195).
-
-&lt;a name=bib-ostermann2020&gt;&lt;/a&gt;[Ostermann, Frank, Daniel NÃ¼st, et
-al.](#cite-ostermann2020) (2020). _Reproducible Research and GIScience:
-an evaluation using GIScience conference papers_. DOI:
-[10.31223/x5zk5v](https://doi.org/10.31223%2Fx5zk5v). URL:
-[http://dx.doi.org/10.31223/X5ZK5V](http://dx.doi.org/10.31223/X5ZK5V).
-
+.tiny[
 &lt;a name=bib-peng2011&gt;&lt;/a&gt;[Peng, RD](#cite-peng2011) (2011).
 "Reproducible Research in Computational Science". In: _Science_
 334.6060, pp. 1226-1227. URL:
 [https://doi.org/10.1126/science.1213847](https://doi.org/10.1126/science.1213847).
-
----
-
-# References
-
-&lt;a name=bib-stark2018&gt;&lt;/a&gt;[Stark, PB](#cite-stark2018) (2018). "Before
-reproducibility must come preproducibility". In: _Nature_ 557.7706, pp.
-613-614. URL:
-[https://doi.org/10.1038/d41586-018-05256-0](https://doi.org/10.1038/d41586-018-05256-0).
 
 &lt;a name=bib-stodden2014&gt;&lt;/a&gt;[Stodden, V and SB
 Miguez](#cite-stodden2014) (2014). "Best Practices for Computational
@@ -743,6 +774,51 @@ Science: Software Infrastructure and Environments for Reproducible and
 Extensible Research". In: _Journal of Open Research Software_ 2.1, p.
 e21. URL:
 [https://doi.org/10.5334/jors.ay](https://doi.org/10.5334/jors.ay).
+
+&lt;a name=bib-ostermann2017&gt;&lt;/a&gt;[Ostermann, FO and C
+Granell](#cite-ostermann2017) (2017). "Advancing science with VGI:
+Reproducibility and replicability of recent studies using VGI". In:
+_Transactions in GIS_ 21.2, pp. 224-237. URL:
+[https://doi.org/10.1111/tgis.12195](https://doi.org/10.1111/tgis.12195).
+
+&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nüst, Daniel, C Granell, et
+al.](#cite-nust2018) (2018). "Reproducible research and GIScience: an
+evaluation using AGILE conference papers". In: _PeerJ_ 6, p. e5072.
+URL:
+[https://doi.org/10.7717/peerj.5072](https://doi.org/10.7717/peerj.5072).
+
+&lt;a name=bib-stark2018&gt;&lt;/a&gt;[Stark, PB](#cite-stark2018) (2018). "Before
+reproducibility must come preproducibility". In: _Nature_ 557.7706, pp.
+613-614. URL:
+[https://doi.org/10.1038/d41586-018-05256-0](https://doi.org/10.1038/d41586-018-05256-0).
+
+&lt;a name=bib-noy2019&gt;&lt;/a&gt;[Noy, Natasha and Aleksandr Noy](#cite-noy2019)
+(2019). "Let go of your data". In: _Nature Materials_ 19.1, p.
+128â€“128. URL:
+[http://doi.org/10.1038/s41563-019-0539-5](http://doi.org/10.1038/s41563-019-0539-5).
+
+&lt;a name=bib-turingway2019&gt;&lt;/a&gt;[The Turing Way Community, Becky Arnold,
+et al.](#cite-turingway2019) (2019). "The Turing Way: A Handbook for
+Reproducible Data Science". . This work was supported by The UKRI
+Strategic Priorities Fund under the EPSRC Grant EP/T001569/,
+particularly the "Tools, Practices and Systems" theme within that
+grant, and by The Alan Turing Institute under the EPSRC grant
+EP/N510129/1. URL:
+[https://the-turing-way.netlify.app/welcome.html](https://the-turing-way.netlify.app/welcome.html).
+
+&lt;a name=bib-ostermann2020&gt;&lt;/a&gt;[Ostermann, Frank, Daniel NÃ¼st, et
+al.](#cite-ostermann2020) (2020). _Reproducible Research and GIScience:
+an evaluation using GIScience conference papers_. URL:
+[http://doi.org/10.31223/X5ZK5V](http://doi.org/10.31223/X5ZK5V).
+
+&lt;a name=bib-nust2021&gt;&lt;/a&gt;[Nüst, Daniel and Stephen J
+Eglen](#cite-nust2021) (2021). "CODECHECK: an Open Science initiative
+for the independent execution of computations underlying research
+articles during peer review to improve reproducibility". In:
+_F1000Research_ 10, p. 253. ISSN: 2046-1402. URL:
+[https://f1000research.com/articles/10-253/v1](https://f1000research.com/articles/10-253/v1).
+]
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
