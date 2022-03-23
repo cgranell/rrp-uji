@@ -1,0 +1,226 @@
+---
+title: "Markdown: uses for research and teaching"
+subtitle: "[3.1] Literate programming y markdown"
+author: "Carlos Granell"
+institute: "Universitat Jaume I"
+date: "April 2021"
+description: "Reproducible Research Practices (RRP'21)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/css/cgc-xaringan-style.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(collapse = TRUE,
+                      fig.retina = 3)
+
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+source("load_references.r")
+```
+
+name: title
+class: Left, middle
+background-image: url(images/rawpixel/nasa-europe-drakside.jpg)
+background-size: cover
+
+
+# .whiteinline[.fancy[`r rmarkdown::metadata$title`]]
+
+### .whiteinline[`r rmarkdown::metadata$subtitle`]
+
+.whiteinline[`r rmarkdown::metadata$description` &#183; `r rmarkdown::metadata$date`]
+
+.right[.whiteinline[`r rmarkdown::metadata$author` &#183; Sergi Trilles]]
+
+.right[.whiteinline[`r rmarkdown::metadata$institute`]]
+
+???
+
+Image of Europe, Africa, and the Middle East at night. Original from NASA. Digitally enhanced by rawpixel.
+Source: [Rawpixel](https://www.rawpixel.com/image/418610/earth-dark-side)
+
+---
+name: spacecraft
+class: bottom, middle
+background-image: url(images/rawpixel/nasa-cygnus-spacecraft.jpg)
+background-size: cover
+
+
+---
+template: spacecraft
+
+## Why focus on the process when the world is outcome driven? Don’t results matter? 
+
+---
+template: spacecraft
+
+## Yes, results do matter. 
+
+---
+template: spacecraft
+
+### But if you optimize for the outcome, you win one time. 
+
+### If you optimize for .acidinline[a process that leads to great outcomes], you can win again and again.
+
+
+
+---
+class: center
+# Do you use...
+
+--
+
+### ...word processor tools for writing papers?
+
+--
+
+### ...presentation tools for making your slides?
+
+--
+
+### ...notes tools for taking your research notes?
+
+--
+
+### ...web editor tools for making your web site?
+
+
+---
+class: center, middle 
+
+## How many distinct tools do you use to create/write .acid[content?]
+
+---
+class: bottom, center
+background-image: url(images/rmarkdown_hedgehog.png)
+background-size: 25%
+background-position: 50% 20%
+
+# It's all about .acidinline[Markdown] `r Cite(my_refs, "xie2018")`
+
+
+---
+background-image: url(images/rmarkdown_hedgehog_wide.png)
+background-size: contain
+background-position: middle, center
+
+???
+Source: [Teaching in Production](https://rstudio-education.github.io/teaching-in-production/)
+
+
+---
+class: center, middle
+
+# Really?
+
+.large[Yes - Open [demo_1doc_Nformats.md](https://rstudio.cloud/project/2482163)]
+
+
+---
+class: inverse, center, middle
+
+# What does Markdown mean for your research?
+
+
+---
+class: center
+background-image: url("images/rmd_flowchart.png")
+background-size: contain
+background-color: #f6f6f6
+
+???
+Source: [Teaching in Production](https://rstudio-education.github.io/teaching-in-production/)
+
+
+---
+class: center
+
+
+### Open, plain format, multiple output formats
+
+--
+
+### Versioning (Github)
+
+--
+
+### Notes, planning, exploratory ideas, documentation (README files), etc. 
+
+--
+
+### Technical reports, papers, books, etc.
+
+--
+
+### Result communications, presentations, etc.
+
+--
+
+### Dashboards, web sites, blog sites, etc. 
+
+
+---
+class: inverse, center, middle
+
+# What does Markdown mean for your teaching?
+
+---
+class: center
+background-image: url("images/rmd_flowchart.png")
+background-size: contain
+background-color: #f6f6f6
+
+???
+Source: [Teaching in Production](https://rstudio-education.github.io/teaching-in-production/)
+
+
+
+---
+class: center
+
+
+### Open, plain format, multiple output formats
+
+--
+
+### Versioning (Github)
+
+--
+
+### Notes, planning, exploratory ideas, documentation (README files), etc. 
+
+--
+
+### Syllabus, e-portfolio, etc.
+
+--
+
+### Hands-on exercises, lessons summaries, essays, etc. 
+
+--
+
+### Presentations, web sites, blog sites, etc.
+
+--
+
+.acid[and your students delivering all of the above]
+
+---
+
+# References
+
+```{r print_refs1, echo=FALSE, results="asis"}
+PrintBibliography(my_refs)
+```

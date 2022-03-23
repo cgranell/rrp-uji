@@ -269,7 +269,6 @@ class: center
 
 > .large[“these and all your communications will be useless to me unless you can propose some practicable way or other of supplying me with observations … .gray.bg-blue[I want not your calculations, but your observations only].”] `r cite("noy2019")`
 
-<!--`r Cite(my_refs, "noy2019")`-->
 
 ???
 
@@ -291,11 +290,11 @@ class: center, middle
 ---
 class: left
 
-# Literate programming 
+### `r cite("knuth1984")` - Literate programming (Act III)
 
 .pull-left[
 
-### [Essay = prose & code](http://www.literateprogramming.com/) `r cite("knuth1984")`
+.huge[[Like prose & code](http://www.literateprogramming.com/)] 
 
 -   .large[Code embedded within the program's documentation as opposed to documentation embedded within code.]
 
@@ -305,15 +304,17 @@ class: left
 
 .pull-right[
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg" width="60%"/>
+```{r knuth, out.width ='60%', fig.align='center', echo=FALSE}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg')
+```
 
-[Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+.center[[Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)]
 
 ]
 
 
 ---
-# Dynamic documentation (Act III)
+### Dynamic documentation (Act III)
 
 .large[.gray.bg-blue[constant change]: anytime that the underlying data, analysis, or code change, the report itself is automatically updated]
 
@@ -347,7 +348,7 @@ class: center, middle
 ---
 class: center, middle
 
-## .gray.bg-blue[Let's go back to 30 years ago, with the birth of Internet...]
+## .gray.bg-blue[Let's go back to 30 years ago, with the birth of the Web...]
 
 
 ---
@@ -360,12 +361,12 @@ After a time, authors are often unable to reproduce their own results! For these
 
 ???
 
-John Claerbout revised his book *Earth Soundings Analysis* with a valid complain.
+John Claerbout revised his book *Earth Soundings Analysis* with a valid complaint.
 
 ---
 class: left
 
-# Electronic documents `r cite("claerbout1992")`
+### `r cite("claerbout1992")` - _`r title("claerbout1992")`_
 
 
 .pull-left[
@@ -380,7 +381,10 @@ class: left
 ]
 
 .pull-right[
-<img src="images/Claerbout92.png" width="60%"/>
+```{r claerbout1992, out.width ='60%', fig.align='center', echo=FALSE}
+knitr::include_graphics('images/Claerbout92.png')
+```
+
 ]
 
 ---
@@ -423,7 +427,7 @@ class:left
 
 .pull-left[
 
--   .large[Only 39 out ot 100 of the published studies in psychology could be reproduced.]
+-   .large[Only 39 out ot 100 of the published studies in psychology could be reproduced]
 
 ]
 
@@ -441,14 +445,11 @@ knitr::include_graphics('images/replicatation-graphic-b.png')
 
 -   .large[in __science studies__ in general, across various disciplines] `r cite("ioannidis2005")`: _`r title("ioannidis2005")`_
 
--   .large[in __economics__]: `r Cite(my_refs, "ioannidis2017")`: _`r title("ioannidis2017")`_
+-   .large[in __economics__] `r cite("ioannidis2017")`: _`r title("ioannidis2017")`_
 
--   .large[in __medical chemistry__]: `r Cite(my_refs, "baker2017")`: _`r title("baker2017")`_
+-   .large[in __medical chemistry__] `r cite("baker2017")`: _`r title("baker2017")`_
 
--   .large[in __neuroscience__]: `r Cite(my_refs, "button2013")`: _`r title("button2013")`_
-
--   others to CHECK
-
+-   .large[in __neuroscience__] `r cite("button2013")`: _`r title("button2013")`_
 
 
 ---
@@ -518,7 +519,7 @@ class: left, center
 
 --
 
-.huge[Discover laws, axioms, rules, etc. and describe them under which conditions they apply]
+.huge[Discover laws, axioms, rules, etc. and describe under which conditions they apply]
 
 --
 
@@ -551,9 +552,9 @@ class: left
 -   .huge[if results are produced by complex .gray.bg-blue[computational] processes...] 
 
 ---
-class: center. middle
+class: center, middle
 
-## .gray.bg-blue[...the _methods_ section of a scientific paper is no longer sufficient]
+## ...the .gray.bg-blue[methods] section of a scientific paper <br/> is .gray.bg-blue[no longer sufficient]
 
 
 ---
@@ -597,6 +598,7 @@ background-size: contain
 [The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
 ---
+name: matrix_definitions
 ### `r cite("turingway2019")` - The Turing Way Community 
 
 ```{r turingway2019_matrix, out.width ='85%', fig.align='center', echo=FALSE}
@@ -608,7 +610,7 @@ knitr::include_graphics('images/turingway_reproducible-matrix.jpg')
 [The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
 
 ---
-### .center[{Re}* terms ]
+### `r cite(c("claerbout1992", "donoho2009", "peng2011", "leek2017", "barba2018"))` - {Re}* terms
 
 -   .large[__Reproducible research__: Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.]
 
@@ -617,40 +619,37 @@ knitr::include_graphics('images/turingway_reproducible-matrix.jpg')
 -   .large[__Replication__: A study that arrives at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses.]
 
 
-`r cite_footnote(c("claerbout1992", "donoho2009", "peng2011", "leek2017", "barba2018"))`
-
-
 ---
-### .center[{Re}* terms ]
-
+### `r cite(c("claerbout1992", "donoho2009", "peng2011", "leek2017", "barba2018"))` - {Re}* terms
 
 -   .large[__Replicability__: A study is replicable if an identical experiment can be performed like the first study and the statistical results are consistent.]
 
 -   .large[__False discovery__: A study is a false discovery if the result presented in the study produces the wrong answer to the question of interest.]
 
-`r cite_footnote(c("claerbout1992", "donoho2009", "peng2011", "leek2017", "barba2018"))`
-
-
 
 ---
-class: center, middle
+class: left
 
-# Our view `r Cite(my_refs, c("ostermann2017", "nust2018", "ostermann2020"))`:
+### `r cite(c("ostermann2017", "nust2018", "ostermann2021"))` - Our view
 
-.large[A reproducible paper ensures a reviewer or reader can recreate the computational workflow of a study or experiment, including the prerequisite knowledge and the computational environment. The former implies the scientific argument to be understandable and sound. The latter requires a detailed description of used software and data, and both being openly available.]
+.pull-left[
 
----
+> .large[A reproducible paper ensures a reader can recreate the computational workflow of a study, including the .gray.bg-blue[prerequisite knowledge] and the .gray.bg-blue[computational environment].] 
 
+> - The former implies the scientific argument to be understandable and sound. 
 
--   .large[Computational reproducibility: When detailed information is provided about code, software, hardware and implementation details.]
+> - The latter requires a detailed description of used software and data, and both being openly available.
 
--   .large[Empirical reproducibility: When detailed information is provided about non-computational empirical scientific experiments and observations. In practice, this is enabled by making the data and details of how it was collected freely available.]
+]
 
--   .large[Statistical reproducibility: When detailed information is provided, for example, about the choice of statistical tests, model parameters, and threshold values. This mostly relates to pre-registration of study design to prevent p-value hacking and other manipulations.]
+.pull-right[
 
-???
+```{r reproducible-agile, out.width ='70%', fig.align='center', echo=FALSE}
+knitr::include_graphics('images/AGILE00-logo-square.svg')
+```
+.center[[Reproducible AGILE](https://reproducible-agile.github.io/)]
 
-[The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
+]
 
 
 ---
@@ -661,7 +660,7 @@ class: center, middle
 ---
 class: center, middle
 
-## .gray.bg-blue[computacional reproducibility]
+# .gray.bg-blue[computacional] reproducibility
 
 
 ---
@@ -673,6 +672,10 @@ class: center
 knitr::include_graphics('images/spectrumreproducibility.jpg')
 ```
 
+???
+
+Linked to criteria assessment of reproducibility
+
 ---
 class: inverse, center, middle
 
@@ -680,19 +683,27 @@ class: inverse, center, middle
 
 ---
 
-### Reproducibility involves the .coldinline[ORIGINAL] data and code:
-1. checking the published manuscript, 
-1. looking for published data and code, then 
-1. comparing the results of that data and code to the published results. 
-1. if they are the same, the study is reproducible; otherwise, it is not.
+# .center[Reproducibility involves the .gray.bg-blue[ORIGINAL] data and code]
+
+-   .large[checking the published manuscript,]
+
+-   .large[looking for published data and code, then]
+
+-   .large[comparing the results of that data and code to the published results]
+
+-   .large[if they are the same, the study is reproducible; otherwise, it is not]
 
 ---
 
-### Replicability involves .fatinline[NEW] data collection to test for consistency with previous results of a smiliar study.
+# .center[Replicability involves .gray.bg-blue[NEW] data collection and/or methods]
 
-- Replication is to advance theory by confronting existing understanding with new evidence.`r Cite(my_refs, "nosek2020")` 
-- Replication is accumulated  evidence 
-- Even when paper is computationally reproducible, it may fail to be replicated
+-   .large[Replication is to test for consistency with previous results of a similar study]
+
+-   .large[Replication is to advance theory by confronting existing understanding with new evidence] `r cite("nosek2020")` 
+
+-   .large[Replication is accumulated evidence] (way to plan a PhD project?)
+
+-   .large[Even when a paper is computationally reproducible, it *may fail* to be replicated]
 
 
 ---

@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 -   [RRP01] **Recognise** the importance of (computational) reproducible research as a fundamental pillar of modern science.
 
--   [RRP02] **Compare and contrast** the RE-* terms (reproduce, replicate, recreate, etc) within the context of each participant's own discipline.
+-   [RRP02] **Compare and contrast** the {Re}* terms (reproduce, replicate, recreate, etc) within the context of each participant's own discipline.
 
 
 ## Content...
@@ -35,17 +35,16 @@ knitr::opts_chunk$set(echo = TRUE)
 2.  Review the concepts of reproducibility, replication, and computational reproducibility in [Reproducibility: historical notes & concept (slides)](slides/slides11_01.html) <!--and [video](https://drive.google.com/file/d/1Fjd37NPEINIRgCOdmaa892ayG2IRaV7H/view?usp=sharing)-->.
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides11_01.html)"}
-    xaringanExtra::embed_xaringan(url = "slides/slides11_01.html", ratio = "16:9")
+    xaringanExtra::embed_xaringan(url = "slides/slides11_01.html#title", ratio = "16:9")
     ```
 
-3.  Reflect on the extent to which these terms ([reproduction, replication, robustness, generalisation](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)) [@turingway2019] are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish (or flag-ship journals in your discipline,) do they request articles that support computational reproducibility, 
-empirical reproducibility, or statistical reproducibility?
+3.  Reflect on the extent to which these terms ([reproduction, replication, robustness, generalisation](slides/slides11_01.html#matrix_definitions)) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (*hint*: check The Turing Way's [definitions page](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html) [@turingway2019]).
 
 
 4.  (Optional) If you're still hesitant to embrace reproducibility, [Five Selfish Reasons to Work Reproducibly by Dr. Florian Markowetz](https://www.youtube.com/watch?v=yVT07Sukv9Q)], based his paper [@markowetz2015], will convince you!
 
 ## Assignments
 
--   Indicate the [Learner Persona](personas.html) with whom you best identify (activity 1) in the **Learner Persona Survey** in the AV.
+-   Indicate the [Learner Persona](personas.html) with whom you best identify (activity 1) in the **Learner Persona Survey** in AV.
 
--   Write a message (min 150 words) to answer the questions posed in Activity 3 above to the forum  **Reflection on reproducibility/replicability in your discipline and in your own researchForo** in AV. Please, indicate in the message your discipline or area of knowledge.
+-   Write a message (min 150 words) to answer the questions posed in Activity 3 above to the forum  **Reflection on reproducibility/replicability in your discipline and in your own research** in AV. Please, indicate in the message your discipline or area of knowledge.

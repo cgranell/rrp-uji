@@ -52,6 +52,10 @@ print <- function(start, end, bib = my_refs) {
   RefManageR::PrintBibliography(bib, start, end,
                                 .opts = list(check.entries = FALSE,
                                              sorting = "ynt",
-                                             no.print.fields = "doi"))
+                                             no.print.fields = c("doi",
+                                                                 "note",
+                                                                 "editor",
+                                                                 "publisher",
+                                                                 "series")))
 
 }
