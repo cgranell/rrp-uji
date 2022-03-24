@@ -1,7 +1,7 @@
 ---
-title: "Sesión 1.2"
+title: "Act I &#183; Setting the stage"
 description: |
-  Evaluación de la reproducibilidad
+  Scene 2 &#183; Reproducibility criteria
 bibliography: references.bib
 ---
 
@@ -9,36 +9,36 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Los resultados de aprendizaje de la sesión...
+##  Learning outcomes...
 
--   RRP03 - **Describir y distinguir** los criterios de reproducibilidad
+-   [RRP03] **Describe and distinguish** the reproducibility criteria.
 
--   RRP04 - **Evaluar** el nivel de reproducibilidad en trabajos de investigación propios u otros propuestos
+-   [RRP04] **Assess** the reproducibility criteria in the student's own research papers or scientific writings.
 
-## Los contenidos de la sesión...
+## Content...
 
--   Recursos que forman parte del proceso científico, más allá del artículo científico publicado.
+-   We identify resources that are part of the scientific process, beyond the published scientific article.
 
--   Caracterización de dichos recursos en criterios de reproducibilidad.
+-   We characterise these resources according to reproducibility criteria.
 
--   Uso e interpretación correcta de los niveles asociados a cada criterio.
+-   We use and interpret correctly the levels associated with each criterion.
 
--   Como leer un artículo científico.
+-   We discuss the role of Open Science and reproduction in a PhD project.
 
--   Como leer un artículo científico desde la perspectiva de la reproducibilidad.
 
-## Actividades y materiales
+## Organisation & materials
 
-**[Tiempo estimado: 2 horas]**
+**[Estimated time: 2 hours]**
 
-1.  Del siguiente artículo [@nust2018], lee las primeras tres secciones (*Introduction, Related Work, Materials & Methods*), donde se proponen unos criterios para evaluar el grado de reproduciblidad de un artículo. Presta atención a la [figura 2](https://doi.org/10.7717/peerj.5072/fig-2), la cual esquematiza los niveles para cada uno de los criterios de reproducibilidad. Es necesario que te familiarices con estos criterios y sus niveles para cuantificar posteriormente cuan reproducible es un artículo.
-
-2.  Para entrar en contexto sobre tu proceso y prácticas de investigación: "[PhD thesis meets reproducibility" (slides)](slides/slides12_01.html) y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).
+1.  To get some context on how reproducibility and [Open Science](glossary.html#open-science) fit into your research process and practices: "[PhD thesis meets reproducibility" (slides)](slides/slides12_01.html). <!--y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).-->
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides12_01.html)"}
-    xaringanExtra::embed_xaringan(url = "slides/slides12_01.html", ratio = "16:9")
+    xaringanExtra::embed_xaringan(url = "slides/slides12_01.html#title", ratio = "16:9")
     ```
 
+2.  Read the first three sections (*Introduction, Related Work, Materials & Methods*) of the following paper [@nust2018], where a set of criteria are proposed to evaluate the degree of reproducibility of an article. (If motivated, you can also read the section 3.1 of the paper [@ostermann2021].) Pay attention to [figure 2](https://doi.org/10.7717/peerj.5072/fig-2), which outlines the levels for each of the reproducibility criteria. You should familiarise yourself with these criteria and their levels to carry out the first activity of the *Reproduction Plan*.
+
+<!--
 3.  Reflexiona sobre tu proceso y prácticas de investigación en general (no te focalices en un proyecto o artículo en concreto) y contesta a las siguientes preguntas.
 
     -   Indica departamento y/o grupo de investigación.
@@ -52,12 +52,13 @@ knitr::opts_chunk$set(echo = TRUE)
     -   ¿Realizas algún análisis o aplicas algún modelo sobre los datos? ¿Utilizas alguna herramienta tecnológica ya existente para el análisis, o escribes tu propio código para analizar los datos? ¿O ambas cosas?
 
     -   ¿Las tablas, figuras, gráficos, mapas o diagramas son resultados habituales en tu investigación, es decir, aparecen frecuentemente en tus informes o artículos finales?
+-->
 
-4.  Realiza un ejercicio de auto-evaluación en el que deberás asignar un nivel (NA, 0, 1, 2, 3) para cada uno de los criterios de reproducibilidad aplicados a uno de tus artículos publicados. Reflexiona sobre aquellos criterios de reproducibilidad que te resultan más difíciles de llevar a cabo (por la falta de conocimiento técnico o de herramienta de apoyo o simplemente porque nunca los ha tenido en cuenta). Destaca tres aspectos (como máximo) que te gustaría intentar mejorar para el próximo artículo de investigación.
+## Assignments
 
-## **Entrega:**
-
--   Responde a las preguntas de la actividad 3 en la **Encuesta prácticas de investigación** en el Aula Virtual.
--   Sube tu auto-evaluación (actividad 4) en el foro **Auto-evaluación de la reproducibilidad** en el AV e indica también la disciplina a la que perteneces en el mensaje.
-
-### 
+-   To begin with the *Reproduction Plan*, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA *Not Applicable*, 0 *Unavailable*, 1 *Documented*, 2 *Available*, 3 *Available and Open*) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.
+  
+  
+<!-- this goes to ACt II 
+Reflect on those reproducibility criteria that are most difficult for you to carry out (for example, due to lack of technical knowledge or support tool or simply because you have never taken them into account). Highlight three aspects (maximum) that you would like to try to improve for the next research article. -->
+   

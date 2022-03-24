@@ -8,4 +8,9 @@ link-citations: yes
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-There are lots of terms related to reproduction and replicability. And the interpretation of these terms often differ per discipline, field or knowledge area. 
+To clarify the meaning of some key terms and concepts used throughout this course, such as replication, replicability, open science, and open data, we briefly define them below.
+
+### Open Science
+
+For [@munafo2017], "Open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others." 
+
