@@ -5,173 +5,219 @@
     <meta charset="utf-8" />
     <meta name="author" content="Carlos Granell" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/cgc-xaringan-style.css" type="text/css" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b4d113274da741eca8fcf2a69588b335","expires":14}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 
 
-
-
-
-
-
 name: title
-class: Left, middle
-background-image: url(images/rawpixel/nasa-moon.jpg)
-background-size: cover
+class: left, middle
+&lt;!--background-image: url(images/rawpixel/nasa-moon.jpg)
+background-size: cover--&gt;
 
 
-# .whiteinline[.fancy[PhD thesis meets reproducibility]]
 
-### .whiteinline[[1.2] Reproducibility evaluation]
 
-.whiteinline[Reproducible Research Practices (RRP'21) &amp;#183; April 2021]
+<style>.shareagain-bar {
+--shareagain-foreground: rgb(255, 255, 255);
+--shareagain-background: rgba(0, 0, 0, 0.5);
+--shareagain-facebook: none;
+--shareagain-pinterest: none;
+--shareagain-reddit: none;
+}</style>
 
-.right[.whiteinline[Carlos Granell &amp;#183; Sergi Trilles]]
 
-.right[.whiteinline[Universitat Jaume I]]
 
+
+
+
+# PhD thesis meets reproducibility
+
+### [1.2] Reproducibility criteria
+
+.large[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
+
+.right[Carlos Granell &amp;#183; Sergi Trilles]
+
+.right[Universitat Jaume I]
+
+
+???
+
+Moon - north polar mosaic. Original from NASA.
+Source: [Rawpixel](https://www.rawpixel.com/image/441553/north-polar-the-moon)
 
 
 ---
-name: spacecraft
-class: bottom, middle
-background-image: url(images/rawpixel/nasa-cygnus-spacecraft.jpg)
-background-size: cover
-
-
----
-template: spacecraft
+class: inverse, bottom, middle
 
 ## You can't guarantee success,
 
-### but you can guarantee failure: never try.
+.large[but you can guarantee failure: never try.]
+
 
 ---
 class: inverse, center, middle
 
 # What does research mean for a PhD thesis today?
 
----
-class: center
-
-
-## Claim #1 
-### All published research today has a computational component.
-
---
-
-## Claim #2 
-### There is a mismatch between the traditional scientific process and computation, leading to reproducibility concerns.
 
 ---
-class: center
-# What about you?
+background-image: url(http://www.phdcomics.com/comics/archive/phd073010s.gif)
+background-size: contain
 
---
-
-### Is your research dependent on computation? How much?
-
---
-
-### Which computational tools do you use? Do you use them sporadically or frequently? Are general-purpose (Word, ...) or specific (SSPS,...) tools?
-
---
-
-### In which phases do you use them?
-
---
-
-.large[data collection, data storage, data analysis, data visualisation, writing, dissemination/presentation, communication, ...]
+???
+[phdcomics.com](https://phdcomics.com/comics/archive.php?comicid=1350)
 
 
 ---
-class: center
-# Data sharing in academia
+background-image: url(images/turingway_reproducibility.jpg)
+background-size: contain
 
-### Sequel of _Tenopir and colleagues_
 
-.large[&lt;a name=cite-tenopir2011&gt;&lt;/a&gt;[[Ten+11](https://doi.org/10.1371/journal.pone.0021101)]: _Data Sharing by Scientists: Practices and Perceptions_]
+???
 
-.large[&lt;a name=cite-tenopir2015&gt;&lt;/a&gt;[[Ten+15](https://doi.org/10.1371/journal.pone.0134826)]: _Changes in data sharing and data reuse practices and perceptions among scientists worldwide_]
-
-.large[&lt;a name=cite-tenopir2020&gt;&lt;/a&gt;[[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]: _Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide_]
+[The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
 
 ---
-class: center, middle
+class: left
+# Data...
 
+--
 
-# Disciplines [[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]
+.huge[Do your colleagues in your discipline .gray.bg-blue[share] data?]
 
-&lt;img src="images/tenopir2020_fig07.png" width="55%"/&gt;
+--
+
+.huge[Do you .gray.bg-blue[access/use] other's data for your research?]
+
+--
+
+.huge[Do you .gray.bg-blue[share] all or part of your data?]
+
+--
+
+.huge[Would you like to .gray.bg-blue[share] (more) data?]
+
+--
+
+.huge[Is your data collection/storage/processing dependent on .gray.bg-blue[computation]? How much?] 
 
 
 ---
-class: center, middle
+class: left
+# Methods, tools, code...results
 
-# Barriers [[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]
+.huge[Is your research linked to .gray.bg-blue[quantitative] or .gray.bg-blue[qualitative methods]? .gray.bg-blue[Mixed] approach?]
+
+--
+
+.huge[Do your methods depend on .gray.bg-blue[computation]? How much?]
+
+--
+
+.huge[Which computational tools do you use? Sporadically or frequently? Are general-purpose (Word) or specific (SSPS) tools?]
+
+--
+
+.huge[In which phases* do you use them?]
+
+.right[*modelling, data analysis, data visualisation, writing, dissemination/presentation, communication, ...]
 
 
-&lt;img src="images/tenopir2020_fig09.png" width="70%"/&gt;
-
-
+&lt;!--
 
 ---
-class: center
-# What about you?
+class: left
+### Data sharing in academia
 
---
+.huge[Sequel of _Tenopir and colleagues_]
 
-### Do your colleagues in your discipline share data?
+.large[.small[&lt;a name=cite-tenopir2011&gt;&lt;/a&gt;[[Ten+11](https://doi.org/10.1371/journal.pone.0021101)]]: _Data Sharing by Scientists: Practices and Perceptions_]
 
---
+.large[.small[&lt;a name=cite-tenopir2015&gt;&lt;/a&gt;[[Ten+15](https://doi.org/10.1371/journal.pone.0134826)]]: _Changes in data sharing and data reuse practices and perceptions among scientists worldwide_]
 
-### Do you share all or part of your data?
+.large[.small[&lt;a name=cite-tenopir2020&gt;&lt;/a&gt;[[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]]: _Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide_]
 
---
+--&gt;
 
-### Would you like to share data?
-
---
-
-### Which are the main barriers you face to data sharing?
-
-
+&lt;!--
 
 ---
-class: center
+class: left
+
+### .small[[[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]] - Disciplines 
+
+&lt;img src="images/tenopir2020_fig07.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+--&gt;
+
+&lt;!--
+
+---
+class: left
+
+### .small[[[Ten+20](https://doi.org/10.1371/journal.pone.0229003)]] - Barriers 
 
 
-## Claim #1 
-### All published research today has a computational component.
+&lt;img src="images/tenopir2020_fig09.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+--&gt;
+
+---
+class: left 
+
+### .small[&lt;a name=cite-chiarelli2021&gt;&lt;/a&gt;[[CLJ21](https://doi.org/10.5281/zenodo.5521077)]] - _{The Art of Publishing Reproducible Research Outputs: Supporting emerging practices through cultural and technological innovation}_
+
+&gt; .huge[Openness and Open Science (data and code sharing, open access, etc.) are enablers of reproducibility, but do not necessarily guarantee it]
 
 --
 
-.acid[Computational reproducibility]
+- sharing research oputputs
 
---
 
-## Claim #2 
-### There is a mismatch between the traditional scientific process and computation, leading to reproducibility concerns.
-
---
-
-.heat[Transparent research]
+- evaluate and testing these results outputs to reproduce/replicate the findings
 
 
 ---
 class: inverse, center, middle
 
-# What does .acidinline[reproducibility] &amp; .heatinline[transparency] mean for a PhD thesis today?
+# What does reproducibility &amp; openness imply for a PhD thesis?
+
+---
+class: center
+# Barriers
 
 
 ---
 class: center
+# Advantages
 
-# Five selfish reasons to work reproducibly &lt;a name=cite-markowetz2015&gt;&lt;/a&gt;[[Mar15](https://doi.org/10.1186/s13059-015-0850-7)]
+---
+class: center
+
+### .small[&lt;a name=cite-markowetz2015&gt;&lt;/a&gt;[[Mar15](https://doi.org/10.1186/s13059-015-0850-7)]] - Five selfish reasons to work reproducibly
 
 --
 
@@ -192,36 +238,11 @@ class: center
 
 .pull-right[
 
-![](images/phdcomics1689.gif)
-
-
-]
-
-
----
-class: center
-
-# Five selfish reasons to work reproducibly [[Mar15](https://doi.org/10.1186/s13059-015-0850-7)]
-
-
-.pull-left[
-### helps to avoid disaster
-
-### makes it easier to write papers
-
-### helps reviewers see it your way
-
-### enables continuity of your work
-
-### helps to build your reputation
-
-]
-
 .pull-right[
 
-### .acidinline[You learn some new science]
+### You learn some new science
 
-### .heatinline[You keep your papes bug-free]
+### You keep your paper bug-free
 
 ]
 
@@ -237,7 +258,7 @@ background-image: url(images/rawpixel/clouds-nebraska.jpg)
 background-size: cover
 
 
-## .whiteinline[Business as usual scenario and irreproducible work remains the norm] &lt;a name=cite-hong2015&gt;&lt;/a&gt;[[Hon+15](https://arxiv.org/abs/1504.00062)]
+## .white[Business as usual scenario and irreproducible work remains the norm] .small[&lt;a name=cite-hong2015&gt;&lt;/a&gt;[[Hon+15](https://arxiv.org/abs/1504.00062)]]
 
 
 ---
@@ -246,11 +267,18 @@ background-image: url(images/rawpixel/beach.jpg)
 background-size: cover
 
 
-## Or you care about .acidinline[reproducibility] and .heatinline[transparency], and you are excited to acquire new reproducible research practices and habits! 
+## Or you care about .gray[reproducibility] and .gray[transparency], and you are excited to acquire new reproducible research practices and habits! 
+
 
 ---
 
 # References
+
+.tiny[
+&lt;a name=bib-tenopir2011&gt;&lt;/a&gt;[Tenopir, C, S Allard, et
+al.](#cite-tenopir2011) (2011). "Data Sharing by Scientists: Practices
+and Perceptions". In: _PLoS ONE_ 6.6, p. e21101. URL:
+[https://doi.org/10.1371/journal.pone.0021101](https://doi.org/10.1371/journal.pone.0021101).
 
 &lt;a name=bib-hong2015&gt;&lt;/a&gt;[Hong, NPC, T Crick, et al.](#cite-hong2015)
 (2015). "Top tips to make your research irreproducible". In: _arXiv
@@ -262,19 +290,10 @@ preprint arXiv:1504.00062_. eprint: 1504.00062. URL:
 Biology_ 16, p. 274. URL:
 [https://doi.org/10.1186/s13059-015-0850-7](https://doi.org/10.1186/s13059-015-0850-7).
 
-&lt;a name=bib-tenopir2011&gt;&lt;/a&gt;[Tenopir, C, S Allard, et
-al.](#cite-tenopir2011) (2011). "Data Sharing by Scientists: Practices
-and Perceptions". In: _PLoS ONE_ 6.6, p. e21101. DOI:
-[10.1371/journal.pone.0021101](https://doi.org/10.1371%2Fjournal.pone.0021101).
-URL:
-[https://doi.org/10.1371/journal.pone.0021101](https://doi.org/10.1371/journal.pone.0021101).
-
 &lt;a name=bib-tenopir2015&gt;&lt;/a&gt;[Tenopir, C, ED Dalton, et
 al.](#cite-tenopir2015) (2015). "Changes in data sharing and data reuse
 practices and perceptions among scientists worldwide". In: _PLoS ONE_
-10.8, p. e0134826. DOI:
-[10.1371/journal.pone.0134826](https://doi.org/10.1371%2Fjournal.pone.0134826).
-URL:
+10.8, p. e0134826. URL:
 [https://doi.org/10.1371/journal.pone.0134826](https://doi.org/10.1371/journal.pone.0134826).
 
 &lt;a name=bib-tenopir2020&gt;&lt;/a&gt;[Tenopir, C, NM Rice, et
@@ -282,12 +301,18 @@ al.](#cite-tenopir2020) (2020). "Data sharing, management, use, and
 reuse: Practices and perceptions of scientists worldwide". In: _PLoS
 ONE_ 15.3, p. e0229003. URL:
 [https://doi.org/10.1371/journal.pone.0229003](https://doi.org/10.1371/journal.pone.0229003).
+
+&lt;a name=bib-chiarelli2021&gt;&lt;/a&gt;[Chiarelli, Andrea, Lucia Loffreda, et
+al.](#cite-chiarelli2021) (2021). _The Art of Publishing Reproducible
+Research Outputs: Supporting emerging practices through cultural and
+technological innovation_. URL:
+[https://doi.org/10.5281/zenodo.5521077](https://doi.org/10.5281/zenodo.5521077).
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "solarized-light",
-"highlightLines": true,
+"highlightStyle": "github",
 "countIncrementalSlides": false,
 "ratio": "16:9"
 });
@@ -355,24 +380,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {

@@ -56,7 +56,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Assignments
 
--   To begin with the *Reproduction Plan*, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA *Not Applicable*, 0 *Unavailable*, 1 *Documented*, 2 *Available*, 3 *Available and Open*) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.
+-   To begin with the **Reproduction Plan**, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA *Not Applicable*, 0 *Unavailable*, 1 *Documented*, 2 *Available*, 3 *Available and Open*) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.
   
   
 <!-- this goes to ACt II 
