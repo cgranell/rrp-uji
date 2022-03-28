@@ -59,8 +59,6 @@ navbar:
 
     - text: "Crew"
       href: blog.html
-    - icon: fa fa-rss
-      href: index.xml
 search: true
 output:
   distill::distill_article:
