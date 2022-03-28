@@ -33,7 +33,7 @@ Existen excelentes guías practicas con recomendaciones generales para el foment
 
 2.  Lee *Passport for Open Science: A Practical Guide for PhD Students* [@barthez2020], explica cómo elaborar la investigación doctoral en línea con los principios de la ciencia abierta. Las prácticas son aplicables a cualquier disciplina y, aunque centradas en estudiantes de doctorado, se dirigen a cualquier investigador/a con independencia de su experiencia previa.
 
-3.  Esta presentación ["Basic recommendations for reproducible projects" (slides)](slides/slides21_01.html) ([y video](https://drive.google.com/file/d/1ClXP52SNq-aW2XC9lGj3lG0C0TNPjpxD/view?usp=sharing)) resume algunos de los aspectos y prácticas de tipo organizativo para la preparación y primeros pasos de un proyecto. Según los tres aspectos a mejorar (limitaciones) que identificaste en la sesión anterior, reflexiona y selecciona las prácticas que puedes llevar a cabo para superar dichas limitaciones en tu próximo artículo de investigación.
+3.  Esta presentación ["Basic recommendations for reproducible projects" (slides)](slides/slides21_01.html) <!--([y video](https://drive.google.com/file/d/1ClXP52SNq-aW2XC9lGj3lG0C0TNPjpxD/view?usp=sharing)) --> resume algunos de los aspectos y prácticas de tipo organizativo para la preparación y primeros pasos de un proyecto. Según los tres aspectos a mejorar (limitaciones) que identificaste en la sesión anterior, reflexiona y selecciona las prácticas que puedes llevar a cabo para superar dichas limitaciones en tu próximo artículo de investigación.
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides21_01.html)"}
     xaringanExtra::embed_xaringan(url = "slides/slides21_01.html", ratio = "16:9")

@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1.  Markdown es un lenguaje muy sencillo para escribir contenido especialmente para la Web. Es tan simple e intuitivo que vais a empezar a escribir texto en Markdown antes de pasar a la Actividad 2. Completa el siguiente tutorial interactivo [markdowntutorial](https://www.markdowntutorial.com/) (solo son 10 minutos) para aprender los conceptos de Markdown.
 
-2.  Esta presentación "[Markdown: uses for research and teaching" (slides)](slides/slides31_01.html) (y [video](https://drive.google.com/file/d/1xbR8LOi3-QLS3gRmYVB1GYxk1HxzF8fZ/view?usp=sharing)) resume sus ventajas y algunos posibles usos prácticos para la investigación y la docencia. También incluye una demo para generar distintos formatos de salida (HTML, PDF, etc) a partir de un mismo documento en Markdown. Lo importante no es la herramienta utilizada, sino que penséis las posibilidades que os puede ofrecer Markdown para agilizar la gestión de documentos en distintos formatos.
+2.  Esta presentación "[Markdown: uses for research and teaching" (slides)](slides/slides31_01.html) <!--(y [video](https://drive.google.com/file/d/1xbR8LOi3-QLS3gRmYVB1GYxk1HxzF8fZ/view?usp=sharing))--> resume sus ventajas y algunos posibles usos prácticos para la investigación y la docencia. También incluye una demo para generar distintos formatos de salida (HTML, PDF, etc) a partir de un mismo documento en Markdown. Lo importante no es la herramienta utilizada, sino que penséis las posibilidades que os puede ofrecer Markdown para agilizar la gestión de documentos en distintos formatos.
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides31_01.html)"}
     xaringanExtra::embed_xaringan(url = "slides/slides31_01.html", ratio = "16:9")

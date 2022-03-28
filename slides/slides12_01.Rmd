@@ -108,6 +108,35 @@ background-size: contain
 [The Turing Way Community](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
 
 
+
+---
+class: left 
+
+### `r cite("chiarelli2021")` - _`r title("chiarelli2021")`_
+
+> .huge[Openness and Open Science (data sharing, code sharing, open access, etc.) are .gray.bg-blue[enablers of reproducibility], but do .gray.bg-blue[not necessarily guarantee it]]
+
+--
+
+.pull-left[
+
+.center[.large[sharing research outputs]]
+
+.center[paper + underpinning data, code, and detailed documented methodology]
+
+]
+
+--
+
+.pull-right[
+
+.center[.large[reproduce/replicate findings]]
+
+.center[evaluate and testing results outputs, which have to be openly published (above) but also clearly separated, labelled and documented]
+]
+
+
+
 ---
 class: left
 # Data...
@@ -122,7 +151,7 @@ class: left
 
 --
 
-.huge[Do you .gray.bg-blue[share] all or part of your data?]
+.huge[Do you .gray.bg-blue[share] all, part or none of your data?]
 
 --
 
@@ -131,6 +160,40 @@ class: left
 --
 
 .huge[Is your data collection/storage/processing dependent on .gray.bg-blue[computation]? How much?] 
+
+
+---
+class: left
+### Data sharing in academia
+
+.huge[Sequel of _Tenopir and colleagues_]
+
+.large[`r cite("tenopir2011")`: _`r title("tenopir2011")`_]
+
+.large[`r cite("tenopir2015")`: _`r title("tenopir2015")`_]
+
+.large[`r cite("tenopir2020")`: _`r title("tenopir2020")`_]
+
+
+---
+class: left
+
+### `r cite("tenopir2020")` - Disciplines 
+
+```{r tenopir2020_disciplines, out.width ='65%', fig.align='center', echo=FALSE}
+knitr::include_graphics('images/tenopir2020_fig07.png')
+```
+
+
+---
+class: left
+
+### `r cite("tenopir2020")` - Barriers 
+
+
+```{r tenopir2020_barriers, out.width ='85%', fig.align='center', echo=FALSE}
+knitr::include_graphics('images/tenopir2020_fig09.png')
+```
 
 
 ---
@@ -154,110 +217,60 @@ class: left
 .right[*modelling, data analysis, data visualisation, writing, dissemination/presentation, communication, ...]
 
 
-
-<!--
-
----
-class: left
-### Data sharing in academia
-
-.huge[Sequel of _Tenopir and colleagues_]
-
-.large[`r cite("tenopir2011")`: _`r title("tenopir2011")`_]
-
-.large[`r cite("tenopir2015")`: _`r title("tenopir2015")`_]
-
-.large[`r cite("tenopir2020")`: _`r title("tenopir2020")`_]
-
--->
-
-<!--
-
----
-class: left
-
-### `r cite("tenopir2020")` - Disciplines 
-
-```{r tenopir2020_disciplines, out.width ='65%', fig.align='center', echo=FALSE}
-knitr::include_graphics('images/tenopir2020_fig07.png')
-```
-
--->
-
-<!--
-
----
-class: left
-
-### `r cite("tenopir2020")` - Barriers 
-
-
-```{r tenopir2020_barriers, out.width ='85%', fig.align='center', echo=FALSE}
-knitr::include_graphics('images/tenopir2020_fig09.png')
-```
-
--->
-
----
-class: left 
-
-### `r cite("chiarelli2021")` - _`r title("chiarelli2021")`_
-
-> .huge[Openness and Open Science (data and code sharing, open access, etc.) are enablers of reproducibility, but do not necessarily guarantee it]
-
---
-
-- sharing research oputputs
-
-
-- evaluate and testing these results outputs to reproduce/replicate the findings
-
-
 ---
 class: inverse, center, middle
 
-# What does reproducibility & openness imply for a PhD thesis?
-
----
-class: center
-# Barriers
+# What do reproducibility & openness mean for a PhD thesis?
 
 
 ---
-class: center
-# Advantages
+class: center, middle
+
+## .gray.bg-blue[drivers and perceived benefits]
 
 ---
-class: center
-
+class: left
 ### `r cite("markowetz2015")` - `r title("markowetz2015")`
 
---
 
-.pull-left[
-### helps to avoid disaster
+-   .large[personal belief] as reproducible work is fundamental to academic research
 
-### makes it easier to write papers
+-   .large[helps to avoid disaster] by tracking a complete history of your research
 
-### helps reviewers see it your way
+-   .large[makes it easier to write papers/theses] though well-documented analyses for generating results that keep your paper bug-free
 
-### enables continuity of your work
+-   .large[helps reviewers see it your way] by inspecting the different parts of the project
 
-### helps to build your reputation
+-   .large[enables continuity of your work] by enabling others to build on your results
 
-]
+-   .large[helps to build your reputation] as your research outcomes can be broadly replicated, trusted and get cited
 
---
+-   .large[you learn some new science]
 
-.pull-right[
 
-.pull-right[
+---
+class: center, middle
 
-### You learn some new science
+## .gray.bg-blue[potencial barriers]
 
-### You keep your paper bug-free
 
-]
+---
+class: left
+### `r cite(c("turingway2019", "chiarelli2021"))`
+
+
+-   .large[is perceived as technically hard]
+
+-   .large[training and mentoring are limited]
+
+-   .large[unwilling to share data] by fear of getting scooped, misused
+
+-   .large[data/code are not "good enough"] to be openly available and judged by others
+
+-   .large[all this effort is not considered for promotion]
+
+-   .large[metrics focus on quantity and impact factor] rather than on quality and reproducibility
+
 
 ---
 class: inverse, center, middle
@@ -280,7 +293,21 @@ background-image: url(images/rawpixel/beach.jpg)
 background-size: cover
 
 
-## Or you care about .gray[reproducibility] and .gray[transparency], and you are excited to acquire new reproducible research practices and habits! 
+## Or you care about .gray.bg-blue[reproducibility] and .gray.bg-blue[openness], and you are excited to acquire new reproducible research practices and habits! 
+
+
+---
+class: inverse, center, middle
+
+# Assessment criteria for (pre-)reproducibility
+
+
+---
+background-image: url(images/AGILE04.png)
+background-size: contain
+class: left, top
+
+.large[`r cite(c("nust2018", "ostermann2021"))`]
 
 
 ---
@@ -289,6 +316,6 @@ background-size: cover
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 6)
+print(start = 1, end = 8)
 ```
 ]
