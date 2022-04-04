@@ -58,7 +58,3 @@ knitr::opts_chunk$set(echo = TRUE)
 
 -   To begin with the **Reproduction Plan**, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA *Not Applicable*, 0 *Unavailable*, 1 *Documented*, 2 *Available*, 3 *Available and Open*) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.
   
-  
-<!-- this goes to ACt II 
-Reflect on those reproducibility criteria that are most difficult for you to carry out (for example, due to lack of technical knowledge or support tool or simply because you have never taken them into account). Highlight three aspects (maximum) that you would like to try to improve for the next research article. -->
-   

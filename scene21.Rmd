@@ -1,0 +1,69 @@
+---
+title: "Act II &#183; Recommendations and practices"
+description: |
+  Scene 1 &#183; Basics to get started
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Learning outcomes...
+
+-   [RRP05] **Organise** a research project to facilitate reproducibility, openness and reuse.
+
+-   [RRP06] **Contrast** the main families of licences for software and data.
+
+
+## Content...
+
+-   We discuss practices and recommendations to get started with reproducibility
+
+-   We introduce and compare types of licences
+
+
+## Organisation & materials
+
+**[Estimated time: 4 hours]**
+
+
+There are excellent practical guides with general recommendations for promoting reproducibility, research data management and open science. This week we'll take a look at three guides for open science and reproducible research.
+
+1. The *British Ecological Society* publishes brief guidelines for conducting open science. Read the guide *Reproducible code* [@cooper2019], which explains organizational aspects focused on ecology but applicable to any discipline.
+
+2. Read *Passport for Open Science: A Practical Guide for PhD Students* [@barthez2020], it explains how to develop doctoral research in line with the principles of open science. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.
+
+3.  [*The Turing Way*](https://the-turing-way.netlify.app/welcome.html) is the third resource or guide which indeed is a compendium of guides on open science, reproducibility, and research ethics. The *Guide for Reproducible Research* [@turingway2019] is relevant, particularly the [Licensing](https://the-turing-way.netlify.app/reproducible-research/licensing.html) section.
+
+    <aside>
+
+    As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library includes guides for researchers abpout the [open access dissemination of the results of the investigation](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/), [copyright and licenses](https://www.uji.es/serveis/cd/bib/pco/base/drets2/), and the October 2020 institutional statement to promote open access [_Declaración institucional a favor de la promoción del acceso abierto en la Universitat Jaume I_](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es).
+
+    </aside>
+
+4.  ["Basic recommendations for reproducible projects" (slides)](slides/slides21_01.html) <!--([y video](https://drive.google.com/file/d/1ClXP52SNq-aW2XC9lGj3lG0C0TNPjpxD/view?usp=sharing)) --> summarises some of the organizational aspects and reproducible practices for the preparation and first steps of a project.
+
+    ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides21_01.html)"}
+    xaringanExtra::embed_xaringan(url = "slides/slides21_01.html#title", ratio = "16:9")
+    ```
+
+
+<!--
+Comenta sobre el tipo de licencia para software y para datos que utilizas normalmente (si lo haces), y cuál utilizarías en el caso de que nunca hayas especificado una licencia.
+
+Según los tres aspectos a mejorar (limitaciones) que identificaste en la sesión anterior, reflexiona y selecciona las prácticas que puedes llevar a cabo para superar dichas limitaciones en tu próximo artículo de investigación
+
+6.  Lee las dos primeras secciones (*Software Citation Principles*, *Motivation*) del artículo *Software citation principles* [@smith2016]. Luego, salta al Anexo B (*Software citation use cases*), que enumera situaciones de uso de software que se pueden dar en un artículo. ¿Qué casos de usos (selecciona 3 como máximo) se dan habitualmente en tus artículos? De estos, ¿en cuantos de ellos citas el software correctamente?.
+
+-->
+
+## Assignments
+
+-   To continue with the **Reproduction Plan**, identify per each assessment criteria which practices and recommendations you can adopt to increase the level of reproducibility of your next paper.
+
+
+<!--
+-   Sube tu auto-reflexión (actividades 3, 5 y 6) en el foro **Auto-reflexión de prácticas, licencias y citación** en el Aula Virutal e indica también la disciplina a la que perteneces en el mensaje.
+-->
+
