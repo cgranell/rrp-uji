@@ -60,7 +60,7 @@ Según los tres aspectos a mejorar (limitaciones) que identificaste en la sesió
 
 ## Assignments
 
--   To continue with the **Reproduction Plan**, identify per each assessment criteria which practices and recommendations you can adopt to increase the level of reproducibility of your next paper.
+-   To continue with the **Reproduction Plan**, identify per each assessment criteria which [practices and recommendations](slides/slides21_01.html#summary) you can adopt (or have already adopted) to increase the level of reproducibility of your next paper.
 
 
 <!--

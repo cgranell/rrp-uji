@@ -42,9 +42,7 @@ navbar:
           href: scene12.html
         - text: "---"
         - text: "II.1 Basic recommendations"
-          href: session21.html
-        - text: "II.2 More recommendations"
-          href: session22.html
+          href: scene21.html
         - text: "---"
         - text: "III.1 Literate programming & Markdown"
           href: session31.html

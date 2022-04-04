@@ -1,0 +1,154 @@
+---
+title: "Advanced recommendations for reproducible projects"
+subtitle: "[2.1] Recomendations and practices"
+author: "Carlos Granell"
+institute: "Universitat Jaume I"
+date: "April 2022"
+description: "Reproducible Research Practices (RRP'22)"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+name: title
+class: Left, middle
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+# knitr::opts_chunk$set(collapse = TRUE,
+#                       fig.retina = 3)
+
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+
+```
+
+```{r xaringan-extra, echo=FALSE}
+library(xaringanExtra)
+
+xaringanExtra:::use_xaringan_extra(c("tile_view", "panelset", "share_again", "editable"))
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket"))
+xaringanExtra::use_scribble(
+  pen_color = "#d33f49", pen_size = 4)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+source("xaringan-themer.R")
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+source("load_references.r")
+```
+
+
+# `r rmarkdown::metadata$title`
+
+### `r rmarkdown::metadata$subtitle`
+
+.large[`r rmarkdown::metadata$description` &#183; `r rmarkdown::metadata$date`]
+
+.right[`r rmarkdown::metadata$author` &#183; Sergi Trilles]
+
+.right[`r rmarkdown::metadata$institute`]
+
+
+
+---
+class: center, middle
+
+# Use Version Control Systems (VCS)
+
+
+---
+
+# .center[Version Control Systems] 
+
+.pull-left[
+
+### Turn you project folder into a local version control repository
+
+- to keep track changes of your work
+
+- to provide a complete historical log of your project 
+
+- to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word). 
+  
+]
+
+.pull-right[
+### Tools: 
+
+- SVN, Mercurial, [Git](https://git-scm.com/)
+
+### Additional readings: 
+
+- [Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+- [An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) 
+
+- `r cite("perez2016")`, `r cite("bryan2020")`
+
+]
+
+---
+class: center, middle
+
+# Use online code repositories services
+
+---
+
+# .center[Online code repositories services] 
+
+.pull-left[
+
+### Web-based platform for hosting code repositories
+
+- VCS + collaborative features
+
+]
+
+.pull-right[
+### Tools: 
+
+- [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)
+
+### Additional readings: 
+
+- [Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)
+
+- `r cite("perez2016")`, `r cite("bryan2020")`
+
+]
+
+---
+
+# Summary
+
+
+---
+
+# References
+
+.tiny[
+```{r print_refs1, echo=FALSE, results="asis"}
+print(start = 1, end = 4)
+```
+]
+

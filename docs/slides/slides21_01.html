@@ -5,95 +5,132 @@
     <meta charset="utf-8" />
     <meta name="author" content="Carlos Granell" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/cgc-xaringan-style.css" type="text/css" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x18284e4b3ab4cd095b3d349fff611c1","expires":14}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 
-
-
-
-
-
-
 name: title
 class: Left, middle
-background-image: url(images/rawpixel/nasa-sun.jpg)
-background-size: cover
+&lt;!--background-image: url(images/rawpixel/nasa-sun.jpg)
+background-size: cover--&gt;
 
 
-# .whiteinline[.fancy[Basic recommendations for reproducible projects]]
 
-### .whiteinline[[2.1] Recomendations and practices]
 
-.whiteinline[Reproducible Research Practices (RRP'21) &amp;#183; April 2021]
 
-.right[.whiteinline[Carlos Granell &amp;#183; Sergi Trilles]]
+<style>.shareagain-bar {
+--shareagain-foreground: rgb(255, 255, 255);
+--shareagain-background: rgba(0, 0, 0, 0.5);
+--shareagain-facebook: none;
+--shareagain-pinterest: none;
+--shareagain-reddit: none;
+}</style>
 
-.right[.whiteinline[Universitat Jaume I]]
+
+
+
+
+
+
+# Basic recommendations for reproducible projects
+
+### [2.1] Recomendations and practices
+
+.large[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
+
+.right[Carlos Granell &amp;#183; Sergi Trilles]
+
+.right[Universitat Jaume I]
+
 
 ???
 
 Solar Observations taken during the Transit of Venus. Originally from NASA.
 Source: [Rawpixel(https://www.rawpixel.com/image/440254/solar-observations)
 
----
-name: spacecraft
-class: bottom, middle
-background-image: url(images/rawpixel/nasa-cygnus-spacecraft.jpg)
-background-size: cover
-
 
 ---
-template: spacecraft
+class: inverse, bottom, middle
 
-## Nobel laureate and physics professor [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)
+## Nobel laureate and physics professor Richard Feynman
 
 .large[“Science is a way of trying not to fool yourself. The principle is that you must not fool yourself, and you are the easiest person to fool.”]
 
+???
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)
+
 ---
-## .center[Computational reproducibility]
+class: left
+##  If you were to reproduce a paper...
 
-### If you were to reproduce a paper...
+-   .large[checking the published manuscript] 
 
-1. .large[check the published manuscript to reproduce,] 
+  -   .small[&lt;a name=cite-keshav2007&gt;&lt;/a&gt;[[Kes07](https://doi.org/10.1145/1273445.1273458)]] - *How to Read a Paper*
+  
+  -   .small[&lt;a name=cite-nust2018_readpaper&gt;&lt;/a&gt;[[NBM18](https://arxiv.org/abs/1806.09525)]] - *How to Read a Research Compendium*
 
-1. .large[download associated data and code (and computational environment),]
+-   .large[looking for published data and code, then]
 
-1. .large[run the analytical stuff, and ]
+-   .large[comparing the results of that data and code to the published results]
 
-1. .large[compare the results to the published results. ]
+-   .large[if they are the _same_, the study is reproducible; otherwise, it is not]
+
+
+
+---
+class: center, middle
+
+## But If you were to .gray.bg-blue[write] a reproducible paper
 
 
 ---
 class: center, top
 
-## Ok, I got it. But getting started is difficult!
+# Getting started is difficult!
 
 --
 
-### "I have never heard of reproducibility before"
+.huge["I have never heard of reproducibility before"]
 
 --
 
-### "I'm not good at using tools. _You said github?_"
+.huge["I'm not good at using tools. _You said github and docker?_"]
 
 --
 
-### "I have never been trained"
+.huge["I have never been trained"]
 
 --
 
-### "I don't know where to find tutorials, guidelines..." 
+.huge["I don't know where to find tutorials, guidelines..."]
 
 --
 
-### "I'm superbusy! I do not have enough time"
+.huge["I'm superbusy! I do not have enough time"]
 
 --
 
-### "I do theoretical stuff. Reproduction is not for me"
+.huge["I do theoretical stuff. Reproduction is not for me"]
 
 
 ---
@@ -104,101 +141,153 @@ class: center, middle
 ---
 class: center, middle
 
-# .fatinline[Reproducible Research Practices]
+# Reproducible Research Practices
 
-### are central to enabling transparent and honest science
+### are central to enabling not only .gray.bg-blue[reproducible] but .gray.bg-blue[transparent, open and honest] science too
 
 ---
-class: center, middle
+class: center, top
 # You should ask
 
+--
 
-### How do I start to make my next paper more reproducible?
+.huge[Which habits should I adopt to change my daily routine?]
 
 --
 
-### Which aspects should I improve the most?
+.huge[Which aspects should I improve the most?]
 
 --
 
-### What steps or recommendations can I follow? 
+.huge[What steps or recommendations can I follow?]
+
 
 ---
-class: center, left
+class: inverse, center, middle
 
-# Simple reproducible project workflows &amp; recommendations
-
-
-### Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): .acidinline[Reproducible code] guide &lt;a name=cite-cooper2019&gt;&lt;/a&gt;[[CH19](https://www.britishecologicalsociety.org/publications/guides-to/)] and .acidinline[Data Management] &lt;a name=cite-harrison2018&gt;&lt;/a&gt;[[Har18](https://www.britishecologicalsociety.org/publications/guides-to/)]
+# Basic recommentations &amp; practices to get started
 
 
-### .heatinline[Passport for Open Science: A Practical Guide for PhD Students] &lt;a name=cite-barthez2020&gt;&lt;/a&gt;[[BL20](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/)]
+---
+class: left
 
-### .coldinline[The Turing Way: A Handbook for Reproducible Data Science] &lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]
+# Key guidelines &amp; recommendations
+
+
+-   .huge[Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): Reproducible code guide .small[&lt;a name=cite-cooper2019&gt;&lt;/a&gt;[[CH19](https://www.britishecologicalsociety.org/publications/guides-to/)]] and [Data Management] guide .small[&lt;a name=cite-harrison2018&gt;&lt;/a&gt;[[Har18](https://www.britishecologicalsociety.org/publications/guides-to/)]]]
+
+
+-   .huge[Passport For Open Science .small[&lt;a name=cite-barthez2020&gt;&lt;/a&gt;[[BL20](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/)]]]
+
+-   .huge[The Turing Way: A Handbook for Reproducible Data Science .small[&lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
+
+-   .large[Reproducible Publications at AGILE Conferences: Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers .small[&lt;a name=cite-nust2020&gt;&lt;/a&gt;[[NÃs+20](https://osf.io/numa5/)]]]
+
 
 ???
 
 Look at the checklist in these guides.
 
+
+
 ---
 class: inverse, center, middle
 
-# Basic recommedations to get started?
-
----
-class: center, middle
+# \#1
 
 # One project = One folder
 
 ---
-class: center, top
+class: left
 
-# What's a project?
+### What's a project?
+
+.pull-left[
+-   .large[an experiment]
+
+-   .large[ideas for future research]
+
+-   .large[regular meeting notes/minutes]
+
+-   .large[teaching materials]
+
+]
 
 --
 
-### one experiment,
+.pull-right[
 
-### your ideas for future research,
+-   .large[a review paper]
 
-### regular meeting notes/minutes
+-   .large[a conference presentation]
 
-### a review paper, conference presentations
+-   .large[a book]
 
-### a book, teaching materials
+-   .large[PhD thesis manuscript]
 
-### PhD thesis manuscript
+]
 
 ---
-class: center, middle
+class: inverse, center, middle
+
+# \#2
 
 # Choose your best way to organise a folder 
 
-.large[Make sure it's consistent, informative and work for you]
-
-(eg: my [folder template](https://github.com/cgranell/rr-template))
-
 
 ---
-class: center, middle
+class: left
+### Folder/project structure
 
-# Consistent naming convention 
 
----
-
-# .center[Consistent naming convention] 
+.huge[Make sure it's consistent, informative, and works for you]
 
 .pull-left[
-  .center[&lt;img src="images/phdcomics1531.gif" width="60%" /&gt;]
+
+-   .large[`data`]
+
+-   .large[`data-raw`]
+
+-   .large[`figs`]
 ]
 
 .pull-right[
-- Name things in machine- and human-readable manner
 
-- Order by default: 
-  - For scripts, start file names with numbers indicating the position of the script in the analysis: `01_download_data.R`
+-   .large[`scripts`]
 
-  - for data, you can use dates as prefix: `20200115_survey.csv`
+-   .large[`reports`]
+
+-   .large[`notes`, ...]
+
+]
+
+(See my [folder template](https://github.com/cgranell/rr-template))
+
+
+---
+class: inverse, center, middle
+
+# \#3
+
+# Choose a consistent file naming convention 
+
+---
+class: left
+### File naming convention
+
+.pull-left[
+  .center[&lt;img src="images/phdcomics1531.gif" width="75%" /&gt;]
+]
+
+.pull-right[
+
+-   .large[Name things **both** in machine- and human-readable manner]
+
+-   .large[Order by default: ]
+
+  - For scripts, file names begin with numbers indicating the position of the script in the analysis: `01_download_data.R`
+
+  - For data, you can use dates (YYYYMMDD) as prefix: `20200115_survey.csv`
 ]
 
 ???
@@ -207,222 +296,328 @@ class: center, middle
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Never touch raw data
+# \#4
+
+# Never ever touch raw data
+
+---
+class: left
+### Raw data
+
+.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#23)]
+
+-   .large[Store raw data permanently (in the `data-raw` folder)]
+
+-   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
+
+-   .large[Document the process such as simple steps and diagrams in a README file]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Choose a coding style
+# \#5
+
+# Use open data formats
+
+---
+class: left
+### Open formats
+
+.huge[Use open, text-based formats whenever possible]
+
+.huge[Alternatively, provide data in an open format besides proprietary format] 
+
+-   .large[.xls + .csv]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Document, document, and document. 
+# \#6
 
-.large[Add README file(s)]
+# Avoid "Data (or code) available upon request"
+
+---
+class: left
+### Data (or code) available upon request
+
+.huge[.small[&lt;a name=cite-stodden2018&gt;&lt;/a&gt;[[SSM18](https://www.pnas.org/doi/abs/10.1073/pnas.1708290115)]] -  An empirical analysis of journal policy effectiveness for computational reproducibility]
+
+.large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
+
+---
+class: inverse, center, middle
+
+# \#7
+
+# Be (data) FAIR, my friend
+
+---
+class: left
+### (data) FAIR 
+
+.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
+
+-   .large[Emphasis on data &amp; metadata documentation]
+
+-   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
+
+&lt;br/&gt;
+
+.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+
+---
+class: inverse, center, middle
+
+# \#8
+
+# Document, document, and document
+
+---
+class: left
+### README file(s) 
+
+
+-   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
+
+  -   If your project is on GitHub, Readme files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+
+
+-   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
+
+-   .large[Keep track of ideas, discussions and decisions about the project (in the `notes` folder)]
+
+-   .large[Simplify edition tools: Use a simple formatting language/tool for note writing (Markdown, GoogleDocs)]
 
 
 ---
-class: center
-# README file(s) 
+class: inverse, center, middle
 
-.large[Include a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
+# \#9 
 
-.large[Include __README files__ to describe metadata/complex content o subfolders]
-
-
-.large[Automatically visualised when landing on a GitHub repository, because it's written in [Markdown](https://www.markdownguide.org/) (Week 3)]
-
+# Add a data license
 
 ---
-class: center, middle
+class: left, middle
 
-# Add a LICENSE file(s)
+### A .gray.bg-blue[license] is a .gray.bg-blue[contract] between the authors and the users
+
+.large[Without a license, **copyright** is automatically attached to your work] 
+
+.large[If you need it, add a **LICENSE filename** to apply a license to your work]
+
+.large[.small[&lt;a name=cite-jolly2012&gt;&lt;/a&gt;[[JAB12](https://doi.org/10.1371/journal.pcbi.1002766)]]: _Ten Simple Rules to Protect Your Intellectual Property_]
 
 ---
+class: left
+### Data licenses
 
-# .center[Licences] 
+.huge[Always add a [license](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-data.html) to the data you plan to make public]
+
+-   .large[Creative Commons Licenses]: [BY SA NC ND](https://creativecommons.org/about/cclicenses/)
+
+-   .large[CC0]: CC Zero allows creators to put their works into the worldwide public domain
+
+-   .large[[Open Data Commons](https://opendatacommons.org/licenses/index.html)]
+
+
+&lt;br/&gt;
+
+.large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
+
+---
+class: inverse, center, middle
+
+# \#10 
+
+# Add a software license
+
+---
+class: left
+### Software licenses
+
+
+.huge[Always add a [license](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-software.html) to the software you plan to make public]
 
 .pull-left[
 
-### A license is a contract between the authors and the users. 
-
-- Without a license, **copyright** is automatically attached to your work. 
-
-- Always **add a license to software** you plan to make public
- - Permissive = attribution (recommended for academic work)
-
- - Copyleft = share-alike (derivate work maintain same license as the original)
+-   .large[**Permissive** = attribution (recommended for academic work)]
  
-- Always **add a license to data** you plan to make public
-
-
 ]
 
 .pull-right[
 
-### Further readings:
-
-- Visit [choosealicense](https://choosealicense.com/) or [OSI-approved licenses](https://opensource.org/licenses)
-
-- &lt;a name=cite-morin2012&gt;&lt;/a&gt;[[MUS12](https://dx.doi.org/10.1371/journal.pcbi.1002598)]: _A Quick Guide to Software Licensing for the Scientist-Programmer_
-
-- &lt;a name=cite-jolly2012&gt;&lt;/a&gt;[[JAB12](https://dx.doi.org/10.1371/journal.pcbi.1002766)]: _Ten Simple Rules to Protect Your Intellectual Property_
-]
-
-
----
-class: center, middle
-
-# Use Version Control Systems (VCS)
-
-
----
-
-# .center[Version Control Systems] 
-
-.pull-left[
-
-### Turn you project folder into a local version control repository
-
-- to keep track changes of your work
-
-- to provide a complete historical log of your project 
-
-- to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word). 
-  
-]
-
-.pull-right[
-### Tools: 
-
-- SVN, Mercurial, [Git](https://git-scm.com/)
-
-### Additional readings: 
-
-- [Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-- [An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) 
-
-- &lt;a name=cite-perez2016&gt;&lt;/a&gt;[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)], &lt;a name=cite-bryan2020&gt;&lt;/a&gt;[[BH20](https://happygitwithr.com/)]
+-   .large[**Copyleft** = share-alike (derivate work maintain same license as the original)]
 
 ]
 
----
-class: center, middle
 
-# Use online code repositories services
+&lt;br/&gt;
 
----
+.large[**What UJI recommends...**]
 
-# .center[Online code repositories services] 
+--
 
-.pull-left[
-
-### Web-based platform for hosting code repositories
-
-- VCS + collaborative features
-
-]
-
-.pull-right[
-### Tools: 
-
-- [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)
-
-### Additional readings: 
-
-- [Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)
-
-- [[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)], [[BH20](https://happygitwithr.com/)]
-
-]
+.large[Not specified]
 
 ---
+class:left
+
+### .small[&lt;a name=cite-morin2012&gt;&lt;/a&gt;[[MUS12](https://doi.org/10.1371/journal.pcbi.1002598)]]: _A Quick Guide to Software Licensing for the Scientist-Programmer_
+
+
+&lt;img src="https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1002598/1/pcbi.1002598.g002.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20220404%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20220404T144537Z&amp;X-Goog-Expires=86400&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=06637cf822653f1442d8a0ebd8b40647e15b7bf92a33383161dd7b3a8d5b131cfb324e6cc53804f46d12ca036a66458fb7c894f18f2fb759becf0cdcbe010465c66084a7022b01a5ae640762134b3ecc5e5e5e6a5d339def6fb7b3050b8e8499d0582310a8089d3e55604f8d9b044fe4dd9e3351ea7824aefe06e4614948521b5c13172102f60f9ca42bc56a436c9e9053f0a0b3882f6906dd203fa77dd76fd1c3f1fc7be74d890c57f76d3a4e5ed8a50b92005264e9cfaba4c2bebb6376539afe766998a4fd73b49db5eda4c4ab69fbbb5a73678492a4328ac697fd45cf45263379802cf2b8135ffaf868e3bb405dbd93be602f56ed5a76e8df8d28574b8ff4" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: inverse, center, middle
+
+# \#11 
+
+# Report the software version you use
+
+---
+class: left, top
+### software version
+
+.huge[A different version can lead to different results!]
+
+.large[.small[&lt;a name=cite-mesnard2017&gt;&lt;/a&gt;[[MB17](https://doi.org/10.1109/MCSE.2017.3151254)]] - Reproducible and Replicable Computational Fluid Dynamics: It's Harder Than You Think]
+
+-   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
+
+---
+class: inverse, center, middle
+
+# \#12
+
+# Cite the software you use
+
+
+---
+class: left
+### Software citation
+
+.huge[Do not use URL as footnotes to report any external library/code/software that you use in a paper]
+
+-   .large[Refer to SciPy as a footnote: https://scipy.org/?]
+
+.huge[Cite software as any other paper] .large[.small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]] - _Software citation principles_]
+
+-   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&amp;btnG=)?]
+
+
+---
+name: summary
+class: inverse, center, middle
 
 # Summary
 
-1. .large[One project = One folder]
+---
 
-1. .large[Choose your best way to organise a folder]
+1.    .large[One project = One folder]
 
-1. .large[Consistent naming convention]
+1.    .large[Choose your best way to organise a folder ]
 
-1. .large[Never touch raw data]
+1.    .large[Choose a consistent file naming convention]
 
-1. .large[Choose a coding style]
+1.    .large[Never ever touch raw data]
 
-1. .large[Document, document, document]
+1.    .large[Use open data formats]
 
-1. .large[LICENSE file(s)]
+1.    .large[Avoid "Data (or code) available upon request"]
 
-1. .large[Use Version Control Systems (VCS)]
+1.    .large[Document, document, document]
 
-1. .large[Use online code repositories services]
+1.    .large[Add a data license]
+
+1.    .large[Add a software license]
+
+1.    .large[Report the software version you use]
+
+1.    .large[Cite the software you use]
 
 
 ---
 
 # References
+
+.tiny[
+&lt;a name=bib-keshav2007&gt;&lt;/a&gt;[Keshav, S.](#cite-keshav2007) (2007). "How
+to Read a Paper". In: _ACM SIGCOMM Computer Communication Review_ 37.3,
+p. 83â€“84. ISSN: 0146-4833. URL:
+[https://doi.org/10.1145/1273445.1273458](https://doi.org/10.1145/1273445.1273458).
+
+&lt;a name=bib-jolly2012&gt;&lt;/a&gt;[Jolly, M, AC Fletcher AC, et
+al.](#cite-jolly2012) (2012). "Ten Simple Rules to Protect Your
+Intellectual Property". In: _PLoS Computacional Biology_ 8 (11), p.
+e1002766. URL:
+[https://doi.org/10.1371/journal.pcbi.1002766](https://doi.org/10.1371/journal.pcbi.1002766).
+
+&lt;a name=bib-morin2012&gt;&lt;/a&gt;[Morin, A, J Urban, et al.](#cite-morin2012)
+(2012). "A Quick Guide to Software Licensing for the
+Scientist-Programmer". In: _PLoS Computacional Biology_ 8.7, p.
+e1002598. URL:
+[https://doi.org/10.1371/journal.pcbi.1002598](https://doi.org/10.1371/journal.pcbi.1002598).
+
+&lt;a name=bib-smith2016&gt;&lt;/a&gt;[Smith, AM, DS Katz, et al.](#cite-smith2016)
+(2016). "Software citation principles". In: _PeerJ Computer Science_ 2,
+p. e86. URL:
+[https://doi.org/10.7717/peerj-cs.86](https://doi.org/10.7717/peerj-cs.86).
+
+&lt;a name=bib-mesnard2017&gt;&lt;/a&gt;[Mesnard, Olivier and Lorena A.
+Barba](#cite-mesnard2017) (2017). "Reproducible and Replicable
+Computational Fluid Dynamics: It's Harder Than You Think". In:
+_Computing in Science Engineering_ 19.4, pp. 44-55. URL:
+[https://doi.org/10.1109/MCSE.2017.3151254](https://doi.org/10.1109/MCSE.2017.3151254).
+
+&lt;a name=bib-harrison2018&gt;&lt;/a&gt;[Harrison, Kate](#cite-harrison2018)
+(2018). _Data management_. URL:
+[https://www.britishecologicalsociety.org/publications/guides-to/](https://www.britishecologicalsociety.org/publications/guides-to/).
+
+&lt;a name=bib-nust2018_readpaper&gt;&lt;/a&gt;[Nüst, Daniel, Carl Boettiger, et
+al.](#cite-nust2018_readpaper) (2018). _How to Read a Research
+Compendium_. URL:
+[https://arxiv.org/abs/1806.09525](https://arxiv.org/abs/1806.09525).
+
+&lt;a name=bib-stodden2018&gt;&lt;/a&gt;[Stodden, Victoria, Jennifer Seiler, et
+al.](#cite-stodden2018) (2018). "An empirical analysis of journal
+policy effectiveness for computational reproducibility". In:
+_Proceedings of the National Academy of Sciences_ 115.11, pp.
+2584-2589. URL:
+[https://www.pnas.org/doi/abs/10.1073/pnas.1708290115](https://www.pnas.org/doi/abs/10.1073/pnas.1708290115).
+
+&lt;a name=bib-cooper2019&gt;&lt;/a&gt;[Cooper, Natalie and Pen-Yuah
+Hsing](#cite-cooper2019) (2019). _Reproducible code_. URL:
+[https://www.britishecologicalsociety.org/publications/guides-to/](https://www.britishecologicalsociety.org/publications/guides-to/).
+
+&lt;a name=bib-turingway2019&gt;&lt;/a&gt;[The Turing Way Community, Becky Arnold,
+et al.](#cite-turingway2019) (2019). "The Turing Way: A Handbook for
+Reproducible Data Science".
+
+URL:
+[https://the-turing-way.netlify.app/welcome.html](https://the-turing-way.netlify.app/welcome.html).
 
 &lt;a name=bib-barthez2020&gt;&lt;/a&gt;[Baker, Anne-Sophie and Bernard
 Larrouturou](#cite-barthez2020) (2020). _Passport For Open Science_.
 URL:
 [https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/).
 
-&lt;a name=bib-bryan2020&gt;&lt;/a&gt;[Bryan, Jenny and Jim
-Hester](#cite-bryan2020) (2020). _Happy Git and GitHub for the useR_.
-URL: [https://happygitwithr.com/](https://happygitwithr.com/).
+&lt;a name=bib-nust2020&gt;&lt;/a&gt;[Nüst, Daniel, Frank Ostermann, et
+al.](#cite-nust2020) (2020). _Reproducible Publications at AGILE
+Conferences: Guidelines for Authors, Scientific Reviewers, and
+Reproducibility Reviewers_. URL:
+[https://osf.io/numa5/](https://osf.io/numa5/).
+]
 
-&lt;a name=bib-cooper2019&gt;&lt;/a&gt;[Cooper, Natalie and Pen-Yuah
-Hsing](#cite-cooper2019) (2019). _Reproducible code_. URL:
-[https://www.britishecologicalsociety.org/publications/guides-to/](https://www.britishecologicalsociety.org/publications/guides-to/).
-
-&lt;a name=bib-harrison2018&gt;&lt;/a&gt;[Harrison, Kate](#cite-harrison2018)
-(2018). _Data management_. URL:
-[https://www.britishecologicalsociety.org/publications/guides-to/](https://www.britishecologicalsociety.org/publications/guides-to/).
-
-&lt;a name=bib-jolly2012&gt;&lt;/a&gt;[Jolly, M, AC Fletcher AC, et
-al.](#cite-jolly2012) (2012). "Ten Simple Rules to Protect Your
-Intellectual Property". In: _PLoS Computacional Biology_ 8 (11), p.
-e1002766. URL:
-[https://dx.doi.org/10.1371/journal.pcbi.1002766](https://dx.doi.org/10.1371/journal.pcbi.1002766).
-
----
-
-# References
-
-&lt;a name=bib-morin2012&gt;&lt;/a&gt;[Morin, A, J Urban, et al.](#cite-morin2012)
-(2012). "A Quick Guide to Software Licensing for the
-Scientist-Programmer". In: _PLoS Computacional Biology_ 8.7, p.
-e1002598. URL:
-[https://dx.doi.org/10.1371/journal.pcbi.1002598](https://dx.doi.org/10.1371/journal.pcbi.1002598).
-
-&lt;a name=bib-perez2016&gt;&lt;/a&gt;[Perez-Riverol, Y, L Gatto, et
-al.](#cite-perez2016) (2016). "Ten simple rules for taking advantage of
-Git and GitHub". In: _PLoS computational biology_ 12.7. URL:
-[https://doi.org/10.1371/journal.pcbi.1004947](https://doi.org/10.1371/journal.pcbi.1004947).
-
-&lt;a name=bib-turingway2019&gt;&lt;/a&gt;[The Turing Way Community, Becky Arnold,
-et al.](#cite-turingway2019) (2019). "The Turing Way: A Handbook for
-Reproducible Data Science". . This work was supported by The UKRI
-Strategic Priorities Fund under the EPSRC Grant EP/T001569/,
-particularly the "Tools, Practices and Systems" theme within that
-grant, and by The Alan Turing Institute under the EPSRC grant
-EP/N510129/1. DOI:
-[10.5281/zenodo.3233986](https://doi.org/10.5281%2Fzenodo.3233986).
-URL:
-[https://the-turing-way.netlify.app/welcome.html](https://the-turing-way.netlify.app/welcome.html).
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "solarized-light",
-"highlightLines": true,
+"highlightStyle": "github",
 "countIncrementalSlides": false,
 "ratio": "16:9"
 });
@@ -490,24 +685,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {

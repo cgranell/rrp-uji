@@ -3,109 +3,143 @@ title: "Basic recommendations for reproducible projects"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2021"
-description: "Reproducible Research Practices (RRP'21)"
+date: "April 2022"
+description: "Reproducible Research Practices (RRP'22)"
 output:
   xaringan::moon_reader:
-    css: ["default", "assets/css/cgc-xaringan-style.css"]
+    css: ["xaringan-themer.css", "custom.css"]
     seal: false
     lib_dir: libs
     nature:
-      highlightStyle: solarized-light
-      highlightLines: true
+      highlightStyle: github
       countIncrementalSlides: false
       ratio: "16:9"
 ---
+name: title
+class: Left, middle
+<!--background-image: url(images/rawpixel/nasa-sun.jpg)
+background-size: cover-->
+
 
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(collapse = TRUE,
-                      fig.retina = 3)
+# knitr::opts_chunk$set(collapse = TRUE,
+#                       fig.retina = 3)
 
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+
+```
+
+```{r xaringan-extra, echo=FALSE}
+library(xaringanExtra)
+
+xaringanExtra:::use_xaringan_extra(c("tile_view", "panelset", "share_again", "editable"))
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket"))
+xaringanExtra::use_scribble(
+  pen_color = "#d33f49", pen_size = 4)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+source("xaringan-themer.R")
 ```
 
 ```{r, load_refs, include=FALSE, cache=FALSE}
 source("load_references.r")
 ```
 
-name: title
-class: Left, middle
-background-image: url(images/rawpixel/nasa-sun.jpg)
-background-size: cover
 
+# `r rmarkdown::metadata$title`
 
-# .whiteinline[.fancy[`r rmarkdown::metadata$title`]]
+### `r rmarkdown::metadata$subtitle`
 
-### .whiteinline[`r rmarkdown::metadata$subtitle`]
+.large[`r rmarkdown::metadata$description` &#183; `r rmarkdown::metadata$date`]
 
-.whiteinline[`r rmarkdown::metadata$description` &#183; `r rmarkdown::metadata$date`]
+.right[`r rmarkdown::metadata$author` &#183; Sergi Trilles]
 
-.right[.whiteinline[`r rmarkdown::metadata$author` &#183; Sergi Trilles]]
+.right[`r rmarkdown::metadata$institute`]
 
-.right[.whiteinline[`r rmarkdown::metadata$institute`]]
 
 ???
 
 Solar Observations taken during the Transit of Venus. Originally from NASA.
 Source: [Rawpixel(https://www.rawpixel.com/image/440254/solar-observations)
 
----
-name: spacecraft
-class: bottom, middle
-background-image: url(images/rawpixel/nasa-cygnus-spacecraft.jpg)
-background-size: cover
-
 
 ---
-template: spacecraft
+class: inverse, bottom, middle
 
-## Nobel laureate and physics professor [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)
+## Nobel laureate and physics professor Richard Feynman
 
 .large[“Science is a way of trying not to fool yourself. The principle is that you must not fool yourself, and you are the easiest person to fool.”]
 
+???
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)
+
 ---
-## .center[Computational reproducibility]
+class: left
+##  If you were to reproduce a paper...
 
-### If you were to reproduce a paper...
+-   .large[checking the published manuscript] 
 
-1. .large[check the published manuscript to reproduce,] 
+  -   `r cite("keshav2007")` - *`r title("keshav2007")`*
+  
+  -   `r cite("nust2018_readpaper")` - *`r title("nust2018_readpaper")`*
 
-1. .large[download associated data and code (and computational environment),]
+-   .large[looking for published data and code, then]
 
-1. .large[run the analytical stuff, and ]
+-   .large[comparing the results of that data and code to the published results]
 
-1. .large[compare the results to the published results. ]
+-   .large[if they are the _same_, the study is reproducible; otherwise, it is not]
+
+
+
+---
+class: center, middle
+
+## But If you were to .gray.bg-blue[write] a reproducible paper
 
 
 ---
 class: center, top
 
-## Ok, I got it. But getting started is difficult!
+# Getting started is difficult!
 
 --
 
-### "I have never heard of reproducibility before"
+.huge["I have never heard of reproducibility before"]
 
 --
 
-### "I'm not good at using tools. _You said github?_"
+.huge["I'm not good at using tools. _You said github and docker?_"]
 
 --
 
-### "I have never been trained"
+.huge["I have never been trained"]
 
 --
 
-### "I don't know where to find tutorials, guidelines..." 
+.huge["I don't know where to find tutorials, guidelines..."]
 
 --
 
-### "I'm superbusy! I do not have enough time"
+.huge["I'm superbusy! I do not have enough time"]
 
 --
 
-### "I do theoretical stuff. Reproduction is not for me"
+.huge["I do theoretical stuff. Reproduction is not for me"]
 
 
 ---
@@ -116,101 +150,153 @@ class: center, middle
 ---
 class: center, middle
 
-# .fatinline[Reproducible Research Practices]
+# Reproducible Research Practices
 
-### are central to enabling transparent and honest science
+### are central to enabling not only .gray.bg-blue[reproducible] but .gray.bg-blue[transparent, open and honest] science too
 
 ---
-class: center, middle
+class: center, top
 # You should ask
 
+--
 
-### How do I start to make my next paper more reproducible?
+.huge[Which habits should I adopt to change my daily routine?]
 
 --
 
-### Which aspects should I improve the most?
+.huge[Which aspects should I improve the most?]
 
 --
 
-### What steps or recommendations can I follow? 
+.huge[What steps or recommendations can I follow?]
+
 
 ---
-class: center, left
+class: inverse, center, middle
 
-# Simple reproducible project workflows & recommendations
-
-
-### Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): .acidinline[Reproducible code] guide `r Cite(my_refs, "cooper2019")` and .acidinline[Data Management] `r Cite(my_refs, "harrison2018")`
+# Basic recommentations & practices to get started
 
 
-### .heatinline[Passport for Open Science: A Practical Guide for PhD Students] `r Cite(my_refs, "barthez2020")`
+---
+class: left
 
-### .coldinline[The Turing Way: A Handbook for Reproducible Data Science] `r Cite(my_refs, "turingway2019")`
+# Key guidelines & recommendations
+
+
+-   .huge[Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): Reproducible code guide `r cite("cooper2019")` and [Data Management] guide `r cite("harrison2018")`]
+
+
+-   .huge[`r title("barthez2020")` `r cite("barthez2020")`]
+
+-   .huge[`r title("turingway2019")` `r cite("turingway2019")`]
+
+-   .large[`r title("nust2020")` `r cite("nust2020")`]
+
 
 ???
 
 Look at the checklist in these guides.
 
+
+
 ---
 class: inverse, center, middle
 
-# Basic recommedations to get started?
-
----
-class: center, middle
+# \#1
 
 # One project = One folder
 
 ---
-class: center, top
+class: left
 
-# What's a project?
+### What's a project?
+
+.pull-left[
+-   .large[an experiment]
+
+-   .large[ideas for future research]
+
+-   .large[regular meeting notes/minutes]
+
+-   .large[teaching materials]
+
+]
 
 --
 
-### one experiment,
+.pull-right[
 
-### your ideas for future research,
+-   .large[a review paper]
 
-### regular meeting notes/minutes
+-   .large[a conference presentation]
 
-### a review paper, conference presentations
+-   .large[a book]
 
-### a book, teaching materials
+-   .large[PhD thesis manuscript]
 
-### PhD thesis manuscript
+]
 
 ---
-class: center, middle
+class: inverse, center, middle
+
+# \#2
 
 # Choose your best way to organise a folder 
 
-.large[Make sure it's consistent, informative and work for you]
-
-(eg: my [folder template](https://github.com/cgranell/rr-template))
-
 
 ---
-class: center, middle
+class: left
+### Folder/project structure
 
-# Consistent naming convention 
 
----
-
-# .center[Consistent naming convention] 
+.huge[Make sure it's consistent, informative, and works for you]
 
 .pull-left[
-  .center[<img src="images/phdcomics1531.gif" width="60%" />]
+
+-   .large[`data`]
+
+-   .large[`data-raw`]
+
+-   .large[`figs`]
 ]
 
 .pull-right[
-- Name things in machine- and human-readable manner
 
-- Order by default: 
-  - For scripts, start file names with numbers indicating the position of the script in the analysis: `01_download_data.R`
+-   .large[`scripts`]
 
-  - for data, you can use dates as prefix: `20200115_survey.csv`
+-   .large[`reports`]
+
+-   .large[`notes`, ...]
+
+]
+
+(See my [folder template](https://github.com/cgranell/rr-template))
+
+
+---
+class: inverse, center, middle
+
+# \#3
+
+# Choose a consistent file naming convention 
+
+---
+class: left
+### File naming convention
+
+.pull-left[
+  .center[<img src="images/phdcomics1531.gif" width="75%" />]
+]
+
+.pull-right[
+
+-   .large[Name things **both** in machine- and human-readable manner]
+
+-   .large[Order by default: ]
+
+  - For scripts, file names begin with numbers indicating the position of the script in the analysis: `01_download_data.R`
+
+  - For data, you can use dates (YYYYMMDD) as prefix: `20200115_survey.csv`
 ]
 
 ???
@@ -219,176 +305,260 @@ class: center, middle
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Never touch raw data
+# \#4
+
+# Never ever touch raw data
+
+---
+class: left
+### Raw data
+
+.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#23)]
+
+-   .large[Store raw data permanently (in the `data-raw` folder)]
+
+-   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
+
+-   .large[Document the process such as simple steps and diagrams in a README file]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Choose a coding style
+# \#5
+
+# Use open data formats
+
+---
+class: left
+### Open formats
+
+.huge[Use open, text-based formats whenever possible]
+
+.huge[Alternatively, provide data in an open format besides proprietary format] 
+
+-   .large[.xls + .csv]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
-# Document, document, and document. 
+# \#6
 
-.large[Add README file(s)]
+# Avoid "Data (or code) available upon request"
+
+---
+class: left
+### Data (or code) available upon request
+
+.huge[`r cite("stodden2018")` -  `r title("stodden2018")`]
+
+.large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
+
+---
+class: inverse, center, middle
+
+# \#7
+
+# Be (data) FAIR, my friend
+
+---
+class: left
+### (data) FAIR 
+
+.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
+
+-   .large[Emphasis on data & metadata documentation]
+
+-   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
+
+<br/>
+
+.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+
+---
+class: inverse, center, middle
+
+# \#8
+
+# Document, document, and document
+
+---
+class: left
+### README file(s) 
+
+
+-   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
+
+  -   If your project is on GitHub, Readme files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+
+
+-   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
+
+-   .large[Keep track of ideas, discussions and decisions about the project (in the `notes` folder)]
+
+-   .large[Simplify edition tools: Use a simple formatting language/tool for note writing (Markdown, GoogleDocs)]
 
 
 ---
-class: center
-# README file(s) 
+class: inverse, center, middle
 
-.large[Include a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
+# \#9 
 
-.large[Include __README files__ to describe metadata/complex content o subfolders]
-
-
-.large[Automatically visualised when landing on a GitHub repository, because it's written in [Markdown](https://www.markdownguide.org/) (Week 3)]
-
+# Add a data license
 
 ---
-class: center, middle
+class: left, middle
 
-# Add a LICENSE file(s)
+### A .gray.bg-blue[license] is a .gray.bg-blue[contract] between the authors and the users
+
+.large[Without a license, **copyright** is automatically attached to your work] 
+
+.large[If you need it, add a **LICENSE filename** to apply a license to your work]
+
+.large[`r cite("jolly2012")`: _`r title("jolly2012")`_]
 
 ---
+class: left
+### Data licenses
 
-# .center[Licences] 
+.huge[Always add a [license](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-data.html) to the data you plan to make public]
+
+-   .large[Creative Commons Licenses]: [BY SA NC ND](https://creativecommons.org/about/cclicenses/)
+
+-   .large[CC0]: CC Zero allows creators to put their works into the worldwide public domain
+
+-   .large[[Open Data Commons](https://opendatacommons.org/licenses/index.html)]
+
+
+<br/>
+
+.large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
+
+---
+class: inverse, center, middle
+
+# \#10 
+
+# Add a software license
+
+---
+class: left
+### Software licenses
+
+
+.huge[Always add a [license](https://the-turing-way.netlify.app/reproducible-research/licensing/licensing-software.html) to the software you plan to make public]
 
 .pull-left[
 
-### A license is a contract between the authors and the users. 
-
-- Without a license, **copyright** is automatically attached to your work. 
-
-- Always **add a license to software** you plan to make public
- - Permissive = attribution (recommended for academic work)
-
- - Copyleft = share-alike (derivate work maintain same license as the original)
+-   .large[**Permissive** = attribution (recommended for academic work)]
  
-- Always **add a license to data** you plan to make public
-
-
 ]
 
 .pull-right[
 
-### Further readings:
-
-- Visit [choosealicense](https://choosealicense.com/) or [OSI-approved licenses](https://opensource.org/licenses)
-
-- `r Cite(my_refs, "morin2012")`: _`r my_refs["morin2012"]$title`_
-
-- `r Cite(my_refs, "jolly2012")`: _`r my_refs["jolly2012"]$title`_
-]
-
-
----
-class: center, middle
-
-# Use Version Control Systems (VCS)
-
-
----
-
-# .center[Version Control Systems] 
-
-.pull-left[
-
-### Turn you project folder into a local version control repository
-
-- to keep track changes of your work
-
-- to provide a complete historical log of your project 
-
-- to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word). 
-  
-]
-
-.pull-right[
-### Tools: 
-
-- SVN, Mercurial, [Git](https://git-scm.com/)
-
-### Additional readings: 
-
-- [Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-- [An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) 
-
-- `r Cite(my_refs, "perez2016")`, `r Cite(my_refs, "bryan2020")`
+-   .large[**Copyleft** = share-alike (derivate work maintain same license as the original)]
 
 ]
 
----
-class: center, middle
 
-# Use online code repositories services
+<br/>
 
----
+.large[**What UJI recommends...**]
 
-# .center[Online code repositories services] 
+--
 
-.pull-left[
-
-### Web-based platform for hosting code repositories
-
-- VCS + collaborative features
-
-]
-
-.pull-right[
-### Tools: 
-
-- [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)
-
-### Additional readings: 
-
-- [Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)
-
-- `r Cite(my_refs, "perez2016")`, `r Cite(my_refs, "bryan2020")`
-
-]
+.large[Not specified]
 
 ---
+class:left
+
+### `r cite("morin2012")`: _`r title("morin2012")`_
+
+
+```{r morin2021, out.width ='50%', fig.align='center', echo=FALSE}
+knitr::include_graphics('https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1002598/1/pcbi.1002598.g002.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20220404%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220404T144537Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=06637cf822653f1442d8a0ebd8b40647e15b7bf92a33383161dd7b3a8d5b131cfb324e6cc53804f46d12ca036a66458fb7c894f18f2fb759becf0cdcbe010465c66084a7022b01a5ae640762134b3ecc5e5e5e6a5d339def6fb7b3050b8e8499d0582310a8089d3e55604f8d9b044fe4dd9e3351ea7824aefe06e4614948521b5c13172102f60f9ca42bc56a436c9e9053f0a0b3882f6906dd203fa77dd76fd1c3f1fc7be74d890c57f76d3a4e5ed8a50b92005264e9cfaba4c2bebb6376539afe766998a4fd73b49db5eda4c4ab69fbbb5a73678492a4328ac697fd45cf45263379802cf2b8135ffaf868e3bb405dbd93be602f56ed5a76e8df8d28574b8ff4')
+```
+
+
+---
+class: inverse, center, middle
+
+# \#11 
+
+# Report the software version you use
+
+---
+class: left, top
+### software version
+
+.huge[A different version can lead to different results!]
+
+.large[`r cite("mesnard2017")` - `r title("mesnard2017")`]
+
+-   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
+
+---
+class: inverse, center, middle
+
+# \#12
+
+# Cite the software you use
+
+
+---
+class: left
+### Software citation
+
+.huge[Do not use URL as footnotes to report any external library/code/software that you use in a paper]
+
+-   .large[Refer to SciPy as a footnote: https://scipy.org/?]
+
+.huge[Cite software as any other paper] .large[`r cite("smith2016")` - _`r title("smith2016")`_]
+
+-   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&btnG=)?]
+
+
+---
+name: summary
+class: inverse, center, middle
 
 # Summary
 
-1. .large[One project = One folder]
+---
 
-1. .large[Choose your best way to organise a folder]
+1.    .large[One project = One folder]
 
-1. .large[Consistent naming convention]
+1.    .large[Choose your best way to organise a folder ]
 
-1. .large[Never touch raw data]
+1.    .large[Choose a consistent file naming convention]
 
-1. .large[Choose a coding style]
+1.    .large[Never ever touch raw data]
 
-1. .large[Document, document, document]
+1.    .large[Use open data formats]
 
-1. .large[LICENSE file(s)]
+1.    .large[Avoid "Data (or code) available upon request"]
 
-1. .large[Use Version Control Systems (VCS)]
+1.    .large[Document, document, document]
 
-1. .large[Use online code repositories services]
+1.    .large[Add a data license]
+
+1.    .large[Add a software license]
+
+1.    .large[Report the software version you use]
+
+1.    .large[Cite the software you use]
 
 
 ---
 
 # References
 
+.tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-PrintBibliography(my_refs, start = 1, end = 5)
+print(start = 1, end = 14)
 ```
+]
 
----
-
-# References
-
-```{r print_refs2, echo=FALSE, results="asis"}
-PrintBibliography(my_refs, start = 6, end = 8)
-```
