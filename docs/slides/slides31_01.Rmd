@@ -108,13 +108,35 @@ background-image: url(images/rmarkdown_hedgehog.png)
 background-size: 25%
 background-position: 50% 20%
 
-# It's all about .acidinline[Markdown] `r Cite(my_refs, "xie2018")`
+# It's all about .acidinline[Markdown] `r cite("xie2018")`
+
+
+
+---
+class: center, middle
+
+# Really?
+
+.large[Yes - Open [demo_markdown101.md](https://rstudio.cloud/project/2482163)]
 
 
 ---
 background-image: url(images/rmarkdown_hedgehog_wide.png)
 background-size: contain
 background-position: middle, center
+
+???
+Source: [Teaching in Production](https://rstudio-education.github.io/teaching-in-production/)
+
+
+---
+class: center
+background-image: url(images/md_flowchart.png)
+background-size: contain
+background-position: middle, center
+
+
+[pandoc - universal document converter](https://pandoc.org/)
 
 ???
 Source: [Teaching in Production](https://rstudio-education.github.io/teaching-in-production/)
@@ -221,6 +243,8 @@ class: center
 
 # References
 
+.tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-PrintBibliography(my_refs)
+print(start = 1, end = 1)
 ```
+]

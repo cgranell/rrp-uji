@@ -27,12 +27,12 @@ We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We co
 
 -   Scene 2: More recommendations
 
-## Act III: Literate programming y notebooks
+## Act III: Literate programming & notebooks
 
 We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
--   Scene 1: [Literate programming y markdown](sesion31.html)
+-   Scene 1: [Literate programming y markdown](scene31.html)
 
--   Scene 2: [R Markdown Notebooks](sesion32.html)
+-   Scene 2: R Markdown Notebooks
 
 RRP Learning Outcome 10 - **Reproduction Plan** - is a skill that will be developed throughout the course. Participants will submit their Reproduction Plan to make their next research project/work or technical writing more reproducible.

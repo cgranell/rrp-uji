@@ -45,9 +45,7 @@ navbar:
           href: scene21.html
         - text: "---"
         - text: "III.1 Literate programming & Markdown"
-          href: session31.html
-        - text: "III.2 R Markdown Notebooks"
-          href: session32.html
+          href: scene31.html
     - text: "Backstage"
       menu:
         - text: "References"
