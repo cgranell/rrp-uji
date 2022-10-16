@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xe030f0d640a4db299eb3cf1c8056ba2","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"e596433385824437b5d03606ba19ad59","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <script src="libs/fabric/fabric.min.js"></script>
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40,"palette":[]}) })</script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -119,7 +119,7 @@ class: center
 
 ???
 
-So, reproducibility is an integral part of the scientifc method. 
+So, reproducibility is an integral part of the scientific method. 
 
 ---
 class: inverse, center, middle
@@ -321,15 +321,17 @@ class: left
 
 .large[Language-specific tools to enable interactive or “live” notebooks]: 
 
--   [Rmarkdown](https://rmarkdown.rstudio.com/)
+-   [R Markdown](https://rmarkdown.rstudio.com/)
 -   [Jupyter Notebooks](https://jupyter.org/)
 -   [Wolfram Notebooks](https://www.wolfram.com/notebooks/)
+-   [Google Colab](https://colab.research.google.com/)
+-   [Quarto](https://quarto.org/): Python, R, Julia and Observable
 
 ]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
@@ -344,7 +346,7 @@ class: center, middle
 class: center, middle
 
 &gt;  .huge[Today, few published results are reproducible in any practical sense. To verify them requires almost as much effort as it took to create them originally. 
-After a time, authors are often unable to reproduce their own results! For these reasons, many people ignaore most of the literature. ]
+After a time, authors are often unable to reproduce their own results! For these reasons, many people ignore most of the literature. ]
 
 .right[Jon Claerbout, *Earth Sounding Analysis*]
 
@@ -374,8 +376,68 @@ class: left
 
 ]
 
+
+---
+class: inverse, center, middle
+
+# Is reproducibility a new problem?
+
+
 ---
 class: center, middle
+
+## .gray.bg-blue[Let's go back to Sep 15, 2022]
+
+
+---
+class: left
+
+### Facts
+
+.large[Rubén Herzog, Universidad de Valparaíso in Chile, published a 2020 [article](https://www.nature.com/articles/s41598-020-74060-6) in Scientific Reports]
+
+--
+
+.large[Paul Lodder, a grad student at the University of Amsterdam, wanted to expand on the model used by Rubén]
+
+--
+
+.large[Paul reproduced the paper's analysis results before looking into expanding...and got .gray.bg-blue[different results]]
+
+
+&gt; I (Paul) shared my findings with Rubén by writing up a .gray.bg-blue[literate programming report], which allowed me to present my findings in a reproducible manner by including the code that leads to any of the results discussed.
+
+&gt; Because I (Paul) was able to run his code and mine on the same simulated data, it was very clear that the typo caused the results from the paper
+
+???
+
+Full story on [Retraction Watch](https://retractionwatch.com/):
+
+- [A grad student finds a ‘typo’ in a psychedelic study’s script that leads to a retraction](https://retractionwatch.com/2022/10/06/a-grad-student-finds-a-typo-in-a-psychedelic-studys-script-that-leads-to-a-retraction/#more-125759)
+- [‘A display of extreme academic integrity’: A grad student who found a key error praises the original author](https://retractionwatch.com/2022/10/11/a-display-of-extreme-academic-integrity-a-grad-student-who-found-a-key-error-praises-the-original-author/)
+
+
+---
+class: left
+
+### Lessons
+
+.large[.gray.bg-blue[Academic integrity &amp; honesty] through &lt;br/&gt; .gray.bg-blue[transparent and reproducible computational code]]
+
+-   Both collaborated to find out the typo. 
+-   Paper is now retracted, but both are working in a new version of the paper
+-   Science wins!
+
+???
+
+Full story on [Retraction Watch](https://retractionwatch.com/):
+
+- [A grad student finds a ‘typo’ in a psychedelic study’s script that leads to a retraction](https://retractionwatch.com/2022/10/06/a-grad-student-finds-a-typo-in-a-psychedelic-studys-script-that-leads-to-a-retraction/#more-125759)
+- [‘A display of extreme academic integrity’: A grad student who found a key error praises the original author](https://retractionwatch.com/2022/10/11/a-display-of-extreme-academic-integrity-a-grad-student-who-found-a-key-error-praises-the-original-author/)
+
+
+---
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
@@ -540,6 +602,7 @@ class: center, middle
 
 ---
 class: left
+
 ### .small[&lt;a name=cite-nust2021&gt;&lt;/a&gt;[[NE21](https://f1000research.com/articles/10-253/v1)]] - _The inverse problem_
 
 ![](images/nust2021_f1000.gif)
@@ -607,7 +670,7 @@ name: matrix_definitions
 ---
 class: left
 
-### .small[&lt;a name=cite-ostermann2017&gt;&lt;/a&gt;&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2021&gt;&lt;/a&gt;[[OG17](https://doi.org/10.1111/tgis.12195); [NÃs+18](https://doi.org/10.7717/peerj.5072); [Ost+21](https://drops.dagstuhl.de/opus/volltexte/2021/14761)]] - Our view
+### .small[&lt;a name=cite-ostermann2017&gt;&lt;/a&gt;&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2021&gt;&lt;/a&gt;[[OG17](https://doi.org/10.1111/tgis.12195); [Nus+18](https://doi.org/10.7717/peerj.5072); [Ost+21](https://drops.dagstuhl.de/opus/volltexte/2021/14761)]] - Our view
 
 .pull-left[
 
@@ -786,7 +849,7 @@ Reproducibility and replicability of recent studies using VGI". In:
 _Transactions in GIS_ 21.2, pp. 224-237. URL:
 [https://doi.org/10.1111/tgis.12195](https://doi.org/10.1111/tgis.12195).
 
-&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nüst, Daniel, C Granell, et
+&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nust, Daniel, C Granell, et
 al.](#cite-nust2018) (2018). "Reproducible research and GIScience: an
 evaluation using AGILE conference papers". In: _PeerJ_ 6, p. e5072.
 URL:
@@ -872,6 +935,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

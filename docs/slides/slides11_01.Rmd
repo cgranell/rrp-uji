@@ -128,7 +128,7 @@ class: center
 
 ???
 
-So, reproducibility is an integral part of the scientifc method. 
+So, reproducibility is an integral part of the scientific method. 
 
 ---
 class: inverse, center, middle
@@ -332,15 +332,17 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/4/4f/Knu
 
 .large[Language-specific tools to enable interactive or “live” notebooks]: 
 
--   [Rmarkdown](https://rmarkdown.rstudio.com/)
+-   [R Markdown](https://rmarkdown.rstudio.com/)
 -   [Jupyter Notebooks](https://jupyter.org/)
 -   [Wolfram Notebooks](https://www.wolfram.com/notebooks/)
+-   [Google Colab](https://colab.research.google.com/)
+-   [Quarto](https://quarto.org/): Python, R, Julia and Observable
 
 ]
 
 
 ---
-class: center, middle
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
@@ -355,7 +357,7 @@ class: center, middle
 class: center, middle
 
 >  .huge[Today, few published results are reproducible in any practical sense. To verify them requires almost as much effort as it took to create them originally. 
-After a time, authors are often unable to reproduce their own results! For these reasons, many people ignaore most of the literature. ]
+After a time, authors are often unable to reproduce their own results! For these reasons, many people ignore most of the literature. ]
 
 .right[Jon Claerbout, *Earth Sounding Analysis*]
 
@@ -387,8 +389,68 @@ knitr::include_graphics('images/Claerbout92.png')
 
 ]
 
+
+---
+class: inverse, center, middle
+
+# Is reproducibility a new problem?
+
+
 ---
 class: center, middle
+
+## .gray.bg-blue[Let's go back to Sep 15, 2022]
+
+
+---
+class: left
+
+### Facts
+
+.large[Rubén Herzog, Universidad de Valparaíso in Chile, published a 2020 [article](https://www.nature.com/articles/s41598-020-74060-6) in Scientific Reports]
+
+--
+
+.large[Paul Lodder, a grad student at the University of Amsterdam, wanted to expand on the model used by Rubén]
+
+--
+
+.large[Paul reproduced the paper's analysis results before looking into expanding...and got .gray.bg-blue[different results]]
+
+
+> I (Paul) shared my findings with Rubén by writing up a .gray.bg-blue[literate programming report], which allowed me to present my findings in a reproducible manner by including the code that leads to any of the results discussed.
+
+> Because I (Paul) was able to run his code and mine on the same simulated data, it was very clear that the typo caused the results from the paper
+
+???
+
+Full story on [Retraction Watch](https://retractionwatch.com/):
+
+- [A grad student finds a ‘typo’ in a psychedelic study’s script that leads to a retraction](https://retractionwatch.com/2022/10/06/a-grad-student-finds-a-typo-in-a-psychedelic-studys-script-that-leads-to-a-retraction/#more-125759)
+- [‘A display of extreme academic integrity’: A grad student who found a key error praises the original author](https://retractionwatch.com/2022/10/11/a-display-of-extreme-academic-integrity-a-grad-student-who-found-a-key-error-praises-the-original-author/)
+
+
+---
+class: left
+
+### Lessons
+
+.large[.gray.bg-blue[Academic integrity & honesty] through <br/> .gray.bg-blue[transparent and reproducible computational code]]
+
+-   Both collaborated to find out the typo. 
+-   Paper is now retracted, but both are working in a new version of the paper
+-   Science wins!
+
+???
+
+Full story on [Retraction Watch](https://retractionwatch.com/):
+
+- [A grad student finds a ‘typo’ in a psychedelic study’s script that leads to a retraction](https://retractionwatch.com/2022/10/06/a-grad-student-finds-a-typo-in-a-psychedelic-studys-script-that-leads-to-a-retraction/#more-125759)
+- [‘A display of extreme academic integrity’: A grad student who found a key error praises the original author](https://retractionwatch.com/2022/10/11/a-display-of-extreme-academic-integrity-a-grad-student-who-found-a-key-error-praises-the-original-author/)
+
+
+---
+class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
@@ -559,6 +621,7 @@ class: center, middle
 
 ---
 class: left
+
 ### `r cite("nust2021")` - _The inverse problem_
 
 ![](images/nust2021_f1000.gif)

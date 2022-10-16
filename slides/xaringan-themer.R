@@ -26,7 +26,7 @@ xaringanthemer::style_duo(
   header_color = "#1277a7",
   text_color = "#000000",
 
-  # secondar y color
+  # secondary color
   secondary_color = "#1277a7",
   inverse_header_color = "#ffffff",
   inverse_text_color = "#d2d2d2",

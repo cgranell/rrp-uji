@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -49,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -72,16 +74,38 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -106,8 +130,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_meta_tags-->
   
-  <meta name="citation_reference" content="citation_title=Five selfish reasons to work reproducibly;citation_publication_date=2015;citation_volume=16;citation_doi=10.1186/s13059-015-0850-7;citation_author=F Markowetz"/>
-  <meta name="citation_reference" content="citation_title=The turing way: A handbook for reproducible data science;citation_publication_date=2019;citation_publisher=Zenodo;citation_doi=10.5281/zenodo.3233986;citation_author=Becky Arnold;citation_author=Louise Bowler;citation_author=Sarah Gibson;citation_author=Patricia Herterich;citation_author=Rosie Higman;citation_author=Anna Krystalli;citation_author=Alexander Morley;citation_author=Martin OÅ”eilly;citation_author=Kirstie Whitaker;citation_author= al.;citation_author=The turing way: A handbook for reproducible data science"/>
+  <meta name="citation_reference" content="citation_title=Five selfish reasons to work reproducibly;citation_volume=16;citation_doi=10.1186/s13059-015-0850-7;citation_author=F Markowetz"/>
+  <meta name="citation_reference" content="citation_title=The turing way: A handbook for reproducible data science;citation_publisher=Zenodo;citation_doi=10.5281/zenodo.3233986;citation_author=Becky Arnold;citation_author=Louise Bowler;citation_author=Sarah Gibson;citation_author=Patricia Herterich;citation_author=Rosie Higman;citation_author=Anna Krystalli;citation_author=Alexander Morley;citation_author=Martin OŔeilly;citation_author=Kirstie Whitaker;citation_author= al.;citation_author=The turing way: A handbook for reproducible data science"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -458,7 +482,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -789,6 +813,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1030,10 +1055,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1865,7 +1886,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1876,6 +1912,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1975,6 +2036,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1997,7 +2060,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2368,7 +2431,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/fitvids-2.1.1/fitvids.min.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2469,10 +2532,10 @@ Backstage
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#learning-outcomes">Learning outcomes…</a></li>
-<li><a href="#content">Content…</a></li>
-<li><a href="#organisation-materials">Organisation &amp; materials</a></li>
-<li><a href="#assignments">Assignments</a></li>
+<li><a href="#learning-outcomes" id="toc-learning-outcomes">Learning outcomes…</a></li>
+<li><a href="#content" id="toc-content">Content…</a></li>
+<li><a href="#organisation-materials" id="toc-organisation-materials">Organisation &amp; materials</a></li>
+<li><a href="#assignments" id="toc-assignments">Assignments</a></li>
 </ul>
 </nav>
 </div>
@@ -2493,10 +2556,10 @@ Backstage
 <li><p>Of the examples of <a href="personas.html">Learner Personas</a>, with which one do you identify the most, even if it doesn’t quite fit your profile?</p></li>
 <li><p>Review the concepts of reproducibility, replication, and computational reproducibility in <a href="slides/slides11_01.html">Reproducibility: historical notes &amp; concept (slides)</a> <!--and [video](https://drive.google.com/file/d/1Fjd37NPEINIRgCOdmaa892ayG2IRaV7H/view?usp=sharing)-->.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="shareagain" style="min-width:300px;margin:1em auto;">
-    <iframe src="slides/slides11_01.html#title" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
-    <script>fitvids('.shareagain', {players: 'iframe'});</script>
-    </div>
+<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
+<iframe src="slides/slides11_01.html#title" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
 </div></li>
 <li><p>Reflect on the extent to which these terms (<a href="slides/slides11_01.html#matrix_definitions">reproduction, replication, robustness, generalisation</a>) are widespread in your own discipline or area of research. Which is more predominant in your discipline? And in your research? Of the journals you publish or flag-ship journals in your discipline, do they request articles that support computational reproducibility, empirical reproducibility, or statistical reproducibility? (<em>hint</em>: check The Turing Way’s <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">definitions page</a> <span class="citation" data-cites="turingway2019">(<a href="#ref-turingway2019" role="doc-biblioref">The Turing Way Community et al. 2019</a>)</span>).</p></li>
 <li><p>(Optional) If you’re still hesitant to embrace reproducibility, <a href="https://www.youtube.com/watch?v=yVT07Sukv9Q">Five Selfish Reasons to Work Reproducibly by Dr. Florian Markowetz</a>], based his paper <span class="citation" data-cites="markowetz2015">(<a href="#ref-markowetz2015" role="doc-biblioref">Markowetz 2015</a>)</span>, will convince you!</p></li>
@@ -2538,8 +2601,15 @@ The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia He
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
 <p>By Carlos Granell and Sergi Trilles © Copyright 2022.</p>
-<p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
-<p><span style="font-size:0.6rem;"><i class="fas fa-wrench"></i> The site made with the distill R-package <i class="fab fa-r-project"></i> powered by the distill web framework <i class="fab fa-js"></i></span></p>
+<p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This
+work is licensed under a
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License</a>.</p>
+<p><span style="font-size:0.6rem;"><i class="fas fa-wrench"></i> The
+site made with the distill R-package <i class="fab fa-r-project"></i>
+powered by the distill web framework
+<i class="fab fa-js"></i></span></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
