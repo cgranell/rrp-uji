@@ -257,6 +257,7 @@ class: center, middle
 
 
 ---
+name: newton
 class: center
 # Newton vs Flamsteed
 

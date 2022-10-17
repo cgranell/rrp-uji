@@ -202,9 +202,9 @@ Look at the checklist in these guides.
 ---
 class: inverse, center, middle
 
-# \#1
+# .blue.bg-white[\#1]
 
-# One project = One folder
+# ONE project = ONE folder
 
 ---
 class: left
@@ -212,6 +212,7 @@ class: left
 ### What's a project?
 
 .pull-left[
+
 -   .large[an experiment]
 
 -   .large[ideas for future research]
@@ -239,7 +240,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#2
+# .blue.bg-white[\#2]
 
 # Choose your best way to organise a folder 
 
@@ -276,7 +277,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#3
+# .blue.bg-white[\#3]
 
 # Choose a consistent file naming convention 
 
@@ -307,7 +308,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#4
+# .blue.bg-white[\#4]
 
 # Never ever touch raw data
 
@@ -315,7 +316,7 @@ class: inverse, center, middle
 class: left
 ### Raw data
 
-.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#23)]
+.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#newton)]
 
 -   .large[Store raw data permanently (in the `data-raw` folder)]
 
@@ -327,7 +328,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#5
+# .blue.bg-white[\#5]
 
 # Use open data formats
 
@@ -345,7 +346,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#6
+# .blue.bg-white[\#6]
 
 # Avoid "Data (or code) available upon request"
 
@@ -360,7 +361,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#7
+# .blue.bg-white[\#7]
 
 # Be (data) FAIR, my friend
 
@@ -381,7 +382,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#8
+# .blue.bg-white[\#8]
 
 # Document, document, and document
 
@@ -392,7 +393,7 @@ class: left
 
 -   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
 
-  -   If your project is on GitHub, Readme files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
 
 
 -   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
@@ -405,7 +406,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#9 
+# .blue.bg-white[\#9]
 
 # Add a data license
 
@@ -440,7 +441,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#10 
+# .blue.bg-white[\#10]
 
 # Add a software license
 
@@ -479,14 +480,17 @@ class:left
 
 
 ```{r morin2021, out.width ='50%', fig.align='center', echo=FALSE}
-knitr::include_graphics('https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1002598/1/pcbi.1002598.g002.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20220404%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220404T144537Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=06637cf822653f1442d8a0ebd8b40647e15b7bf92a33383161dd7b3a8d5b131cfb324e6cc53804f46d12ca036a66458fb7c894f18f2fb759becf0cdcbe010465c66084a7022b01a5ae640762134b3ecc5e5e5e6a5d339def6fb7b3050b8e8499d0582310a8089d3e55604f8d9b044fe4dd9e3351ea7824aefe06e4614948521b5c13172102f60f9ca42bc56a436c9e9053f0a0b3882f6906dd203fa77dd76fd1c3f1fc7be74d890c57f76d3a4e5ed8a50b92005264e9cfaba4c2bebb6376539afe766998a4fd73b49db5eda4c4ab69fbbb5a73678492a4328ac697fd45cf45263379802cf2b8135ffaf868e3bb405dbd93be602f56ed5a76e8df8d28574b8ff4')
+knitr::include_graphics('https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1002598.g002&type=large')
 ```
 
+???
+
+Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
 ---
 class: inverse, center, middle
 
-# \#11 
+# .blue.bg-white[\#11]
 
 # Report the software version you use
 
@@ -505,7 +509,7 @@ class: inverse, center, middle
 
 # \#12
 
-# Cite the software you use
+# .blue.bg-white[Cite the software you use]
 
 
 ---

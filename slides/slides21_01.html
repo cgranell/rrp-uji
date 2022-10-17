@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x18284e4b3ab4cd095b3d349fff611c1","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xdd3d0985f664f59aa41b94897df1695","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <script src="libs/fabric/fabric.min.js"></script>
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40,"palette":[]}) })</script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -181,7 +181,7 @@ class: left
 
 -   .huge[The Turing Way: A Handbook for Reproducible Data Science .small[&lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
 
--   .large[Reproducible Publications at AGILE Conferences: Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers .small[&lt;a name=cite-nust2020&gt;&lt;/a&gt;[[NÃs+20](https://osf.io/numa5/)]]]
+-   .large[Reproducible Publications at AGILE Conferences: Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers .small[&lt;a name=cite-nust2020&gt;&lt;/a&gt;[[Nus+20](https://osf.io/numa5/)]]]
 
 
 ???
@@ -193,9 +193,9 @@ Look at the checklist in these guides.
 ---
 class: inverse, center, middle
 
-# \#1
+# .blue.bg-white[\#1]
 
-# One project = One folder
+# ONE project = ONE folder
 
 ---
 class: left
@@ -203,6 +203,7 @@ class: left
 ### What's a project?
 
 .pull-left[
+
 -   .large[an experiment]
 
 -   .large[ideas for future research]
@@ -230,7 +231,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#2
+# .blue.bg-white[\#2]
 
 # Choose your best way to organise a folder 
 
@@ -267,7 +268,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#3
+# .blue.bg-white[\#3]
 
 # Choose a consistent file naming convention 
 
@@ -298,7 +299,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#4
+# .blue.bg-white[\#4]
 
 # Never ever touch raw data
 
@@ -306,7 +307,7 @@ class: inverse, center, middle
 class: left
 ### Raw data
 
-.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#23)]
+.huge[Remember [Newton's letter to Flamsteed](https://cgranell.github.io/rrp-uji/slides/slides11_01.html#newton)]
 
 -   .large[Store raw data permanently (in the `data-raw` folder)]
 
@@ -318,7 +319,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#5
+# .blue.bg-white[\#5]
 
 # Use open data formats
 
@@ -336,7 +337,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#6
+# .blue.bg-white[\#6]
 
 # Avoid "Data (or code) available upon request"
 
@@ -351,7 +352,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#7
+# .blue.bg-white[\#7]
 
 # Be (data) FAIR, my friend
 
@@ -372,7 +373,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#8
+# .blue.bg-white[\#8]
 
 # Document, document, and document
 
@@ -383,7 +384,7 @@ class: left
 
 -   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
 
-  -   If your project is on GitHub, Readme files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
 
 
 -   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
@@ -396,7 +397,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#9 
+# .blue.bg-white[\#9]
 
 # Add a data license
 
@@ -431,7 +432,7 @@ class: left
 ---
 class: inverse, center, middle
 
-# \#10 
+# .blue.bg-white[\#10]
 
 # Add a software license
 
@@ -469,13 +470,16 @@ class:left
 ### .small[&lt;a name=cite-morin2012&gt;&lt;/a&gt;[[MUS12](https://doi.org/10.1371/journal.pcbi.1002598)]]: _A Quick Guide to Software Licensing for the Scientist-Programmer_
 
 
-&lt;img src="https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1002598/1/pcbi.1002598.g002.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20220404%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20220404T144537Z&amp;X-Goog-Expires=86400&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=06637cf822653f1442d8a0ebd8b40647e15b7bf92a33383161dd7b3a8d5b131cfb324e6cc53804f46d12ca036a66458fb7c894f18f2fb759becf0cdcbe010465c66084a7022b01a5ae640762134b3ecc5e5e5e6a5d339def6fb7b3050b8e8499d0582310a8089d3e55604f8d9b044fe4dd9e3351ea7824aefe06e4614948521b5c13172102f60f9ca42bc56a436c9e9053f0a0b3882f6906dd203fa77dd76fd1c3f1fc7be74d890c57f76d3a4e5ed8a50b92005264e9cfaba4c2bebb6376539afe766998a4fd73b49db5eda4c4ab69fbbb5a73678492a4328ac697fd45cf45263379802cf2b8135ffaf868e3bb405dbd93be602f56ed5a76e8df8d28574b8ff4" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1002598.g002&amp;type=large" width="50%" style="display: block; margin: auto;" /&gt;
 
+???
+
+Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
 ---
 class: inverse, center, middle
 
-# \#11 
+# .blue.bg-white[\#11]
 
 # Report the software version you use
 
@@ -494,7 +498,7 @@ class: inverse, center, middle
 
 # \#12
 
-# Cite the software you use
+# .blue.bg-white[Cite the software you use]
 
 
 ---
@@ -548,7 +552,7 @@ class: inverse, center, middle
 .tiny[
 &lt;a name=bib-keshav2007&gt;&lt;/a&gt;[Keshav, S.](#cite-keshav2007) (2007). "How
 to Read a Paper". In: _ACM SIGCOMM Computer Communication Review_ 37.3,
-p. 83â€“84. ISSN: 0146-4833. URL:
+p. 83–84. ISSN: 0146-4833. URL:
 [https://doi.org/10.1145/1273445.1273458](https://doi.org/10.1145/1273445.1273458).
 
 &lt;a name=bib-jolly2012&gt;&lt;/a&gt;[Jolly, M, AC Fletcher AC, et
@@ -578,7 +582,7 @@ _Computing in Science Engineering_ 19.4, pp. 44-55. URL:
 (2018). _Data management_. URL:
 [https://www.britishecologicalsociety.org/publications/guides-to/](https://www.britishecologicalsociety.org/publications/guides-to/).
 
-&lt;a name=bib-nust2018_readpaper&gt;&lt;/a&gt;[Nüst, Daniel, Carl Boettiger, et
+&lt;a name=bib-nust2018_readpaper&gt;&lt;/a&gt;[Nust, Daniel, Carl Boettiger, et
 al.](#cite-nust2018_readpaper) (2018). _How to Read a Research
 Compendium_. URL:
 [https://arxiv.org/abs/1806.09525](https://arxiv.org/abs/1806.09525).
@@ -606,7 +610,7 @@ Larrouturou](#cite-barthez2020) (2020). _Passport For Open Science_.
 URL:
 [https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/).
 
-&lt;a name=bib-nust2020&gt;&lt;/a&gt;[Nüst, Daniel, Frank Ostermann, et
+&lt;a name=bib-nust2020&gt;&lt;/a&gt;[Nust, Daniel, Frank Ostermann, et
 al.](#cite-nust2020) (2020). _Reproducible Publications at AGILE
 Conferences: Guidelines for Authors, Scientific Reviewers, and
 Reproducibility Reviewers_. URL:
@@ -660,6 +664,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
