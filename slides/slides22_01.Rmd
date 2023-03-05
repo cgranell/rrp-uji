@@ -3,8 +3,8 @@ title: "Advanced recommendations for reproducible projects"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2022"
-description: "Reproducible Research Practices (RRP'22)"
+date: "March 2022"
+description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "custom.css"]
@@ -68,6 +68,29 @@ source("load_references.r")
 
 .right[`r rmarkdown::metadata$institute`]
 
+
+
+
+---
+class: inverse, center, middle
+
+# .blue.bg-white[\#7]
+
+# Be (data) FAIR, my friend
+
+---
+class: left
+### (data) FAIR 
+
+.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
+
+-   .large[Emphasis on data & metadata documentation]
+
+-   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
+
+<br/>
+
+.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
 
 
 ---
@@ -137,9 +160,41 @@ class: center, middle
 
 ]
 
+
 ---
+name: summary
+class: inverse, center, middle
 
 # Summary
+
+---
+
+1.    .large[One project = One folder]
+
+1.    .large[Choose your best way to organise a folder ]
+
+1.    .large[Choose a consistent file naming convention]
+
+1.    .large[Never ever touch raw data]
+
+1.    .large[Use open data formats]
+
+1.    .large[Avoid "Data (or code) available upon request"]
+
+1.    .large[Document, document, document]
+
+1.    .large[Add a data license]
+
+1.    .large[Add a software license]
+
+1.    .large[Report the software version you use]
+
+1.    .large[Cite the software you use]
+
+
+
+
+
 
 
 ---

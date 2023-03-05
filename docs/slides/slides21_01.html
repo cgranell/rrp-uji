@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xdd3d0985f664f59aa41b94897df1695","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x468d5ca092d4c53a86117e10b300d64","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -38,6 +38,9 @@ background-size: cover--&gt;
 
 
 
+
+
+
 <style>.shareagain-bar {
 --shareagain-foreground: rgb(255, 255, 255);
 --shareagain-background: rgba(0, 0, 0, 0.5);
@@ -56,7 +59,7 @@ background-size: cover--&gt;
 
 ### [2.1] Recomendations and practices
 
-.large[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
+.large[Reproducible Research Practices (RRP'23) &amp;#183; March 2023]
 
 .right[Carlos Granell &amp;#183; Sergi Trilles]
 
@@ -174,12 +177,12 @@ class: left
 # Key guidelines &amp; recommendations
 
 
--   .huge[Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): Reproducible code guide .small[&lt;a name=cite-cooper2019&gt;&lt;/a&gt;[[CH19](https://www.britishecologicalsociety.org/publications/guides-to/)]] and [Data Management] guide .small[&lt;a name=cite-harrison2018&gt;&lt;/a&gt;[[Har18](https://www.britishecologicalsociety.org/publications/guides-to/)]]]
+-   .large[Inspired by British Ecological Society (BES), [guides to better science](https://www.britishecologicalsociety.org/publications/guides-to/): Reproducible code guide .small[&lt;a name=cite-cooper2019&gt;&lt;/a&gt;[[CH19](https://www.britishecologicalsociety.org/publications/guides-to/)]] and Data Management guide .small[&lt;a name=cite-harrison2018&gt;&lt;/a&gt;[[Har18](https://www.britishecologicalsociety.org/publications/guides-to/)]]]
 
 
--   .huge[Passport For Open Science .small[&lt;a name=cite-barthez2020&gt;&lt;/a&gt;[[BL20](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/)]]]
+-   .large[Passport For Open Science .small[&lt;a name=cite-barthez2020&gt;&lt;/a&gt;[[BL20](https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/)]]]
 
--   .huge[The Turing Way: A Handbook for Reproducible Data Science .small[&lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
+-   .large[The Turing Way: A Handbook for Reproducible Data Science .small[&lt;a name=cite-turingway2019&gt;&lt;/a&gt;[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
 
 -   .large[Reproducible Publications at AGILE Conferences: Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers .small[&lt;a name=cite-nust2020&gt;&lt;/a&gt;[[Nus+20](https://osf.io/numa5/)]]]
 
@@ -191,6 +194,7 @@ Look at the checklist in these guides.
 
 
 ---
+name: basic1
 class: inverse, center, middle
 
 # .blue.bg-white[\#1]
@@ -204,7 +208,9 @@ class: left
 
 .pull-left[
 
--   .large[an experiment]
+-   .large[an experiment in a PhD project]
+
+-   .large[master project thesis]
 
 -   .large[ideas for future research]
 
@@ -222,6 +228,8 @@ class: left
 
 -   .large[a conference presentation]
 
+-   .large[a workshop/seminar materials]
+
 -   .large[a book]
 
 -   .large[PhD thesis manuscript]
@@ -229,6 +237,7 @@ class: left
 ]
 
 ---
+name: basic2
 class: inverse, center, middle
 
 # .blue.bg-white[\#2]
@@ -262,10 +271,11 @@ class: left
 
 ]
 
-(See my [folder template](https://github.com/cgranell/rr-template))
+.large[See [example repository structure](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-advanced.html) .small[[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
 
 
 ---
+name: basic3
 class: inverse, center, middle
 
 # .blue.bg-white[\#3]
@@ -297,6 +307,7 @@ class: left
 
 
 ---
+name: basic4
 class: inverse, center, middle
 
 # .blue.bg-white[\#4]
@@ -313,10 +324,11 @@ class: left
 
 -   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
 
--   .large[Document the process such as simple steps and diagrams in a README file]
+-   .large[Document the process such as simple steps and diagrams in a README file (See [\#7](#basic7))]
 
 
 ---
+name: basic5
 class: inverse, center, middle
 
 # .blue.bg-white[\#5]
@@ -335,6 +347,7 @@ class: left
 
 
 ---
+name: basic6
 class: inverse, center, middle
 
 # .blue.bg-white[\#6]
@@ -350,30 +363,10 @@ class: left
 .large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
 
 ---
+name: basic7
 class: inverse, center, middle
 
 # .blue.bg-white[\#7]
-
-# Be (data) FAIR, my friend
-
----
-class: left
-### (data) FAIR 
-
-.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
-
--   .large[Emphasis on data &amp; metadata documentation]
-
--   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
-
-&lt;br/&gt;
-
-.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
-
----
-class: inverse, center, middle
-
-# .blue.bg-white[\#8]
 
 # Document, document, and document
 
@@ -383,6 +376,8 @@ class: left
 
 
 -   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
+
+  -   Suggestions for a good [README](https://www.makeareadme.com/)] and [GitHub's READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
   -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
 
@@ -395,9 +390,10 @@ class: left
 
 
 ---
+name: basic8
 class: inverse, center, middle
 
-# .blue.bg-white[\#9]
+# .blue.bg-white[\#8]
 
 # Add a data license
 
@@ -430,9 +426,10 @@ class: left
 .large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
 
 ---
+name: basic9
 class: inverse, center, middle
 
-# .blue.bg-white[\#10]
+# .blue.bg-white[\#9]
 
 # Add a software license
 
@@ -477,15 +474,18 @@ class:left
 Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
 ---
+name: basic10
 class: inverse, center, middle
 
-# .blue.bg-white[\#11]
+# .blue.bg-white[\#10]
 
 # Report the software version you use
 
 ---
 class: left, top
-### software version
+### Software version
+
+.huge[Specify versions of relevant software components (packages, libraries)]
 
 .huge[A different version can lead to different results!]
 
@@ -494,24 +494,77 @@ class: left, top
 -   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
 
 ---
+name: basic11
 class: inverse, center, middle
 
-# \#12
+# .blue.bg-white[\#11]
 
-# .blue.bg-white[Cite the software you use]
+# Cite the software you use
 
 
 ---
 class: left
 ### Software citation
 
-.huge[Do not use URL as footnotes to report any external library/code/software that you use in a paper]
+.huge[Cite software that's important to the research outcome]
+
+-   .large[[R engine](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)?] 
+
+  - type  `citation()` to get reference publication in bibtex entry
+  - add "All analyses were performed using R Statistical Software (v4.2.2; R Core Team 2022)" to **DASA section**
+
+-   .large[[R packages](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)? It depends...]
+
+  - type `citation("&lt;packageName&gt;")` to get reference publication in bibtex format 
+  - add "Temperature data was obtained from Environment and Climate Change Canada via the `weathercan` R package (v0.6.2; LaZerte and Albers 2018)" to **DASA section**.
+
+
+
+---
+class: left
+### Software citation
+
+.huge[[`report`](https://cran.r-project.org/package=report) R Package]
+
+
+```r
+report::report_system()
+```
+
+```
+## Analyses were conducted using the R Statistical language (version 4.2.2; R Core
+## Team, 2022) on Windows 10 x64 (build 22621)
+```
+
+
+```r
+report::report_packages()
+```
+
+```
+##   - xaringanthemer (version 0.4.2; Aden-Buie G, 2022)
+##   - xaringanExtra (version 0.7.0; Aden-Buie G, Warkentin M, 2022)
+##   - report (version 0.5.6; Makowski D et al., 2023)
+##   - RefManageR (version 1.3.0; McLean MW, 2017)
+##   - here (version 1.0.1; Müller K, 2020)
+##   - R (version 4.2.2; R Core Team, 2022)
+```
+
+
+---
+class: left
+### Software citation
+
+
+.huge[Do not use URL as *footnotes* to cite external library/code/software]
 
 -   .large[Refer to SciPy as a footnote: https://scipy.org/?]
 
 .huge[Cite software as any other paper] .large[.small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]] - _Software citation principles_]
 
 -   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&amp;btnG=)?]
+
+.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
 
 
 ---
@@ -522,27 +575,27 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[One project = One folder]
+1.    .large[[One project = One folder](#basic1)]
 
-1.    .large[Choose your best way to organise a folder ]
+1.    .large[[Choose your best way to organise a folder](#basic2)]
 
-1.    .large[Choose a consistent file naming convention]
+1.    .large[[Choose a consistent file naming convention](#basic3)]
 
-1.    .large[Never ever touch raw data]
+1.    .large[[Never ever touch raw data](#basic4)]
 
-1.    .large[Use open data formats]
+1.    .large[[Use open data formats](#basic5)]
 
-1.    .large[Avoid "Data (or code) available upon request"]
+1.    .large[[Avoid "Data (or code) available upon request"](#basic6)]
 
-1.    .large[Document, document, document]
+1.    .large[[Document, document, document](#basic7)]
 
-1.    .large[Add a data license]
+1.    .large[[Add a data license](#basic8)]
 
-1.    .large[Add a software license]
+1.    .large[[Add a software license](#basic9)]
 
-1.    .large[Report the software version you use]
+1.    .large[[Report the software version you use](#basic10)]
 
-1.    .large[Cite the software you use]
+1.    .large[[Cite the software you use](#basic11)]
 
 
 ---
