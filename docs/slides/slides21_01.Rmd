@@ -1,5 +1,5 @@
 ---
-title: "Basic recommendations for reproducible projects"
+title: "Basic recommendations for open and reproducible research"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
@@ -205,7 +205,7 @@ Look at the checklist in these guides.
 
 
 ---
-name: basic1
+name: b1
 class: inverse, center, middle
 
 # .blue.bg-white[\#1]
@@ -248,7 +248,7 @@ class: left
 ]
 
 ---
-name: basic2
+name: b2
 class: inverse, center, middle
 
 # .blue.bg-white[\#2]
@@ -286,7 +286,7 @@ class: left
 
 
 ---
-name: basic3
+name: b3
 class: inverse, center, middle
 
 # .blue.bg-white[\#3]
@@ -318,7 +318,7 @@ class: left
 
 
 ---
-name: basic4
+name: b4
 class: inverse, center, middle
 
 # .blue.bg-white[\#4]
@@ -335,11 +335,11 @@ class: left
 
 -   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
 
--   .large[Document the process such as simple steps and diagrams in a README file (See [\#7](#basic7))]
+-   .large[Document the process such as simple steps and diagrams in a README file (See [\#7](#b7))]
 
 
 ---
-name: basic5
+name: b5
 class: inverse, center, middle
 
 # .blue.bg-white[\#5]
@@ -358,7 +358,7 @@ class: left
 
 
 ---
-name: basic6
+name: b6
 class: inverse, center, middle
 
 # .blue.bg-white[\#6]
@@ -374,7 +374,7 @@ class: left
 .large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
 
 ---
-name: basic7
+name: b7
 class: inverse, center, middle
 
 # .blue.bg-white[\#7]
@@ -401,7 +401,7 @@ class: left
 
 
 ---
-name: basic8
+name: b8
 class: inverse, center, middle
 
 # .blue.bg-white[\#8]
@@ -437,7 +437,7 @@ class: left
 .large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
 
 ---
-name: basic9
+name: b9
 class: inverse, center, middle
 
 # .blue.bg-white[\#9]
@@ -487,7 +487,7 @@ knitr::include_graphics('https://journals.plos.org/ploscompbiol/article/file?id=
 Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
 ---
-name: basic10
+name: b10
 class: inverse, center, middle
 
 # .blue.bg-white[\#10]
@@ -507,7 +507,7 @@ class: left, top
 -   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
 
 ---
-name: basic11
+name: b11
 class: inverse, center, middle
 
 # .blue.bg-white[\#11]
@@ -572,27 +572,27 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[[One project = One folder](#basic1)]
+1.    .large[[One project = One folder](#b1)]
 
-1.    .large[[Choose your best way to organise a folder](#basic2)]
+1.    .large[[Choose your best way to organise a folder](#b2)]
 
-1.    .large[[Choose a consistent file naming convention](#basic3)]
+1.    .large[[Choose a consistent file naming convention](#b3)]
 
-1.    .large[[Never ever touch raw data](#basic4)]
+1.    .large[[Never ever touch raw data](#b4)]
 
-1.    .large[[Use open data formats](#basic5)]
+1.    .large[[Use open data formats](#b5)]
 
-1.    .large[[Avoid "Data (or code) available upon request"](#basic6)]
+1.    .large[[Avoid "Data (or code) available upon request"](#b6)]
 
-1.    .large[[Document, document, document](#basic7)]
+1.    .large[[Document, document, document](#b7)]
 
-1.    .large[[Add a data license](#basic8)]
+1.    .large[[Add a data license](#b8)]
 
-1.    .large[[Add a software license](#basic9)]
+1.    .large[[Add a software license](#b9)]
 
-1.    .large[[Report the software version you use](#basic10)]
+1.    .large[[Report the software version you use](#b10)]
 
-1.    .large[[Cite the software you use](#basic11)]
+1.    .large[[Cite the software you use](#b11)]
 
 
 ---
