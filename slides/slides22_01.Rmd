@@ -1,5 +1,5 @@
 ---
-title: "Advanced recommendations for reproducible projects"
+title: "Advanced recommendations for open and reproducible research"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
@@ -69,18 +69,79 @@ source("load_references.r")
 .right[`r rmarkdown::metadata$institute`]
 
 
+---
+class: inverse, bottom, middle
+
+## Karl Pooper's *Conjectures and Refutations*
+
+.large["At the core of the scientific method is the attempt to refute or disprove theories"]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
 
 
 ---
+class: left
+
+##  What is the scientific method? (for Popper)
+
+.huge[Science progresses through *conjectures and refutations*]
+
+--
+
+-   .large[Scientists are confronted with some question, and offer a possible answer] 
+
+--
+
+-   .large[The  answer is a *conjecture* initially (is it right or wrong?)]
+
+--
+
+-   .large[Scientists do their best to *refute* this conjecture, or prove it wrong]
+
+--
+
+-   .large[Typically it is refuted, rejected, and replaced by a better one]
+
+--
+
+-   .large[This too will then be tested, and eventually replaced by an even better one]
+
+--
+
+-   .large[If scientists have not been able to refute a theory over a long period of time, despite their best efforts, then the theory has been *corroborated*]
+
+
+???
+
+Source: [Why should we trust science? Because it doesn’t trust itself](https://theconversation.com/why-should-we-trust-science-because-it-doesnt-trust-itself-188988)
+
+
+---
+class: inverse, bottom, middle
+
+## Karl Pooper's *Conjectures and Refutations*
+
+.large[The ideas we can most trust are those that have been the most tried and tested]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+
+
+---
+name: a1
 class: inverse, center, middle
 
-# .blue.bg-white[\#7]
+# .blue.bg-white[\#1]
 
 # Be (data) FAIR, my friend
 
 ---
 class: left
-### (data) FAIR 
+### (Data) FAIR 
 
 .huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
@@ -92,73 +153,154 @@ class: left
 
 .large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
 
+---
+class: left
+### Be (data) FAIR, my friend
+
+https://ieeexplore.ieee.org/document/8816763
+
 
 ---
-class: center, middle
+name: a2
+class: inverse, center, middle
 
-# Use Version Control Systems (VCS)
+# .blue.bg-white[\#2]
+
+# Use open source software whenever possible
+
+---
+class: left
+### Open source software
+
+Use open source software instead of commercial software
+
+---
+name: a3
+class: inverse, center, middle
+
+# .blue.bg-white[\#3]
+
+# Learn/use scripting languages 
+
+---
+class: left
+### Scripting languages 
+
+https://ieeexplore.ieee.org/document/9153295
+
+Play with numbers, measure & explore data, distrust of your intuition
 
 
 ---
+name: a4
+class: inverse, center, middle
 
-# .center[Version Control Systems] 
+# .blue.bg-white[\#4]
 
-.pull-left[
+# Learn/use computational notebook formats
 
-### Turn you project folder into a local version control repository
+---
+class:left 
+### Computational notebook formats
 
-- to keep track changes of your work
+jupyter, rmarkdown, quarto
 
-- to provide a complete historical log of your project 
 
-- to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word). 
+---
+name: a5
+class: inverse, center, middle
+
+# .blue.bg-white[\#5]
+
+# Learn/use version control systems
+
+
+---
+class: left
+### Version control systems
+
+.huge[Turn you project folder into a local version control repository]
+
+-   .large[to keep track changes of your work]
+
+-   .large[to provide a complete historical log of your project]
+
+-   .large[to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word)] 
+
+---
+class: left
+### Version control systems
   
-]
+.huge[Tools]: 
 
-.pull-right[
-### Tools: 
+-   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
 
-- SVN, Mercurial, [Git](https://git-scm.com/)
+.huge[Readings]: 
 
-### Additional readings: 
-
-- [Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-- [An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/) 
-
-- `r cite("perez2016")`, `r cite("bryan2020")`
-
-]
+-   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
+-   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
+-   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
 
 ---
-class: center, middle
+name: a6
+class: inverse, center, middle
 
-# Use online code repositories services
+# .blue.bg-white[\#6]
+
+# Use online (Git) repository hosting services
 
 ---
+class: left
+### Online (Git) repository hosting services
 
-# .center[Online code repositories services] 
+.huge[Easier for individuals and teams to use Git for version control and collaboration]
 
-.pull-left[
+-   .large[VCS + collaborative features + development support features]
 
-### Web-based platform for hosting code repositories
+.huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
 
-- VCS + collaborative features
+.huge[Readings]: 
 
-]
+-   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
 
-.pull-right[
-### Tools: 
+-   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
 
-- [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)
+---
+name: a6
+class: inverse, center, middle
 
-### Additional readings: 
+# .blue.bg-white[\#6]
 
-- [Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)
+# Learn/use containerisation tools
 
-- `r cite("perez2016")`, `r cite("bryan2020")`
 
-]
+---
+class: left
+### Containerisation tools
+
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Be (software) FAIR, my friend
+
+---
+class: left
+### (Software) FAIR
+
+https://www.nature.com/articles/s41597-022-01710-x
+
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Make use of *Make*
 
 
 ---
@@ -169,32 +311,23 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[One project = One folder]
+1.    .large[Be (data) FAIR, my friend]
 
-1.    .large[Choose your best way to organise a folder ]
+1.    .large[Use open source software whenever possible]
 
-1.    .large[Choose a consistent file naming convention]
+1.    .large[Learn/use scripting languages]
 
-1.    .large[Never ever touch raw data]
+1.    .large[Learn/use computational notebook formats]
 
-1.    .large[Use open data formats]
+1.    .large[Learn/use version control (Git)]
 
-1.    .large[Avoid "Data (or code) available upon request"]
+1.    .large[Use online repository hosting services]
 
-1.    .large[Document, document, document]
+1.    .large[Learn/use containerisation tools]
 
-1.    .large[Add a data license]
+1.    .large[Be (software) FAIR, my friend]
 
-1.    .large[Add a software license]
-
-1.    .large[Report the software version you use]
-
-1.    .large[Cite the software you use]
-
-
-
-
-
+1.    .large[Make use of *Make*]
 
 
 ---

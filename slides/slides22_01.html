@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Advanced recommendations for open and reproducible research</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Carlos Granell" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xdba4fe8b0854c1297ca3f38feab990e","expires":14}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40,"palette":[]}) })</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+name: title
+class: Left, middle
+
+
+
+
+<style>.shareagain-bar {
+--shareagain-foreground: rgb(255, 255, 255);
+--shareagain-background: rgba(0, 0, 0, 0.5);
+--shareagain-facebook: none;
+--shareagain-pinterest: none;
+--shareagain-reddit: none;
+}</style>
+
+
+
+
+
+
+
+# Advanced recommendations for open and reproducible research
+
+### [2.1] Recomendations and practices
+
+.large[Reproducible Research Practices (RRP'23) &amp;#183; March 2022]
+
+.right[Carlos Granell &amp;#183; Sergi Trilles]
+
+.right[Universitat Jaume I]
+
+
+---
+class: inverse, bottom, middle
+
+## Karl Pooper's *Conjectures and Refutations*
+
+.large["At the core of the scientific method is the attempt to refute or disprove theories"]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+
+---
+class: left
+
+##  What is the scientific method? (for Popper)
+
+.huge[Science progresses through *conjectures and refutations*]
+
+--
+
+-   .large[Scientists are confronted with some question, and offer a possible answer] 
+
+--
+
+-   .large[The  answer is a *conjecture* initially (is it right or wrong?)]
+
+--
+
+-   .large[Scientists do their best to *refute* this conjecture, or prove it wrong]
+
+--
+
+-   .large[Typically it is refuted, rejected, and replaced by a better one]
+
+--
+
+-   .large[This too will then be tested, and eventually replaced by an even better one]
+
+--
+
+-   .large[If scientists have not been able to refute a theory over a long period of time, despite their best efforts, then the theory has been *corroborated*]
+
+
+???
+
+Source: [Why should we trust science? Because it doesn’t trust itself](https://theconversation.com/why-should-we-trust-science-because-it-doesnt-trust-itself-188988)
+
+
+---
+class: inverse, bottom, middle
+
+## Karl Pooper's *Conjectures and Refutations*
+
+.large[The ideas we can most trust are those that have been the most tried and tested]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+
+
+---
+name: a1
+class: inverse, center, middle
+
+# .blue.bg-white[\#1]
+
+# Be (data) FAIR, my friend
+
+---
+class: left
+### (Data) FAIR 
+
+.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
+
+-   .large[Emphasis on data &amp; metadata documentation]
+
+-   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
+
+&lt;br/&gt;
+
+.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+
+---
+class: left
+### Be (data) FAIR, my friend
+
+https://ieeexplore.ieee.org/document/8816763
+
+
+---
+name: a2
+class: inverse, center, middle
+
+# .blue.bg-white[\#2]
+
+# Use open source software whenever possible
+
+---
+class: left
+### Open source software
+
+Use open source software instead of commercial software
+
+---
+name: a3
+class: inverse, center, middle
+
+# .blue.bg-white[\#3]
+
+# Learn/use scripting languages 
+
+---
+class: left
+### Scripting languages 
+
+https://ieeexplore.ieee.org/document/9153295
+
+Play with numbers, measure &amp; explore data, distrust of your intuition
+
+
+---
+name: a4
+class: inverse, center, middle
+
+# .blue.bg-white[\#4]
+
+# Learn/use computational notebook formats
+
+---
+class:left 
+### Computational notebook formats
+
+jupyter, rmarkdown, quarto
+
+
+---
+name: a5
+class: inverse, center, middle
+
+# .blue.bg-white[\#5]
+
+# Learn/use version control systems
+
+
+---
+class: left
+### Version control systems
+
+.huge[Turn you project folder into a local version control repository]
+
+-   .large[to keep track changes of your work]
+
+-   .large[to provide a complete historical log of your project]
+
+-   .large[to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word)] 
+
+---
+class: left
+### Version control systems
+  
+.huge[Tools]: 
+
+-   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
+
+.huge[Readings]: 
+
+-   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
+-   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
+-   .large[.small[&lt;a name=cite-perez2016&gt;&lt;/a&gt;[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)]], .small[&lt;a name=cite-bryan2020&gt;&lt;/a&gt;[[BH20](https://happygitwithr.com/)]]]
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Use online (Git) repository hosting services
+
+---
+class: left
+### Online (Git) repository hosting services
+
+.huge[Easier for individuals and teams to use Git for version control and collaboration]
+
+-   .large[VCS + collaborative features + development support features]
+
+.huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
+
+.huge[Readings]: 
+
+-   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
+
+-   .large[.small[[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)]], .small[[[BH20](https://happygitwithr.com/)]]]
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Learn/use containerisation tools
+
+
+---
+class: left
+### Containerisation tools
+
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Be (software) FAIR, my friend
+
+---
+class: left
+### (Software) FAIR
+
+https://www.nature.com/articles/s41597-022-01710-x
+
+
+---
+name: a6
+class: inverse, center, middle
+
+# .blue.bg-white[\#6]
+
+# Make use of *Make*
+
+
+---
+name: summary
+class: inverse, center, middle
+
+# Summary
+
+---
+
+1.    .large[Be (data) FAIR, my friend]
+
+1.    .large[Use open source software whenever possible]
+
+1.    .large[Learn/use scripting languages]
+
+1.    .large[Learn/use computational notebook formats]
+
+1.    .large[Learn/use version control (Git)]
+
+1.    .large[Use online repository hosting services]
+
+1.    .large[Learn/use containerisation tools]
+
+1.    .large[Be (software) FAIR, my friend]
+
+1.    .large[Make use of *Make*]
+
+
+---
+
+# References
+
+.tiny[
+&lt;a name=bib-perez2016&gt;&lt;/a&gt;[Perez-Riverol, Y, L Gatto, et
+al.](#cite-perez2016) (2016). "Ten simple rules for taking advantage of
+Git and GitHub". In: _PLoS computational biology_ 12.7. URL:
+[https://doi.org/10.1371/journal.pcbi.1004947](https://doi.org/10.1371/journal.pcbi.1004947).
+
+&lt;a name=bib-bryan2020&gt;&lt;/a&gt;[Bryan, Jenny and Jim
+Hester](#cite-bryan2020) (2020). _Happy Git and GitHub for the useR_.
+URL: [https://happygitwithr.com/](https://happygitwithr.com/).
+]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
