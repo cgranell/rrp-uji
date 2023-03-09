@@ -29,7 +29,7 @@ We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We co
 
 -   Scene 2: [Advanced recommendations](scene22.html)
 
--   Scene 3: [AGILE Guidelines for reproduclbe papers](scene23.html)
+-   Scene 3: [AGILE Guidelines for reproducible papers](scene23.html)
 
 ## Act III: Literate programming & notebooks
 
@@ -37,7 +37,7 @@ We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
 -   Scene 1: [Literate programming y markdown](scene31.html)
 
--   Scene 2: [Quarto: an open-source scientific and technical publishing system]()
+-   Scene 2: [Quarto: an open-source scientific and technical publishing system](scene32.html)
 
 -   Scene 3: Tools
 

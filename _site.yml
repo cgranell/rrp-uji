@@ -48,10 +48,12 @@ navbar:
         - text: "II.2 Advanced recommendations"
           href: scene22.html
         - text: "II.3 AGILE Guidelines"
-          href: scene22.html
+          href: scene23.html
         - text: "---"
         - text: "III.1 Literate programming & Markdown"
           href: scene31.html
+        - text: "III.2 Quarto"
+          href: scene32.html
     - text: "Backstage"
       menu:
         - text: "Repro plan (pdf)"

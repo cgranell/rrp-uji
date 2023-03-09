@@ -1,0 +1,36 @@
+---
+title: "Act III &#183; Literate programming & notebooks"
+description: |
+  Scene 2 &#183; Quarto: an open-source scientific and technical publishing system
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Learning outcomes...
+
+-   [RRP07] **Understand** the value of combining questions, source code and outcomes.
+
+## Content...
+
+-   We difference between `knitr`, R Markdown, and Quarto
+
+-   We introduce practical uses of Quarto to generate static documents, websites, blogs, and presentations
+
+-   We introduce how Quarto can be used for research and teaching
+
+## Organisation & materials
+
+**[Estimated time: 2 hours]**
+
+
+[Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) and it's the next-generation of  [RMarkdown](https://rmarkdown.rstudio.com/).
+
+We rely on the excellent [rstudio::conf 2022 Workshop - Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock, to learn the wide range of features that Quarto offers to produce elegantly formatted document adn content.
+
+
+## Assignments
+
+

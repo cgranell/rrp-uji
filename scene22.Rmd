@@ -1,7 +1,7 @@
 ---
 title: "Act II &#183; Recommendations and practices"
 description: |
-  Scene 1 &#183; Advanced recomendations
+  Scene 2 &#183; Advanced recomendations
 bibliography: references.bib
 ---
 
