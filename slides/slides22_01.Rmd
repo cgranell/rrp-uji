@@ -74,61 +74,11 @@ class: inverse, bottom, middle
 
 ## Karl Pooper's *Conjectures and Refutations*
 
-.large["At the core of the scientific method is the attempt to refute or disprove theories"]
-
-???
-
-[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
-
-
----
-class: left
-
-##  What is the scientific method? (for Popper)
-
-.huge[Science progresses through *conjectures and refutations*]
-
---
-
--   .large[Scientists are confronted with some question, and offer a possible answer] 
-
---
-
--   .large[The  answer is a *conjecture* initially (is it right or wrong?)]
-
---
-
--   .large[Scientists do their best to *refute* this conjecture, or prove it wrong]
-
---
-
--   .large[Typically it is refuted, rejected, and replaced by a better one]
-
---
-
--   .large[This too will then be tested, and eventually replaced by an even better one]
-
---
-
--   .large[If scientists have not been able to refute a theory over a long period of time, despite their best efforts, then the theory has been *corroborated*]
-
-
-???
-
-Source: [Why should we trust science? Because it doesn’t trust itself](https://theconversation.com/why-should-we-trust-science-because-it-doesnt-trust-itself-188988)
-
-
----
-class: inverse, bottom, middle
-
-## Karl Pooper's *Conjectures and Refutations*
-
 .large[The ideas we can most trust are those that have been the most tried and tested]
 
 ???
 
 [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
-
 
 
 ---

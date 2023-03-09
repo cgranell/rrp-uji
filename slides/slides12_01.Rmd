@@ -3,8 +3,8 @@ title: "PhD thesis meets reproducibility"
 subtitle: "[1.2] Reproducibility criteria"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2022"
-description: "Reproducible Research Practices (RRP'22)"
+date: "April 2023"
+description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "custom.css"]
@@ -82,6 +82,57 @@ class: inverse, bottom, middle
 ## You can't guarantee success,
 
 .large[but you can guarantee failure: never try.]
+
+
+---
+class: left, center
+# Objectives of scientific research
+
+--
+
+.huge[Discover laws, axioms, rules, etc. and describe under which conditions they apply]
+
+--
+
+.huge[Conduct case studies to prove a general principle or theory]
+
+--
+
+.huge[Transfer/publish results to prove validity, veracity, trust in findings]
+
+--
+
+> One of the pathways by which scientists confirm the validity of a new
+finding or discovery is by repeating the research that produced it.
+
+
+> Observed inconsistency may be an important precursor to new discovery while 
+others fear it may be a symptom of a lack of rigor in science
+
+
+---
+
+# Reproducibility involves the .gray.bg-blue[ORIGINAL] data and code
+
+-   .large[check the published manuscript,]
+
+-   .large[look for published data and code, then]
+
+-   .large[compare the results of that data and code to the published results]
+
+-   .large[if they are the same, the study is reproducible; otherwise, it is not]
+
+---
+
+# Replicability involves .gray.bg-blue[NEW] data collection and/or methods
+
+-   .large[Replication is to test for consistency with previous results of a similar study]
+
+-   .large[Replication is to advance theory by confronting existing understanding with new evidence] `r cite("nosek2020")` 
+
+-   .large[Replication is accumulated evidence] (way to plan a PhD project?)
+
+-   .large[Even when a paper is computationally reproducible, it *may fail* to be replicated]
 
 
 ---

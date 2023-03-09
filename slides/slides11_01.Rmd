@@ -3,8 +3,8 @@ title: "Reproducibility: historical notes & concept"
 subtitle: "[1.1] Reproducibility & replicability"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2022"
-description: "Reproducible Research Practices (RRP'22)"
+date: "April 2023"
+description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "custom.css"]
@@ -88,47 +88,87 @@ class: inverse, center, middle
 # Reproducibility in Science
 
 ---
-class: center
-# Reproducibility in Science
+class: left
+# Should we trust science?
 
-.huge[Doubt is inherently human and we (scientists) always have doubts!]
-
---
-
-.large[Well, that doesn’t mean it’s OK to keep questioning climate change, evolution, and the power of vaccines...]
-
----
-class: center
-# Advancing science and knowledge requires
-
+.huge[Doubt is inherently human and we (scientists) also have doubts!]
 
 --
 
-.large[Openness]
+.huge[Karl Pooper's *Conjectures and Refutations*]
 
---
+> .large["At the core of the scientific method is the attempt to refute or disprove theories"]
 
-.large[Transparency]
 
---
-
-.large[Honesty]
-
---
-
-.large[Reproduction]
-
---
-
-.large[Cumulative evidence (replication)]
-
---
-
-.huge.gray.bg-blue[It's all about the SCIENTIFIC METHOD!]
 
 ???
 
-So, reproducibility is an integral part of the scientific method. 
+By default, we (scientists) doubt everything.
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+
+---
+class: left
+
+#  What is the scientific method?
+
+.huge[Science progresses through *conjectures and refutations*]
+
+--
+
+-   .large[Scientists are confronted with some question, and offer a possible answer] 
+
+--
+
+-   .large[The  answer is a .gray.bg-blue[conjecture] initially (is it right or wrong?)]
+
+--
+
+-   .large[Scientists do their best to .gray.bg-blue[refute] this conjecture, or prove it wrong]
+
+--
+
+-   .large[Typically it is refuted, rejected, and replaced by a better one]
+
+--
+
+-   .large[This too will then be tested, and eventually replaced by an even better one]
+
+--
+
+-   .large[If scientists have not been able to refute a theory over a long period of time, despite their best efforts, then the theory has been .gray.bg-blue[corroborated]]
+
+
+???
+
+Source: [Why should we trust science? Because it doesn’t trust itself](https://theconversation.com/why-should-we-trust-science-because-it-doesnt-trust-itself-188988)
+
+
+---
+class: left
+
+# Advancing science and knowledge...
+
+--
+
+.huge[... is all about the scientific method!]
+
+-   .large[Openness, Transparency, Honesty, Integrity, Reproduction (test), Replication (cumulative evidence)]
+
+--
+
+.huge[For Pooper, the ideas we can most trust are those that have been the most .blue[tried and tested]]
+
+--
+
+.huge[So, .blue[reproduction & replication] are integral parts of the scientific method]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+
 
 ---
 class: inverse, center, middle
@@ -139,7 +179,7 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## .gray.bg-blue[Let's go back to the 17th century...]
+## Let's go back to the .gray.bg-blue[ 17th century...]
 
 
 ---
@@ -169,7 +209,7 @@ class: center, middle
 
 <br/><br/><br/><br/>
 
-.huge[Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility adn the experiemental science...]
+.huge[Boyle's [air-pump](https://en.wikipedia.org/wiki/Air_pump) was one of the first documented disputes over reproducibility and the experimental science...]
 
 ]
 
@@ -281,21 +321,57 @@ class: inverse, center, middle
 
 # Is reproducibility a new problem?
 
+---
+class: center, middle
+
+## Let's go back to the .gray.bg-blue[19th century]
+
+
+---
+class: left
+# The case of Arman Fizeau 
+
+.pull-left[
+
+.center[
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Armand_Hippolyte_Louis_Fizeau_by_Eug%C3%A8ne_Pirou_-_Original.jpg/480px-Armand_Hippolyte_Louis_Fizeau_by_Eug%C3%A8ne_Pirou_-_Original.jpg" width="40%"/>
+
+[Armand Fizeau](https://en.wikipedia.org/wiki/Hippolyte_Fizeau)]
+
+]
+
+.pull-right[
+
+-   .large[Experimental physicist in Paris]
+
+-   .large[His speciality was refining and confirming other people's results]
+
+-   .large[This is the soul of science because there is no such thing as a fact that cannot be independently corroborated]
+
+
+]
+
+.center.huge[[How simple ideas lead to scientific discoveries](https://www.youtube.com/watch?v=F8UFGu2M2gM)]
+
+---
+class: inverse, center, middle
+
+# Is reproducibility a new problem?
 
 ---
 class: center, middle
 
-## .gray.bg-blue[Let's go back to 40 years ago, with the birth of personal computers...]
+## Let's go back to .gray.bg-blue[40 years ago], with the birth of personal computers...
 
 
 ---
 class: left
 
-### `r cite("knuth1984")` - Literate programming (Act III)
+# Literate programming `r cite("knuth1984")`
 
 .pull-left[
 
-.huge[[Like prose & code](http://www.literateprogramming.com/)] 
+.huge[[Prose & code together](http://www.literateprogramming.com/)] 
 
 -   .large[Code embedded within the program's documentation as opposed to documentation embedded within code.]
 
@@ -315,7 +391,7 @@ knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/4/4f/Knu
 
 
 ---
-### Dynamic documentation (Act III)
+# Dynamic documentation (Act III)
 
 .large[.gray.bg-blue[constant change]: anytime that the underlying data, analysis, or code change, the report itself is automatically updated]
 
@@ -351,7 +427,7 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## .gray.bg-blue[Let's go back to 30 years ago, with the birth of the Web...]
+## Let's go back to .gray.bg-blue[30 years ago], with the birth of the Web...
 
 
 ---
@@ -384,6 +460,7 @@ class: left
 ]
 
 .pull-right[
+
 ```{r claerbout1992, out.width ='60%', fig.align='center', echo=FALSE}
 knitr::include_graphics('images/Claerbout92.png')
 ```
@@ -400,7 +477,7 @@ class: inverse, center, middle
 ---
 class: center, middle
 
-## .gray.bg-blue[Let's go back to Sep 15, 2022]
+## Let's go back to .gray.bg-blue[Sep 15, 2022]
 
 
 ---
@@ -436,11 +513,11 @@ class: left
 
 ### Lessons
 
-.large[.gray.bg-blue[Academic integrity & honesty] through <br/> .gray.bg-blue[transparent and reproducible computational code]]
+.huge[.gray.bg-blue[Academic integrity & honesty] through <br/> .gray.bg-blue[transparent and reproducible computational code]]
 
--   Both collaborated to find out the typo. 
--   Paper is now retracted, but both are working in a new version of the paper
--   Science wins!
+-   .large[Both collaborated to find out the typo]
+-   .large[Paper is now retracted, but both are working in a new version of the paper]
+-   .large[Science wins!]
 
 ???
 
@@ -459,7 +536,7 @@ class: inverse, center, middle
 class: center, middle
 
 
-## No, it is not .gray.bg-blue[NEW], but it .gray.bg-blue[IS] still a problem.
+## No, it is not .gray.bg-blue[NEW], but it .gray.bg-blue[IS still a problem].
 
 ---
 class: left, bottom
@@ -475,13 +552,13 @@ class: left
 
 .huge[Assessed 500 papers]
 
--   .large[149 not subject to any data availability policy]
+-   .large[149 did not subject to any data availability policy]
 
 -   .large[208 did not adhere to data availability instructions]
 
 -   .large[143 adhered to minimum requirements]
 
--   .large[47 deposited full primary data] ~9%
+-   .large[47 deposited full primary data (~9%)] 
 
 
 ---
@@ -503,7 +580,8 @@ knitr::include_graphics('images/replicatation-graphic-b.png')
 
 
 ---
-### .center[Reproducibility issues are well covered...]
+class: left
+### Reproducibility issues are well covered...
 
 
 -   .large[in __science studies__ in general, across various disciplines] `r cite("ioannidis2005")`: _`r title("ioannidis2005")`_
@@ -556,11 +634,11 @@ class: left
 
 ### `r cite("fanelli2018")` -  _`r title("fanelli2018")`_
 
-.huge[“science is in crisis” narrative is wrong?]
+.huge[Is “science is in crisis” narrative wrong?]
 
 --
 
-> The new “science is in crisis” narrative is not only empirically unsupported, but also quite obviously counterproductive. Instead of inspiring younger generations to do more and better science, it might foster in them cynicism and indifference. Instead of inviting greater respect for and investment in research, it risks discrediting the value of evidence and feeding antiscientific agendas.
+> .large[The new “science is in crisis” narrative is not only empirically unsupported, but also quite obviously counterproductive. Instead of inspiring younger generations to do more and better science, it might foster in them cynicism and indifference. Instead of inviting greater respect for and investment in research, it risks discrediting the value of evidence and feeding antiscientific agendas.]
 
 ---
 class: left,
@@ -569,38 +647,12 @@ class: left,
 
 .huge[“science is in crisis” narrative is wrong?]
 
-> Therefore, contemporary science could be more accurately portrayed as facing “new opportunities and challenges” or even a “revolution”. .gray.bg-blue[Efforts to promote transparency and reproducibility would find complete justification in such a narrative of transformation and empowerment], a narrative that is not only more compelling and inspiring than that of a crisis, but also better supported by evidence.
+> .large[Therefore, contemporary science could be more accurately portrayed as facing “new opportunities and challenges” or even a “revolution”. .gray.bg-blue[Efforts to promote transparency and reproducibility would find complete justification in such a narrative of transformation and empowerment], a narrative that is not only more compelling and inspiring than that of a crisis, but also better supported by evidence.]
 
 ---
 class: inverse, center, middle
 
 # The concept of reproduction 
-
----
-class: left, center
-# Objectives of scientific research
-
---
-
-.huge[Discover laws, axioms, rules, etc. and describe under which conditions they apply]
-
---
-
-.huge[Conduct case studies to prove a general principle or theory]
-
---
-
-.huge[Transfer/publish results to prove validity, veracity, trust in findings]
-
---
-
-> One of the pathways by which scientists confirm the validity of a new
-finding or discovery is by repeating the research that produced it.
-
-
-> Observed inconsistency may be an important precursor to new discovery while 
-others fear it may be a symptom of a lack of rigor in science
-
 
 
 ---
@@ -612,12 +664,12 @@ class: left
 
 -   .huge[Many and diverse .gray.bg-blue[computational] sciences (bio-informatics, geophysics, material science, fluid mechanics, climate modelling, computational chemistry, ...)] `r cite("barba2021")`
 
--   .huge[if results are produced by complex .gray.bg-blue[computational] processes...] 
+-   .huge[As results are increasingly produced by complex .gray.bg-blue[computational] processes...] 
 
 ---
 class: center, middle
 
-## ...the .gray.bg-blue[methods] section of a scientific paper <br/> is .gray.bg-blue[no longer sufficient]
+## ...the traditional .gray.bg-blue[methods] section <br/> of a scientific paper is <br/> .gray.bg-blue[no longer sufficient]
 
 
 ---
@@ -635,12 +687,12 @@ class: left
 
 .pull-left[
 
--   .large['Show me' = ‘help me if you can’]
+-   .large['Show me' = help me if you can]
 
 > "If I say: ‘here’s my work’ and it’s wrong, I might have erred, but at least I am honest". 
 
 
--   .large[not 'trust me' = not ‘catch me if you can’]
+-   .large['Trust me' = catch me if you can]
 
 > "If I publish a paper long on results but short on methods, and it’s wrong, that makes me untrustworthy." 
 
@@ -741,33 +793,15 @@ knitr::include_graphics('images/spectrumreproducibility.jpg')
 Linked to criteria assessment of reproducibility
 
 ---
-class: inverse, center, middle
+class: left, middle
 
 # Summary
 
----
 
-# .center[Reproducibility involves the .gray.bg-blue[ORIGINAL] data and code]
+.huge[Reproducibility involves the .gray.bg-blue[ORIGINAL] data and code]
 
--   .large[checking the published manuscript,]
 
--   .large[looking for published data and code, then]
-
--   .large[comparing the results of that data and code to the published results]
-
--   .large[if they are the same, the study is reproducible; otherwise, it is not]
-
----
-
-# .center[Replicability involves .gray.bg-blue[NEW] data collection and/or methods]
-
--   .large[Replication is to test for consistency with previous results of a similar study]
-
--   .large[Replication is to advance theory by confronting existing understanding with new evidence] `r cite("nosek2020")` 
-
--   .large[Replication is accumulated evidence] (way to plan a PhD project?)
-
--   .large[Even when a paper is computationally reproducible, it *may fail* to be replicated]
+.huge[Replicability involves .gray.bg-blue[NEW] data and/or methods]
 
 
 ---
