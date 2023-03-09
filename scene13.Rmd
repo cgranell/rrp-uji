@@ -1,0 +1,38 @@
+---
+title: "Act I &#183; Setting the stage"
+description: |
+  Scene 2 &#183; Pre-reproducibility assessment
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##  Learning outcomes...
+
+-   [RRP03] **Describe and distinguish** the reproducibility criteria.
+
+-   [RRP04] **Assess** participants' own own research papers or scientific writings according to the reproducibility criteria.
+
+## Content...
+
+-   We identify resources that are part of the scientific process, beyond the published scientific article.
+
+-   We characterise these resources according to reproducibility criteria.
+
+-   We use and interpret correctly the levels associated with each criterion.
+
+
+## Organisation & materials
+
+**[Estimated time: 2 hours]**
+
+1.  If you are very interested in a paper, you want to understand the inner aspects pretty well. So, you give reproducibility a try. It is then advisable to assess first the level of [pre-reproducibility of a paper](slides/slides13_01.pdf) before attempting a real reproduction.
+
+2.  Read the first three sections (*Introduction, Related Work, Materials & Methods*) of the following paper [@nust2018], where a set of criteria are proposed to evaluate the degree of reproducibility of an article. (If motivated, you can also read the section 3.1 of the paper [@ostermann2021].) Pay attention to [figure 2](https://doi.org/10.7717/peerj.5072/fig-2), which outlines the levels for each of the reproducibility criteria. You should familiarise yourself with these criteria and their levels to carry out the first activity of the *Reproduction Plan*.
+
+## Assignments
+
+-   To begin with the **Reproduction Plan**, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA *Not Applicable*, 0 *Unavailable*, 1 *Documented*, 2 *Available*, 3 *Available and Open*) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.
+  

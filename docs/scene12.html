@@ -86,32 +86,11 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-<style>
-  div.csl-bib-body { }
-  div.csl-entry {
-    clear: both;
-    }
-  .hanging div.csl-entry {
-    margin-left:2em;
-    text-indent:-2em;
-  }
-  div.csl-left-margin {
-    min-width:2em;
-    float:left;
-  }
-  div.csl-right-inline {
-    margin-left:2em;
-    padding-left:1em;
-  }
-  div.csl-indent {
-    margin-left: 2em;
-  }
-</style>
 
   <!--radix_placeholder_meta_tags-->
   <title>Reproducible Research Practices'23: Act I &amp;#183; Setting the stage</title>
 
-  <meta property="description" itemprop="description" content="Scene 2 &amp;#183; Reproducibility criteria"/>
+  <meta property="description" itemprop="description" content="Scene 2 &amp;#183; PhD meets open science"/>
 
   <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
 
@@ -119,23 +98,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Reproducible Research Practices&#39;23: Act I &amp;#183; Setting the stage"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Scene 2 &amp;#183; Reproducibility criteria"/>
+  <meta property="og:description" content="Scene 2 &amp;#183; PhD meets open science"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Reproducible Research Practices&#39;23"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Reproducible Research Practices&#39;23: Act I &amp;#183; Setting the stage"/>
-  <meta property="twitter:description" content="Scene 2 &amp;#183; Reproducibility criteria"/>
+  <meta property="twitter:description" content="Scene 2 &amp;#183; PhD meets open science"/>
 
   <!--/radix_placeholder_meta_tags-->
   
-  <meta name="citation_reference" content="citation_title=Reproducible research and GIScience: An evaluation using AGILE conference papers;citation_volume=6;citation_doi=10.7717/peerj.5072;citation_author=Daniel Nust;citation_author=C Granell;citation_author=B Hofer;citation_author=M Konkol;citation_author=FO Ostermann;citation_author=R Sileryte;citation_author=V Cerutti"/>
-  <meta name="citation_reference" content="citation_title=Reproducible Research and GIScience: An Evaluation Using GIScience Conference Papers;citation_publisher=Schloss Dagstuhl – Leibniz-Zentrum für Informatik;citation_volume=208;citation_doi=10.4230/LIPIcs.GIScience.2021.II.2;citation_author=Frank O. Ostermann;citation_author=Daniel Nüst;citation_author=Carlos Granell;citation_author=Barbara Hofer;citation_author=Markus Konkol"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Act I &#183; Setting the stage"]},{"type":"character","attributes":{},"value":["Scene 2 &#183; Reproducibility criteria\n"]},{"type":"character","attributes":{},"value":["references.bib"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Act I &#183; Setting the stage"]},{"type":"character","attributes":{},"value":["Scene 2 &#183; PhD meets open science\n"]},{"type":"character","attributes":{},"value":["references.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2452,7 +2429,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Act I &#183; Setting the stage","description":"Scene 2 &#183; Reproducibility criteria","authors":[]}
+{"title":"Act I &#183; Setting the stage","description":"Scene 2 &#183; PhD meets open science","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2489,10 +2466,12 @@ Stage
 </button>
 <div class="nav-dropdown-content">
 <a href="scene11.html">I.1 Reproduction &amp; replication</a>
-<a href="scene12.html">I.2 Assessment criteria</a>
+<a href="scene12.html">I.2 PhD meets open science</a>
+<a href="scene13.html">I.3 Pre-reproducibility assessment</a>
 <hr/>
 <a href="scene21.html">II.1 Basic recommendations</a>
 <a href="scene22.html">II.2 Advanced recommendations</a>
+<a href="scene22.html">II.3 AGILE Guidelines</a>
 <hr/>
 <a href="scene31.html">III.1 Literate programming &amp; Markdown</a>
 </div>
@@ -2524,7 +2503,7 @@ Backstage
 <h1>Act I · Setting the stage</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Scene 2 · Reproducibility criteria</p></p>
+<p><p>Scene 2 · PhD meets open science</p></p>
 </div>
 
 
@@ -2542,56 +2521,38 @@ Backstage
 </div>
 <h2 id="learning-outcomes">Learning outcomes…</h2>
 <ul>
-<li><p>[RRP03] <strong>Describe and distinguish</strong> the reproducibility criteria.</p></li>
-<li><p>[RRP04] <strong>Assess</strong> the reproducibility criteria in the student’s own research papers or scientific writings.</p></li>
+<li>[RRP01] <strong>Recognise</strong> the importance of (computational) reproducible research as a fundamental pillar of open science.</li>
 </ul>
 <h2 id="content">Content…</h2>
 <ul>
 <li><p>We identify resources that are part of the scientific process, beyond the published scientific article.</p></li>
-<li><p>We characterise these resources according to reproducibility criteria.</p></li>
-<li><p>We use and interpret correctly the levels associated with each criterion.</p></li>
 <li><p>We discuss the role of Open Science and reproduction in a PhD project.</p></li>
 </ul>
 <h2 id="organisation-materials">Organisation &amp; materials</h2>
 <p><strong>[Estimated time: 2 hours]</strong></p>
 <ol type="1">
-<li><p>To get some context on how reproducibility and <a href="glossary.html#open-science">Open Science</a> fit into your research process and practices: “<a href="slides/slides12_01.html">PhD thesis meets reproducibility” (slides)</a>. <!--y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).--></p>
+<li><p>To get some context on how reproducibility and <a href="glossary.html#open-science">Open Science</a> fit into your research process and practices: “<a href="slides/slides12_01.html">Open, reproducible, and replicable (PhD) research” (slides)</a>. <!--y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).--></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
 <iframe src="slides/slides12_01.html#title" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 </div></li>
-<li><p>Read the first three sections (<em>Introduction, Related Work, Materials &amp; Methods</em>) of the following paper <span class="citation" data-cites="nust2018">(<a href="#ref-nust2018" role="doc-biblioref">Nust et al. 2018</a>)</span>, where a set of criteria are proposed to evaluate the degree of reproducibility of an article. (If motivated, you can also read the section 3.1 of the paper <span class="citation" data-cites="ostermann2021">(<a href="#ref-ostermann2021" role="doc-biblioref">Ostermann et al. 2021</a>)</span>.) Pay attention to <a href="https://doi.org/10.7717/peerj.5072/fig-2">figure 2</a>, which outlines the levels for each of the reproducibility criteria. You should familiarise yourself with these criteria and their levels to carry out the first activity of the <em>Reproduction Plan</em>.</p></li>
+<li><p>Reflect on your research process and practices in general (do not focus on a specific project or article) and answer the following questions.</p></li>
 </ol>
-<!--
-3.  Reflexiona sobre tu proceso y prácticas de investigación en general (no te focalices en un proyecto o artículo en concreto) y contesta a las siguientes preguntas.
-
-    -   Indica departamento y/o grupo de investigación.
-
-    -   ¿Realizas una investigación teórica-conceptual, práctica-experimental, o una combinación de ellas?
-
-    -   ¿Juegan los datos de entrada un papel importante en tu investigación? ¿Utilizas fuentes de datos ya existentes? ¿O generas los datos expresamente para tu investigación (p.e. cuestionarios)?
-
-    -   ¿Necesitas ajustar, arreglar, limpiar, en definitiva, pre-procesar los datos de entrada para tu investigación?
-
-    -   ¿Realizas algún análisis o aplicas algún modelo sobre los datos? ¿Utilizas alguna herramienta tecnológica ya existente para el análisis, o escribes tu propio código para analizar los datos? ¿O ambas cosas?
-
-    -   ¿Las tablas, figuras, gráficos, mapas o diagramas son resultados habituales en tu investigación, es decir, aparecen frecuentemente en tus informes o artículos finales?
--->
+<ul>
+<li><p>Indicates department and/or research group.</p></li>
+<li><p>Do you carry out theoretical-conceptual, practical-experimental research, or a combination of them?</p></li>
+<li><p>Does input data play an important role in your research? Do you use existing data sources? Or do you generate the data expressly for your research (eg questionnaires)?</p></li>
+<li><p>Do you need to adjust, fix, clean, aggregate, that is, pre-process input data for your research?</p></li>
+<li><p>Do you carry out any analysis or apply any model on the data? Do you use any existing technology tools for analysis, or do you write your own code to analyse the data? Or both?</p></li>
+<li><p>Are the tables, figures, graphs, maps or diagrams common results in your research, that is, do they frequently appear in your final reports or articles?</p></li>
+</ul>
 <h2 id="assignments">Assignments</h2>
 <ul>
-<li>To begin with the <strong>Reproduction Plan</strong>, choose one of your recent published paper or a current draft, and carry out a self-assessment exercise in which you must assign a level (NA <em>Not Applicable</em>, 0 <em>Unavailable</em>, 1 <em>Documented</em>, 2 <em>Available</em>, 3 <em>Available and Open</em>) for each of the reproducibility criteria: Input Data; Preprocessing; Methods, Analysis, Processing; Computational Environment; Results.</li>
+<li>Answer the questions posed in Activity 2 above to the corresponding activity in AV.</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-nust2018" class="csl-entry" role="doc-biblioentry">
-Nust, Daniel, C Granell, B Hofer, M Konkol, FO Ostermann, R Sileryte, and V Cerutti. 2018. <span>“Reproducible Research and GIScience: An Evaluation Using AGILE Conference Papers.”</span> <em>PeerJ</em> 6: e5072. <a href="https://doi.org/10.7717/peerj.5072">https://doi.org/10.7717/peerj.5072</a>.
-</div>
-<div id="ref-ostermann2021" class="csl-entry" role="doc-biblioentry">
-Ostermann, Frank O., Daniel Nüst, Carlos Granell, Barbara Hofer, and Markus Konkol. 2021. <span>“<span class="nocase">Reproducible Research and GIScience: An Evaluation Using GIScience Conference Papers</span>.”</span> In <em>11th International Conference on Geographic Information Science (GIScience 2021) - Part II</em>, edited by Krzysztof Janowicz and Judith A. Verstegen, 208:2:1–16. Leibniz International Proceedings in Informatics (LIPIcs). Dagstuhl, Germany: Schloss Dagstuhl – Leibniz-Zentrum f<span>ü</span>r Informatik. <a href="https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2">https://doi.org/10.4230/LIPIcs.GIScience.2021.II.2</a>.
-</div>
-</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

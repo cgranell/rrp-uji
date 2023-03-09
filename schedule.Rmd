@@ -17,7 +17,9 @@ We cover learning outcomes [RRP01 to RRP04](index.html#learning-outcomes). We lo
 
 -   Scene 1: [Reproducibility and replicability](scene11.html)
 
--   Scene 2: [Reproducibility criteria](scene12.html)
+-   Scene 2: [PhD meets open science](scene12.html)
+
+-   Scene 3: [Pre-reproducibility assessment](scene13.html)
 
 ## Act II: Recommendations and practices
 
@@ -27,12 +29,16 @@ We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We co
 
 -   Scene 2: [Advanced recommendations](scene22.html)
 
+-   Scene 3: [AGILE Guidelines for reproduclbe papers](scene23.html)
+
 ## Act III: Literate programming & notebooks
 
 We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
 -   Scene 1: [Literate programming y markdown](scene31.html)
 
--   Scene 2: R Markdown Notebooks
+-   Scene 2: [Quarto: an open-source scientific and technical publishing system]()
+
+-   Scene 3: Tools
 
 RRP Learning Outcome 10 - **Reproduction Plan** - is a skill that will be developed throughout the course. Participants will submit their Reproduction Plan to make their next research project/work or technical writing more reproducible.

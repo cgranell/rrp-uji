@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>PhD thesis meets reproducibility</title>
+    <title>Open, reproducible, and replicable (PhD) research</title>
     <meta charset="utf-8" />
     <meta name="author" content="Carlos Granell" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xef952d612fb4e80824418405577a1a2","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"f12d52e1223e4814b96df24a282b5872","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
     <script src="libs/fabric/fabric.min.js"></script>
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40}) })</script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#d33f49"],"pen_size":4,"eraser_size":40,"palette":[]}) })</script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -51,11 +51,11 @@ background-size: cover--&gt;
 
 
 
-# PhD thesis meets reproducibility
+# Open, reproducible, and replicable (PhD) research
 
-### [1.2] Reproducibility criteria
+### [1.2] PhD meet Open Science
 
-.large[Reproducible Research Practices (RRP'22) &amp;#183; April 2022]
+.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2023]
 
 .right[Carlos Granell &amp;#183; Sergi Trilles]
 
@@ -74,6 +74,57 @@ class: inverse, bottom, middle
 ## You can't guarantee success,
 
 .large[but you can guarantee failure: never try.]
+
+
+---
+class: left, center
+# Objectives of scientific research
+
+--
+
+.huge[Discover laws, axioms, rules, etc. and describe under which conditions they apply]
+
+--
+
+.huge[Conduct case studies to prove a general principle or theory]
+
+--
+
+.huge[Transfer/publish results to prove validity, veracity, trust in findings]
+
+--
+
+&gt; One of the pathways by which scientists confirm the validity of a new
+finding or discovery is by repeating the research that produced it.
+
+
+&gt; Observed inconsistency may be an important precursor to new discovery while 
+others fear it may be a symptom of a lack of rigor in science
+
+
+---
+
+# Reproducibility involves the .gray.bg-blue[ORIGINAL] data and code
+
+-   .large[check the published manuscript,]
+
+-   .large[look for published data and code, then]
+
+-   .large[compare the results of that data and code to the published results]
+
+-   .large[if they are the same, the study is reproducible; otherwise, it is not]
+
+---
+
+# Replicability involves .gray.bg-blue[NEW] data collection and/or methods
+
+-   .large[Replication is to test for consistency with previous results of a similar study]
+
+-   .large[Replication is to advance theory by confronting existing understanding with new evidence] .small[&lt;a name=cite-nosek2020&gt;&lt;/a&gt;[[NE20](http://doi.org/10.1371/journal.pbio.3000691)]] 
+
+-   .large[Replication is accumulated evidence] (way to plan a PhD project?)
+
+-   .large[Even when a paper is computationally reproducible, it *may fail* to be replicated]
 
 
 ---
@@ -295,7 +346,7 @@ background-image: url(images/AGILE04.png)
 background-size: contain
 class: left, top
 
-.large[.small[&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2021&gt;&lt;/a&gt;[[NÃs+18](https://doi.org/10.7717/peerj.5072); [Ost+21](https://drops.dagstuhl.de/opus/volltexte/2021/14761)]]]
+.large[.small[&lt;a name=cite-nust2018&gt;&lt;/a&gt;&lt;a name=cite-ostermann2021&gt;&lt;/a&gt;[[Nus+18](https://doi.org/10.7717/peerj.5072); [Ost+21](https://drops.dagstuhl.de/opus/volltexte/2021/14761)]]]
 
 
 ---
@@ -324,17 +375,16 @@ practices and perceptions among scientists worldwide". In: _PLoS ONE_
 10.8, p. e0134826. URL:
 [https://doi.org/10.1371/journal.pone.0134826](https://doi.org/10.1371/journal.pone.0134826).
 
-&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nüst, Daniel, C Granell, et
+&lt;a name=bib-nust2018&gt;&lt;/a&gt;[Nust, Daniel, C Granell, et
 al.](#cite-nust2018) (2018). "Reproducible research and GIScience: an
 evaluation using AGILE conference papers". In: _PeerJ_ 6, p. e5072.
 URL:
 [https://doi.org/10.7717/peerj.5072](https://doi.org/10.7717/peerj.5072).
 
-&lt;a name=bib-tenopir2020&gt;&lt;/a&gt;[Tenopir, C, NM Rice, et
-al.](#cite-tenopir2020) (2020). "Data sharing, management, use, and
-reuse: Practices and perceptions of scientists worldwide". In: _PLoS
-ONE_ 15.3, p. e0229003. URL:
-[https://doi.org/10.1371/journal.pone.0229003](https://doi.org/10.1371/journal.pone.0229003).
+&lt;a name=bib-nosek2020&gt;&lt;/a&gt;[Nosek, Brian A. and Timothy M.
+Errington](#cite-nosek2020) (2020). "What is replication?". In: _PLOS
+Biology_ 18.3, p. e3000691. ISSN: 1545-7885. URL:
+[http://doi.org/10.1371/journal.pbio.3000691](http://doi.org/10.1371/journal.pbio.3000691).
 
 &lt;a name=bib-chiarelli2021&gt;&lt;/a&gt;[Chiarelli, Andrea, Lucia Loffreda, et
 al.](#cite-chiarelli2021) (2021). _The Art of Publishing Reproducible
@@ -397,6 +447,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

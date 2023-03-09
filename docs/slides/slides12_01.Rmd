@@ -1,6 +1,6 @@
 ---
-title: "PhD thesis meets reproducibility"
-subtitle: "[1.2] Reproducibility criteria"
+title: "Open, reproducible, and replicable (PhD) research"
+subtitle: "[1.2] PhD meet Open Science"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2023"

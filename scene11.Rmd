@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Learning outcomes...
 
--   [RRP01] **Recognise** the importance of (computational) reproducible research as a fundamental pillar of modern science.
+-   [RRP01] **Recognise** the importance of (computational) reproducible research as a fundamental pillar of open science.
 
 -   [RRP02] **Compare and contrast** the {Re}* terms (reproduce, replicate, recreate, etc) within the context of each participant’s own discipline.
 

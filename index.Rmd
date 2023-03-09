@@ -76,7 +76,7 @@ We are not talking about “learning to programme” as a course objective or "k
 
 Briefly, the course's learning outcomes are to help you:
 
--   [RRP01] Recognise the importance of (computational) reproducible research as a fundamental pillar of modern science.
+-   [RRP01] Recognise the importance of (computational) reproducible research as a fundamental pillar of open science.
 -   [RRP02] Compare and contrast the RE-* terms (reproduce, replicate, recreate, etc) within the context of each participant's own discipline.
 -   [RRP03] Describe and distinguish the reproducibility criteria.
 -   [RRP04] Assess participants' own work according to the reproducibility criteria.
