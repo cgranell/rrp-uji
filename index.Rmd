@@ -17,7 +17,7 @@ bibliography: references.bib
 link-citations: true
 
 description: |
-  [UJI Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices about reproducible research - [Academic year 2021/2022](https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/21-22/recerca/).
+  [UJI Doctoral School](https://www.uji.es/estudis/centres/escola-doctorat/base/info-general/escola/)'s cross-disciplinary training course on recommendations and best practices about open and reproducible research - [Academic year 2022/2023](https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/22-23/recerca/reproducible/).
 site: distill::distill_website
 ---
 
@@ -45,11 +45,11 @@ This introductory course is currently scheduled to be offered in 2 or 3 weeks. W
 
 ## Course identification
 
-**Code/Name**: MI007.TMP - Reproducible Research Practices
+**Code/Name**: MI006.TMP - Reproducible Research Practices
 
 **Duration**: 6 hours (up to 20 hours including attendance and self-directed work)
 
-**Dates**: 29 March, 5 and 11 April 2022, from 10 to 12
+**Dates**: 18 and 25 April, 2 May 2023, from 10 to 12
 
 **Teaching language**: English (*Note: in Spanish even years, in English odd years*)
 
@@ -68,8 +68,7 @@ This course emphasises the principles and strategies of open science and reprodu
 
 <aside>
 
-We are not talking about “learning to programme” as a course objetive or "knowing how to
-programme” as a previous requirement. Of course, an open mindset is presupposed so that the course participants can incorporate new practices/recommendations into their research process.
+We are not talking about “learning to programme” as a course objective or "knowing how to programme” as a previous requirement. Of course, an open mindset is presupposed so that the course participants can incorporate new practices/recommendations into their research process.
 
 </aside>
 
@@ -97,9 +96,7 @@ This web site is the main `theatre entrance` to the `play` of reproducible  rese
 
 ## Acknowledgements
 
-This course was developed and is maintained by [Carlos Granell](http://carlosgranell.eu).
-
-The following individuals have contributed to improving the course: ...
+This course was developed and is maintained by [Carlos Granell](http://carlosgranell.eu). Nevertheless, the following individuals have contributed to improving the course: Daniel Nüst, Frank Ostermann
 
 The course materials are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Linked materials are governed by their own licenses. I assume that all external materials used here are covered under the educational fair use policy. If this is not the case and any material displayed here violates copyright, please let me know and I will remove it.
 

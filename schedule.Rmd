@@ -25,7 +25,7 @@ We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We co
 
 -   Scene 1: [Basics to get started](scene21.html)
 
--   Scene 2: More recommendations
+-   Scene 2: [Advanced recommendations](scene22.html)
 
 ## Act III: Literate programming & notebooks
 
