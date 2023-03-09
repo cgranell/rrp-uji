@@ -54,6 +54,10 @@ navbar:
           href: scene31.html
     - text: "Backstage"
       menu:
+        - text: "Repro plan (pdf)"
+          href: Repro_plan.pdf
+        - text: "Repro plan (doc)"
+          href: Repro_plan.docx
         - text: "References"
           href: references.html
         - text: "Glossary"
