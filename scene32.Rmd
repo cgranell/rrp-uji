@@ -26,9 +26,17 @@ knitr::opts_chunk$set(echo = TRUE)
 **[Estimated time: 2 hours]**
 
 
-[Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) and it's the next-generation of  [RMarkdown](https://rmarkdown.rstudio.com/).
+1.  This [video](https://vimeo.com/178485416) explains in 1 minute what R Markdown is.
 
-We rely on the excellent [rstudio::conf 2022 Workshop - Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock, to learn the wide range of features that Quarto offers to produce elegantly formatted document adn content.
+<!--
+2.  En esta [demo](https://drive.google.com/file/d/1vBF2jX3k9Hz8WRlZB0QC1jTB6D9cIdKw/view?usp=sharing), podéis ver un ejemplo de estructura y organización de un notebook en R Markdown.
+
+3.  Este [vídeo](https://drive.google.com/file/d/1HXVV1lZhO2G4Ufvr4SJzHqvU-CvYwJxj/view?usp=sharing) muestra un ejemplo de un artículo reproducible [@miralles2020], que os puede servir de guía para que vuestro próximo artículo sea mucho más reproducible.
+-->
+
+2. [Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) and it's the next-generation of  [RMarkdown](https://rmarkdown.rstudio.com/).
+
+We rely on the excellent [rstudio::conf 2022 Workshop - Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock, to learn the wide range of features that Quarto offers to produce elegantly formatted document and content.
 
 
 ## Assignments

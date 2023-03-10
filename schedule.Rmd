@@ -39,6 +39,6 @@ We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
 -   Scene 2: [Quarto: an open-source scientific and technical publishing system](scene32.html)
 
--   Scene 3: Tools
+-   Scene 3: [Tools and resources](scene33.html)
 
 RRP Learning Outcome 10 - **Reproduction Plan** - is a skill that will be developed throughout the course. Participants will submit their Reproduction Plan to make their next research project/work or technical writing more reproducible.

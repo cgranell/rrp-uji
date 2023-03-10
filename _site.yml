@@ -54,6 +54,9 @@ navbar:
           href: scene31.html
         - text: "III.2 Quarto"
           href: scene32.html
+        - text: "III.3 Tools & resources"
+          href: scene33.html
+
     - text: "Backstage"
       menu:
         - text: "Repro plan (pdf)"

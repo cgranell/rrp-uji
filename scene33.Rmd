@@ -1,0 +1,37 @@
+---
+title: "Act III &#183; Literate programming & notebooks"
+description: |
+  Scene 3 &#183; Tools & resources
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Learning outcomes...
+
+-   [RRP07] **Understand** the value of combining questions, source code and outcomes.
+
+## Content...
+
+-   We learn existing resources and tools for streamlining reproducibility 
+
+## Organisation & materials
+
+**[Estimated time: 42 hours]**
+
+Below resources in no particular order. Subject to revision 
+
+-   [TIER2 (enhancing Trust, Integrity and Efficiency in Research through next-level Reproducibility)](https://tier2-project.eu/) project will increase reproducibility of scientific research results that will bring trust, integrity, and efficiency to the European Research Area (ERA) and the global Research and Innovation (R&I) system.
+
+-   [Github Template for RStudio on Binder / JupyterHub](https://github.com/rocker-org/binder/)
+
+-   Posit's [Quarto playlist](https://www.youtube.com/playlist?list=PL9HYL-VRX0oRupficE2l5DGgVIzpypTHs)
+
+-   YouTube: [R Consortium](https://www.youtube.com/@RConsortium/), [Posit](https://www.youtube.com/@PositPBC), [R4DS Online Learning Community](https://www.youtube.com/@r4ds)
+
+
+## Assignments
+
+
