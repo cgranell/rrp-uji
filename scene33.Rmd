@@ -23,7 +23,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Below resources in no particular order. Subject to revision 
 
+-   [OSF project "Reproducible Publications at AGILE Conferences"](https://osf.io/phmce/)
+
 -   [TIER2 (enhancing Trust, Integrity and Efficiency in Research through next-level Reproducibility)](https://tier2-project.eu/) project will increase reproducibility of scientific research results that will bring trust, integrity, and efficiency to the European Research Area (ERA) and the global Research and Innovation (R&I) system.
+
+-   [Center for Open Science](https://www.cos.io/), [Open Science Framework (OSF) to](https://osf.io/), [https://www.researchequals.com/](https://www.researchequals.com/)
 
 -   [Github Template for RStudio on Binder / JupyterHub](https://github.com/rocker-org/binder/)
 
