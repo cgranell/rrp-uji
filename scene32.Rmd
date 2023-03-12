@@ -34,9 +34,10 @@ knitr::opts_chunk$set(echo = TRUE)
 3.  Este [vídeo](https://drive.google.com/file/d/1HXVV1lZhO2G4Ufvr4SJzHqvU-CvYwJxj/view?usp=sharing) muestra un ejemplo de un artículo reproducible [@miralles2020], que os puede servir de guía para que vuestro próximo artículo sea mucho más reproducible.
 -->
 
-2. [Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) and it's the next-generation of  [RMarkdown](https://rmarkdown.rstudio.com/).
+2. [Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) and it's the next-generation of  [RMarkdown](https://rmarkdown.rstudio.com/). Check slidos by Mine Çetinkaya-Rundel & Julia Stewart Lowndes about ["Hello Quarto: Share, Collaborate, Teach, Reimagine"](https://mine.quarto.pub/hello-quarto/), or watch the [video at rstudio:conf(2022)](https://www.youtube.com/watch?v=p7Hxu4coDl8)
 
-We rely on the excellent [rstudio::conf 2022 Workshop - Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock, to learn the wide range of features that Quarto offers to produce elegantly formatted document and content.
+
+3. We rely on the excellent [rstudio::conf 2022 Workshop - Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock, to learn the wide range of features that Quarto offers to produce elegantly formatted document and content.
 
 
 ## Assignments

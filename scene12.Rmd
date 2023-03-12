@@ -24,11 +24,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **[Estimated time: 2 hours]**
 
-1.  To get some context on how reproducibility and [Open Science](glossary.html#open-science) fit into your research process and practices: "[Open, reproducible, and replicable (PhD) research" (slides)](slides/slides12_01.html). <!--y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).-->
+1.  To get some context on how reproducibility and [Open Science](glossary.html#open-science) fit into your research process and practices: "[Open, reproducible, and replicable (PhD) research" (slides)](slides/slides12_01.pdf). 
+
+<!--
+1.  To get some context on how reproducibility and [Open Science](glossary.html#open-science) fit into your research process and practices: "[Open, reproducible, and replicable (PhD) research" (slides)](slides/slides12_01.html). <!--y [video](https://drive.google.com/file/d/1mtSO0BrrvlCMEN7LBXQaa7dIGYMGgsOw/view?usp=sharing).
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides12_01.html)"}
     xaringanExtra::embed_xaringan(url = "slides/slides12_01.html#title", ratio = "16:9")
     ```
+
+-->
 
 2. Reflect on your research process and practices in general (do not focus on a specific project or article) and answer the following questions.
 

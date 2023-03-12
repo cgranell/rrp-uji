@@ -36,6 +36,7 @@ Below resources in no particular order. Subject to revision
 -   YouTube: [R Consortium](https://www.youtube.com/@RConsortium/), [Posit](https://www.youtube.com/@PositPBC), [R4DS Online Learning Community](https://www.youtube.com/@r4ds)
 
 
+-   [OpenScapes](https://openscapes.github.io/series/)
 ## Assignments
 
 
