@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xdba4fe8b0854c1297ca3f38feab990e","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xc58095dea084172b36990c337a71b1b","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -53,60 +53,11 @@ class: Left, middle
 
 ### [2.1] Recomendations and practices
 
-.large[Reproducible Research Practices (RRP'23) &amp;#183; March 2022]
+.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2022]
 
 .right[Carlos Granell &amp;#183; Sergi Trilles]
 
 .right[Universitat Jaume I]
-
-
----
-class: inverse, bottom, middle
-
-## Karl Pooper's *Conjectures and Refutations*
-
-.large["At the core of the scientific method is the attempt to refute or disprove theories"]
-
-???
-
-[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
-
-
----
-class: left
-
-##  What is the scientific method? (for Popper)
-
-.huge[Science progresses through *conjectures and refutations*]
-
---
-
--   .large[Scientists are confronted with some question, and offer a possible answer] 
-
---
-
--   .large[The  answer is a *conjecture* initially (is it right or wrong?)]
-
---
-
--   .large[Scientists do their best to *refute* this conjecture, or prove it wrong]
-
---
-
--   .large[Typically it is refuted, rejected, and replaced by a better one]
-
---
-
--   .large[This too will then be tested, and eventually replaced by an even better one]
-
---
-
--   .large[If scientists have not been able to refute a theory over a long period of time, despite their best efforts, then the theory has been *corroborated*]
-
-
-???
-
-Source: [Why should we trust science? Because it doesn’t trust itself](https://theconversation.com/why-should-we-trust-science-because-it-doesnt-trust-itself-188988)
 
 
 ---
@@ -121,7 +72,6 @@ class: inverse, bottom, middle
 [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
 
 
-
 ---
 name: a1
 class: inverse, center, middle
@@ -132,11 +82,11 @@ class: inverse, center, middle
 
 ---
 class: left
-### (Data) FAIR 
+### Be (data) FAIR, my friend 
 
 .huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
--   .large[Emphasis on data &amp; metadata documentation]
+-   .large[Emphasis on data &amp; metadata documentation .small[&lt;a name=cite-wilkinson2016&gt;&lt;/a&gt;[[Wil+16](http://dx.doi.org/10.1038/sdata.2016.18)]]]
 
 -   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
 
@@ -148,7 +98,24 @@ class: left
 class: left
 ### Be (data) FAIR, my friend
 
-https://ieeexplore.ieee.org/document/8816763
+
+.pull-left[
+
+&lt;img src="images/fair-principles.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+.large[.small[&lt;a name=cite-pimentel2019&gt;&lt;/a&gt;[[Pim+19](https://doi.org/10.1109/MSR.2019.00077)]]  *A Large-Scale Study About Quality and Reproducibility of Jupyter Notebooks*]
+
+.large[They studied 1.4 millions of notebooks (GitHub)]
+
+-   .large[Only 24% ran without exceptions] 
+-   .large[Only 4% produced same results]
+
+]
+
 
 
 ---
@@ -163,7 +130,39 @@ class: inverse, center, middle
 class: left
 ### Open source software
 
-Use open source software instead of commercial software
+
+
+.pull-left[
+
+.huge[Instead of ]
+
+-   .large[ArcGIS]
+-   .large[Google Maps/Places]
+-   .large[Stata, SPSS, Excel...]
+
+]
+
+--
+
+.pull-right[
+
+.huge[Pick]
+-   .large[QGIS]
+-   .large[OpenStreetMap]
+-   .large[Python, R, ...]
+
+]
+
+
+--
+
+.huge[Mixed approach to make the .blue[implicit] (analytical workflow) .gray.bg-blue[explicit]]
+
+-   .large[[ArcGIS Python Notebooks](https://developers.arcgis.com/python/guide/using-the-jupyter-notebook-environment/)]
+
+???
+
+make implicit explicit means to make analytical workflow explicit instead of click-based analysis 
 
 ---
 name: a3
@@ -177,9 +176,20 @@ class: inverse, center, middle
 class: left
 ### Scripting languages 
 
-https://ieeexplore.ieee.org/document/9153295
 
-Play with numbers, measure &amp; explore data, distrust of your intuition
+
+.huge[Play with data, measure &amp; explore, distrust of your intuition]
+
+
+.huge[R/Python scripts describe every step of an analysis]
+
+-   .large[Descriptive-based analysis (vs. click-based) of what the code does]
+
+.huge[Others can understand (Remember: [_'Show me', not 'trust me'_](slides11_01.html#stark2018))]
+
+-   .large[.gray.bg-blue[What] has been done &amp; .gray.bg-blue[How] it has been done]
+
+-   .large[See section *During analysis: best coding practices* .small[&lt;a name=cite-alston2021&gt;&lt;/a&gt;[[AR21](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/bes2.1801)]]] 
 
 
 ---
@@ -194,8 +204,21 @@ class: inverse, center, middle
 class:left 
 ### Computational notebook formats
 
-jupyter, rmarkdown, quarto
+.huge[Computational notebook is a virtual notebook .gray.bg-blue[environment] used for .gray.bg-blue[literate programming], which consists of cells of .gray.bg-blue[documentation], executable .gray.bg-blue[code], and .gray.bg-blue[results] as code output ([Wikipedia](https://en.wikipedia.org/wiki/Notebook_interface))]
 
+-   .large[Jupyter, RMarkdown, Quarto, Matlab,...]
+
+--
+
+.huge[Notebooks as first-class citizens] 
+
+-   .large[EarthCube annual meetings include a call for notebooks ([CFN 22](https://www.earthcube.org/post/call-for-notebooks-cfn-22)) as peer-reviewed submissions - See [Notebooks 2022 proceedings](https://github.com/earthcube2022)]
+
+-   .large[Master/PhD theses as computational notebooks?]
+
+???
+
+Also in my class of Spatial Data Science
 
 ---
 name: a5
@@ -257,10 +280,10 @@ class: left
 -   .large[.small[[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)]], .small[[[BH20](https://happygitwithr.com/)]]]
 
 ---
-name: a6
+name: a7
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#7]
 
 # Learn/use containerisation tools
 
@@ -270,28 +293,77 @@ class: left
 ### Containerisation tools
 
 
+.pull-left[
+
+.large[[Docker](https://www.docker.com/) and family tools .small[&lt;a name=cite-nust2020-docker&gt;&lt;/a&gt;[[Nus+20](https://doi.org/10.1371/journal.pcbi.1008316)]]]
+
+.large[[Binder](https://mybinder.org/) deploys a cloud-based docker container based on a git repo]
+
+.large[[`repo2docker`](https://github.com/jupyterhub/repo2docker) fetches a git repository and builds a container image based on the configuration files found in the repository]
+
+]
+
+.pull-right[
+
+
+&lt;img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&amp;id=10.1371/journal.pcbi.1008316.g002
+" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
 ---
-name: a6
+name: a8
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#8]
 
 # Be (software) FAIR, my friend
 
 ---
 class: left
-### (Software) FAIR
+### Be (software) FAIR, my friend
 
-https://www.nature.com/articles/s41597-022-01710-x
+.huge[Document your source code .small[&lt;a name=cite-barker2022&gt;&lt;/a&gt;&lt;a name=cite-hasselbring2020&gt;&lt;/a&gt;[[Bar+22](http://dx.doi.org/10.1038/s41597-022-01710-x); [Has+20](https://doi.org/10.1109/MC.2020.2998235)]]] 
+
+-   .large[**Findable**: Deposit source code in a repository that provides DOIs and metadata]
+
+-   .large[**Accessible**: Provide the opportunity to download the source code in bulk form]
+
+-   .large[**Interoperable**: Use open source programming languages and software]
+
+
+-   .large[**Reusable**: Release the software under a clear and open usage license]
+
+--
+
+.huge[Cite software properly .small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]] - [Basic #11](slides21_01.html#b11)]
 
 
 ---
-name: a6
+name: a9
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#9]
 
 # Make use of *Make*
+
+
+---
+class: left
+### Make use of *Make*
+
+.huge[[GNU Make](https://www.gnu.org/software/make/) is +40 years old but still relevant today] 
+
+-   .large[coordinates and automates command-line processes, such as a series of independent scripts]
+
+-   .large[provides “one-entry” point to your analysis]
+
+.huge[Readings]
+
+-   .large[[Reproducibility with Make](https://the-turing-way.netlify.app/reproducible-research/make.html)]
+
+-   .large[[SnakeMake](https://snakemake.readthedocs.io/en/stable/): Python alternative to Make]
 
 
 ---
@@ -302,23 +374,23 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[Be (data) FAIR, my friend]
+1.    .large[[Be (data) FAIR, my friend](#a1)]
 
-1.    .large[Use open source software whenever possible]
+1.    .large[[Use open source software whenever possible](#a2)]
 
-1.    .large[Learn/use scripting languages]
+1.    .large[[Learn/use scripting languages](#a3)]
 
-1.    .large[Learn/use computational notebook formats]
+1.    .large[[Learn/use computational notebook formats](#a4)]
 
-1.    .large[Learn/use version control (Git)]
+1.    .large[[Learn/use version control (Git)](#a5)]
 
-1.    .large[Use online repository hosting services]
+1.    .large[[Use online repository hosting services](#a6)]
 
-1.    .large[Learn/use containerisation tools]
+1.    .large[[Learn/use containerisation tools](#a7)]
 
-1.    .large[Be (software) FAIR, my friend]
+1.    .large[[Be (software) FAIR, my friend](#a8)]
 
-1.    .large[Make use of *Make*]
+1.    .large[[Make use of *Make*](#a9)]
 
 
 ---
@@ -331,9 +403,50 @@ al.](#cite-perez2016) (2016). "Ten simple rules for taking advantage of
 Git and GitHub". In: _PLoS computational biology_ 12.7. URL:
 [https://doi.org/10.1371/journal.pcbi.1004947](https://doi.org/10.1371/journal.pcbi.1004947).
 
+&lt;a name=bib-smith2016&gt;&lt;/a&gt;[Smith, AM, DS Katz, et al.](#cite-smith2016)
+(2016). "Software citation principles". In: _PeerJ Computer Science_ 2,
+p. e86. URL:
+[https://doi.org/10.7717/peerj-cs.86](https://doi.org/10.7717/peerj-cs.86).
+
+&lt;a name=bib-wilkinson2016&gt;&lt;/a&gt;[Wilkinson, Mark D., Michel Dumontier, et
+al.](#cite-wilkinson2016) (2016). "The FAIR Guiding Principles for
+scientific data management and stewardship". In: _Scientific Data_ 3.1.
+URL:
+[http://dx.doi.org/10.1038/sdata.2016.18](http://dx.doi.org/10.1038/sdata.2016.18).
+
+&lt;a name=bib-pimentel2019&gt;&lt;/a&gt;[Pimentel, João Felipe, Leonardo Murta, et
+al.](#cite-pimentel2019) (2019). "A Large-Scale Study About Quality and
+Reproducibility of Jupyter Notebooks". In: _2019 IEEE/ACM 16th
+International Conference on Mining Software Repositories (MSR)_. , pp.
+507-517.
+
 &lt;a name=bib-bryan2020&gt;&lt;/a&gt;[Bryan, Jenny and Jim
 Hester](#cite-bryan2020) (2020). _Happy Git and GitHub for the useR_.
 URL: [https://happygitwithr.com/](https://happygitwithr.com/).
+
+&lt;a name=bib-hasselbring2020&gt;&lt;/a&gt;[Hasselbring, Wilhelm, Leslie Carr, et
+al.](#cite-hasselbring2020) (2020). "Open Source Research Software".
+In: _Computer_ 53.8, pp. 84-88. URL:
+[https://doi.org/10.1109/MC.2020.2998235](https://doi.org/10.1109/MC.2020.2998235).
+
+&lt;a name=bib-nust2020-docker&gt;&lt;/a&gt;[Nust, Daniel, Vanessa Sochat, et
+al.](#cite-nust2020-docker) (2020). "Ten simple rules for writing
+Dockerfiles for reproducible data science". In: _PLOS Computational
+Biology_ 16.11, pp. 1-24. URL:
+[https://doi.org/10.1371/journal.pcbi.1008316](https://doi.org/10.1371/journal.pcbi.1008316).
+
+&lt;a name=bib-alston2021&gt;&lt;/a&gt;[Alston, Jesse M. and Jessica A.
+Rick](#cite-alston2021) (2021). "A Beginner's Guide to Conducting
+Reproducible Research". In: _The Bulletin of the Ecological Society of
+America_ 102.2, p. e01801. eprint:
+https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/bes2.1801.
+URL:
+[https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/bes2.1801](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/bes2.1801).
+
+&lt;a name=bib-barker2022&gt;&lt;/a&gt;[Barker, Michelle, Neil P. Chue Hong, et
+al.](#cite-barker2022) (2022). "Introducing the FAIR Principles for
+research software". In: _Scientific Data_ 9.1. URL:
+[http://dx.doi.org/10.1038/s41597-022-01710-x](http://dx.doi.org/10.1038/s41597-022-01710-x).
 ]
 
     </textarea>

@@ -3,7 +3,7 @@ title: "Advanced recommendations for open and reproducible research"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "March 2022"
+date: "April 2022"
 description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
@@ -91,11 +91,11 @@ class: inverse, center, middle
 
 ---
 class: left
-### (Data) FAIR 
+### Be (data) FAIR, my friend 
 
 .huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
--   .large[Emphasis on data & metadata documentation]
+-   .large[Emphasis on data & metadata documentation `r cite("wilkinson2016")`]
 
 -   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
 
@@ -107,7 +107,26 @@ class: left
 class: left
 ### Be (data) FAIR, my friend
 
-https://ieeexplore.ieee.org/document/8816763
+
+.pull-left[
+
+```{r fair, out.width ='75%', fig.align='center', echo=FALSE}
+knitr::include_graphics('images/fair-principles.png')
+```
+
+]
+
+.pull-right[
+
+.large[`r cite("pimentel2019")`  *`r title("pimentel2019")`*]
+
+.large[They studied 1.4 millions of notebooks (GitHub)]
+
+-   .large[Only 24% ran without exceptions] 
+-   .large[Only 4% produced same results]
+
+]
+
 
 
 ---
@@ -122,7 +141,39 @@ class: inverse, center, middle
 class: left
 ### Open source software
 
-Use open source software instead of commercial software
+
+
+.pull-left[
+
+.huge[Instead of ]
+
+-   .large[ArcGIS]
+-   .large[Google Maps/Places]
+-   .large[Stata, SPSS, Excel...]
+
+]
+
+--
+
+.pull-right[
+
+.huge[Pick]
+-   .large[QGIS]
+-   .large[OpenStreetMap]
+-   .large[Python, R, ...]
+
+]
+
+
+--
+
+.huge[Mixed approach to make the .blue[implicit] (analytical workflow) .gray.bg-blue[explicit]]
+
+-   .large[[ArcGIS Python Notebooks](https://developers.arcgis.com/python/guide/using-the-jupyter-notebook-environment/)]
+
+???
+
+make implicit explicit means to make analytical workflow explicit instead of click-based analysis 
 
 ---
 name: a3
@@ -136,9 +187,20 @@ class: inverse, center, middle
 class: left
 ### Scripting languages 
 
-https://ieeexplore.ieee.org/document/9153295
 
-Play with numbers, measure & explore data, distrust of your intuition
+
+.huge[Play with data, measure & explore, distrust of your intuition]
+
+
+.huge[R/Python scripts describe every step of an analysis]
+
+-   .large[Descriptive-based analysis (vs. click-based) of what the code does]
+
+.huge[Others can understand (Remember: [_'Show me', not 'trust me'_](slides11_01.html#stark2018))]
+
+-   .large[.gray.bg-blue[What] has been done & .gray.bg-blue[How] it has been done]
+
+-   .large[See section *During analysis: best coding practices* `r cite("alston2021")`] 
 
 
 ---
@@ -153,8 +215,21 @@ class: inverse, center, middle
 class:left 
 ### Computational notebook formats
 
-jupyter, rmarkdown, quarto
+.huge[Computational notebook is a virtual notebook .gray.bg-blue[environment] used for .gray.bg-blue[literate programming], which consists of cells of .gray.bg-blue[documentation], executable .gray.bg-blue[code], and .gray.bg-blue[results] as code output ([Wikipedia](https://en.wikipedia.org/wiki/Notebook_interface))]
 
+-   .large[Jupyter, RMarkdown, Quarto, Matlab,...]
+
+--
+
+.huge[Notebooks as first-class citizens] 
+
+-   .large[EarthCube annual meetings include a call for notebooks ([CFN 22](https://www.earthcube.org/post/call-for-notebooks-cfn-22)) as peer-reviewed submissions - See [Notebooks 2022 proceedings](https://github.com/earthcube2022)]
+
+-   .large[Master/PhD theses as computational notebooks?]
+
+???
+
+Also in my class of Spatial Data Science
 
 ---
 name: a5
@@ -216,10 +291,10 @@ class: left
 -   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
 
 ---
-name: a6
+name: a7
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#7]
 
 # Learn/use containerisation tools
 
@@ -229,28 +304,79 @@ class: left
 ### Containerisation tools
 
 
+.pull-left[
+
+.large[[Docker](https://www.docker.com/) and family tools `r cite("nust2020-docker")`]
+
+.large[[Binder](https://mybinder.org/) deploys a cloud-based docker container based on a git repo]
+
+.large[[`repo2docker`](https://github.com/jupyterhub/repo2docker) fetches a git repository and builds a container image based on the configuration files found in the repository]
+
+]
+
+.pull-right[
+
+
+```{r nust2020-docker, out.width ='90%', fig.align='center', echo=FALSE}
+knitr::include_graphics('https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1008316.g002
+')
+```
+
+]
+
+
 ---
-name: a6
+name: a8
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#8]
 
 # Be (software) FAIR, my friend
 
 ---
 class: left
-### (Software) FAIR
+### Be (software) FAIR, my friend
 
-https://www.nature.com/articles/s41597-022-01710-x
+.huge[Document your source code `r cite(c("barker2022", "hasselbring2020"))`] 
+
+-   .large[**Findable**: Deposit source code in a repository that provides DOIs and metadata]
+
+-   .large[**Accessible**: Provide the opportunity to download the source code in bulk form]
+
+-   .large[**Interoperable**: Use open source programming languages and software]
+
+
+-   .large[**Reusable**: Release the software under a clear and open usage license]
+
+--
+
+.huge[Cite software properly `r cite("smith2016")` - [Basic #11](slides21_01.html#b11)]
 
 
 ---
-name: a6
+name: a9
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
+# .blue.bg-white[\#9]
 
 # Make use of *Make*
+
+
+---
+class: left
+### Make use of *Make*
+
+.huge[[GNU Make](https://www.gnu.org/software/make/) is +40 years old but still relevant today] 
+
+-   .large[coordinates and automates command-line processes, such as a series of independent scripts]
+
+-   .large[provides “one-entry” point to your analysis]
+
+.huge[Readings]
+
+-   .large[[Reproducibility with Make](https://the-turing-way.netlify.app/reproducible-research/make.html)]
+
+-   .large[[SnakeMake](https://snakemake.readthedocs.io/en/stable/): Python alternative to Make]
 
 
 ---
@@ -261,23 +387,23 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[Be (data) FAIR, my friend]
+1.    .large[[Be (data) FAIR, my friend](#a1)]
 
-1.    .large[Use open source software whenever possible]
+1.    .large[[Use open source software whenever possible](#a2)]
 
-1.    .large[Learn/use scripting languages]
+1.    .large[[Learn/use scripting languages](#a3)]
 
-1.    .large[Learn/use computational notebook formats]
+1.    .large[[Learn/use computational notebook formats](#a4)]
 
-1.    .large[Learn/use version control (Git)]
+1.    .large[[Learn/use version control (Git)](#a5)]
 
-1.    .large[Use online repository hosting services]
+1.    .large[[Use online repository hosting services](#a6)]
 
-1.    .large[Learn/use containerisation tools]
+1.    .large[[Learn/use containerisation tools](#a7)]
 
-1.    .large[Be (software) FAIR, my friend]
+1.    .large[[Be (software) FAIR, my friend](#a8)]
 
-1.    .large[Make use of *Make*]
+1.    .large[[Make use of *Make*](#a9)]
 
 
 ---
@@ -286,7 +412,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 4)
+print(start = 1, end = 9)
 ```
 ]
 
