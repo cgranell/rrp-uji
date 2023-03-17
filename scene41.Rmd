@@ -1,0 +1,39 @@
+---
+title: "Act III &#183; Literate programming & notebooks"
+description: |
+  Scene 1 &#183; Literate programming & markdown
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Learning outcomes...
+
+-   [RRP07] **Understand** the value of combining questions, source code and outcomes.
+
+## Content...
+
+-   We learn the structure and elements of a Markdown document
+
+-   We introduce practical uses of Markdown for research 
+
+-   We introduce practical uses of Markdown for teaching
+
+## Organisation & materials
+
+**[Estimated time: 2 hours]**
+
+
+1.  Markdown is a very simple language for writing content especially for the web. This interactive tutorial [markdowntutorial](https://www.markdowntutorial.com/) is a good starting point to learn the basics of Markdown.
+
+2.  This presentation "[Markdown: uses for research and teaching" (slides)](slides/slides31_01.html) <!--(y [video](https://drive.google.com/file/d/1xbR8LOi3-QLS3gRmYVB1GYxk1HxzF8fZ/view?usp=sharing))--> summarises its advantages and provides some practical uses for research and teaching. It also includes a demo to generate different output formats (HTML, PDF, etc) from the same document in Markdown. The important thing is not the tool used, but that you think about the possibilities that Markdown can offer you to speed up the management of documents in different formats.
+
+    ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides31_01.html)"}
+    xaringanExtra::embed_xaringan(url = "slides/slides31_01.html#title", ratio = "16:9")
+    ```
+
+## Assignments
+
+

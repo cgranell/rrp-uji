@@ -1,5 +1,5 @@
 ---
-title: "Advanced recommendations for open and reproducible research"
+title: "During analysis &#183;<br/>Recommendations for open and reproducible research"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"

@@ -23,22 +23,30 @@ We cover learning outcomes [RRP01 to RRP04](index.html#learning-outcomes). We lo
 
 ## Act II: Recommendations and practices
 
-We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We comment and discuss recommendations and suggestions for getting started with reproducibility research practices and applying them to the **Reproduction Plan** to address the weakest aspects identified in Act I.
+We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We comment and discuss recommendations and suggestions for getting started with reproducibility research practices and applying them to the **Reproduction Plan** to address the weakest aspects identified in Act I. Recommendations below are grouped according to when they are most likely to take them into consideration: before, during and after data analysis. 
 
--   Scene 1: [Basics to get started](scene21.html)
+-   Scene 1: [Before: basics to get started](scene21.html)
 
--   Scene 2: [Advanced recommendations](scene22.html)
+-   Scene 2: [During analysis: coding practices and tools](scene22.html)
 
--   Scene 3: [AGILE Guidelines for reproducible papers](scene23.html)
+-   Scene 3: [After analysis: writing and sharing reproducible resources](scene23.html)
 
-## Act III: Literate programming & notebooks
+
+## Act III: Recommendations and practices: GIScience
+
+Same as Act II but focus on the GIScience discipline.
+
+-   Scene 1: [AGILE Guidelines for reproducible papers](scene31.html)
+
+
+## Act IV: Literate programming & notebooks (separate github repo - obgoing)
 
 We cover learning outcomes [RRP08 to RRP09](index.html#learning-outcomes).
 
--   Scene 1: [Literate programming y markdown](scene31.html)
+-   Scene 1: [Literate programming y markdown](scene41.html)
 
--   Scene 2: [Quarto: an open-source scientific and technical publishing system](scene32.html)
+-   Scene 2: [Quarto: an open-source scientific and technical publishing system](scene42.html)
 
--   Scene 3: [Tools and resources](scene33.html)
+-   Scene 3: [Tools and resources](scene43.html)
 
 RRP Learning Outcome 10 - **Reproduction Plan** - is a skill that will be developed throughout the course. Participants will submit their Reproduction Plan to make their next research project/work or technical writing more reproducible.

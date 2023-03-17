@@ -1,7 +1,7 @@
 ---
 title: "Act II &#183; Recommendations and practices"
 description: |
-  Scene 3 &#183; AGILE Guidelines
+  Scene 3 &#183; After:  recomendations
 bibliography: references.bib
 ---
 
@@ -20,19 +20,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 -   We discuss practices and recommendations to get started with reproducibility
 
+-   We introduce and compare types of licences
+
 
 ## Organisation & materials
 
 **[Estimated time: 4 hours]**
 
 
-[Reproducible Publications at AGILE Conferences – Guidelines for Authors, Scientific Reviewers, and Reproducibility Reviewers](https://doi.org/10.17605/OSF.IO/CB7Z8) (December 2020)
+## Assignments
 
-[Reproducible Publications at AGILE Conferences – Spanish translation](https://doi.org/10.17605/OSF.IO/MF9BE) (July 2019)
-
-The main OSF project with all documentation about the Reproducible Publications at AGILE Conferences and creation of the guidelines: https://osf.io/phmce/
-
-
-
-    
 

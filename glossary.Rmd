@@ -12,12 +12,24 @@ To clarify the meaning of some key terms and concepts used throughout this cours
 
 ### Open Access
 
-Open access content is accessible to all with no barriers: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research. 
+Open access content is accessible to all with limited or no copyright and licensing restrictions: no authentication requirements, no resources under an embargo, no paid access, etc. Content may concern scientific publications, data, code, documentation, and any other research artefact relevant to produce or interpret correctly the results of the research. 
+
+### Open Data
+
+Open data refers to the research data gathered or used during a research project and is made available for access and re-use.
 
 ### Open Science
 
-For [@munafo2017], "Open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others." 
+For [@munafo2017], "open science refers to the process of making the content and process of producing evidence and claims transparent and accessible to others." 
+
+### Open Source
+
+Software artefact that can be publicly accessed, with a license that allows its use, creation of derivatives and distribution.
 
 ### Reproducibility
 
-The capacity of another researcher or group of researcher to obtain the same results using the same methods and data (and most likely using the same or similar computational environment) from the original study. This highlights the importance of the methods used to produce such results.
+The ability of another researcher or team to obtain the same results using the same methods and data (and most likely using the same or similar computational environment) from the original study. 
+
+### Repricability
+
+The ability of another researcher or team to obtain results consistent with the original study using different methods and/or data (and most likely using a similar computational environment).

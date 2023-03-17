@@ -30,11 +30,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 There are excellent practical guides with general recommendations for promoting reproducibility, research data management and open science. This week we'll take a look at three guides for open science and reproducible research.
 
-1. The *British Ecological Society* publishes brief guidelines for conducting open science. Read the guide *Reproducible code* [@cooper2019], which explains organizational aspects focused on ecology but applicable to any discipline.
+1. The *British Ecological Society* publishes brief guidelines for conducting open science on ecology but applicable to any discipline. Among them, the guide *Reproducible code* [@cooper2019] explains organizational and managerial aspects for making software code more reproducible.
 
-2. Read *Passport for Open Science: A Practical Guide for PhD Students* [@barthez2020], it explains how to develop doctoral research in line with the principles of open science. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.
+2. *Passport for Open Science: A Practical Guide for PhD Students* [@barthez2020] explains how the principles of open science can be applied to doctoral research. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.
 
-3.  [*The Turing Way*](https://the-turing-way.netlify.app/welcome.html) is the third resource or guide which indeed is a compendium of guides on open science, reproducibility, and research ethics. The *Guide for Reproducible Research* [@turingway2019] is relevant, particularly the [Licensing](https://the-turing-way.netlify.app/reproducible-research/licensing.html) section.
+3. *A Beginner's Guide to Conducting Reproducible Research* [@alston2021] is a very concise, practical guide to apply reproducible practices to a research project. 
+
+4.  [*The Turing Way*](https://the-turing-way.netlify.app/welcome.html) is indeed a compendium of guides on open science, reproducibility, and research ethics, among other interesting topics. Have a look at the *Guide for Reproducible Research* [@turingway2019].
 
     <aside>
 

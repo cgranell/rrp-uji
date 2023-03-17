@@ -28,8 +28,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **[Estimated time: 2 hours]**
 
-0.  Who are we? A [brief historical account](https://docs.google.com/presentation/d/14zJk4Rx0JIFIEbF6qy_V1Pi17z0zafbrh9sZxotK0RQ/edit?usp=sharing) of [reproducibility](glossary.html#reproducibility) in the [AGILE conference series](https://agile-online.org/). Check out [Reproducible Research @ AGILE](https://reproducible-agile.github.io/)
-
 1.  Of the examples of [Learner Personas](personas.html), with which one do you identify the most, even if it doesn't quite fit your profile?
 
 2.  Review the concepts of reproducibility, replication, and computational reproducibility in [Reproducibility: historical notes & concept (slides)](slides/slides11_01.html) <!--and [video](https://drive.google.com/file/d/1Fjd37NPEINIRgCOdmaa892ayG2IRaV7H/view?usp=sharing)-->.
