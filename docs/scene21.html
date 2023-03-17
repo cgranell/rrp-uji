@@ -130,6 +130,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_meta_tags-->
   
+  <meta name="citation_reference" content="citation_title=A beginner’s guide to conducting reproducible research;citation_volume=102;citation_doi=https://doi.org/10.1002/bes2.1801;citation_author=Jesse M. Alston;citation_author=Jessica A. Rick"/>
   <meta name="citation_reference" content="citation_title=Passport for open science - a practical guide ofr PhD students;citation_publisher=University of Lille;citation_author=Johann Berti;citation_author=Marin Dacos;citation_author=Gabriel Gallezot;citation_author=Madeleine Géroudet;citation_author=Sabrina Granger;citation_author=Joanna Janik;citation_author=Claire Josserand;citation_author=Jean-François Lutz;citation_author=Christine Okret-Manville;citation_author=Sébastien Perrin;citation_author=Noël Thiboud"/>
   <meta name="citation_reference" content="citation_title=Reproducible code;citation_publisher=British Ecological Society;citation_author=Natalie Cooper;citation_author=Pen-Yuah Hsing"/>
   <meta name="citation_reference" content="citation_title=The turing way: A handbook for reproducible data science;citation_publisher=Zenodo;citation_doi=10.5281/zenodo.3233986;citation_author=Becky Arnold;citation_author=Louise Bowler;citation_author=Sarah Gibson;citation_author=Patricia Herterich;citation_author=Rosie Higman;citation_author=Anna Krystalli;citation_author=Alexander Morley;citation_author=Martin OŔeilly;citation_author=Kirstie Whitaker;citation_author= al.;citation_author=The turing way: A handbook for reproducible data science"/>
@@ -2493,13 +2494,15 @@ Stage
 <a href="scene12.html">I.2 PhD meets open science</a>
 <a href="scene13.html">I.3 Pre-reproducibility assessment</a>
 <hr/>
-<a href="scene21.html">II.1 Basic recommendations</a>
-<a href="scene22.html">II.2 Advanced recommendations</a>
-<a href="scene23.html">II.3 AGILE Guidelines</a>
+<a href="scene21.html">II.1 Basic: recommendations</a>
+<a href="scene22.html">II.2 During: recommendations</a>
+<a href="scene23.html">II.3 After: recommendations</a>
 <hr/>
-<a href="scene31.html">III.1 Literate programming &amp; Markdown</a>
-<a href="scene32.html">III.2 Quarto</a>
-<a href="scene33.html">III.3 Tools &amp; resources</a>
+<a href="scene31.html">III.1 AGILE Guidelines</a>
+<hr/>
+<a href="scene41.html">IV.1 Literate programming &amp; Markdown</a>
+<a href="scene42.html">IV.2 Quarto</a>
+<a href="scene43.html">IV.3 Tools &amp; resources</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -2561,9 +2564,10 @@ Backstage
 <p><strong>[Estimated time: 4 hours]</strong></p>
 <p>There are excellent practical guides with general recommendations for promoting reproducibility, research data management and open science. This week we’ll take a look at three guides for open science and reproducible research.</p>
 <ol type="1">
-<li><p>The <em>British Ecological Society</em> publishes brief guidelines for conducting open science. Read the guide <em>Reproducible code</em> <span class="citation" data-cites="cooper2019">(<a href="#ref-cooper2019" role="doc-biblioref">Cooper and Hsing 2019</a>)</span>, which explains organizational aspects focused on ecology but applicable to any discipline.</p></li>
-<li><p>Read <em>Passport for Open Science: A Practical Guide for PhD Students</em> <span class="citation" data-cites="barthez2020">(<a href="#ref-barthez2020" role="doc-biblioref">Berti et al. 2022</a>)</span>, it explains how to develop doctoral research in line with the principles of open science. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.</p></li>
-<li><p><a href="https://the-turing-way.netlify.app/welcome.html"><em>The Turing Way</em></a> is the third resource or guide which indeed is a compendium of guides on open science, reproducibility, and research ethics. The <em>Guide for Reproducible Research</em> <span class="citation" data-cites="turingway2019">(<a href="#ref-turingway2019" role="doc-biblioref">The Turing Way Community et al. 2019</a>)</span> is relevant, particularly the <a href="https://the-turing-way.netlify.app/reproducible-research/licensing.html">Licensing</a> section.</p>
+<li><p>The <em>British Ecological Society</em> publishes brief guidelines for conducting open science on ecology but applicable to any discipline. Among them, the guide <em>Reproducible code</em> <span class="citation" data-cites="cooper2019">(<a href="#ref-cooper2019" role="doc-biblioref">Cooper and Hsing 2019</a>)</span> explains organizational and managerial aspects for making software code more reproducible.</p></li>
+<li><p><em>Passport for Open Science: A Practical Guide for PhD Students</em> <span class="citation" data-cites="barthez2020">(<a href="#ref-barthez2020" role="doc-biblioref">Berti et al. 2022</a>)</span> explains how the principles of open science can be applied to doctoral research. The proposed practices are applicable to any discipline and, although focused on doctoral students, they are aimed at any researcher regardless of their previous experience.</p></li>
+<li><p><em>A Beginner’s Guide to Conducting Reproducible Research</em> <span class="citation" data-cites="alston2021">(<a href="#ref-alston2021" role="doc-biblioref">Alston and Rick 2021</a>)</span> is a very concise, practical guide to apply reproducible practices to a research project.</p></li>
+<li><p><a href="https://the-turing-way.netlify.app/welcome.html"><em>The Turing Way</em></a> is indeed a compendium of guides on open science, reproducibility, and research ethics, among other interesting topics. Have a look at the <em>Guide for Reproducible Research</em> <span class="citation" data-cites="turingway2019">(<a href="#ref-turingway2019" role="doc-biblioref">The Turing Way Community et al. 2019</a>)</span>.</p>
 <aside>
 <p>As part of the <a href="https://www.uji.es/serveis/cd/bib/pco/">Open Knowledge Portal</a>, the UJI library includes guides for researchers abpout the <a href="https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/">open access dissemination of the results of the investigation</a>, <a href="https://www.uji.es/serveis/cd/bib/pco/base/drets2/">copyright and licenses</a>, and the October 2020 institutional statement to promote open access <a href="http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es"><em>Declaración institucional a favor de la promoción del acceso abierto en la Universitat Jaume I</em></a>.</p>
 </aside></li>
@@ -2592,6 +2596,9 @@ Según los tres aspectos a mejorar (limitaciones) que identificaste en la sesió
 -->
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-alston2021" class="csl-entry" role="doc-biblioentry">
+Alston, Jesse M., and Jessica A. Rick. 2021. <span>“A Beginner’s Guide to Conducting Reproducible Research.”</span> <em>The Bulletin of the Ecological Society of America</em> 102 (2): e01801. https://doi.org/<a href="https://doi.org/10.1002/bes2.1801">https://doi.org/10.1002/bes2.1801</a>.
+</div>
 <div id="ref-barthez2020" class="csl-entry" role="doc-biblioentry">
 Berti, Johann, Marin Dacos, Gabriel Gallezot, Madeleine Géroudet, Sabrina Granger, Joanna Janik, Claire Josserand, et al. 2022. <span>“Passport for Open Science - a Practical Guide Ofr PhD Students.”</span> University of Lille. <a href="https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/">https://www.ouvrirlascience.fr/passport-for-open-science-a-practical-guide-for-phd-students/</a>.
 </div>

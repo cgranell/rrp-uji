@@ -1,9 +1,9 @@
 ---
-title: "Basic recommendations for open and reproducible research"
+title: "Before data analysis &#183;<br/>Recommendations for open and reproducible research"
 subtitle: "[2.1] Recomendations and practices"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "March 2023"
+date: "April 2023"
 description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
@@ -192,6 +192,8 @@ class: left
 
 
 -   .large[`r title("barthez2020")` `r cite("barthez2020")`]
+
+-   .large[`r title("alston2021")` `r cite("alston2021")`]
 
 -   .large[`r title("turingway2019")` `r cite("turingway2019")`]
 
@@ -601,7 +603,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 14)
+print(start = 1, end = 13)
 ```
 ]
 
