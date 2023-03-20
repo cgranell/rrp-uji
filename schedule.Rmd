@@ -27,9 +27,9 @@ We cover learning outcomes [RRP05 to RRP07](index.html#learning-outcomes). We co
 
 -   Scene 1: [Before: basics to get started](scene21.html)
 
--   Scene 2: [During analysis: coding practices and tools](scene22.html)
+-   Scene 2: [During: data/coding practices and tools](scene22.html)
 
--   Scene 3: [After analysis: writing and sharing reproducible resources](scene23.html)
+-   Scene 3: [After: writing and sharing reproducible resources](scene23.html)
 
 
 ## Act III: Recommendations and practices: GIScience

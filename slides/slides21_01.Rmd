@@ -1,6 +1,6 @@
 ---
-title: "Before data analysis &#183;<br/>Recommendations for open and reproducible research"
-subtitle: "[2.1] Recomendations and practices"
+title: "Before analysis &#183; Basics to get started"
+subtitle: "[2.1] Recomendations and practices for open and reproducbile research"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2023"
@@ -107,9 +107,11 @@ class: left
 
 -   .large[comparing the results of that data and code to the published results]
 
--   .large[if they are the _same_, the study is reproducible; otherwise, it is not]
+-   .large[if they are the _same_, the study is reproducible; otherwise, it is not*]
 
+???
 
+* or partially reproducible. Remember: Reproducibility is not a binary flag, but a spectrum
 
 ---
 class: center, middle
@@ -177,12 +179,6 @@ class: center, top
 
 
 ---
-class: inverse, center, middle
-
-# Basic recommentations & practices to get started
-
-
----
 class: left
 
 # Key guidelines & recommendations
@@ -205,9 +201,14 @@ class: left
 Look at the checklist in these guides.
 
 
+---
+class: inverse, center, middle
+
+# Basic recommentations & practices to get started
+
 
 ---
-name: b1
+name: rec01
 class: inverse, center, middle
 
 # .blue.bg-white[\#1]
@@ -250,17 +251,17 @@ class: left
 ]
 
 ---
-name: b2
+name: rec02
 class: inverse, center, middle
 
 # .blue.bg-white[\#2]
 
-# Choose your best way to organise a folder 
+# Choose your best way to organise a project/folder 
 
 
 ---
 class: left
-### Folder/project structure
+### Project/folder structure
 
 
 .huge[Make sure it's consistent, informative, and works for you]
@@ -286,9 +287,12 @@ class: left
 
 .large[See [example repository structure](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-advanced.html) `r cite("turingway2019")`]
 
+--
+
+.huge[And **stick to it**]
 
 ---
-name: b3
+name: rec03
 class: inverse, center, middle
 
 # .blue.bg-white[\#3]
@@ -305,13 +309,11 @@ class: left
 
 .pull-right[
 
--   .large[Name things **both** in machine- and human-readable manner]
+-   .large[File names are **machine-readable**, **human-readable**, and play well with **default ordering**]
 
--   .large[Order by default: ]
+-   .large[Script file names begin with numbers/letters to indicate the sequence in the analysis: `01_download_data.R`]
 
-  - For scripts, file names begin with numbers indicating the position of the script in the analysis: `01_download_data.R`
-
-  - For data, you can use dates (YYYYMMDD) as prefix: `20200115_survey.csv`
+-   .large[Data file names begin with dates (YYYYMMDD) as prefix: `20200115_survey.csv`]
 ]
 
 ???
@@ -320,7 +322,7 @@ class: left
 
 
 ---
-name: b4
+name: rec04
 class: inverse, center, middle
 
 # .blue.bg-white[\#4]
@@ -337,11 +339,11 @@ class: left
 
 -   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
 
--   .large[Document the process such as simple steps and diagrams in a README file (See [\#7](#b7))]
+-   .large[Document the process such as simple steps, diagrams, contents of the datasets and their provenance in a plain text README file (See [Recommendation \#6](#rec06))]
 
 
 ---
-name: b5
+name: rec05
 class: inverse, center, middle
 
 # .blue.bg-white[\#5]
@@ -360,26 +362,10 @@ class: left
 
 
 ---
-name: b6
+name: rec06
 class: inverse, center, middle
 
 # .blue.bg-white[\#6]
-
-# Avoid "Data (or code) available upon request"
-
----
-class: left
-### Data (or code) available upon request
-
-.huge[`r cite("stodden2018")` -  `r title("stodden2018")`]
-
-.large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
-
----
-name: b7
-class: inverse, center, middle
-
-# .blue.bg-white[\#7]
 
 # Document, document, and document
 
@@ -392,21 +378,21 @@ class: left
 
   -   Suggestions for a good [README](https://www.makeareadme.com/)] and [GitHub's READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
-  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/)
 
 
 -   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
 
 -   .large[Keep track of ideas, discussions and decisions about the project (in the `notes` folder)]
 
--   .large[Simplify edition tools: Use a simple formatting language/tool for note writing (Markdown, GoogleDocs)]
+-   .large[Use simple formatting language/tool for writing plain text files that can be version controlled]
 
 
 ---
-name: b8
+name: rec07
 class: inverse, center, middle
 
-# .blue.bg-white[\#8]
+# .blue.bg-white[\#7]
 
 # Add a data license
 
@@ -439,10 +425,10 @@ class: left
 .large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
 
 ---
-name: b9
+name: rec08
 class: inverse, center, middle
 
-# .blue.bg-white[\#9]
+# .blue.bg-white[\#8]
 
 # Add a software license
 
@@ -488,82 +474,66 @@ knitr::include_graphics('https://journals.plos.org/ploscompbiol/article/file?id=
 
 Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
+
 ---
-name: b10
+name: rec09
+class: inverse, center, middle
+
+# .blue.bg-white[\#9]
+
+# Learn/use version control systems
+
+
+---
+class: left
+### Version control systems
+
+.huge[Turn you project folder into a local version control repository]
+
+-   .large[to keep track changes of your work over time, be they collaborative (working with others) or non-collaborative (tracking file histories)]
+
+-   .large[to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word)] 
+
+---
+class: left
+### Version control systems
+  
+.huge[Tools]: 
+
+-   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
+
+.huge[Readings]: 
+
+-   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
+-   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
+-   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
+
+
+
+---
+name: rec10
 class: inverse, center, middle
 
 # .blue.bg-white[\#10]
 
-# Report the software version you use
-
----
-class: left, top
-### Software version
-
-.huge[Specify versions of relevant software components (packages, libraries)]
-
-.huge[A different version can lead to different results!]
-
-.large[`r cite("mesnard2017")` - `r title("mesnard2017")`]
-
--   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
-
----
-name: b11
-class: inverse, center, middle
-
-# .blue.bg-white[\#11]
-
-# Cite the software you use
-
+# Learn/Use online (Git) repository hosting services
 
 ---
 class: left
-### Software citation
+### Online (Git) repository hosting services
 
-.huge[Cite software that's important to the research outcome]
+.huge[Easier for individuals and teams to use Git for version control and collaboration]
 
--   .large[[R engine](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)?] 
+-   .large[VCS + collaborative features + development support features]
 
-  - type  `citation()` to get reference publication in bibtex entry
-  - add "All analyses were performed using R Statistical Software (v4.2.2; R Core Team 2022)" to **DASA section**
+.huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
 
--   .large[[R packages](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)? It depends...]
+.huge[Readings]: 
 
-  - type `citation("<packageName>")` to get reference publication in bibtex format 
-  - add "Temperature data was obtained from Environment and Climate Change Canada via the `weathercan` R package (v0.6.2; LaZerte and Albers 2018)" to **DASA section**.
+-   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
 
+-   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
 
-
----
-class: left
-### Software citation
-
-.huge[[`report`](https://cran.r-project.org/package=report) R Package]
-
-```{r}
-report::report_system()
-```
-
-```{r}
-report::report_packages()
-```
-
-
----
-class: left
-### Software citation
-
-
-.huge[Do not use URL as *footnotes* to cite external library/code/software]
-
--   .large[Refer to SciPy as a footnote: https://scipy.org/?]
-
-.huge[Cite software as any other paper] .large[`r cite("smith2016")` - _`r title("smith2016")`_]
-
--   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&btnG=)?]
-
-.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
 
 
 ---
@@ -574,27 +544,26 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[[One project = One folder](#b1)]
+-    .large[[One project = One folder](#rec1)]
 
-1.    .large[[Choose your best way to organise a folder](#b2)]
+-    .large[[Choose your best way to organise a folder](#rec02)]
 
-1.    .large[[Choose a consistent file naming convention](#b3)]
+-    .large[[Choose a consistent file naming convention](#rec03)]
 
-1.    .large[[Never ever touch raw data](#b4)]
+-    .large[[Never ever touch raw data](#rec04)]
 
-1.    .large[[Use open data formats](#b5)]
+-    .large[[Use open data formats](#rec05)]
 
-1.    .large[[Avoid "Data (or code) available upon request"](#b6)]
+-    .large[[Document, document, document](#rec06)]
 
-1.    .large[[Document, document, document](#b7)]
+-    .large[[Add a data license](#rec07)]
 
-1.    .large[[Add a data license](#b8)]
+-    .large[[Add a software license](#rec08)]
 
-1.    .large[[Add a software license](#b9)]
+-    .large[[Learn/use version control systems](#rec09)]
 
-1.    .large[[Report the software version you use](#b10)]
+-    .large[[Learn/Use online (Git) repository hosting services](#rec10)]
 
-1.    .large[[Cite the software you use](#b11)]
 
 
 ---
@@ -603,7 +572,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 13)
+print(start = 1, end = 12)
 ```
 ]
 

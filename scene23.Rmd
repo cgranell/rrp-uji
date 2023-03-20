@@ -1,7 +1,7 @@
 ---
-title: "Act II &#183; Recommendations and practices"
+title: "Act II &#183; Recommendations and practices for open and reproducbile research"
 description: |
-  Scene 3 &#183; After:  recomendations
+  Scene 3 &#183; After: writing and sharing reproducible resources
 bibliography: references.bib
 ---
 

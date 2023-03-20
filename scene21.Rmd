@@ -1,5 +1,5 @@
 ---
-title: "Act II &#183; Recommendations and practices"
+title: "Act II &#183; Recommendations and practices for open and reproducbile research"
 description: |
   Scene 1 &#183; Basics to get started
 bibliography: references.bib
@@ -44,7 +44,7 @@ There are excellent practical guides with general recommendations for promoting 
 
     </aside>
 
-4.  ["Basic recommendations for open and reproducible research" (slides)](slides/slides21_01.html) <!--([y video](https://drive.google.com/file/d/1ClXP52SNq-aW2XC9lGj3lG0C0TNPjpxD/view?usp=sharing)) --> summarises some of the organizational aspects and reproducible practices for the preparation and first steps of a project.
+4.  ["Before: Basics to get started" (slides)](slides/slides21_01.html) <!--([y video](https://drive.google.com/file/d/1ClXP52SNq-aW2XC9lGj3lG0C0TNPjpxD/view?usp=sharing)) --> summarises some of the organizational aspects and reproducible practices for the preparation and first steps of a project.
 
     ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides21_01.html)"}
     xaringanExtra::embed_xaringan(url = "slides/slides21_01.html#title", ratio = "16:9")

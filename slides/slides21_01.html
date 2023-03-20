@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Before data analysis · Recommendations for open and reproducible research:</title>
+    <title>Before analysis · Basics to get started</title>
     <meta charset="utf-8" />
     <meta name="author" content="Carlos Granell" />
     <script src="libs/header-attrs/header-attrs.js"></script>
@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x1b89ed7b28246b5a2dc2f07b5de4743","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x1ba32db1c88408d9d5ff19f7fee753f","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -55,9 +55,9 @@ background-size: cover--&gt;
 
 
 
-# Before data analysis &amp;#183;&lt;br/&gt;Recommendations for open and reproducible research: 
+# Before analysis &amp;#183; Basics to get started
 
-### [2.1] Recomendations and practices
+### [2.1] Recomendations and practices for open and reproducbile research
 
 .large[Reproducible Research Practices (RRP'23) &amp;#183; April 2023]
 
@@ -96,9 +96,11 @@ class: left
 
 -   .large[comparing the results of that data and code to the published results]
 
--   .large[if they are the _same_, the study is reproducible; otherwise, it is not]
+-   .large[if they are the _same_, the study is reproducible; otherwise, it is not*]
 
+???
 
+* or partially reproducible. Remember: Reproducibility is not a binary flag, but a spectrum
 
 ---
 class: center, middle
@@ -166,12 +168,6 @@ class: center, top
 
 
 ---
-class: inverse, center, middle
-
-# Basic recommentations &amp; practices to get started
-
-
----
 class: left
 
 # Key guidelines &amp; recommendations
@@ -194,9 +190,14 @@ class: left
 Look at the checklist in these guides.
 
 
+---
+class: inverse, center, middle
+
+# Basic recommentations &amp; practices to get started
+
 
 ---
-name: b1
+name: rec01
 class: inverse, center, middle
 
 # .blue.bg-white[\#1]
@@ -239,17 +240,17 @@ class: left
 ]
 
 ---
-name: b2
+name: rec02
 class: inverse, center, middle
 
 # .blue.bg-white[\#2]
 
-# Choose your best way to organise a folder 
+# Choose your best way to organise a project/folder 
 
 
 ---
 class: left
-### Folder/project structure
+### Project/folder structure
 
 
 .huge[Make sure it's consistent, informative, and works for you]
@@ -275,9 +276,12 @@ class: left
 
 .large[See [example repository structure](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-advanced.html) .small[[[The+19](https://the-turing-way.netlify.app/welcome.html)]]]
 
+--
+
+.huge[And **stick to it**]
 
 ---
-name: b3
+name: rec03
 class: inverse, center, middle
 
 # .blue.bg-white[\#3]
@@ -294,13 +298,11 @@ class: left
 
 .pull-right[
 
--   .large[Name things **both** in machine- and human-readable manner]
+-   .large[File names are **machine-readable**, **human-readable**, and play well with **default ordering**]
 
--   .large[Order by default: ]
+-   .large[Script file names begin with numbers/letters to indicate the sequence in the analysis: `01_download_data.R`]
 
-  - For scripts, file names begin with numbers indicating the position of the script in the analysis: `01_download_data.R`
-
-  - For data, you can use dates (YYYYMMDD) as prefix: `20200115_survey.csv`
+-   .large[Data file names begin with dates (YYYYMMDD) as prefix: `20200115_survey.csv`]
 ]
 
 ???
@@ -309,7 +311,7 @@ class: left
 
 
 ---
-name: b4
+name: rec04
 class: inverse, center, middle
 
 # .blue.bg-white[\#4]
@@ -326,11 +328,11 @@ class: left
 
 -   .large[Use scripts to produce derived, clean datasets for analyses (in the `data` folder)]
 
--   .large[Document the process such as simple steps and diagrams in a README file (See [\#7](#b7))]
+-   .large[Document the process such as simple steps, diagrams, contents of the datasets and their provenance in a plain text README file (See [Recommendation \#6](#rec06))]
 
 
 ---
-name: b5
+name: rec05
 class: inverse, center, middle
 
 # .blue.bg-white[\#5]
@@ -349,26 +351,10 @@ class: left
 
 
 ---
-name: b6
+name: rec06
 class: inverse, center, middle
 
 # .blue.bg-white[\#6]
-
-# Avoid "Data (or code) available upon request"
-
----
-class: left
-### Data (or code) available upon request
-
-.huge[.small[&lt;a name=cite-stodden2018&gt;&lt;/a&gt;[[SSM18](https://www.pnas.org/doi/abs/10.1073/pnas.1708290115)]] -  An empirical analysis of journal policy effectiveness for computational reproducibility]
-
-.large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
-
----
-name: b7
-class: inverse, center, middle
-
-# .blue.bg-white[\#7]
 
 # Document, document, and document
 
@@ -381,21 +367,21 @@ class: left
 
   -   Suggestions for a good [README](https://www.makeareadme.com/)] and [GitHub's READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
-  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/) (Act III)
+  -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/)
 
 
 -   .large[Include (if required) __README files__ in each subfolder to describe metadata/complex content]
 
 -   .large[Keep track of ideas, discussions and decisions about the project (in the `notes` folder)]
 
--   .large[Simplify edition tools: Use a simple formatting language/tool for note writing (Markdown, GoogleDocs)]
+-   .large[Use simple formatting language/tool for writing plain text files that can be version controlled]
 
 
 ---
-name: b8
+name: rec07
 class: inverse, center, middle
 
-# .blue.bg-white[\#8]
+# .blue.bg-white[\#7]
 
 # Add a data license
 
@@ -428,10 +414,10 @@ class: left
 .large[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/pco/base/drets2/)**]
 
 ---
-name: b9
+name: rec08
 class: inverse, center, middle
 
-# .blue.bg-white[\#9]
+# .blue.bg-white[\#8]
 
 # Add a software license
 
@@ -475,98 +461,66 @@ class:left
 
 Source: [https://doi.org/10.1371/journal.pcbi.1002598.g002](https://doi.org/10.1371/journal.pcbi.1002598.g002)
 
+
 ---
-name: b10
+name: rec09
+class: inverse, center, middle
+
+# .blue.bg-white[\#9]
+
+# Learn/use version control systems
+
+
+---
+class: left
+### Version control systems
+
+.huge[Turn you project folder into a local version control repository]
+
+-   .large[to keep track changes of your work over time, be they collaborative (working with others) or non-collaborative (tracking file histories)]
+
+-   .large[to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word)] 
+
+---
+class: left
+### Version control systems
+  
+.huge[Tools]: 
+
+-   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
+
+.huge[Readings]: 
+
+-   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
+-   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
+-   .large[.small[&lt;a name=cite-perez2016&gt;&lt;/a&gt;[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)]], .small[&lt;a name=cite-bryan2020&gt;&lt;/a&gt;[[BH20](https://happygitwithr.com/)]]]
+
+
+
+---
+name: rec10
 class: inverse, center, middle
 
 # .blue.bg-white[\#10]
 
-# Report the software version you use
-
----
-class: left, top
-### Software version
-
-.huge[Specify versions of relevant software components (packages, libraries)]
-
-.huge[A different version can lead to different results!]
-
-.large[.small[&lt;a name=cite-mesnard2017&gt;&lt;/a&gt;[[MB17](https://doi.org/10.1109/MCSE.2017.3151254)]] - Reproducible and Replicable Computational Fluid Dynamics: It's Harder Than You Think]
-
--   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
-
----
-name: b11
-class: inverse, center, middle
-
-# .blue.bg-white[\#11]
-
-# Cite the software you use
-
+# Learn/Use online (Git) repository hosting services
 
 ---
 class: left
-### Software citation
+### Online (Git) repository hosting services
 
-.huge[Cite software that's important to the research outcome]
+.huge[Easier for individuals and teams to use Git for version control and collaboration]
 
--   .large[[R engine](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)?] 
+-   .large[VCS + collaborative features + development support features]
 
-  - type  `citation()` to get reference publication in bibtex entry
-  - add "All analyses were performed using R Statistical Software (v4.2.2; R Core Team 2022)" to **DASA section**
+.huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
 
--   .large[[R packages](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)? It depends...]
+.huge[Readings]: 
 
-  - type `citation("&lt;packageName&gt;")` to get reference publication in bibtex format 
-  - add "Temperature data was obtained from Environment and Climate Change Canada via the `weathercan` R package (v0.6.2; LaZerte and Albers 2018)" to **DASA section**.
+-   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
 
+-   .large[.small[[[Per+16](https://doi.org/10.1371/journal.pcbi.1004947)]], .small[[[BH20](https://happygitwithr.com/)]]]
 
-
----
-class: left
-### Software citation
-
-.huge[[`report`](https://cran.r-project.org/package=report) R Package]
-
-
-```r
-report::report_system()
-```
-
-```
-## Analyses were conducted using the R Statistical language (version 4.2.2; R Core
-## Team, 2022) on Windows 10 x64 (build 22621)
-```
-
-
-```r
-report::report_packages()
-```
-
-```
-##   - xaringanthemer (version 0.4.2; Aden-Buie G, 2022)
-##   - xaringanExtra (version 0.7.0; Aden-Buie G, Warkentin M, 2022)
-##   - report (version 0.5.6; Makowski D et al., 2023)
-##   - RefManageR (version 1.3.0; McLean MW, 2017)
-##   - here (version 1.0.1; Müller K, 2020)
-##   - R (version 4.2.2; R Core Team, 2022)
-```
-
-
----
-class: left
-### Software citation
-
-
-.huge[Do not use URL as *footnotes* to cite external library/code/software]
-
--   .large[Refer to SciPy as a footnote: https://scipy.org/?]
-
-.huge[Cite software as any other paper] .large[.small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]] - _Software citation principles_]
-
--   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&amp;btnG=)?]
-
-.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
 
 
 ---
@@ -577,27 +531,26 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[[One project = One folder](#b1)]
+-    .large[[One project = One folder](#rec1)]
 
-1.    .large[[Choose your best way to organise a folder](#b2)]
+-    .large[[Choose your best way to organise a folder](#rec02)]
 
-1.    .large[[Choose a consistent file naming convention](#b3)]
+-    .large[[Choose a consistent file naming convention](#rec03)]
 
-1.    .large[[Never ever touch raw data](#b4)]
+-    .large[[Never ever touch raw data](#rec04)]
 
-1.    .large[[Use open data formats](#b5)]
+-    .large[[Use open data formats](#rec05)]
 
-1.    .large[[Avoid "Data (or code) available upon request"](#b6)]
+-    .large[[Document, document, document](#rec06)]
 
-1.    .large[[Document, document, document](#b7)]
+-    .large[[Add a data license](#rec07)]
 
-1.    .large[[Add a data license](#b8)]
+-    .large[[Add a software license](#rec08)]
 
-1.    .large[[Add a software license](#b9)]
+-    .large[[Learn/use version control systems](#rec09)]
 
-1.    .large[[Report the software version you use](#b10)]
+-    .large[[Learn/Use online (Git) repository hosting services](#rec10)]
 
-1.    .large[[Cite the software you use](#b11)]
 
 
 ---
@@ -622,16 +575,10 @@ Scientist-Programmer". In: _PLoS Computacional Biology_ 8.7, p.
 e1002598. URL:
 [https://doi.org/10.1371/journal.pcbi.1002598](https://doi.org/10.1371/journal.pcbi.1002598).
 
-&lt;a name=bib-smith2016&gt;&lt;/a&gt;[Smith, AM, DS Katz, et al.](#cite-smith2016)
-(2016). "Software citation principles". In: _PeerJ Computer Science_ 2,
-p. e86. URL:
-[https://doi.org/10.7717/peerj-cs.86](https://doi.org/10.7717/peerj-cs.86).
-
-&lt;a name=bib-mesnard2017&gt;&lt;/a&gt;[Mesnard, Olivier and Lorena A.
-Barba](#cite-mesnard2017) (2017). "Reproducible and Replicable
-Computational Fluid Dynamics: It's Harder Than You Think". In:
-_Computing in Science Engineering_ 19.4, pp. 44-55. URL:
-[https://doi.org/10.1109/MCSE.2017.3151254](https://doi.org/10.1109/MCSE.2017.3151254).
+&lt;a name=bib-perez2016&gt;&lt;/a&gt;[Perez-Riverol, Y, L Gatto, et
+al.](#cite-perez2016) (2016). "Ten simple rules for taking advantage of
+Git and GitHub". In: _PLoS computational biology_ 12.7. URL:
+[https://doi.org/10.1371/journal.pcbi.1004947](https://doi.org/10.1371/journal.pcbi.1004947).
 
 &lt;a name=bib-harrison2018&gt;&lt;/a&gt;[Harrison, Kate](#cite-harrison2018)
 (2018). _Data management_. URL:
@@ -641,13 +588,6 @@ _Computing in Science Engineering_ 19.4, pp. 44-55. URL:
 al.](#cite-nust2018_readpaper) (2018). _How to Read a Research
 Compendium_. URL:
 [https://arxiv.org/abs/1806.09525](https://arxiv.org/abs/1806.09525).
-
-&lt;a name=bib-stodden2018&gt;&lt;/a&gt;[Stodden, Victoria, Jennifer Seiler, et
-al.](#cite-stodden2018) (2018). "An empirical analysis of journal
-policy effectiveness for computational reproducibility". In:
-_Proceedings of the National Academy of Sciences_ 115.11, pp.
-2584-2589. URL:
-[https://www.pnas.org/doi/abs/10.1073/pnas.1708290115](https://www.pnas.org/doi/abs/10.1073/pnas.1708290115).
 
 &lt;a name=bib-cooper2019&gt;&lt;/a&gt;[Cooper, Natalie and Pen-Yuah
 Hsing](#cite-cooper2019) (2019). _Reproducible code_. URL:
@@ -659,6 +599,10 @@ Reproducible Data Science".
 
 URL:
 [https://the-turing-way.netlify.app/welcome.html](https://the-turing-way.netlify.app/welcome.html).
+
+&lt;a name=bib-bryan2020&gt;&lt;/a&gt;[Bryan, Jenny and Jim
+Hester](#cite-bryan2020) (2020). _Happy Git and GitHub for the useR_.
+URL: [https://happygitwithr.com/](https://happygitwithr.com/).
 
 &lt;a name=bib-nust2020&gt;&lt;/a&gt;[Nust, Daniel, Frank Ostermann, et
 al.](#cite-nust2020) (2020). _Reproducible Publications at AGILE
