@@ -1,0 +1,280 @@
+---
+title: "After analysis &#183; writing and sharing reproducible resources"
+subtitle: "[2.1] Recomendations and practices for open and reproducible research"
+author: "Carlos Granell"
+institute: "Universitat Jaume I"
+date: "April 2022"
+description: "Reproducible Research Practices (RRP'23)"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+name: title
+class: Left, middle
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+# knitr::opts_chunk$set(collapse = TRUE,
+#                       fig.retina = 3)
+
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+
+```
+
+```{r xaringan-extra, echo=FALSE}
+library(xaringanExtra)
+
+xaringanExtra:::use_xaringan_extra(c("tile_view", "panelset", "share_again", "editable"))
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket"))
+xaringanExtra::use_scribble(
+  pen_color = "#d33f49", pen_size = 4)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+source("xaringan-themer.R")
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+source("load_references.r")
+```
+
+
+```{r load, echo=FALSE}
+library(report)
+```
+
+# `r rmarkdown::metadata$title`
+
+### `r rmarkdown::metadata$subtitle`
+
+.large[`r rmarkdown::metadata$description` &#183; `r rmarkdown::metadata$date`]
+
+.right[`r rmarkdown::metadata$author` &#183; Sergi Trilles]
+
+.right[`r rmarkdown::metadata$institute`]
+
+
+---
+class: inverse, bottom, middle
+
+## Karl Pooper's *Conjectures and Refutations*
+
+.large[The ideas we can most trust are those that have been the most tried and tested]
+
+???
+
+[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+
+---
+name: rec21
+class: inverse, center, middle
+
+# .blue.bg-white[\#21]
+
+# Avoid *Data (or code) available upon request*
+
+---
+class: left
+### Data (or code) available upon request
+
+.huge[`r cite("stodden2018")` -  `r title("stodden2018")`]
+
+.large[...only .gray.bg-blue[44%] of requests led to receiving data and/or code from the original authors]
+
+
+
+---
+name: rec22
+class: inverse, center, middle
+
+# .blue.bg-white[\#22]
+
+# Report the software version you use
+
+---
+class: left, top
+### Software version
+
+.huge[Specify versions of relevant software components (packages, libraries)]
+
+.huge[A different version can lead to different results!]
+
+.large[`r cite("mesnard2017")` - `r title("mesnard2017")`]
+
+-   .large[Check "Story 4: Different Versions of Code, External Libraries, or Compilers can Challenge Reproducibility"]
+
+---
+name: rec23
+class: inverse, center, middle
+
+# .blue.bg-white[\#23]
+
+# Cite the software you use
+
+
+---
+class: left
+### Software citation
+
+.huge[Cite software that's important to the research outcome]
+
+-   .large[[R engine](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)?] 
+
+  - type  `citation()` to get reference publication in bibtex entry
+  - add "All analyses were performed using R Statistical Software (v4.2.2; R Core Team 2022)" to **DASA section**
+
+-   .large[[R packages](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)? It depends...]
+
+  - type `citation("<packageName>")` to get reference publication in bibtex format 
+  - add "Temperature data was obtained from Environment and Climate Change Canada via the `weathercan` R package (v0.6.2; LaZerte and Albers 2018)" to **DASA section**.
+
+
+
+---
+class: left
+### Software citation
+
+.huge[[`report`](https://cran.r-project.org/package=report) R Package]
+
+```{r}
+report::report_system()
+```
+
+```{r}
+report::report_packages()
+```
+
+
+---
+class: left
+### Software citation
+
+
+.huge[Do not use URL as *footnotes* to cite external library/code/software]
+
+-   .large[Refer to SciPy as a footnote: https://scipy.org/?]
+
+.huge[Cite software as any other paper] .large[`r cite("smith2016")` - _`r title("smith2016")`_]
+
+-   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&btnG=)?]
+
+.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
+
+
+---
+name: rec24
+class: inverse, center, middle
+
+# .blue.bg-white[\#24]
+
+# Hello Quarto (and friends)
+
+---
+class: left
+### Hello Quarto (and friends)
+
+Truly reproducible figures and tables are created directly with code and integrated into documents in a way that allows automatic updating when analyses are re-run, creating a “dynamic” document
+
+
+
+---
+name: rec25
+class: inverse, center, middle
+
+# .blue.bg-white[\#25]
+
+# Pre-print your work 
+
+ To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
+
+---
+name: rec26
+class: inverse, center, middle
+
+# .blue.bg-white[\#26]
+
+# Sharing data and code 
+
+---
+class: left
+### Sharing data and code
+
+
+- Take another look at the AGILE Reproducible Paper Guidelines
+- Read [Ten simple rules for getting and giving credit for data](https://doi.org/10.1371/journal.pcbi.1010476) (has both content on technical things as well as licensing, and more)
+- Deposit data/code/papers on Zenodo, specially to connecting GitHub with Zenodo: https://genr.eu/wp/cite/
+
+
+---
+name: rec27:
+class: inverse, center, middle
+
+# .blue.bg-white[\#27]
+
+# Sharing data and code 
+
+---
+class: left
+### Research Compendia
+
+- When data, code, software, and products of a research project are archived together, these are termed a “research compendium"
+
+- They provide a standardized and easily recognizable way to organize the digital materials of a research project, which enables other researchers to inspect, reproduce, and extend research
+
+-  Open Science Framework (OSF; http://osf.io/. The goal of the OSF is to enable research to be shared at every step of the scientific process—from developing a research idea and designing a study, to storing and analyzing collected data and writing and publishing reports or papers 
+
+Sullivan, I., A. DeHaven, and D. Mellor. 2019. Open and reproducible research on Open Science Framework. Current Protocols Essential Laboratory Techniques 18:e32.
+
+---
+name: summary
+class: inverse, center, middle
+
+# Summary
+
+---
+
+-    .large[[Avoid *Data (or code) available upon request*](#rec21)]
+
+-    .large[[Report the software version you use](#rec22)]
+
+-    .large[[Cite the software you use](#rec23)]
+
+-    .large[[Hello Quarto (and friends)](#rec24)]
+
+-    .large[[Pre-print your work](#rec25)]
+
+-    .large[[Sharing data and code](#rec26)]
+
+-    .large[[Research Compendia](#rec27)]
+
+
+
+---
+
+# References
+
+.tiny[
+```{r print_refs1, echo=FALSE, results="asis"}
+print(start = 1, end = 3)
+```
+]
+

@@ -40,11 +40,6 @@ knitr::opts_chunk$set(
 
 ```
 
-```{r load, echo=FALSE}
-library(report)
-```
-
-
 ```{r xaringan-extra, echo=FALSE}
 library(xaringanExtra)
 

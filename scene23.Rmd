@@ -1,5 +1,5 @@
 ---
-title: "Act II &#183; Recommendations and practices for open and reproducbile research"
+title: "Act II &#183; Recommendations and practices for open and reproducible research"
 description: |
   Scene 3 &#183; After: writing and sharing reproducible resources
 bibliography: references.bib
@@ -26,6 +26,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Organisation & materials
 
 **[Estimated time: 4 hours]**
+
+.  ["After: writing and sharing reproducible resources" (slides)](slides/slides22_01.html) summarises some of the organizational aspects and reproducible practices for the preparation and first steps of a project.
+
+    ```{r embed-again, echo=FALSE, fig.cap="[Slides](slides/slides23_01.html)"}
+    xaringanExtra::embed_xaringan(url = "slides/slides23_01.html#title", ratio = "16:9")
+    ```
+
+
 
 
 ## Assignments
