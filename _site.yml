@@ -43,7 +43,7 @@ navbar:
         - text: "I.3 Pre-reproducibility assessment"
           href: scene13.html
         - text: "---"
-        - text: "II.1 Basic: recommendations"
+        - text: "II.1 Before: recommendations"
           href: scene21.html
         - text: "II.2 During: recommendations"
           href: scene22.html

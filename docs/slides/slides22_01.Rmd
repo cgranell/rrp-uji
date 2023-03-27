@@ -1,6 +1,6 @@
 ---
-title: "During analysis &#183;<br/>Recommendations for open and reproducible research"
-subtitle: "[2.1] Recomendations and practices"
+title: "During analysis &#183; Data/coding practices and tools"
+subtitle: "[2.1] Recomendations and practices for open and reproducible research"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2022"
@@ -81,11 +81,45 @@ class: inverse, bottom, middle
 [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
 
 
+
 ---
-name: a1
+name: rec11
 class: inverse, center, middle
 
-# .blue.bg-white[\#1]
+# .blue.bg-white[\#11]
+
+# Open data != reproducible data
+
+---
+class: left
+### Open data != reproducible
+
+
+“Openness and Open Science (data sharing, code sharing, open access,
+etc.) are enablers of reproducibility, but do not necessarily guarantee
+it” https://zenodo.org/record/5521077
+
+By default:
+
+- Open != good (of high academic quality)
+- Reproducible != Good (of high academic quality)
+- Open != reproducible
+
+
+---
+name: rec12
+class: inverse, center, middle
+
+# .blue.bg-white[\#12]
+
+# Data (required) for reproducibility
+
+
+---
+name: rec13
+class: inverse, center, middle
+
+# .blue.bg-white[\#13]
 
 # Be (data) FAIR, my friend
 
@@ -95,9 +129,11 @@ class: left
 
 .huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
--   .large[Emphasis on data & metadata documentation `r cite("wilkinson2016")`]
+-   .large[Emphasis on identifiers, metadata, standards, licenses, permanence `r cite("wilkinson2016")`]
 
 -   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
+
+-   .large[Data as **first-class citizen** in scientific discourse `r cite("noy2023")`]: Replication?
 
 <br/>
 
@@ -130,10 +166,10 @@ knitr::include_graphics('images/fair-principles.png')
 
 
 ---
-name: a2
+name: rec14
 class: inverse, center, middle
 
-# .blue.bg-white[\#2]
+# .blue.bg-white[\#14]
 
 # Use open source software whenever possible
 
@@ -176,10 +212,10 @@ class: left
 make implicit explicit means to make analytical workflow explicit instead of click-based analysis 
 
 ---
-name: a3
+name: rec15
 class: inverse, center, middle
 
-# .blue.bg-white[\#3]
+# .blue.bg-white[\#15]
 
 # Learn/use scripting languages 
 
@@ -204,10 +240,10 @@ class: left
 
 
 ---
-name: a4
+name: rec16
 class: inverse, center, middle
 
-# .blue.bg-white[\#4]
+# .blue.bg-white[\#16]
 
 # Learn/use computational notebook formats
 
@@ -231,70 +267,32 @@ class:left
 
 Also in my class of Spatial Data Science
 
+
 ---
-name: a5
+name: rec17
 class: inverse, center, middle
 
-# .blue.bg-white[\#5]
+# .blue.bg-white[\#17]
 
-# Learn/use version control systems
+# Preserve computational environment 
+
+
+---
+class:left
+### Preserve computational environment
+
+- `renv` package for R or `venv` for Python
+
+- good for documenting specific versions of all packages being used in the project folder
+
+- complement coding practices (setting a seed, etc.)
 
 
 ---
-class: left
-### Version control systems
-
-.huge[Turn you project folder into a local version control repository]
-
--   .large[to keep track changes of your work]
-
--   .large[to provide a complete historical log of your project]
-
--   .large[to handle properly text formats (code, text documents, markdown documents) as opposed to rich/binary formats (Word)] 
-
----
-class: left
-### Version control systems
-  
-.huge[Tools]: 
-
--   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
-
-.huge[Readings]: 
-
--   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
--   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
--   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
-
----
-name: a6
+name: rec18
 class: inverse, center, middle
 
-# .blue.bg-white[\#6]
-
-# Use online (Git) repository hosting services
-
----
-class: left
-### Online (Git) repository hosting services
-
-.huge[Easier for individuals and teams to use Git for version control and collaboration]
-
--   .large[VCS + collaborative features + development support features]
-
-.huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
-
-.huge[Readings]: 
-
--   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
-
--   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
-
----
-name: a7
-class: inverse, center, middle
-
-# .blue.bg-white[\#7]
+# .blue.bg-white[\#18]
 
 # Learn/use containerisation tools
 
@@ -325,11 +323,15 @@ knitr::include_graphics('https://journals.plos.org/ploscompbiol/article/figure/i
 ]
 
 
+???
+
+creating a snapshot of the computational environment
+
 ---
-name: a8
+name: rec19
 class: inverse, center, middle
 
-# .blue.bg-white[\#8]
+# .blue.bg-white[\#19]
 
 # Be (software) FAIR, my friend
 
@@ -345,19 +347,18 @@ class: left
 
 -   .large[**Interoperable**: Use open source programming languages and software]
 
-
 -   .large[**Reusable**: Release the software under a clear and open usage license]
 
 --
 
-.huge[Cite software properly `r cite("smith2016")` - [Basic #11](slides21_01.html#b11)]
+.huge[Cite software properly `r cite("smith2016")` - [#2X](slides31_01.html)]
 
 
 ---
-name: a9
+name: rec20
 class: inverse, center, middle
 
-# .blue.bg-white[\#9]
+# .blue.bg-white[\#20]
 
 # Make use of *Make*
 
@@ -387,23 +388,25 @@ class: inverse, center, middle
 
 ---
 
-1.    .large[[Be (data) FAIR, my friend](#a1)]
+-    .large[[Open data != reproducible data](#rec11)]
 
-1.    .large[[Use open source software whenever possible](#a2)]
+-    .large[[Data (required) for reproducibility](#rec12)]
 
-1.    .large[[Learn/use scripting languages](#a3)]
+-    .large[[Be (data) FAIR, my friend](#rec13)]
 
-1.    .large[[Learn/use computational notebook formats](#a4)]
+-    .large[[Use open source software whenever possible](#rec14)]
 
-1.    .large[[Learn/use version control (Git)](#a5)]
+-    .large[[Learn/use scripting languages](#rec15)]
 
-1.    .large[[Use online repository hosting services](#a6)]
+-    .large[[Learn/use computational notebook formats](#rec16)]
 
-1.    .large[[Learn/use containerisation tools](#a7)]
+-    .large[[Preserve computational environment](#rec17)]
 
-1.    .large[[Be (software) FAIR, my friend](#a8)]
+-    .large[[Learn/use containerisation tools](#rec18)]
 
-1.    .large[[Make use of *Make*](#a9)]
+-    .large[[Be (software) FAIR, my friend](#rec19)]
+
+-    .large[[Make use of *Make*](#rec20)]
 
 
 ---
@@ -412,7 +415,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 9)
+print(start = 1, end = 8)
 ```
 ]
 
