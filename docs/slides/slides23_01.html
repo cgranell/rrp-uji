@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x9bcf620303b440aa2eab78fe80e1ce2","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x5d79e2131ab467f8cd09f4747b67a44","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -53,7 +53,7 @@ class: Left, middle
 
 # After analysis &amp;#183; writing and sharing reproducible resources
 
-### [2.1] Recomendations and practices for open and reproducible research
+### [Act II] Recomendations and practices for open and reproducible research
 
 .large[Reproducible Research Practices (RRP'23) &amp;#183; April 2022]
 
@@ -173,16 +173,31 @@ report::report_packages()
 class: left
 ### Software citation
 
+.pull-left[
 
-.huge[Do not use URL as *footnotes* to cite external library/code/software]
+.huge[Do not use URL to cite external library/code/software]
 
--   .large[Refer to SciPy as a footnote: https://scipy.org/?]
+-   .large[Cite `SciPy` as a footnote: https://scipy.org/?]
 
-.huge[Cite software as any other paper] .large[.small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]] - _Software citation principles_]
+]
 
--   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&amp;btnG=)?]
+--
 
-.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
+.pull-right[
+
+.huge[Cite software as any other paper instead] 
+
+-   .large[Cite `SciPy` as a paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&amp;btnG=)?]
+
+]
+
+--
+
+.huge[Readings:]
+
+-   .large[[Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
+
+-   .large[Software citation principles .small[&lt;a name=cite-smith2016&gt;&lt;/a&gt;[[SKN16](https://doi.org/10.7717/peerj-cs.86)]]]
 
 
 ---
@@ -209,33 +224,20 @@ class: inverse, center, middle
 
 # Pre-print your work 
 
- To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
+---
+class: left
+### Preprints
+
+To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
+
 
 ---
-name: rec26
+name: rec26:
 class: inverse, center, middle
 
 # .blue.bg-white[\#26]
 
-# Sharing data and code 
-
----
-class: left
-### Sharing data and code
-
-
-- Take another look at the AGILE Reproducible Paper Guidelines
-- Read [Ten simple rules for getting and giving credit for data](https://doi.org/10.1371/journal.pcbi.1010476) (has both content on technical things as well as licensing, and more)
-- Deposit data/code/papers on Zenodo, specially to connecting GitHub with Zenodo: https://genr.eu/wp/cite/
-
-
----
-name: rec27:
-class: inverse, center, middle
-
-# .blue.bg-white[\#27]
-
-# Sharing data and code 
+# Research Compendia
 
 ---
 class: left
@@ -248,6 +250,25 @@ class: left
 -  Open Science Framework (OSF; http://osf.io/. The goal of the OSF is to enable research to be shared at every step of the scientific process—from developing a research idea and designing a study, to storing and analyzing collected data and writing and publishing reports or papers 
 
 Sullivan, I., A. DeHaven, and D. Mellor. 2019. Open and reproducible research on Open Science Framework. Current Protocols Essential Laboratory Techniques 18:e32.
+
+-   [Octopus and ResearchEquals aim to break the publishing mould](https://www.nature.com/articles/d41586-023-00861-0)
+
+
+---
+name: rec27
+class: inverse, center, middle
+
+# .blue.bg-white[\#26]
+
+# Interactive papers
+
+
+---
+class: left
+### Interactive papers
+
+[Advancing Reproducible Research by Publishing R Markdown Notebooks as Interactive Sandboxes Using the learnr Package](https://journal.r-project.org/articles/RJ-2022-021/) .small[&lt;a name=cite-tso2022&gt;&lt;/a&gt;[[Tso+22](https://doi.org/10.32614/RJ-2022-021)]]
+
 
 ---
 name: summary
@@ -267,9 +288,9 @@ class: inverse, center, middle
 
 -    .large[[Pre-print your work](#rec25)]
 
--    .large[[Sharing data and code](#rec26)]
+-    .large[[Research Compendia](#rec26)]
 
--    .large[[Research Compendia](#rec27)]
+-    .large[[Interactive papes](#rec27)]
 
 
 
@@ -295,6 +316,13 @@ policy effectiveness for computational reproducibility". In:
 _Proceedings of the National Academy of Sciences_ 115.11, pp.
 2584-2589. URL:
 [https://www.pnas.org/doi/abs/10.1073/pnas.1708290115](https://www.pnas.org/doi/abs/10.1073/pnas.1708290115).
+
+&lt;a name=bib-tso2022&gt;&lt;/a&gt;[Tso, Chak Hau Michael, Michael Hollaway, et
+al.](#cite-tso2022) (2022). "The R Journal: Advancing Reproducible
+Research by Publishing R Markdown Notebooks as Interactive Sandboxes
+Using the learnr Package". In: _The R Journal_ 14 (1), pp. 255-263.
+ISSN: 2073-4859. URL:
+[https://doi.org/10.32614/RJ-2022-021](https://doi.org/10.32614/RJ-2022-021).
 ]
 
     </textarea>

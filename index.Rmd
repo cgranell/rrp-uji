@@ -45,11 +45,13 @@ This introductory course is currently scheduled to be offered in 2 or 3 weeks. W
 
 ## Course identification
 
-**Code/Name**: MI006.TMP - Reproducible Research Practices
+**Code/Name**: MI007.TMP - Reproducible Research Practices
 
 **Duration**: 6 hours (up to 20 hours including attendance and self-directed work)
 
 **Dates**: 18 and 25 April, 2 May 2023, from 10 to 12
+
+**Room**: TD2203AA
 
 **Teaching language**: English (*Note: in Spanish even years, in English odd years*)
 
@@ -59,7 +61,7 @@ This introductory course is currently scheduled to be offered in 2 or 3 weeks. W
 
 -   [Sergi Trilles](http://geotec.uji.es/staff) <br> PostDoc - JdC <br> Office [UB-1518DD](http://smart.uji.es/index.php?room=UB1518DD), Espaitec2, 5th floor <br> Universitat Jaume I, Spain
 
-Detail course description in [Spanish](https://ujiapps.uji.es/ade/rest/storage/HPOJUR5VMPQWDOCS6QGHUI6VX5LYWTDU) and  [English](https://ujiapps.uji.es/ade/rest/storage/Z8KFWYOHSZYNTH6WKH0DRGQVLCPLCM8P)
+Detail course description in [Spanish](https://www.uji.es/upo/rest/contenido/927504816/raw?idioma=es) and  [English](https://www.uji.es/upo/rest/contenido/927504816/raw?idioma=en)
 
 
 ## Purpose 

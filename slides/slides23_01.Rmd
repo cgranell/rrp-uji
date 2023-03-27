@@ -1,6 +1,6 @@
 ---
 title: "After analysis &#183; writing and sharing reproducible resources"
-subtitle: "[2.1] Recomendations and practices for open and reproducible research"
+subtitle: "[Act II] Recomendations and practices for open and reproducible research"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2022"
@@ -168,16 +168,31 @@ report::report_packages()
 class: left
 ### Software citation
 
+.pull-left[
 
-.huge[Do not use URL as *footnotes* to cite external library/code/software]
+.huge[Do not use URL to cite external library/code/software]
 
--   .large[Refer to SciPy as a footnote: https://scipy.org/?]
+-   .large[Cite `SciPy` as a footnote: https://scipy.org/?]
 
-.huge[Cite software as any other paper] .large[`r cite("smith2016")` - _`r title("smith2016")`_]
+]
 
--   .large[Refer to SciPy as a cited paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&btnG=)?]
+--
 
-.huge[Check [Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
+.pull-right[
+
+.huge[Cite software as any other paper instead] 
+
+-   .large[Cite `SciPy` as a paper: [Virtanen et al. (2020)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=SciPy+1.0%3A+fundamental+algorithms+for+scientific+computing+in+Python&btnG=)?]
+
+]
+
+--
+
+.huge[Readings:]
+
+-   .large[[Software Citation Checklist for Authors](https://zenodo.org/record/3479199#.YYmfT73MKAk)]
+
+-   .large[`r title("smith2016")` `r cite("smith2016")`]
 
 
 ---
@@ -204,33 +219,20 @@ class: inverse, center, middle
 
 # Pre-print your work 
 
- To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
+---
+class: left
+### Preprints
+
+To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
+
 
 ---
-name: rec26
+name: rec26:
 class: inverse, center, middle
 
 # .blue.bg-white[\#26]
 
-# Sharing data and code 
-
----
-class: left
-### Sharing data and code
-
-
-- Take another look at the AGILE Reproducible Paper Guidelines
-- Read [Ten simple rules for getting and giving credit for data](https://doi.org/10.1371/journal.pcbi.1010476) (has both content on technical things as well as licensing, and more)
-- Deposit data/code/papers on Zenodo, specially to connecting GitHub with Zenodo: https://genr.eu/wp/cite/
-
-
----
-name: rec27:
-class: inverse, center, middle
-
-# .blue.bg-white[\#27]
-
-# Sharing data and code 
+# Research Compendia
 
 ---
 class: left
@@ -243,6 +245,25 @@ class: left
 -  Open Science Framework (OSF; http://osf.io/. The goal of the OSF is to enable research to be shared at every step of the scientific process—from developing a research idea and designing a study, to storing and analyzing collected data and writing and publishing reports or papers 
 
 Sullivan, I., A. DeHaven, and D. Mellor. 2019. Open and reproducible research on Open Science Framework. Current Protocols Essential Laboratory Techniques 18:e32.
+
+-   [Octopus and ResearchEquals aim to break the publishing mould](https://www.nature.com/articles/d41586-023-00861-0)
+
+
+---
+name: rec27
+class: inverse, center, middle
+
+# .blue.bg-white[\#26]
+
+# Interactive papers
+
+
+---
+class: left
+### Interactive papers
+
+[Advancing Reproducible Research by Publishing R Markdown Notebooks as Interactive Sandboxes Using the learnr Package](https://journal.r-project.org/articles/RJ-2022-021/) `r cite("tso2022")`
+
 
 ---
 name: summary
@@ -262,9 +283,9 @@ class: inverse, center, middle
 
 -    .large[[Pre-print your work](#rec25)]
 
--    .large[[Sharing data and code](#rec26)]
+-    .large[[Research Compendia](#rec26)]
 
--    .large[[Research Compendia](#rec27)]
+-    .large[[Interactive papes](#rec27)]
 
 
 
@@ -274,7 +295,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 3)
+print(start = 1, end = 4)
 ```
 ]
 

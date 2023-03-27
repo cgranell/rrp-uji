@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xe4fca271cfe43268a1e21b256e2a9cb","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b22888d383fd4003abfaad93bba3009c","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -51,9 +51,9 @@ class: Left, middle
 
 # During analysis &amp;#183; Data/coding practices and tools
 
-### [2.1] Recomendations and practices for open and reproducible research
+### [Act II] Recomendations and practices for open and reproducible research
 
-.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2022]
+.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2023]
 
 .right[Carlos Granell &amp;#183; Sergi Trilles]
 
@@ -86,15 +86,23 @@ class: left
 ### Open data != reproducible
 
 
-“Openness and Open Science (data sharing, code sharing, open access,
-etc.) are enablers of reproducibility, but do not necessarily guarantee
-it” https://zenodo.org/record/5521077
+.huge[“Openness and Open Science (data sharing, code sharing, open access, etc.) are enablers of reproducibility, but do not necessarily guarantee it” .small[&lt;a name=cite-chiarelli2021&gt;&lt;/a&gt;[[CLJ21](https://doi.org/10.5281/zenodo.5521077)]]]
 
-By default:
+.huge[By default:]
 
-- Open != good (of high academic quality)
-- Reproducible != Good (of high academic quality)
-- Open != reproducible
+-   .large[Open != good (of high academic quality)]
+
+--
+
+-   .large[Reproducible != Good (of high academic quality)]
+
+--
+
+-   .large[Open != reproducible]
+
+???
+
+Source: [Becoming a better scientist with open and reproducible research (2)](https://lgatto.github.io/open-and-rr-2/)
 
 
 ---
@@ -104,6 +112,36 @@ class: inverse, center, middle
 # .blue.bg-white[\#12]
 
 # Data (required) for reproducibility
+
+
+---
+class: left
+### Data for reproducibility
+
+
+.huge[Are datasets valuable contributions by themselves? .small[&lt;a name=cite-noy2023&gt;&lt;/a&gt;[[NG23](https://dl.acm.org/doi/10.1145/3528574)]]]
+
+--
+
+.huge[Go to next [Recomendation #13](#rec13)]
+
+
+---
+class: left
+### Data for reproducibility
+
+
+.huge[Are datasets meaningless outside of the accompanying article? .small[[[NG23](https://dl.acm.org/doi/10.1145/3528574)]]]
+
+--
+
+-   .large[Reproducibility means .gray.bg-blue[access] to datasets to validate the research] 
+
+-   .large[Access does not necessarily imply that datasets are open or citable or discoverable by themselves]
+
+-   .large[**Suggestion**: Deposit reproducibility package (data, code, docs) on Zenodo or similar rather than supplementary material tied to the paper]
+
+  -   .large[Hint: [connecting GitHub with Zenodo](https://genr.eu/wp/cite/)]
 
 
 ---
@@ -118,22 +156,6 @@ class: inverse, center, middle
 class: left
 ### Be (data) FAIR, my friend 
 
-.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
-
--   .large[Emphasis on identifiers, metadata, standards, licenses, permanence .small[&lt;a name=cite-wilkinson2016&gt;&lt;/a&gt;[[Wil+16](http://dx.doi.org/10.1038/sdata.2016.18)]]]
-
--   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
-
--   .large[Data as **first-class citizen** in scientific discourse .small[&lt;a name=cite-noy2023&gt;&lt;/a&gt;[[NG23](https://dl.acm.org/doi/10.1145/3528574)]]]: Replication?
-
-&lt;br/&gt;
-
-.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
-
----
-class: left
-### Be (data) FAIR, my friend
-
 
 .pull-left[
 
@@ -143,15 +165,71 @@ class: left
 
 .pull-right[
 
-.large[.small[&lt;a name=cite-pimentel2019&gt;&lt;/a&gt;[[Pim+19](https://doi.org/10.1109/MSR.2019.00077)]]  *A Large-Scale Study About Quality and Reproducibility of Jupyter Notebooks*]
 
-.large[They studied 1.4 millions of notebooks (GitHub)]
+.large[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
--   .large[Only 24% ran without exceptions] 
--   .large[Only 4% produced same results]
+-   .large[Emphasis on identifiers, metadata, standards, licenses, permanence .small[&lt;a name=cite-wilkinson2016&gt;&lt;/a&gt;[[Wil+16](http://dx.doi.org/10.1038/sdata.2016.18)]]]
+
+-   .large[Analysis on [metadata standards](https://github.com/leipzig/metadata-in-rcr) for reproducible research .small[&lt;a name=cite-leipzig2021&gt;&lt;/a&gt;[[Lei+21](https://www.sciencedirect.com/science/article/pii/S2666389921001707)]]]
+
+-   .large[Ten simple rules for getting and giving credit for data .small[&lt;a name=cite-wood-charlson2022&gt;&lt;/a&gt;[[Woo+22](https://doi.org/10.1371/journal.pcbi.1010476)]]]
 
 ]
 
+???
+
+Standards that are featured within .small[[[Lei+21](https://www.sciencedirect.com/science/article/pii/S2666389921001707)]] can be found at https://github.com/leipzig/metadata-in-rcr.
+
+
+---
+class: left
+### Be (data) FAIR, my friend
+
+
+.huge[Datasets *are* valuable contributions by themselves .small[[[NG23](https://dl.acm.org/doi/10.1145/3528574)]]]
+
+--
+
+
+-   .large[Datasets should be findable, accessible, interoperable, and reusable]
+
+--
+
+-   .large[Datasets as .gray.bg-blue[first-class citizen] in scientific discourse .small[[[NG23](https://dl.acm.org/doi/10.1145/3528574)]]...]
+
+--
+
+-   .large[...so others can reuse, cite, evaluate, create value based on them to advance knowledge (.gray.bg-blue[replicability?])]
+
+
+
+---
+class: left
+### Be (data) FAIR, my friend
+
+
+.pull-left[
+
+.huge[[Coalition for Publishing Data in the Earth and Space Sciences (COPDESS)](https://copdess.org/enabling-fair-data-project/commitment-statement-in-the-earth-space-and-environmental-sciences/)]: 
+
+&gt; .large[all journals in geosciences require authors to make all data that supports the conclusions in their papers avail able in publicly accessible repositories that follow the FAIR principles]
+
+
+]
+
+.pull-right[
+
+
+.huge[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+
+&gt; *personal investigador difunda en modalidad de acceso abierto los datos de
+investigación (datasets) asociados a la producción científica siempre que no se den razones
+legítimas de confidencialidad, propiedad intelectual y/o seguridad. Los datos de investigación
+deberán ser FAIR (findable, accessible, interoperable and reusable) e ir acompañados de una
+licencia estándar que indique explícitamente las condiciones de uso y favorezca la
+reproductibilidad científica*
+
+]
 
 
 ---
@@ -258,6 +336,21 @@ Also in my class of Spatial Data Science
 
 
 ---
+class:left 
+### Computational notebook formats
+
+
+.huge[A Large-Scale Study About Quality and Reproducibility of Jupyter Notebooks .small[&lt;a name=cite-pimentel2019&gt;&lt;/a&gt;[[Pim+19](https://doi.org/10.1109/MSR.2019.00077)]]]
+
+.large[Studied 1.4 millions of notebooks (GitHub)]
+
+-   .large[Only 24% ran without exceptions] 
+-   .large[Only 4% produced same results]
+
+
+.large[Provided *best practices for the reproducibility of notebooks*]
+
+---
 name: rec17
 class: inverse, center, middle
 
@@ -270,11 +363,16 @@ class: inverse, center, middle
 class:left
 ### Preserve computational environment
 
-- `renv` package for R or `venv` for Python
+.huge[Dependency management packages]
 
-- good for documenting specific versions of all packages being used in the project folder
+-   .large[document/manage specific versions of all packages and dependences used in a project]
 
-- complement coding practices (setting a seed, etc.)
+-   .large[`renv` for R or `venv` for Python. See [post on `renv` usage](https://www.r-bloggers.com/2023/03/r-renv-how-to-manage-dependencies-in-r-projects-easily/)]
+
+  -   author: `renv::activate()` + `renv::snapshot()` + `renv::snapshot()` ...
+  -   others: `renv::restore()`
+
+-   .large[complement them with best coding practices (setting a seed, etc.)]
 
 
 ---
@@ -292,6 +390,8 @@ class: left
 
 
 .pull-left[
+
+.large[Beyond dependency management packages...]
 
 .large[[Docker](https://www.docker.com/) and family tools .small[&lt;a name=cite-nust2020-docker&gt;&lt;/a&gt;[[Nus+20](https://doi.org/10.1371/journal.pcbi.1008316)]]]
 
@@ -437,10 +537,28 @@ https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/bes2.1801.
 URL:
 [https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/bes2.1801](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/bes2.1801).
 
+&lt;a name=bib-chiarelli2021&gt;&lt;/a&gt;[Chiarelli, Andrea, Lucia Loffreda, et
+al.](#cite-chiarelli2021) (2021). _The Art of Publishing Reproducible
+Research Outputs: Supporting emerging practices through cultural and
+technological innovation_. URL:
+[https://doi.org/10.5281/zenodo.5521077](https://doi.org/10.5281/zenodo.5521077).
+
+&lt;a name=bib-leipzig2021&gt;&lt;/a&gt;[Leipzig, Jeremy, Daniel Nüst, et
+al.](#cite-leipzig2021) (2021). "The role of metadata in reproducible
+computational research". In: _Patterns_ 2.9, p. 100322. ISSN:
+2666-3899. URL:
+[https://www.sciencedirect.com/science/article/pii/S2666389921001707](https://www.sciencedirect.com/science/article/pii/S2666389921001707).
+
 &lt;a name=bib-barker2022&gt;&lt;/a&gt;[Barker, Michelle, Neil P. Chue Hong, et
 al.](#cite-barker2022) (2022). "Introducing the FAIR Principles for
 research software". In: _Scientific Data_ 9.1. URL:
 [http://dx.doi.org/10.1038/s41597-022-01710-x](http://dx.doi.org/10.1038/s41597-022-01710-x).
+
+&lt;a name=bib-wood-charlson2022&gt;&lt;/a&gt;[Wood-Charlson, Elisha M., Zachary
+Crockett, et al.](#cite-wood-charlson2022) (2022). "Ten simple rules
+for getting and giving credit for data". In: _PLOS Computational
+Biology_ 18.9, pp. 1-11. URL:
+[https://doi.org/10.1371/journal.pcbi.1010476](https://doi.org/10.1371/journal.pcbi.1010476).
 
 &lt;a name=bib-noy2023&gt;&lt;/a&gt;[Noy, Natasha and Carole Goble](#cite-noy2023)
 (2023). "Are We Cobblers without Shoes?". In: _Communications of the

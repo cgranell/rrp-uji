@@ -1,6 +1,6 @@
 ---
 title: "Before analysis &#183; Basics to get started"
-subtitle: "[2.1] Recomendations and practices for open and reproducbile research"
+subtitle: "[Act II] Recomendations and practices for open and reproducible research"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2023"
@@ -493,15 +493,16 @@ class: left
 class: left
 ### Version control systems
   
-.huge[Tools]: 
+.huge[Tools:] 
 
 -   .large[SVN, Mercurial, [Git](https://git-scm.com/)]
 
-.huge[Readings]: 
+.huge[Readings:] 
 
 -   .large[[Getting started with git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)]
 -   .large[[An introduction to Git: what it is, and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)]
--   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
+-   .large[`r title("perez2016")` `r cite("perez2016")`]
+-   .large[`r title("bryan2018")` `r cite("bryan2018")`]
 
 
 
@@ -523,11 +524,14 @@ class: left
 
 .huge[Tools]: .large[[GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [GitHub](https://github.com/)]
 
-.huge[Readings]: 
+.huge[Readings:] 
 
 -   .large[[Cookiecutter Data Science: Best practices for organising your repository for easy version control](https://drivendata.github.io/cookiecutter-data-science/)]
 
--   .large[`r cite("perez2016")`, `r cite("bryan2020")`]
+-   .large[`r title("perez2016")` `r cite("perez2016")`]
+
+-   .large[`r title("bryan2020")` `r cite("bryan2020")`]
+
 
 
 
@@ -567,7 +571,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 12)
+print(start = 1, end = 13)
 ```
 ]
 

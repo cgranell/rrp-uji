@@ -1,9 +1,9 @@
 ---
 title: "During analysis &#183; Data/coding practices and tools"
-subtitle: "[2.1] Recomendations and practices for open and reproducible research"
+subtitle: "[Act II] Recomendations and practices for open and reproducible research"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
-date: "April 2022"
+date: "April 2023"
 description: "Reproducible Research Practices (RRP'23)"
 output:
   xaringan::moon_reader:
@@ -95,15 +95,23 @@ class: left
 ### Open data != reproducible
 
 
-“Openness and Open Science (data sharing, code sharing, open access,
-etc.) are enablers of reproducibility, but do not necessarily guarantee
-it” https://zenodo.org/record/5521077
+.huge[“Openness and Open Science (data sharing, code sharing, open access, etc.) are enablers of reproducibility, but do not necessarily guarantee it” `r cite("chiarelli2021")`]
 
-By default:
+.huge[By default:]
 
-- Open != good (of high academic quality)
-- Reproducible != Good (of high academic quality)
-- Open != reproducible
+-   .large[Open != good (of high academic quality)]
+
+--
+
+-   .large[Reproducible != Good (of high academic quality)]
+
+--
+
+-   .large[Open != reproducible]
+
+???
+
+Source: [Becoming a better scientist with open and reproducible research (2)](https://lgatto.github.io/open-and-rr-2/)
 
 
 ---
@@ -113,6 +121,36 @@ class: inverse, center, middle
 # .blue.bg-white[\#12]
 
 # Data (required) for reproducibility
+
+
+---
+class: left
+### Data for reproducibility
+
+
+.huge[Are datasets valuable contributions by themselves? `r cite("noy2023")`]
+
+--
+
+.huge[Go to next [Recomendation #13](#rec13)]
+
+
+---
+class: left
+### Data for reproducibility
+
+
+.huge[Are datasets meaningless outside of the accompanying article? `r cite("noy2023")`]
+
+--
+
+-   .large[Reproducibility means .gray.bg-blue[access] to datasets to validate the research] 
+
+-   .large[Access does not necessarily imply that datasets are open or citable or discoverable by themselves]
+
+-   .large[**Suggestion**: Deposit reproducibility package (data, code, docs) on Zenodo or similar rather than supplementary material tied to the paper]
+
+  -   .large[Hint: [connecting GitHub with Zenodo](https://genr.eu/wp/cite/)]
 
 
 ---
@@ -127,22 +165,6 @@ class: inverse, center, middle
 class: left
 ### Be (data) FAIR, my friend 
 
-.huge[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
-
--   .large[Emphasis on identifiers, metadata, standards, licenses, permanence `r cite("wilkinson2016")`]
-
--   .large[[How to GO FAIR](https://www.go-fair.org/how-to-go-fair/)]
-
--   .large[Data as **first-class citizen** in scientific discourse `r cite("noy2023")`]: Replication?
-
-<br/>
-
-.large[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
-
----
-class: left
-### Be (data) FAIR, my friend
-
 
 .pull-left[
 
@@ -154,15 +176,71 @@ knitr::include_graphics('images/fair-principles.png')
 
 .pull-right[
 
-.large[`r cite("pimentel2019")`  *`r title("pimentel2019")`*]
 
-.large[They studied 1.4 millions of notebooks (GitHub)]
+.large[[Findable, Accesible, Interoperable, Reusable](https://www.go-fair.org/fair-principles/) for scientific data management and stewardship]
 
--   .large[Only 24% ran without exceptions] 
--   .large[Only 4% produced same results]
+-   .large[Emphasis on identifiers, metadata, standards, licenses, permanence `r cite("wilkinson2016")`]
+
+-   .large[Analysis on [metadata standards](https://github.com/leipzig/metadata-in-rcr) for reproducible research `r cite("leipzig2021")`]
+
+-   .large[`r title("wood-charlson2022")` `r cite("wood-charlson2022")`]
 
 ]
 
+???
+
+Standards that are featured within `r cite("leipzig2021")` can be found at https://github.com/leipzig/metadata-in-rcr.
+
+
+---
+class: left
+### Be (data) FAIR, my friend
+
+
+.huge[Datasets *are* valuable contributions by themselves `r cite("noy2023")`]
+
+--
+
+
+-   .large[Datasets should be findable, accessible, interoperable, and reusable]
+
+--
+
+-   .large[Datasets as .gray.bg-blue[first-class citizen] in scientific discourse `r cite("noy2023")`...]
+
+--
+
+-   .large[...so others can reuse, cite, evaluate, create value based on them to advance knowledge (.gray.bg-blue[replicability?])]
+
+
+
+---
+class: left
+### Be (data) FAIR, my friend
+
+
+.pull-left[
+
+.huge[[Coalition for Publishing Data in the Earth and Space Sciences (COPDESS)](https://copdess.org/enabling-fair-data-project/commitment-statement-in-the-earth-space-and-environmental-sciences/)]: 
+
+> .large[all journals in geosciences require authors to make all data that supports the conclusions in their papers avail able in publicly accessible repositories that follow the FAIR principles]
+
+
+]
+
+.pull-right[
+
+
+.huge[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+
+> *personal investigador difunda en modalidad de acceso abierto los datos de
+investigación (datasets) asociados a la producción científica siempre que no se den razones
+legítimas de confidencialidad, propiedad intelectual y/o seguridad. Los datos de investigación
+deberán ser FAIR (findable, accessible, interoperable and reusable) e ir acompañados de una
+licencia estándar que indique explícitamente las condiciones de uso y favorezca la
+reproductibilidad científica*
+
+]
 
 
 ---
@@ -269,6 +347,21 @@ Also in my class of Spatial Data Science
 
 
 ---
+class:left 
+### Computational notebook formats
+
+
+.huge[`r title("pimentel2019")` `r cite("pimentel2019")`]
+
+.large[Studied 1.4 millions of notebooks (GitHub)]
+
+-   .large[Only 24% ran without exceptions] 
+-   .large[Only 4% produced same results]
+
+
+.large[Provided *best practices for the reproducibility of notebooks*]
+
+---
 name: rec17
 class: inverse, center, middle
 
@@ -281,11 +374,16 @@ class: inverse, center, middle
 class:left
 ### Preserve computational environment
 
-- `renv` package for R or `venv` for Python
+.huge[Dependency management packages]
 
-- good for documenting specific versions of all packages being used in the project folder
+-   .large[document/manage specific versions of all packages and dependences used in a project]
 
-- complement coding practices (setting a seed, etc.)
+-   .large[`renv` for R or `venv` for Python. See [post on `renv` usage](https://www.r-bloggers.com/2023/03/r-renv-how-to-manage-dependencies-in-r-projects-easily/)]
+
+  -   author: `renv::activate()` + `renv::snapshot()` + `renv::snapshot()` ...
+  -   others: `renv::restore()`
+
+-   .large[complement them with best coding practices (setting a seed, etc.)]
 
 
 ---
@@ -303,6 +401,8 @@ class: left
 
 
 .pull-left[
+
+.large[Beyond dependency management packages...]
 
 .large[[Docker](https://www.docker.com/) and family tools `r cite("nust2020-docker")`]
 
@@ -415,7 +515,7 @@ class: inverse, center, middle
 
 .tiny[
 ```{r print_refs1, echo=FALSE, results="asis"}
-print(start = 1, end = 8)
+print(start = 1, end = 11)
 ```
 ]
 

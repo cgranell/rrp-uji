@@ -8,4 +8,4 @@ nocite: |
   @*
 ---
 
-All materials described below are (should be) freely available online. If you can’t get to them, let me know. Note that a lot of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go down. If you notice anything that’s not quite right, please let me know.
+All materials described below are (should be) freely available online. If you cannot get to them, let me know. Note that a lot of the listed resources are dynamic and ever changing. That means occasionally links might not work, sites go down. If you notice anything that's not quite right, please let me know.

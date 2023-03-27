@@ -1,6 +1,6 @@
 ---
 title: "Reproducibility: historical notes & concept"
-subtitle: "[1.1] Reproducibility & replicability"
+subtitle: "[Act I] Setting the stage"
 author: "Carlos Granell"
 institute: "Universitat Jaume I"
 date: "April 2023"
