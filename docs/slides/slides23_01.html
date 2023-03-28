@@ -9,7 +9,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x5d79e2131ab467f8cd09f4747b67a44","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xcae334d5b4644a2a654ba12f78e785b","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -55,7 +55,7 @@ class: Left, middle
 
 ### [Act II] Recomendations and practices for open and reproducible research
 
-.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2022]
+.large[Reproducible Research Practices (RRP'23) &amp;#183; April 2023]
 
 .right[Carlos Granell &amp;#183; Sergi Trilles]
 
@@ -212,8 +212,51 @@ class: inverse, center, middle
 class: left
 ### Hello Quarto (and friends)
 
-Truly reproducible figures and tables are created directly with code and integrated into documents in a way that allows automatic updating when analyses are re-run, creating a “dynamic” document
 
+.huge[You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more]
+
+.huge[Truly reproducible figures and tables are created directly with code and integrated into documents in a way that allows automatic updating when analyses are re-run, creating a “dynamic” document]
+
+.huge[[Quarto in 2 hours](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)]
+
+---
+class: left
+### Hello Quarto (and friends)
+
+.huge[`knitr` started in 2011, RMarkdown in 2014]
+
+![](images/rmd-knitr.png)
+
+
+---
+class: left
+### Hello Quarto (and friends)
+
+
+![](images/qmd-knitr.jpeg)
+
+---
+class: left
+### Hello Quarto (and friends)
+
+
+![](images/qmd-jupyter.jpeg)
+
+---
+class: left
+### Hello Quarto (and friends)
+
+
+![](images/jupyter-alone.jpeg)
+
+
+???
+
+Quarto uses an engine like `knitr` to execute code and generate a temporary output `.md`
+
+The `.md` file is processed via Pandoc and Quarto's Lua filters + Bootstrap CSS for HTML or LaTeX for PDF and converted to a final output format
+
+Lua filters written by R/Python/Julia developers should be interchangeable between formats - typically not language specific!
 
 
 ---
@@ -226,10 +269,29 @@ class: inverse, center, middle
 
 ---
 class: left
-### Preprints
+### Pre-print your works
 
-To increase access to publications, authors can post preprints of final (but preacceptance) versions of manuscripts on a preprint server, or postprints of manuscripts on postprint servers.
 
+.huge[**Preprints** are versions of your paper that have not yet been sent to a journal for review]
+
+.huge[Preprint = a paper for a journal]
+
+-   .large[Choose the most appropriate copyright license for your work]
+
+-   .large[Increase access and visibility to (pre-acceptance) versions of manuscripts] 
+
+.huge[Where to publish a preprint paper?]
+
+-   .large[[arXiv](https://arxiv.org/), [BioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/public-dashboard), [EarthArXiv](https://eartharxiv.org/), [psyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv)]
+
+???
+
+- [arXiv](https://arxiv.org/): physics, mathematics, computer science, quantitative biology, statistics, electrical engineering, and system sciences.
+- [BioRxiv](https://www.biorxiv.org/): biological sciences.
+- [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/public-dashboard): chemical science.
+- [EarthArXiv](https://eartharxiv.org/)]: Earth Science and related domains of planetary science
+- [psyArXiv](https://psyarxiv.com/): psychology, powered by [OSFPreprints](https://osf.io/preprints/).
+- [SocArXiv](https://osf.io/preprints/socarxiv): social sciences, powered by [OSFPreprints](https://osf.io/preprints/).
 
 ---
 name: rec26:
@@ -243,15 +305,17 @@ class: inverse, center, middle
 class: left
 ### Research Compendia
 
-- When data, code, software, and products of a research project are archived together, these are termed a “research compendium"
+.huge[Data, code, software, and products of a research project are archived together]
 
-- They provide a standardized and easily recognizable way to organize the digital materials of a research project, which enables other researchers to inspect, reproduce, and extend research
+.huge[Standardized and easily recognizable way to organize digital materials of a research project]
 
--  Open Science Framework (OSF; http://osf.io/. The goal of the OSF is to enable research to be shared at every step of the scientific process—from developing a research idea and designing a study, to storing and analyzing collected data and writing and publishing reports or papers 
+.huge[Tools to share every step of the scientific process]
 
-Sullivan, I., A. DeHaven, and D. Mellor. 2019. Open and reproducible research on Open Science Framework. Current Protocols Essential Laboratory Techniques 18:e32.
+  -   .large[[Open Science Framework (OSF)](http://osf.io/) [Getting started on the OSF](https://help.osf.io/article/342-getting-started-on-the-osf)]
 
--   [Octopus and ResearchEquals aim to break the publishing mould](https://www.nature.com/articles/d41586-023-00861-0)
+  -   .large[[Octopus](https://www.octopus.ac/) .small[&lt;a name=cite-dhar2023&gt;&lt;/a&gt;[[Dha23](http://dx.doi.org/10.1038/d41586-023-00861-0)]]]
+  
+  -   .large[[ResearchEquals](https://www.researchequals.com/) .small[[[Dha23](http://dx.doi.org/10.1038/d41586-023-00861-0)]]]
 
 
 ---
@@ -267,7 +331,22 @@ class: inverse, center, middle
 class: left
 ### Interactive papers
 
-[Advancing Reproducible Research by Publishing R Markdown Notebooks as Interactive Sandboxes Using the learnr Package](https://journal.r-project.org/articles/RJ-2022-021/) .small[&lt;a name=cite-tso2022&gt;&lt;/a&gt;[[Tso+22](https://doi.org/10.32614/RJ-2022-021)]]
+
+.huge[Reproducible entire analysis...]
+
+-   .large[remote execution via Binder, Google Colab, ...]
+
+-   .large[local execution via Docker or `renv`]
+
+--
+
+.huge[What if interested in a small fraction of an analysis]
+
+--
+
+-   .large[protected computing environment (sandbox) + notebooks + `learnr` R package .small[&lt;a name=cite-aden-buie2023&gt;&lt;/a&gt;[[Ade+23](https://rstudio.github.io/learnr/)]]]
+
+-   .large[Ex: [GB rainfall chemistry paper](https://cptecn-sandboxdemo.datalabs.ceh.ac.uk/) .small[&lt;a name=cite-tso2022&gt;&lt;/a&gt;[[Tso+22](https://doi.org/10.32614/RJ-2022-021)]]]
 
 
 ---
@@ -290,7 +369,7 @@ class: inverse, center, middle
 
 -    .large[[Research Compendia](#rec26)]
 
--    .large[[Interactive papes](#rec27)]
+-    .large[[Interactive papers](#rec27)]
 
 
 
@@ -323,6 +402,15 @@ Research by Publishing R Markdown Notebooks as Interactive Sandboxes
 Using the learnr Package". In: _The R Journal_ 14 (1), pp. 255-263.
 ISSN: 2073-4859. URL:
 [https://doi.org/10.32614/RJ-2022-021](https://doi.org/10.32614/RJ-2022-021).
+
+&lt;a name=bib-aden-buie2023&gt;&lt;/a&gt;[Aden-Buie, Garrick, Barret Schloerke, et
+al.](#cite-aden-buie2023) (2023). _learnr: Interactive Tutorials for
+R_. URL:
+[https://rstudio.github.io/learnr/](https://rstudio.github.io/learnr/).
+
+&lt;a name=bib-dhar2023&gt;&lt;/a&gt;[Dhar, Payal](#cite-dhar2023) (2023). _Octopus
+and ResearchEquals aim to break the publishing mould_. URL:
+[http://dx.doi.org/10.1038/d41586-023-00861-0](http://dx.doi.org/10.1038/d41586-023-00861-0).
 ]
 
     </textarea>
