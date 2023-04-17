@@ -152,22 +152,34 @@ class: left
 
 --
 
-.huge[... is all about the scientific method!]
+.huge[... is all about the **scientific method**!]
 
--   .large[Openness, Transparency, Honesty, Integrity, Reproduction (test), Replication (cumulative evidence)]
 
---
+-   .large[For Pooper, the ideas we can most trust are those that have been the most .blue[tried and tested]]
 
-.huge[For Pooper, the ideas we can most trust are those that have been the most .blue[tried and tested]]
 
 --
 
-.huge[So, .blue[reproduction & replication] are integral parts of the scientific method]
+.huge[... and **dissemination** of scientific results]
+
 
 ???
 
 [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
 
+
+---
+class: center, middle
+
+# If **science drivers** are/should be 
+
+## .gray.bg-blue[Openness], .gray.bg-blue[Transparency], .gray.bg-blue[Honesty], .gray.bg-blue[Integrity], .gray.bg-blue[Reproduction] (test), and .gray.bg-blue[Replication] (cumulative evidence)
+
+---
+class: center, middle
+
+
+# What are NOT .gray.bg-blue[reproduction & replication] integral parts of the scientific method and of the scientific publications?
 
 
 ---
