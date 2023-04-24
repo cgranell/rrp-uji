@@ -40,7 +40,10 @@ There are excellent practical guides with general recommendations for promoting 
 
     <aside>
 
-    As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library includes guides for researchers abpout the [open access dissemination of the results of the investigation](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/), [copyright and licenses](https://www.uji.es/serveis/cd/bib/pco/base/drets2/), and the October 2020 institutional statement to promote open access [_Declaración institucional a favor de la promoción del acceso abierto en la Universitat Jaume I_](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es).
+    As part of the [Open Knowledge Portal](https://www.uji.es/serveis/cd/bib/pco/), the UJI library includes guides for researchers about the [open access dissemination of the results of the investigation](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/), and [copyright and licenses](https://www.uji.es/serveis/cd/bib/pco/base/drets2/). Key steps towards open and transparent science have been:
+    - October 2020 institutional statement to promote open access [_Declaración institucional a favor de la promoción del acceso abierto en la Universitat Jaume I_](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es);
+    - End 2022 [*Código de Buenas Prácticas en Investigación y Doctorado (CBPID)*](https://ujiapps.uji.es/ade/rest/storage/JC0VO1VPDBAYIPKUZROLFYLCNXLBKD3B);
+    - March 2023 adhesion to the [COaRa Coalition for Advancing Research Assessment (CoARA)](https://www.uji.es/com/investigacio/arxiu/noticies/2023/2/adhesio-CoARA/).
 
     </aside>
 

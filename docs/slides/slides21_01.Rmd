@@ -371,7 +371,7 @@ class: left
 
 -   .large[Include (at least) a __README file__ in the root folder to describe the project, provide basic orientation to use your code, data, etc. ]
 
-  -   Suggestions for a good [README](https://www.makeareadme.com/)] and [GitHub's READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+  -   Suggestions for writing a good [README](https://www.makeareadme.com/) and [GitHub's README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
   -   If your project is on GitHub, README files will be automatically visualised if written in [Markdown](https://www.markdownguide.org/)
 
