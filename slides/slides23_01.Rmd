@@ -76,13 +76,13 @@ library(report)
 ---
 class: inverse, bottom, middle
 
-## Karl Pooper's *Conjectures and Refutations*
+## Nobel laureate and physics professor Wolfgang Pauli
 
-.large[The ideas we can most trust are those that have been the most tried and tested]
+.large["I do not mind if you think slowly, but I do object when you publish more quickly than you think.”]
 
 ???
 
-[Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper)
+[Wolfgang Pauli](https://es.wikipedia.org/wiki/Wolfgang_Pauli), [Quotes](https://en.wikiquote.org/wiki/Wolfgang_Pauli)
 
 ---
 name: rec21
@@ -227,6 +227,7 @@ class: left
 class: left
 ### Hello Quarto (and friends)
 
+.huge[`Quarto` started in 2022]
 
 ![](images/qmd-knitr.jpeg)
 
@@ -234,6 +235,7 @@ class: left
 class: left
 ### Hello Quarto (and friends)
 
+.huge[`Quarto` started in 2022]
 
 ![](images/qmd-jupyter.jpeg)
 
@@ -269,8 +271,6 @@ class: left
 
 .huge[**Preprints** are versions of your paper that have not yet been sent to a journal for review]
 
-.huge[Preprint = a paper for a journal]
-
 -   .large[Choose the most appropriate copyright license for your work]
 
 -   .large[Increase access and visibility to (pre-acceptance) versions of manuscripts] 
@@ -278,6 +278,18 @@ class: left
 .huge[Where to publish a preprint paper?]
 
 -   .large[[arXiv](https://arxiv.org/), [BioRxiv](https://www.biorxiv.org/), [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/public-dashboard), [EarthArXiv](https://eartharxiv.org/), [psyArXiv](https://psyarxiv.com/), [SocArXiv](https://osf.io/preprints/socarxiv)]
+
+---
+class: left
+### Pre-print your works
+
+.huge[**[What UJI recommends...](https://www.uji.es/serveis/cd/bib/serveis/investigacio/oa/)**] 
+
+> *Guardar siempre la última versión del artículo que se ha enviado en la revista después del proceso de peer review (esta versión recibe nombres diferentes: postprint author's final draft; accepted author manuscript; accepted version, postprint, etc.), puesto que algunas editoriales solo permiten publicar esta versión en los repositorios institucionales. Esta versión, y la versión definitiva publicada, cumplen los mandatos de la Ley de la ciencia y Horizonte Europa.*
+
+> *¿Qué se tiene que depositar en acceso abierto? Obligatoriamente, artículos de revistas científicas.*
+
+> *Se depositará la versión postprint, es decir, el manuscrito revisado y aceptado para su publicación, antes de las adaptaciones al formato final del editor, o la versión preprint.*
 
 ???
 

@@ -254,7 +254,7 @@ class: left
 
 .huge[[Coalition for Publishing Data in the Earth and Space Sciences (COPDESS)](https://copdess.org/enabling-fair-data-project/commitment-statement-in-the-earth-space-and-environmental-sciences/)]: 
 
-> .large[all journals in geosciences require authors to make all data that supports the conclusions in their papers avail able in publicly accessible repositories that follow the FAIR principles]
+> .large[all journals in geosciences require authors to make all data that supports the conclusions in their papers available in publicly accessible repositories that follow the FAIR principles]
 
 
 ]
@@ -486,7 +486,7 @@ class: left
 
 --
 
-.huge[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
+.huge[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**] .large[nothing yet]
 
 ---
 name: rec20
