@@ -154,6 +154,37 @@ class: left
 
 
 ---
+class: left
+### Data for reproducibility
+
+
+.huge[Example: [Using mobile devices as scientific measurement instruments: Reliable android task scheduling](https://doi.org/10.1016/j.pmcj.2022.101550)]
+
+
+```{r mermaid, fig.align='center', fig.asp=0.8, fig.width=8, echo=FALSE}
+suppressPackageStartupMessages(library(widgetframe))
+
+l=DiagrammeR::mermaid("
+graph LR; 
+  I1(Analysis Notebook) -- ref 26 --> Z2[Reproducibility Package archived on Zenodo <br> 'Universitat Jaume I Research Data' Community]
+  I1 == input ==> A((PAPER PDF))
+  A == output ==> O1(NTD Software)
+  A == output ==> O2(Fig 4)
+  A == output ==> O3(Fig 5)
+  O1 -- ref 21 --> Z1[Archived on Zenodo]
+  O2 -- ref 26 --> Z2
+  O3 -- ref 26 --> Z2
+  Z1 -- github --> G1[Github Repo]
+  Z2 -- github --> G2[Github Repo]
+")
+
+widgetframe::frameableWidget(l)
+```
+
+???
+https://jojozhuang.github.io/tutorial/mermaid-cheat-sheet/
+
+---
 name: rec13
 class: inverse, center, middle
 
@@ -443,7 +474,7 @@ class: left
 
 -   .large[**Findable**: Deposit source code in a repository that provides DOIs and metadata]
 
--   .large[**Accessible**: Provide the opportunity to download the source code in bulk form]
+-   .large[**Accessible**: Provide the opportunity to download the source code]
 
 -   .large[**Interoperable**: Use open source programming languages and software]
 
@@ -451,8 +482,11 @@ class: left
 
 --
 
-.huge[Cite software properly `r cite("smith2016")` - [#2X](slides31_01.html)]
+.huge[Cite software properly `r cite("smith2016")` - [#23](slides23_01.html#rec23)]
 
+--
+
+.huge[**[What UJI recommends...](http://www.uji.es/upo/rest/contenido/630998650/raw?idioma=es)**]
 
 ---
 name: rec20
